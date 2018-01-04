@@ -1,0 +1,142 @@
+Vesta static timing analysis, pin-to-register and register-to-pin minimum timing
+
+Top 17 minimum delay paths:
+Path input pin ULA_ctrl[0] to output pin ULA_OUT[15] delay 551.103 ps
+      0.0 ps         ULA_ctrl[0]:               ->   BUFX4_124/A
+    116.3 ps  ULA_ctrl_0_bF_buf1:   BUFX4_124/Y -> OAI21X1_122/A
+    199.5 ps               _463_: OAI21X1_122/Y ->  OAI21X1_60/C
+    334.6 ps               _464_:  OAI21X1_60/Y ->     INVX8_3/A
+    404.9 ps           _518__15_:    BUFX4_17/Y ->    BUFX2_35/A
+    476.1 ps         ULA_OUT[15]:    BUFX2_35/Y -> 
+
+Path input pin ULA_B[7] to output pin ULA_OUT[7] delay 581.565 ps
+      0.0 ps    ULA_B[7]:              -> OAI21X1_79/B
+     60.9 ps       _285_: OAI21X1_79/Y -> OAI21X1_11/C
+    111.0 ps       _292_: OAI21X1_11/Y -> AOI21X1_16/C
+    172.7 ps       _293_: AOI21X1_16/Y -> NAND3X1_29/B
+    327.0 ps    _518__7_:    BUFX4_7/Y ->   BUFX2_27/A
+    412.2 ps  ULA_OUT[7]:   BUFX2_27/Y -> 
+
+Path input pin ULA_B[5] to output pin ULA_OUT[5] delay 617.323 ps
+      0.0 ps    ULA_B[5]:              -> OAI21X1_54/B
+     60.9 ps       _239_: OAI21X1_54/Y -> OAI21X1_58/C
+    111.0 ps       _246_: OAI21X1_58/Y -> AOI21X1_37/C
+    173.5 ps       _247_: AOI21X1_37/Y ->  NAND3X1_8/C
+    323.4 ps    _518__5_:    BUFX4_5/Y ->   BUFX2_25/A
+    408.9 ps  ULA_OUT[5]:   BUFX2_25/Y -> 
+
+Path input pin ULA_B[3] to output pin ULA_OUT[13] delay 682.319 ps
+      0.0 ps     ULA_B[3]:               ->  NAND3X1_40/A
+     75.7 ps        _402_:  NAND3X1_40/Y ->  AOI21X1_11/A
+    144.8 ps        _409_:  AOI21X1_11/Y -> OAI21X1_121/A
+    359.9 ps        _419_: OAI21X1_121/Y ->    INVX8_11/A
+    421.7 ps    _518__13_:    BUFX4_14/Y ->    BUFX2_33/A
+    494.7 ps  ULA_OUT[13]:    BUFX2_33/Y -> 
+
+Path input pin ULA_B[3] to output pin ULA_OUT[3] delay 692.806 ps
+      0.0 ps    ULA_B[3]:              -> OAI21X1_48/B
+     65.2 ps       _198_: OAI21X1_48/Y -> NAND3X1_25/B
+    117.7 ps       _199_: NAND3X1_25/Y -> AOI21X1_32/C
+    182.7 ps       _200_: AOI21X1_32/Y ->  AOI22X1_5/C
+    351.4 ps    _518__3_:  AOI22X1_5/Y ->   BUFX2_23/A
+    438.6 ps  ULA_OUT[3]:   BUFX2_23/Y -> 
+
+Path input pin ULA_A[1] to output pin ULA_OUT[1] delay 696.699 ps
+      0.0 ps    ULA_A[1]:              -> OAI21X1_18/A
+     70.4 ps       _114_: OAI21X1_18/Y -> NAND2X1_29/A
+    119.3 ps       _122_: NAND2X1_29/Y -> AOI21X1_28/C
+    183.3 ps       _123_: AOI21X1_28/Y ->  AOI22X1_3/C
+    351.8 ps    _518__1_:  AOI22X1_3/Y ->   BUFX2_21/A
+    439.0 ps  ULA_OUT[1]:   BUFX2_21/Y -> 
+
+Path input pin ULA_B[6] to output pin ULA_OUT[6] delay 702.558 ps
+      0.0 ps    ULA_B[6]:              -> OAI21X1_66/B
+     60.9 ps       _263_: OAI21X1_66/Y -> OAI21X1_69/C
+    111.0 ps       _269_: OAI21X1_69/Y ->  AOI21X1_4/C
+    172.6 ps       _270_:  AOI21X1_4/Y -> NAND3X1_26/A
+    328.0 ps    _518__6_:    BUFX4_6/Y ->   BUFX2_26/A
+    413.3 ps  ULA_OUT[6]:   BUFX2_26/Y -> 
+
+Path input pin ULA_B[4] to output pin ULA_OUT[4] delay 705.132 ps
+      0.0 ps    ULA_B[4]:               -> OAI21X1_111/B
+     60.9 ps       _214_: OAI21X1_111/Y ->  OAI21X1_24/C
+    111.0 ps       _221_:  OAI21X1_24/Y ->  AOI21X1_35/C
+    172.6 ps       _222_:  AOI21X1_35/Y ->  NAND3X1_34/A
+    328.7 ps    _518__4_:     BUFX4_4/Y ->    BUFX2_24/A
+    414.2 ps  ULA_OUT[4]:    BUFX2_24/Y -> 
+
+Path input pin ULA_ctrl[0] to output pin ULA_OUT[11] delay 712.601 ps
+      0.0 ps         ULA_ctrl[0]:              ->  BUFX4_135/A
+    109.9 ps  ULA_ctrl_0_bF_buf3:  BUFX4_135/Y -> OAI21X1_98/A
+    192.0 ps               _379_: OAI21X1_98/Y -> OAI21X1_99/C
+    331.7 ps               _380_: OAI21X1_99/Y ->    INVX8_9/A
+    403.3 ps           _518__11_:   BUFX4_11/Y ->   BUFX2_31/A
+    474.8 ps         ULA_OUT[11]:   BUFX2_31/Y -> 
+
+Path input pin ULA_ctrl[0] to output pin ULA_OUT[9] delay 716.229 ps
+      0.0 ps         ULA_ctrl[0]:              ->  BUFX4_108/A
+    119.6 ps  ULA_ctrl_0_bF_buf2:  BUFX4_108/Y -> OAI21X1_87/A
+    203.3 ps               _341_: OAI21X1_87/Y -> OAI21X1_88/C
+    342.2 ps               _342_: OAI21X1_88/Y ->    INVX8_7/A
+    413.5 ps            _518__9_:    BUFX4_9/Y ->   BUFX2_29/A
+    484.9 ps          ULA_OUT[9]:   BUFX2_29/Y -> 
+
+Path input pin ULA_ctrl[0] to output pin ULA_OUT[10] delay 726.657 ps
+      0.0 ps         ULA_ctrl[0]:              ->  BUFX4_136/A
+    108.5 ps  ULA_ctrl_0_bF_buf0:  BUFX4_136/Y -> OAI21X1_39/A
+    190.4 ps               _359_: OAI21X1_39/Y -> OAI21X1_56/C
+    326.0 ps               _360_: OAI21X1_56/Y ->    INVX8_8/A
+    396.4 ps           _518__10_:   BUFX4_10/Y ->   BUFX2_30/A
+    467.7 ps         ULA_OUT[10]:   BUFX2_30/Y -> 
+
+Path input pin ULA_B[14] to output pin ULA_OUT[14] delay 746.8 ps
+      0.0 ps    ULA_B[14]:              -> NAND2X1_40/B
+    110.0 ps        _420_: NAND2X1_40/Y ->  OAI21X1_1/B
+    167.7 ps        _422_:  OAI21X1_1/Y -> OAI21X1_22/C
+    362.3 ps        _439_: OAI21X1_22/Y ->    INVX8_2/A
+    423.6 ps    _518__14_:   BUFX4_16/Y ->   BUFX2_34/A
+    496.4 ps  ULA_OUT[14]:   BUFX2_34/Y -> 
+
+Path input pin ULA_ctrl[0] to output pin ULA_OUT[8] delay 752.221 ps
+      0.0 ps         ULA_ctrl[0]:              ->  BUFX4_133/A
+    125.7 ps  ULA_ctrl_0_bF_buf4:  BUFX4_133/Y -> OAI21X1_71/A
+    210.4 ps               _323_: OAI21X1_71/Y -> OAI21X1_80/C
+    349.5 ps               _324_: OAI21X1_80/Y ->    INVX8_6/A
+    420.9 ps            _518__8_:    BUFX4_8/Y ->   BUFX2_28/A
+    492.3 ps          ULA_OUT[8]:   BUFX2_28/Y -> 
+
+Path input pin ULA_ctrl[0] to output pin ULA_OUT[12] delay 763.143 ps
+      0.0 ps         ULA_ctrl[0]:               ->   BUFX4_124/A
+    116.3 ps  ULA_ctrl_0_bF_buf1:   BUFX4_124/Y -> OAI21X1_110/A
+    199.5 ps               _400_: OAI21X1_110/Y -> OAI21X1_112/C
+    338.3 ps               _401_: OAI21X1_112/Y ->    INVX8_10/A
+    409.7 ps           _518__12_:    BUFX4_13/Y ->    BUFX2_32/A
+    481.0 ps         ULA_OUT[12]:    BUFX2_32/Y -> 
+
+Path input pin ULA_B[3] to output pin ULA_OUT[2] delay 771.629 ps
+      0.0 ps    ULA_B[3]:              -> NAND2X1_36/A
+     55.5 ps       _150_: NAND2X1_36/Y -> AOI21X1_30/B
+    114.9 ps       _166_: AOI21X1_30/Y -> NAND2X1_43/A
+    209.4 ps       _167_: NAND2X1_43/Y ->   AND2X2_2/A
+    366.7 ps    _518__2_:   AND2X2_2/Y ->   BUFX2_22/A
+    445.2 ps  ULA_OUT[2]:   BUFX2_22/Y -> 
+
+Path input pin ULA_A[0] to output pin ULA_OUT[0] delay 774.577 ps
+      0.0 ps    ULA_A[0]:              -> NAND2X1_54/A
+    123.2 ps       _426_: NAND2X1_54/Y -> OAI21X1_55/B
+    210.4 ps       _486_: OAI21X1_55/Y ->   AND2X2_7/B
+    367.3 ps    _518__0_:   AND2X2_7/Y ->   BUFX2_20/A
+    443.9 ps  ULA_OUT[0]:   BUFX2_20/Y -> 
+
+Path input pin ULA_A[0] to output pin ULA_flags[1] delay 839.53 ps
+      0.0 ps      ULA_A[0]:              -> NAND2X1_54/A
+    123.2 ps         _426_: NAND2X1_54/Y -> OAI21X1_55/B
+    210.4 ps         _486_: OAI21X1_55/Y -> AOI21X1_21/A
+    299.9 ps         _466_: AOI21X1_21/Y ->  NAND3X1_7/B
+    352.3 ps         _470_:  NAND3X1_7/Y ->  NOR2X1_17/A
+    415.6 ps          zero:  NOR2X1_17/Y ->   BUFX4_78/A
+    533.2 ps      _519__1_:   BUFX4_19/Y ->   BUFX2_37/A
+    604.0 ps  ULA_flags[1]:   BUFX2_37/Y -> 
+
+-----------------------------------------
+

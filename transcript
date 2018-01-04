@@ -1,0 +1,254 @@
+# Loading project Nrisc_aurora
+project open /home/jcscheunemann/intelFPGA/17.0/modelsim_ase/Multiplicador
+# reading /home/jcscheunemann/intelFPGA/17.0/modelsim_ase/linuxaloem/../modelsim.ini
+# reading modelsim.ini
+# Loading project Multiplicador
+# Compile of arquivos_sint.v was successful.
+# Compile of booth4always.v was successful.
+# Compile of booth4assign.v was successful.
+# Compile of booth4assign_V1.v was successful.
+# Compile of booth4assign_V2.v was successful.
+# Compile of booth4beta.v was successful.
+# Compile of booth_newMBE.v was successful.
+# Compile of const.v was successful.
+# Compile of driverclk.v was successful.
+# Compile of ferramenta.v was successful.
+# Compile of somadores.v was successful.
+# Compile of tb_multipliers.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim work.tb_multipliers
+# vsim work.tb_multipliers 
+# Start time: 10:43:38 on Nov 15,2017
+# Loading work.tb_multipliers
+# Loading work.driverclk
+# Loading work.booth_newMBE
+# Loading work.booth4assign_V2
+# Loading work.booth4assign
+# Loading work.ferramenta
+# Loading work.somador
+# Compile of arquivos_sint.v was successful.
+# Compile of booth4always.v was successful.
+# Compile of booth4assign.v was successful.
+# Compile of booth4assign_V1.v was successful.
+# Compile of booth4assign_V2.v was successful.
+# Compile of booth4beta.v was successful.
+# Compile of booth_newMBE.v was successful.
+# Compile of const.v was successful.
+# Compile of driverclk.v was successful.
+# Compile of ferramenta.v was successful.
+# Compile of somadores.v was successful.
+# Compile of tb_multipliers.v was successful.
+# 12 compiles, 0 failed with no errors.
+run
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[0]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[1]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[2]
+#  one ***** alguem errou entre si e nao foi o S 
+#  inus one  alguem errou entre si e nao foi o S 
+#  one ***** alguem errou entre si e nao foi o S 
+#                   MULTIPLIER ZERO TEST PASSED  
+# >>>>>>>>>Error                  210::::: -113*  99 = -11187 | -11187
+#            0 %
+#  dom ***** alguem errou entre si e nao foi o S 
+# >>>>>>>>>Error                  240:::::  -11*  13 =   -143 |   -143
+# >>>>>>>>>Error                  270:::::   -8* -58 =    464 |    464
+# >>>>>>>>>Error                  300:::::   70*-113 =  -7910 |  -7910
+# >>>>>>>>>Error                  330:::::  -75* -67 =   5025 |   5025
+# >>>>>>>>>Error                  360:::::  -68*  32 =  -2176 |  -2176
+# >>>>>>>>>Error                  390:::::  -54*  83 =  -4482 |  -4482
+restart
+# Closing VCD file "multiplication.vcd"
+# Loading work.tb_multipliers
+# Loading work.driverclk
+# Loading work.booth_newMBE
+# Loading work.booth4assign_V2
+# Loading work.booth4assign
+# Loading work.ferramenta
+# Loading work.somador
+add wave -position end  sim:/tb_multipliers/A
+add wave -position end  sim:/tb_multipliers/B
+add wave -position end  sim:/tb_multipliers/S
+add wave -position end  sim:/tb_multipliers/Y
+add wave -position end  sim:/tb_multipliers/W
+add wave -position end  sim:/tb_multipliers/X
+add wave -position end  sim:/tb_multipliers/clk
+run
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[0]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[1]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[2]
+#  one ***** alguem errou entre si e nao foi o S 
+#  inus one  alguem errou entre si e nao foi o S 
+#  one ***** alguem errou entre si e nao foi o S 
+#                   MULTIPLIER ZERO TEST PASSED  
+# >>>>>>>>>Error                  210::::: -113*  99 = -11187 | -11187
+#            0 %
+#  dom ***** alguem errou entre si e nao foi o S 
+# >>>>>>>>>Error                  240:::::  -11*  13 =   -143 |   -143
+# >>>>>>>>>Error                  270:::::   -8* -58 =    464 |    464
+# >>>>>>>>>Error                  300:::::   70*-113 =  -7910 |  -7910
+# >>>>>>>>>Error                  330:::::  -75* -67 =   5025 |   5025
+# >>>>>>>>>Error                  360:::::  -68*  32 =  -2176 |  -2176
+# >>>>>>>>>Error                  390:::::  -54*  83 =  -4482 |  -4482
+add wave -position end  sim:/tb_multipliers/DUV/booth_NewMBE/P
+restart
+# Closing VCD file "multiplication.vcd"
+run
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[0]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[1]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[2]
+#  one ***** alguem errou entre si e nao foi o S 
+#  inus one  alguem errou entre si e nao foi o S 
+#  one ***** alguem errou entre si e nao foi o S 
+#                   MULTIPLIER ZERO TEST PASSED  
+# >>>>>>>>>Error                  210::::: -113*  99 = -11187 | -11187
+#            0 %
+#  dom ***** alguem errou entre si e nao foi o S 
+# >>>>>>>>>Error                  240:::::  -11*  13 =   -143 |   -143
+# >>>>>>>>>Error                  270:::::   -8* -58 =    464 |    464
+# >>>>>>>>>Error                  300:::::   70*-113 =  -7910 |  -7910
+# >>>>>>>>>Error                  330:::::  -75* -67 =   5025 |   5025
+# >>>>>>>>>Error                  360:::::  -68*  32 =  -2176 |  -2176
+# >>>>>>>>>Error                  390:::::  -54*  83 =  -4482 |  -4482
+add wave -position end  sim:/tb_multipliers/DUV/booth_NewMBE/Spar
+restart
+# Closing VCD file "multiplication.vcd"
+run
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[0]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[1]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[2]
+#  one ***** alguem errou entre si e nao foi o S 
+#  inus one  alguem errou entre si e nao foi o S 
+#  one ***** alguem errou entre si e nao foi o S 
+#                   MULTIPLIER ZERO TEST PASSED  
+# >>>>>>>>>Error                  210::::: -113*  99 = -11187 | -11187
+#            0 %
+#  dom ***** alguem errou entre si e nao foi o S 
+# >>>>>>>>>Error                  240:::::  -11*  13 =   -143 |   -143
+# >>>>>>>>>Error                  270:::::   -8* -58 =    464 |    464
+# >>>>>>>>>Error                  300:::::   70*-113 =  -7910 |  -7910
+# >>>>>>>>>Error                  330:::::  -75* -67 =   5025 |   5025
+# >>>>>>>>>Error                  360:::::  -68*  32 =  -2176 |  -2176
+# >>>>>>>>>Error                  390:::::  -54*  83 =  -4482 |  -4482
+# Compile of arquivos_sint.v was successful.
+# Compile of booth4always.v was successful.
+# Compile of booth4assign.v was successful.
+# Compile of booth4assign_V1.v was successful.
+# Compile of booth4assign_V2.v was successful.
+# Compile of booth4beta.v was successful.
+# Compile of booth_newMBE.v was successful.
+# Compile of const.v was successful.
+# Compile of driverclk.v was successful.
+# Compile of ferramenta.v was successful.
+# Compile of somadores.v was successful.
+# Compile of tb_multipliers.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "multiplication.vcd"
+# Loading work.tb_multipliers
+# Loading work.driverclk
+# Loading work.booth_newMBE
+# Loading work.booth4assign_V2
+# Loading work.booth4assign
+# Loading work.ferramenta
+# Loading work.somador
+run
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[0]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[1]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[2]
+#  one ***** alguem errou entre si e nao foi o S 
+#  inus one  alguem errou entre si e nao foi o S 
+#  one ***** alguem errou entre si e nao foi o S 
+#                   MULTIPLIER ZERO TEST PASSED  
+# Compile of arquivos_sint.v was successful.
+# Compile of booth4always.v was successful.
+# Compile of booth4assign.v was successful.
+# Compile of booth4assign_V1.v was successful.
+# Compile of booth4assign_V2.v was successful.
+# Compile of booth4beta.v was successful.
+# Compile of booth_newMBE.v was successful.
+# Compile of const.v was successful.
+# Compile of driverclk.v was successful.
+# Compile of ferramenta.v was successful.
+# Compile of somadores.v was successful.
+# Compile of tb_multipliers.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "multiplication.vcd"
+# Loading work.tb_multipliers
+# Loading work.driverclk
+# Loading work.booth_newMBE
+# Loading work.booth4assign_V2
+# Loading work.booth4assign
+# Loading work.ferramenta
+# Loading work.somador
+run
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[0]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[1]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[2]
+#  one ***** alguem errou entre si e nao foi o S 
+#  inus one  alguem errou entre si e nao foi o S 
+#  one ***** alguem errou entre si e nao foi o S 
+#                   MULTIPLIER ZERO TEST PASSED  
+# Compile of arquivos_sint.v was successful.
+# Compile of booth4always.v was successful.
+# Compile of booth4assign.v was successful.
+# Compile of booth4assign_V1.v was successful.
+# Compile of booth4assign_V2.v was successful.
+# Compile of booth4beta.v was successful.
+# Compile of booth_newMBE.v was successful.
+# Compile of const.v was successful.
+# Compile of driverclk.v was successful.
+# Compile of ferramenta.v was successful.
+# Compile of somadores.v was successful.
+# Compile of tb_multipliers.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "multiplication.vcd"
+# Loading work.tb_multipliers
+# Loading work.driverclk
+# Loading work.booth_newMBE
+# Loading work.booth4assign_V2
+# Loading work.booth4assign
+# Loading work.ferramenta
+# Loading work.somador
+run
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[0]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[1]
+# ** Error: (vsim-PLI-3537) $dumpvars() : Argument 2 is invalid.    : /home/jcscheunemann/Work/VLSI/multiplicador/tb_multipliers.v(103)
+#    Time: 0 ns  Iteration: 0  Region: /tb_multipliers/genblk1[2]
+#  one ***** alguem errou entre si e nao foi o S 
+#  inus one  alguem errou entre si e nao foi o S 
+#  one ***** alguem errou entre si e nao foi o S 
+#                   MULTIPLIER ZERO TEST PASSED  
+run
+# >>>>>>>>>Error                  210::::: -113*  99 = -11187 | -11187
+#            0 %
+#  dom ***** alguem errou entre si e nao foi o S 
+# >>>>>>>>>Error                  240:::::  -11*  13 =   -143 |   -143
+# >>>>>>>>>Error                  270:::::   -8* -58 =    464 |    464
+# >>>>>>>>>Error                  300:::::   70*-113 =  -7910 |  -7910
+# >>>>>>>>>Error                  330:::::  -75* -67 =   5025 |   5025
+# >>>>>>>>>Error                  360:::::  -68*  32 =  -2176 |  -2176
+# >>>>>>>>>Error                  390:::::  -54*  83 =  -4482 |  -4482
+# End time: 10:52:14 on Nov 15,2017, Elapsed time: 0:08:36
+# Errors: 21, Warnings: 0

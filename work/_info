@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/jcscheunemann/intelFPGA/17.0/modelsim_ase
+vsomaUla
+Z0 !s110 1510516378
+!i10b 1
+!s100 RN:FdTJdka1jn:hJKd6a]3
+IL3a>K75IB4iFN^7YI@6mf0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/home/jcscheunemann/Work/NRISC-Aurora
+w1510515815
+8/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v
+F/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v
+L0 122
+Z3 OV;L;10.5c;63
+r1
+!s85 0
+31
+Z4 !s108 1510516378.000000
+!s107 /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+nsoma@ula
+vULA_TB
+R0
+!i10b 1
+!s100 bQW88[n5c4gbH[hX2<Zkh2
+I7]b08lSIodQ<PP<elgo881
+R1
+R2
+w1481369838
+8/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB.v
+F/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB.v|
+!i113 1
+R5
+R6
+n@u@l@a_@t@b
+vULA_TB2
+R0
+!i10b 1
+!s100 398H3ghX:AFJ]2]Q4^K6Y2
+IT438fB6cG=oHLOg<YGHE>3
+R1
+R2
+w1489543942
+8/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB 2 .v
+F/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB 2 .v
+L0 17
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB 2 .v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB 2 .v|
+!i113 1
+R5
+R6
+n@u@l@a_@t@b2

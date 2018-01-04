@@ -1,0 +1,16 @@
+/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v {1 {vlog -work work -stats=none /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module NRISC_ULA
+-- Compiling module somaUla
+
+Top level modules:
+	NRISC_ULA
+
+} {} {}} /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB.v {1 {vlog -work work -stats=none /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ULA_TB
+
+Top level modules:
+	ULA_TB
+
+} {} {}}

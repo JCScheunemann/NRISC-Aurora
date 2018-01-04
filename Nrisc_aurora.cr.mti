@@ -1,0 +1,17 @@
+/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v {0 {vlog -work work -stats=none /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module NRISC_ULA
+** Error (suppressible): (vlog-10008) /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v(104): Too many indices (1) for array type Outsum (dimensionality 0).
+** Error (suppressible): (vlog-10008) /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v(104): Too many indices (1) for array type Outsum (dimensionality 0).
+** Error (suppressible): (vlog-10008) /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v(105): Too many indices (1) for array type Outsum (dimensionality 0).
+** Error (suppressible): (vlog-10008) /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA.v(105): Too many indices (1) for array type Outsum (dimensionality 0).
+-- Compiling module somaUla
+
+} {} {}} /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB.v {1 {vlog -work work -stats=none /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/ULA/ULA_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ULA_TB
+
+Top level modules:
+	ULA_TB
+
+} {} {}}

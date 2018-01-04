@@ -1,0 +1,69 @@
+Qflow static timing analysis logfile created on seg jan 1 22:00:42 -02 2018
+Running vesta static timing analysis
+vesta  NRISC_ULA.rtlnopwr.v /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+----------------------------------------------
+Vesta static timing analysis tool
+(c) 2013-2017 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "osu018_stdcells"
+End of library at line 6141
+Parsing module "NRISC_ULA"
+Lib Read:  Processed 6142 lines.
+Verilog netlist read:  Processed 726 lines.
+Number of paths analyzed:  0
+
+Top 0 maximum delay paths:
+Computed maximum clock frequency (zero slack) = inf MHz
+-----------------------------------------
+
+Number of paths analyzed:  0
+
+Top 0 minimum delay paths:
+Design meets minimum hold timing.
+-----------------------------------------
+
+Number of paths analyzed:  17
+
+Top 17 maximum delay paths:
+Path input pin ULA_B[1] to output pin ULA_flags[1] delay 1530.57 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[0] delay 1297.53 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[14] delay 1143.79 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[10] delay 1137.54 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[8] delay 1133.11 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[4] delay 1132.88 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[12] delay 1132.75 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[1] delay 1124.85 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[2] delay 1121.9 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[6] delay 1084.23 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[15] delay 1074.54 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[11] delay 1048.75 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[3] delay 1040.03 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[9] delay 1027.63 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[7] delay 1007.8 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[5] delay 1006.84 ps
+Path input pin ULA_B[1] to output pin ULA_OUT[13] delay 923.514 ps
+-----------------------------------------
+
+Number of paths analyzed:  17
+
+Top 17 minimum delay paths:
+Path input pin ULA_B[15] to output pin ULA_OUT[15] delay 537.797 ps
+Path input pin ULA_B[7] to output pin ULA_OUT[7] delay 699.24 ps
+Path input pin ULA_A[1] to output pin ULA_OUT[1] delay 729.765 ps
+Path input pin ULA_B[13] to output pin ULA_OUT[13] delay 750.455 ps
+Path input pin ULA_B[3] to output pin ULA_OUT[5] delay 761.266 ps
+Path input pin ULA_B[11] to output pin ULA_OUT[11] delay 804.556 ps
+Path input pin ULA_B[6] to output pin ULA_OUT[6] delay 822.402 ps
+Path input pin ULA_B[12] to output pin ULA_OUT[12] delay 833.192 ps
+Path input pin ULA_B[14] to output pin ULA_OUT[14] delay 835.462 ps
+Path input pin ULA_B[3] to output pin ULA_OUT[3] delay 871.028 ps
+Path input pin ULA_B[9] to output pin ULA_OUT[9] delay 872.708 ps
+Path input pin ULA_B[4] to output pin ULA_flags[1] delay 883.348 ps
+Path input pin ULA_B[10] to output pin ULA_OUT[10] delay 884.165 ps
+Path input pin ULA_A[2] to output pin ULA_OUT[2] delay 930.291 ps
+Path input pin ULA_B[4] to output pin ULA_OUT[4] delay 989.096 ps
+Path input pin ULA_B[8] to output pin ULA_OUT[8] delay 1007.63 ps
+Path input pin ULA_A[0] to output pin ULA_OUT[0] delay 1013.31 ps
+-----------------------------------------
+

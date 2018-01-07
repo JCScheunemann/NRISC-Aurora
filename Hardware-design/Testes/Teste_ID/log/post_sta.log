@@ -1,0 +1,15 @@
+Qflow static timing analysis logfile created on dom jan 7 12:20:57 -02 2018
+Converting qrouter output to vesta delay format
+Running rc2dly -r NRISC_InstructionDecoder.rc -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -d NRISC_InstructionDecoder.dly
+Running vesta static timing analysis with back-annotated extracted wire delays
+vesta -c -d NRISC_InstructionDecoder.dly --summary reports --long NRISC_InstructionDecoder.rtlnopwr.v /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+----------------------------------------------
+Vesta static timing analysis tool
+(c) 2013-2017 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "osu018_stdcells"
+End of library at line 6141
+Parsing module "NRISC_InstructionDecoder"
+Lib Read:  Processed 6142 lines.
+ERROR: Net _220__0_ only had 2 receivers in delay file,  but expected a fanout of 3

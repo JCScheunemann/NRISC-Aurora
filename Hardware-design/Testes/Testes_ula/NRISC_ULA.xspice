@@ -1,0 +1,667 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+*SPICE netlist created from BLIF module NRISC_ULA by blif2BSpice
+.subckt NRISC_ULA a_vdd a_gnd a_ULA_A_0_ a_ULA_A_1_ a_ULA_A_2_ a_ULA_A_3_ a_ULA_A_4_ a_ULA_A_5_ a_ULA_A_6_ a_ULA_A_7_ a_ULA_A_8_ a_ULA_A_9_ a_ULA_A_10_ a_ULA_A_11_ a_ULA_A_12_ a_ULA_A_13_ a_ULA_A_14_ a_ULA_A_15_ a_ULA_B_0_ a_ULA_B_1_ a_ULA_B_2_ a_ULA_B_3_ a_ULA_B_4_ a_ULA_B_5_ a_ULA_B_6_ a_ULA_B_7_ a_ULA_B_8_ a_ULA_B_9_ a_ULA_B_10_ a_ULA_B_11_ a_ULA_B_12_ a_ULA_B_13_ a_ULA_B_14_ a_ULA_B_15_ a_ULA_ctrl_0_ a_ULA_ctrl_1_ a_ULA_ctrl_2_ a_ULA_ctrl_3_ a_ULA_OUT_0_ a_ULA_OUT_1_ a_ULA_OUT_2_ a_ULA_OUT_3_ a_ULA_OUT_4_ a_ULA_OUT_5_ a_ULA_OUT_6_ a_ULA_OUT_7_ a_ULA_OUT_8_ a_ULA_OUT_9_ a_ULA_OUT_10_ a_ULA_OUT_11_ a_ULA_OUT_12_ a_ULA_OUT_13_ a_ULA_OUT_14_ a_ULA_OUT_15_ a_ULA_flags_0_ a_ULA_flags_1_ a_ULA_flags_2_
+ABUFX4_1 [_444_] _444__bF$buf3 d_lut_BUFX4
+ABUFX4_2 [_444_] _444__bF$buf2 d_lut_BUFX4
+ABUFX4_3 [_444_] _444__bF$buf1 d_lut_BUFX4
+ABUFX4_4 [_444_] _444__bF$buf0 d_lut_BUFX4
+ABUFX4_5 [_438_] _438__bF$buf3 d_lut_BUFX4
+ABUFX4_6 [_438_] _438__bF$buf2 d_lut_BUFX4
+ABUFX4_7 [_438_] _438__bF$buf1 d_lut_BUFX4
+ABUFX4_8 [_438_] _438__bF$buf0 d_lut_BUFX4
+ABUFX4_9 [ULA_B_3_] ULA_B_3_bF$buf3 d_lut_BUFX4
+ABUFX4_10 [ULA_B_3_] ULA_B_3_bF$buf2 d_lut_BUFX4
+ABUFX4_11 [ULA_B_3_] ULA_B_3_bF$buf1 d_lut_BUFX4
+ABUFX4_12 [ULA_B_3_] ULA_B_3_bF$buf0 d_lut_BUFX4
+ABUFX4_13 [ULA_B_0_] ULA_B_0_bF$buf5 d_lut_BUFX4
+ABUFX4_14 [ULA_B_0_] ULA_B_0_bF$buf4 d_lut_BUFX4
+ABUFX4_15 [ULA_B_0_] ULA_B_0_bF$buf3 d_lut_BUFX4
+ABUFX4_16 [ULA_B_0_] ULA_B_0_bF$buf2 d_lut_BUFX4
+ABUFX4_17 [ULA_B_0_] ULA_B_0_bF$buf1 d_lut_BUFX4
+ABUFX4_18 [ULA_B_0_] ULA_B_0_bF$buf0 d_lut_BUFX4
+ABUFX4_19 [_426_] _426__bF$buf3 d_lut_BUFX4
+ABUFX4_20 [_426_] _426__bF$buf2 d_lut_BUFX4
+ABUFX4_21 [_426_] _426__bF$buf1 d_lut_BUFX4
+ABUFX4_22 [_426_] _426__bF$buf0 d_lut_BUFX4
+ABUFX4_23 [_24_] _24__bF$buf4 d_lut_BUFX4
+ABUFX4_24 [_24_] _24__bF$buf3 d_lut_BUFX4
+ABUFX4_25 [_24_] _24__bF$buf2 d_lut_BUFX4
+ABUFX4_26 [_24_] _24__bF$buf1 d_lut_BUFX4
+ABUFX4_27 [_24_] _24__bF$buf0 d_lut_BUFX4
+ABUFX4_28 [_94_] _94__bF$buf3 d_lut_BUFX4
+ABUFX4_29 [_94_] _94__bF$buf2 d_lut_BUFX4
+ABUFX4_30 [_94_] _94__bF$buf1 d_lut_BUFX4
+ABUFX4_31 [_94_] _94__bF$buf0 d_lut_BUFX4
+ABUFX4_32 [ULA_ctrl_0_] ULA_ctrl_0_bF$buf3 d_lut_BUFX4
+ABUFX4_33 [ULA_ctrl_0_] ULA_ctrl_0_bF$buf2 d_lut_BUFX4
+ABUFX4_34 [ULA_ctrl_0_] ULA_ctrl_0_bF$buf1 d_lut_BUFX4
+ABUFX4_35 [ULA_ctrl_0_] ULA_ctrl_0_bF$buf0 d_lut_BUFX4
+ABUFX4_36 [_425_] _425__bF$buf3 d_lut_BUFX4
+ABUFX4_37 [_425_] _425__bF$buf2 d_lut_BUFX4
+ABUFX4_38 [_425_] _425__bF$buf1 d_lut_BUFX4
+ABUFX4_39 [_425_] _425__bF$buf0 d_lut_BUFX4
+ABUFX4_40 [ULA_B_1_] ULA_B_1_bF$buf4 d_lut_BUFX4
+ABUFX4_41 [ULA_B_1_] ULA_B_1_bF$buf3 d_lut_BUFX4
+ABUFX4_42 [ULA_B_1_] ULA_B_1_bF$buf2 d_lut_BUFX4
+ABUFX4_43 [ULA_B_1_] ULA_B_1_bF$buf1 d_lut_BUFX4
+ABUFX4_44 [ULA_B_1_] ULA_B_1_bF$buf0 d_lut_BUFX4
+AINVX1_1 [ULA_A_0_] _412_ d_lut_INVX1
+AINVX2_1 [ULA_B_0_bF$buf5] _413_ d_lut_INVX2
+ANOR2X1_1 [_412_ _413_] _414_ d_lut_NOR2X1
+AINVX1_2 [_414_] _415_ d_lut_INVX1
+ANAND3X1_1 [ULA_ctrl_2_ ULA_ctrl_1_ ULA_ctrl_3_] _416_ d_lut_NAND3X1
+AINVX2_2 [ULA_ctrl_1_] _417_ d_lut_INVX2
+ANAND3X1_2 [ULA_ctrl_2_ ULA_ctrl_3_ _417_] _418_ d_lut_NAND3X1
+AAND2X2_1 [_418_ _416_] _419_ d_lut_AND2X2
+AINVX2_3 [ULA_ctrl_2_] _420_ d_lut_INVX2
+ANAND3X1_3 [ULA_ctrl_3_ _420_ _417_] _421_ d_lut_NAND3X1
+ANAND3X1_4 [ULA_ctrl_1_ ULA_ctrl_3_ _420_] _422_ d_lut_NAND3X1
+AAND2X2_2 [_421_ _422_] _423_ d_lut_AND2X2
+AINVX1_3 [ULA_ctrl_3_] _424_ d_lut_INVX1
+ANAND3X1_5 [ULA_ctrl_2_ _417_ _424_] _425_ d_lut_NAND3X1
+ANAND3X1_6 [ULA_ctrl_2_ ULA_ctrl_1_ _424_] _426_ d_lut_NAND3X1
+AAND2X2_3 [_425__bF$buf3 _426__bF$buf3] _427_ d_lut_AND2X2
+ANAND3X1_7 [_419_ _423_ _427_] _428_ d_lut_NAND3X1
+AAOI21X1_1 [ULA_ctrl_0_bF$buf3 _415_ _428_] _429_ d_lut_AOI21X1
+AOAI21X1_1 [ULA_ctrl_0_bF$buf2 _415_ _429_] _430_ d_lut_OAI21X1
+AINVX8_1 [ULA_B_3_bF$buf3] _431_ d_lut_INVX8
+AOR2X2_1 [ULA_B_0_bF$buf4 ULA_B_1_bF$buf4] _432_ d_lut_OR2X2
+ANOR3X1_1 [ULA_B_0_bF$buf3 ULA_B_1_bF$buf3 ULA_B_2_] _433_ d_lut_NOR3X1
+AOR2X2_2 [ULA_B_2_ ULA_B_3_bF$buf2] _434_ d_lut_OR2X2
+AOAI22X1_1 [_432_ _434_ _433_ _431_] _435_ d_lut_OAI22X1
+AMUX2X1_1 [_435_ _431_ ULA_ctrl_0_bF$buf1] _436_ d_lut_MUX2X1
+AINVX2_4 [_436_] _437_ d_lut_INVX2
+AINVX8_2 [ULA_B_2_] _438_ d_lut_INVX8
+AOAI21X1_2 [ULA_B_0_bF$buf2 ULA_B_1_bF$buf2 ULA_ctrl_0_bF$buf0] _439_ d_lut_OAI21X1
+AXNOR2X1_1 [_439_ _438__bF$buf3] _440_ d_lut_XNOR2X1
+AAND2X2_4 [ULA_B_0_bF$buf1 ULA_B_1_bF$buf1] _441_ d_lut_AND2X2
+AINVX4_1 [ULA_ctrl_0_bF$buf3] _442_ d_lut_INVX4
+ANAND2X1_1 [ULA_B_1_bF$buf0 _442_] _443_ d_lut_NAND2X1
+AOAI21X1_3 [_439_ _441_ _443_] _444_ d_lut_OAI21X1
+AMUX2X1_2 [ULA_A_15_ ULA_A_14_ ULA_B_0_bF$buf0] _445_ d_lut_MUX2X1
+AINVX1_4 [_445_] _446_ d_lut_INVX1
+AMUX2X1_3 [ULA_A_13_ ULA_A_12_ ULA_B_0_bF$buf5] _447_ d_lut_MUX2X1
+AINVX1_5 [_447_] _448_ d_lut_INVX1
+AMUX2X1_4 [_446_ _448_ _444__bF$buf3] _449_ d_lut_MUX2X1
+AMUX2X1_5 [ULA_A_9_ ULA_A_8_ ULA_B_0_bF$buf4] _450_ d_lut_MUX2X1
+AINVX1_6 [_450_] _451_ d_lut_INVX1
+AMUX2X1_6 [ULA_A_11_ ULA_A_10_ ULA_B_0_bF$buf3] _452_ d_lut_MUX2X1
+AINVX1_7 [_452_] _453_ d_lut_INVX1
+AMUX2X1_7 [_453_ _451_ _444__bF$buf2] _454_ d_lut_MUX2X1
+AMUX2X1_8 [_454_ _449_ _440_] _455_ d_lut_MUX2X1
+ANOR2X1_2 [_437_ _455_] _456_ d_lut_NOR2X1
+AMUX2X1_9 [ULA_A_3_ ULA_A_2_ ULA_B_0_bF$buf2] _457_ d_lut_MUX2X1
+AAND2X2_5 [_444__bF$buf1 _457_] _0_ d_lut_AND2X2
+AMUX2X1_10 [ULA_A_1_ ULA_A_0_ ULA_B_0_bF$buf1] _1_ d_lut_MUX2X1
+AINVX1_8 [_1_] _2_ d_lut_INVX1
+AOAI21X1_4 [_2_ _444__bF$buf0 _440_] _3_ d_lut_OAI21X1
+AINVX1_9 [ULA_A_4_] _4_ d_lut_INVX1
+ANAND2X1_2 [ULA_B_0_bF$buf0 ULA_A_5_] _5_ d_lut_NAND2X1
+AOAI21X1_5 [_4_ ULA_B_0_bF$buf5 _5_] _6_ d_lut_OAI21X1
+AINVX1_10 [ULA_A_7_] _7_ d_lut_INVX1
+ANAND2X1_3 [ULA_B_0_bF$buf4 _7_] _8_ d_lut_NAND2X1
+AOAI21X1_6 [ULA_B_0_bF$buf3 ULA_A_6_ _8_] _9_ d_lut_OAI21X1
+ANAND2X1_4 [_9_ _444__bF$buf3] _10_ d_lut_NAND2X1
+AOAI21X1_7 [_444__bF$buf2 _6_ _10_] _11_ d_lut_OAI21X1
+AOAI22X1_2 [_0_ _3_ _11_ _440_] _12_ d_lut_OAI22X1
+AINVX2_5 [ULA_B_4_] _13_ d_lut_INVX2
+ANOR2X1_3 [ULA_B_0_bF$buf2 ULA_B_1_bF$buf4] _14_ d_lut_NOR2X1
+ANOR2X1_4 [ULA_B_2_ ULA_B_3_bF$buf1] _15_ d_lut_NOR2X1
+AAOI21X1_2 [_14_ _15_ _442_] _16_ d_lut_AOI21X1
+AXNOR2X1_2 [_16_ _13_] _17_ d_lut_XNOR2X1
+ANAND2X1_5 [ULA_ctrl_3_ _417_] _18_ d_lut_NAND2X1
+AOAI21X1_8 [_18_ ULA_ctrl_2_ _416_] _19_ d_lut_OAI21X1
+AINVX1_11 [_19_] _20_ d_lut_INVX1
+ANOR2X1_5 [_20_ _17_] _21_ d_lut_NOR2X1
+AOAI21X1_9 [_12_ _436_ _21_] _22_ d_lut_OAI21X1
+ANOR2X1_6 [ULA_B_4_ _422_] _23_ d_lut_NOR2X1
+AINVX8_3 [ULA_B_1_bF$buf3] _24_ d_lut_INVX8
+AMUX2X1_11 [_447_ _445_ _24__bF$buf4] _25_ d_lut_MUX2X1
+AMUX2X1_12 [_452_ _450_ ULA_B_1_bF$buf2] _26_ d_lut_MUX2X1
+AMUX2X1_13 [_26_ _25_ _438__bF$buf2] _27_ d_lut_MUX2X1
+ANAND2X1_6 [ULA_B_1_bF$buf1 _457_] _28_ d_lut_NAND2X1
+AAOI21X1_3 [_24__bF$buf3 _1_ _434_] _29_ d_lut_AOI21X1
+ANOR2X1_7 [ULA_B_3_bF$buf0 _438__bF$buf1] _30_ d_lut_NOR2X1
+ANAND2X1_7 [_24__bF$buf2 _6_] _31_ d_lut_NAND2X1
+AOAI21X1_10 [_9_ _24__bF$buf1 _31_] _32_ d_lut_OAI21X1
+AAOI22X1_1 [_28_ _29_ _32_ _30_] _33_ d_lut_AOI22X1
+AOAI21X1_11 [_27_ _431_ _33_] _34_ d_lut_OAI21X1
+AOAI21X1_12 [_426__bF$buf2 _414_ _425__bF$buf2] _35_ d_lut_OAI21X1
+AOAI21X1_13 [ULA_A_0_ ULA_B_0_bF$buf1 _35_] _36_ d_lut_OAI21X1
+AINVX1_12 [_418_] _37_ d_lut_INVX1
+AAND2X2_6 [_433_ ULA_A_0_] _38_ d_lut_AND2X2
+ANOR2X1_8 [ULA_B_3_bF$buf3 ULA_B_4_] _39_ d_lut_NOR2X1
+ANAND3X1_8 [_37_ _39_ _38_] _40_ d_lut_NAND3X1
+ANAND3X1_9 [_36_ _40_ _428_] _41_ d_lut_NAND3X1
+AAOI21X1_4 [_23_ _34_ _41_] _42_ d_lut_AOI21X1
+AOAI21X1_14 [_22_ _456_ _42_] _43_ d_lut_OAI21X1
+AAND2X2_7 [_43_ _430_] _458__0_ d_lut_AND2X2
+AXNOR2X1_3 [_439_ ULA_B_2_] _44_ d_lut_XNOR2X1
+ANAND3X1_10 [ULA_B_1_bF$buf0 ULA_A_15_ _413_] _45_ d_lut_NAND3X1
+AMUX2X1_14 [ULA_A_14_ ULA_A_13_ ULA_B_0_bF$buf0] _46_ d_lut_MUX2X1
+AOAI21X1_15 [_444__bF$buf1 _46_ _45_] _47_ d_lut_OAI21X1
+ANAND2X1_8 [_44_ _47_] _48_ d_lut_NAND2X1
+ANAND2X1_9 [ULA_B_0_bF$buf5 ULA_B_1_bF$buf4] _49_ d_lut_NAND2X1
+ANAND3X1_11 [ULA_ctrl_0_bF$buf2 _49_ _432_] _50_ d_lut_NAND3X1
+AMUX2X1_15 [ULA_A_10_ ULA_A_9_ ULA_B_0_bF$buf4] _51_ d_lut_MUX2X1
+ANAND3X1_12 [_443_ _51_ _50_] _52_ d_lut_NAND3X1
+AMUX2X1_16 [ULA_A_12_ ULA_A_11_ ULA_B_0_bF$buf3] _53_ d_lut_MUX2X1
+ANAND2X1_10 [_53_ _444__bF$buf0] _54_ d_lut_NAND2X1
+ANAND3X1_13 [_440_ _54_ _52_] _55_ d_lut_NAND3X1
+ANAND2X1_11 [_55_ _48_] _56_ d_lut_NAND2X1
+ANOR2X1_9 [_437_ _56_] _57_ d_lut_NOR2X1
+AMUX2X1_17 [ULA_A_4_ ULA_A_3_ ULA_B_0_bF$buf2] _58_ d_lut_MUX2X1
+ANAND2X1_12 [_58_ _444__bF$buf3] _59_ d_lut_NAND2X1
+AMUX2X1_18 [ULA_A_2_ ULA_A_1_ ULA_B_0_bF$buf1] _60_ d_lut_MUX2X1
+ANAND3X1_14 [_443_ _60_ _50_] _61_ d_lut_NAND3X1
+ANAND3X1_15 [_440_ _59_ _61_] _62_ d_lut_NAND3X1
+AINVX1_13 [ULA_A_6_] _63_ d_lut_INVX1
+ANAND2X1_13 [ULA_B_0_bF$buf0 _63_] _64_ d_lut_NAND2X1
+AOAI21X1_16 [ULA_B_0_bF$buf5 ULA_A_5_ _64_] _65_ d_lut_OAI21X1
+ANAND3X1_16 [_50_ _443_ _65_] _66_ d_lut_NAND3X1
+AMUX2X1_19 [ULA_A_8_ ULA_A_7_ ULA_B_0_bF$buf4] _67_ d_lut_MUX2X1
+ANAND2X1_14 [_67_ _444__bF$buf2] _68_ d_lut_NAND2X1
+ANAND3X1_17 [_44_ _68_ _66_] _69_ d_lut_NAND3X1
+ANAND3X1_18 [_437_ _62_ _69_] _70_ d_lut_NAND3X1
+ANAND2X1_15 [_21_ _70_] _71_ d_lut_NAND2X1
+AOAI21X1_17 [_46_ ULA_B_1_bF$buf3 _45_] _72_ d_lut_OAI21X1
+AMUX2X1_20 [_53_ _51_ ULA_B_1_bF$buf2] _73_ d_lut_MUX2X1
+AMUX2X1_21 [_73_ _72_ _438__bF$buf0] _74_ d_lut_MUX2X1
+ANAND2X1_16 [ULA_B_3_bF$buf2 _74_] _75_ d_lut_NAND2X1
+AINVX1_14 [_65_] _76_ d_lut_INVX1
+ANAND2X1_17 [ULA_B_1_bF$buf1 _67_] _77_ d_lut_NAND2X1
+AOAI21X1_18 [_76_ ULA_B_1_bF$buf0 _77_] _78_ d_lut_OAI21X1
+ANOR2X1_10 [ULA_B_1_bF$buf4 _60_] _79_ d_lut_NOR2X1
+AOAI21X1_19 [_58_ _24__bF$buf0 _15_] _80_ d_lut_OAI21X1
+AOAI21X1_20 [_80_ _79_ _23_] _81_ d_lut_OAI21X1
+AAOI21X1_5 [_30_ _78_ _81_] _82_ d_lut_AOI21X1
+AAND2X2_8 [ULA_A_1_ ULA_B_1_bF$buf3] _83_ d_lut_AND2X2
+AOAI21X1_21 [_426__bF$buf1 _83_ _425__bF$buf1] _84_ d_lut_OAI21X1
+AOAI21X1_22 [ULA_A_1_ ULA_B_1_bF$buf2 _84_] _85_ d_lut_OAI21X1
+AMUX2X1_22 [ULA_A_0_ ULA_A_1_ ULA_B_0_bF$buf3] _86_ d_lut_MUX2X1
+ANOR2X1_11 [ULA_B_1_bF$buf1 _86_] _87_ d_lut_NOR2X1
+AINVX1_15 [_39_] _88_ d_lut_INVX1
+AAOI21X1_6 [_416_ _418_ _88_] _89_ d_lut_AOI21X1
+ANAND3X1_19 [_438__bF$buf3 _87_ _89_] _90_ d_lut_NAND3X1
+ANAND3X1_20 [_85_ _90_ _428_] _91_ d_lut_NAND3X1
+AAOI21X1_7 [_75_ _82_ _91_] _92_ d_lut_AOI21X1
+AOAI21X1_23 [_71_ _57_ _92_] _93_ d_lut_OAI21X1
+AINVX8_4 [_428_] _94_ d_lut_INVX8
+AXNOR2X1_4 [_83_ ULA_ctrl_0_bF$buf1] _95_ d_lut_XNOR2X1
+ANAND2X1_18 [_95_ _94__bF$buf3] _96_ d_lut_NAND2X1
+AAND2X2_9 [_93_ _96_] _458__1_ d_lut_AND2X2
+AINVX1_16 [ULA_A_2_] _97_ d_lut_INVX1
+ANOR2X1_12 [_97_ _438__bF$buf2] _98_ d_lut_NOR2X1
+AXNOR2X1_5 [_98_ ULA_ctrl_0_bF$buf0] _99_ d_lut_XNOR2X1
+ANAND2X1_19 [_99_ _94__bF$buf2] _100_ d_lut_NAND2X1
+ANOR2X1_13 [_445_ _444__bF$buf1] _101_ d_lut_NOR2X1
+ANAND2X1_20 [_44_ _101_] _102_ d_lut_NAND2X1
+ANAND3X1_21 [_443_ _452_ _50_] _103_ d_lut_NAND3X1
+ANAND2X1_21 [_447_ _444__bF$buf0] _104_ d_lut_NAND2X1
+ANAND3X1_22 [_440_ _104_ _103_] _105_ d_lut_NAND3X1
+ANAND3X1_23 [_436_ _102_ _105_] _106_ d_lut_NAND3X1
+AMUX2X1_23 [ULA_A_5_ ULA_A_4_ ULA_B_0_bF$buf2] _107_ d_lut_MUX2X1
+ANAND2X1_22 [_107_ _444__bF$buf3] _108_ d_lut_NAND2X1
+ANAND3X1_24 [_443_ _457_ _50_] _109_ d_lut_NAND3X1
+ANAND3X1_25 [_440_ _108_ _109_] _110_ d_lut_NAND3X1
+ANAND3X1_26 [_50_ _443_ _9_] _111_ d_lut_NAND3X1
+ANAND2X1_23 [_450_ _444__bF$buf2] _112_ d_lut_NAND2X1
+ANAND3X1_27 [_44_ _112_ _111_] _113_ d_lut_NAND3X1
+ANAND3X1_28 [_437_ _110_ _113_] _114_ d_lut_NAND3X1
+ANAND3X1_29 [_21_ _106_ _114_] _115_ d_lut_NAND3X1
+AOAI21X1_24 [_445_ ULA_B_1_bF$buf0 ULA_B_2_] _116_ d_lut_OAI21X1
+AMUX2X1_24 [_452_ _447_ _24__bF$buf4] _117_ d_lut_MUX2X1
+AOAI21X1_25 [_117_ ULA_B_2_ _116_] _118_ d_lut_OAI21X1
+ANAND2X1_24 [ULA_B_3_bF$buf1 _118_] _119_ d_lut_NAND2X1
+ANAND2X1_25 [_24__bF$buf3 _9_] _120_ d_lut_NAND2X1
+AOAI21X1_26 [_24__bF$buf2 _451_ _120_] _121_ d_lut_OAI21X1
+ANOR2X1_14 [ULA_B_1_bF$buf4 _457_] _122_ d_lut_NOR2X1
+AOAI21X1_27 [_107_ _24__bF$buf1 _15_] _123_ d_lut_OAI21X1
+AOAI21X1_28 [_123_ _122_ _23_] _124_ d_lut_OAI21X1
+AAOI21X1_8 [_30_ _121_ _124_] _125_ d_lut_AOI21X1
+ANAND2X1_26 [ULA_A_0_ _413_] _126_ d_lut_NAND2X1
+AMUX2X1_25 [ULA_A_1_ ULA_A_2_ ULA_B_0_bF$buf1] _127_ d_lut_MUX2X1
+AMUX2X1_26 [_127_ _126_ _24__bF$buf0] _128_ d_lut_MUX2X1
+ANAND3X1_30 [_438__bF$buf1 _128_ _89_] _129_ d_lut_NAND3X1
+AOAI21X1_29 [_426__bF$buf0 _98_ _425__bF$buf0] _130_ d_lut_OAI21X1
+AOAI21X1_30 [ULA_A_2_ ULA_B_2_ _130_] _131_ d_lut_OAI21X1
+ANAND3X1_31 [_129_ _131_ _428_] _132_ d_lut_NAND3X1
+AAOI21X1_9 [_119_ _125_ _132_] _133_ d_lut_AOI21X1
+ANAND2X1_27 [_133_ _115_] _134_ d_lut_NAND2X1
+AAND2X2_10 [_134_ _100_] _458__2_ d_lut_AND2X2
+ANAND2X1_28 [ULA_A_15_ _14_] _135_ d_lut_NAND2X1
+ANAND3X1_32 [_443_ _53_ _50_] _136_ d_lut_NAND3X1
+ANAND2X1_29 [_46_ _444__bF$buf1] _137_ d_lut_NAND2X1
+ANAND2X1_30 [_137_ _136_] _138_ d_lut_NAND2X1
+AOAI22X1_3 [_438__bF$buf0 _135_ _138_ _44_] _139_ d_lut_OAI22X1
+ANOR2X1_15 [_437_ _139_] _140_ d_lut_NOR2X1
+AAND2X2_11 [_444__bF$buf0 _65_] _141_ d_lut_AND2X2
+AINVX1_17 [_58_] _142_ d_lut_INVX1
+AOAI21X1_31 [_444__bF$buf3 _142_ _440_] _143_ d_lut_OAI21X1
+ANAND3X1_33 [_443_ _67_ _50_] _144_ d_lut_NAND3X1
+ANAND2X1_31 [_51_ _444__bF$buf2] _145_ d_lut_NAND2X1
+ANAND2X1_32 [_145_ _144_] _146_ d_lut_NAND2X1
+AOAI22X1_4 [_141_ _143_ _146_ _440_] _147_ d_lut_OAI22X1
+AOAI21X1_32 [_147_ _436_ _21_] _148_ d_lut_OAI21X1
+ANOR2X1_16 [_438__bF$buf3 _135_] _149_ d_lut_NOR2X1
+AMUX2X1_27 [_53_ _46_ _24__bF$buf4] _150_ d_lut_MUX2X1
+AAOI21X1_10 [_438__bF$buf2 _150_ _149_] _151_ d_lut_AOI21X1
+ANAND2X1_33 [ULA_B_3_bF$buf0 _151_] _152_ d_lut_NAND2X1
+AOAI21X1_33 [_65_ _24__bF$buf3 _15_] _153_ d_lut_OAI21X1
+AAOI21X1_11 [_24__bF$buf2 _142_ _153_] _154_ d_lut_AOI21X1
+AINVX2_6 [_30_] _155_ d_lut_INVX2
+AMUX2X1_28 [_51_ _67_ ULA_B_1_bF$buf3] _156_ d_lut_MUX2X1
+AOAI21X1_34 [_156_ _155_ _23_] _157_ d_lut_OAI21X1
+ANOR2X1_17 [_157_ _154_] _158_ d_lut_NOR2X1
+AMUX2X1_29 [ULA_A_2_ ULA_A_3_ ULA_B_0_bF$buf0] _159_ d_lut_MUX2X1
+AMUX2X1_30 [_159_ _86_ _24__bF$buf1] _160_ d_lut_MUX2X1
+ANAND3X1_34 [_438__bF$buf1 _160_ _89_] _161_ d_lut_NAND3X1
+AINVX1_18 [ULA_A_3_] _162_ d_lut_INVX1
+ANOR2X1_18 [_162_ _431_] _163_ d_lut_NOR2X1
+AOAI21X1_35 [_426__bF$buf3 _163_ _425__bF$buf3] _164_ d_lut_OAI21X1
+AOAI21X1_36 [ULA_A_3_ ULA_B_3_bF$buf3 _164_] _165_ d_lut_OAI21X1
+ANAND3X1_35 [_161_ _165_ _428_] _166_ d_lut_NAND3X1
+AAOI21X1_12 [_152_ _158_ _166_] _167_ d_lut_AOI21X1
+AOAI21X1_37 [_148_ _140_ _167_] _168_ d_lut_OAI21X1
+ANAND2X1_34 [_442_ _163_] _169_ d_lut_NAND2X1
+AOAI21X1_38 [_162_ _431_ ULA_ctrl_0_bF$buf3] _170_ d_lut_OAI21X1
+ANAND3X1_36 [_169_ _170_ _94__bF$buf1] _171_ d_lut_NAND3X1
+AAND2X2_12 [_168_ _171_] _458__3_ d_lut_AND2X2
+ANAND2X1_35 [_440_ _436_] _172_ d_lut_NAND2X1
+ANOR2X1_19 [_449_ _172_] _173_ d_lut_NOR2X1
+ANAND3X1_37 [_443_ _107_ _50_] _174_ d_lut_NAND3X1
+ANAND3X1_38 [_440_ _10_ _174_] _175_ d_lut_NAND3X1
+ANAND3X1_39 [_443_ _450_ _50_] _176_ d_lut_NAND3X1
+ANAND2X1_36 [_452_ _444__bF$buf1] _177_ d_lut_NAND2X1
+ANAND3X1_40 [_44_ _177_ _176_] _178_ d_lut_NAND3X1
+AAOI21X1_13 [_178_ _175_ _436_] _179_ d_lut_AOI21X1
+AOAI21X1_39 [_173_ _179_ _21_] _180_ d_lut_OAI21X1
+ANAND2X1_37 [_438__bF$buf0 _25_] _181_ d_lut_NAND2X1
+ANAND2X1_38 [ULA_B_3_bF$buf2 _181_] _182_ d_lut_NAND2X1
+ANOR2X1_20 [_434_ _32_] _183_ d_lut_NOR2X1
+AOAI21X1_40 [_26_ _155_ _23_] _184_ d_lut_OAI21X1
+ANOR2X1_21 [_184_ _183_] _185_ d_lut_NOR2X1
+AINVX2_7 [_89_] _186_ d_lut_INVX2
+ANOR2X1_22 [_4_ _13_] _187_ d_lut_NOR2X1
+AOAI21X1_41 [_426__bF$buf2 _187_ _425__bF$buf2] _188_ d_lut_OAI21X1
+AOAI21X1_42 [ULA_A_4_ ULA_B_4_ _188_] _189_ d_lut_OAI21X1
+AOAI21X1_43 [_126_ ULA_B_1_bF$buf2 ULA_B_2_] _190_ d_lut_OAI21X1
+AMUX2X1_31 [ULA_A_3_ ULA_A_4_ ULA_B_0_bF$buf5] _191_ d_lut_MUX2X1
+AMUX2X1_32 [_191_ _127_ _24__bF$buf0] _192_ d_lut_MUX2X1
+AOAI21X1_44 [_192_ ULA_B_2_ _190_] _193_ d_lut_OAI21X1
+AOAI21X1_45 [_193_ _186_ _189_] _194_ d_lut_OAI21X1
+AAOI21X1_14 [_182_ _185_ _194_] _195_ d_lut_AOI21X1
+ANOR2X1_23 [_442_ _187_] _196_ d_lut_NOR2X1
+AAND2X2_13 [_187_ _442_] _197_ d_lut_AND2X2
+AOAI21X1_46 [_196_ _197_ _94__bF$buf0] _198_ d_lut_OAI21X1
+ANAND3X1_41 [_198_ _195_ _180_] _458__4_ d_lut_NAND3X1
+AINVX1_19 [_21_] _199_ d_lut_INVX1
+AINVX1_20 [_172_] _200_ d_lut_INVX1
+ANAND2X1_39 [_47_ _200_] _201_ d_lut_NAND2X1
+AAND2X2_14 [_52_ _54_] _202_ d_lut_AND2X2
+AOAI21X1_47 [_76_ _444__bF$buf0 _68_] _203_ d_lut_OAI21X1
+AAOI21X1_15 [_440_ _203_ _436_] _204_ d_lut_AOI21X1
+AOAI21X1_48 [_440_ _202_ _204_] _205_ d_lut_OAI21X1
+AAOI21X1_16 [_201_ _205_ _199_] _206_ d_lut_AOI21X1
+AINVX1_21 [_23_] _207_ d_lut_INVX1
+ANAND2X1_40 [_438__bF$buf3 _72_] _208_ d_lut_NAND2X1
+ANAND2X1_41 [ULA_B_3_bF$buf1 _208_] _209_ d_lut_NAND2X1
+ANOR2X1_24 [_438__bF$buf2 _73_] _210_ d_lut_NOR2X1
+AAOI21X1_17 [_438__bF$buf1 _78_ _210_] _211_ d_lut_AOI21X1
+AOAI21X1_49 [_211_ ULA_B_3_bF$buf0 _209_] _212_ d_lut_OAI21X1
+ANAND2X1_42 [ULA_A_5_ ULA_B_5_] _213_ d_lut_NAND2X1
+AINVX1_22 [_213_] _214_ d_lut_INVX1
+AOAI21X1_50 [_426__bF$buf1 _214_ _425__bF$buf1] _215_ d_lut_OAI21X1
+AOAI21X1_51 [ULA_A_5_ ULA_B_5_ _215_] _216_ d_lut_OAI21X1
+AOAI21X1_52 [_86_ ULA_B_1_bF$buf1 ULA_B_2_] _217_ d_lut_OAI21X1
+AMUX2X1_33 [ULA_A_4_ ULA_A_5_ ULA_B_0_bF$buf4] _218_ d_lut_MUX2X1
+AMUX2X1_34 [_218_ _159_ _24__bF$buf4] _219_ d_lut_MUX2X1
+AOAI21X1_53 [_219_ ULA_B_2_ _217_] _220_ d_lut_OAI21X1
+AOR2X2_3 [_220_ _186_] _221_ d_lut_OR2X2
+AAND2X2_15 [_221_ _216_] _222_ d_lut_AND2X2
+AOAI21X1_54 [_212_ _207_ _222_] _223_ d_lut_OAI21X1
+ANOR2X1_25 [_206_ _223_] _224_ d_lut_NOR2X1
+AXOR2X1_1 [_213_ ULA_ctrl_0_bF$buf2] _225_ d_lut_XOR2X1
+AOAI21X1_55 [_428_ _225_ _224_] _458__5_ d_lut_OAI21X1
+ANAND2X1_43 [_101_ _200_] _226_ d_lut_NAND2X1
+AAND2X2_16 [_103_ _104_] _227_ d_lut_AND2X2
+AAOI21X1_18 [_112_ _111_ _44_] _228_ d_lut_AOI21X1
+ANOR2X1_26 [_436_ _228_] _229_ d_lut_NOR2X1
+AOAI21X1_56 [_440_ _227_ _229_] _230_ d_lut_OAI21X1
+AAOI21X1_19 [_226_ _230_ _199_] _231_ d_lut_AOI21X1
+AOR2X2_4 [_117_ _155_] _232_ d_lut_OR2X2
+ANOR3X1_2 [ULA_B_1_bF$buf0 ULA_B_2_ _445_] _233_ d_lut_NOR3X1
+ANOR2X1_27 [_431_ _233_] _234_ d_lut_NOR2X1
+AAOI21X1_20 [_15_ _121_ _234_] _235_ d_lut_AOI21X1
+ANAND3X1_42 [_23_ _232_ _235_] _236_ d_lut_NAND3X1
+AAND2X2_17 [ULA_A_6_ ULA_B_6_] _237_ d_lut_AND2X2
+AOAI21X1_57 [_426__bF$buf0 _237_ _425__bF$buf0] _238_ d_lut_OAI21X1
+AOAI21X1_58 [ULA_A_6_ ULA_B_6_ _238_] _239_ d_lut_OAI21X1
+AMUX2X1_35 [ULA_A_5_ ULA_A_6_ ULA_B_0_bF$buf3] _240_ d_lut_MUX2X1
+AMUX2X1_36 [_240_ _191_ _24__bF$buf3] _241_ d_lut_MUX2X1
+AMUX2X1_37 [_241_ _128_ _438__bF$buf0] _242_ d_lut_MUX2X1
+ANOR2X1_28 [_186_ _242_] _243_ d_lut_NOR2X1
+ANOR2X1_29 [_94__bF$buf3 _243_] _244_ d_lut_NOR2X1
+ANAND3X1_43 [_239_ _244_ _236_] _245_ d_lut_NAND3X1
+AXNOR2X1_6 [_237_ ULA_ctrl_0_bF$buf1] _246_ d_lut_XNOR2X1
+ANAND2X1_44 [_246_ _94__bF$buf2] _247_ d_lut_NAND2X1
+AOAI21X1_59 [_231_ _245_ _247_] _248_ d_lut_OAI21X1
+AINVX1_23 [_248_] _458__6_ d_lut_INVX1
+ANAND2X1_45 [ULA_A_15_ _433_] _249_ d_lut_NAND2X1
+ANOR2X1_30 [_431_ _249_] _250_ d_lut_NOR2X1
+ANAND3X1_44 [_44_ _137_ _136_] _251_ d_lut_NAND3X1
+ANAND3X1_45 [_440_ _145_ _144_] _252_ d_lut_NAND3X1
+AAOI21X1_21 [_251_ _252_ _436_] _253_ d_lut_AOI21X1
+AOAI21X1_60 [_253_ _250_ _21_] _254_ d_lut_OAI21X1
+ANAND2X1_46 [_15_ _156_] _255_ d_lut_NAND2X1
+AAOI21X1_22 [_30_ _150_ _250_] _256_ d_lut_AOI21X1
+ANAND2X1_47 [_255_ _256_] _257_ d_lut_NAND2X1
+AAND2X2_18 [ULA_A_7_ ULA_B_7_] _258_ d_lut_AND2X2
+AOAI21X1_61 [_426__bF$buf3 _258_ _425__bF$buf3] _259_ d_lut_OAI21X1
+AOAI21X1_62 [ULA_A_7_ ULA_B_7_ _259_] _260_ d_lut_OAI21X1
+AMUX2X1_38 [ULA_A_6_ ULA_A_7_ ULA_B_0_bF$buf2] _261_ d_lut_MUX2X1
+AMUX2X1_39 [_261_ _218_ _24__bF$buf2] _262_ d_lut_MUX2X1
+AMUX2X1_40 [_262_ _160_ _438__bF$buf3] _263_ d_lut_MUX2X1
+AOAI21X1_63 [_263_ _186_ _260_] _264_ d_lut_OAI21X1
+AAOI21X1_23 [_23_ _257_ _264_] _265_ d_lut_AOI21X1
+ANOR2X1_31 [_442_ _258_] _266_ d_lut_NOR2X1
+AAND2X2_19 [_258_ _442_] _267_ d_lut_AND2X2
+AOAI21X1_64 [_266_ _267_ _94__bF$buf1] _268_ d_lut_OAI21X1
+ANAND3X1_46 [_265_ _268_ _254_] _458__7_ d_lut_NAND3X1
+ANOR2X1_32 [_88_ _422_] _269_ d_lut_NOR2X1
+AINVX4_2 [_269_] _270_ d_lut_INVX4
+AAND2X2_20 [ULA_A_8_ ULA_B_8_] _271_ d_lut_AND2X2
+AOAI21X1_65 [_426__bF$buf2 _271_ _425__bF$buf2] _272_ d_lut_OAI21X1
+AOAI21X1_66 [ULA_A_8_ ULA_B_8_ _272_] _273_ d_lut_OAI21X1
+AOAI21X1_67 [_27_ _270_ _273_] _274_ d_lut_OAI21X1
+ANOR2X1_33 [_94__bF$buf0 _274_] _275_ d_lut_NOR2X1
+ANOR3X1_3 [_436_ _20_ _17_] _276_ d_lut_NOR3X1
+AINVX1_24 [_416_] _277_ d_lut_INVX1
+AOAI21X1_68 [_37_ _277_ _13_] _278_ d_lut_OAI21X1
+ANAND2X1_48 [_30_ _192_] _279_ d_lut_NAND2X1
+AMUX2X1_41 [ULA_A_7_ ULA_A_8_ ULA_B_0_bF$buf1] _280_ d_lut_MUX2X1
+AMUX2X1_42 [_280_ _240_ _24__bF$buf1] _281_ d_lut_MUX2X1
+AAOI22X1_2 [ULA_B_3_bF$buf3 _38_ _281_ _15_] _282_ d_lut_AOI22X1
+AAOI21X1_24 [_279_ _282_ _278_] _283_ d_lut_AOI21X1
+AAOI21X1_25 [_276_ _455_ _283_] _284_ d_lut_AOI21X1
+AXNOR2X1_7 [_271_ ULA_ctrl_0_bF$buf0] _285_ d_lut_XNOR2X1
+AAOI22X1_3 [_94__bF$buf3 _285_ _284_ _275_] _458__8_ d_lut_AOI22X1
+ANAND2X1_49 [_276_ _56_] _286_ d_lut_NAND2X1
+ANAND3X1_47 [_438__bF$buf2 ULA_B_3_bF$buf2 _87_] _287_ d_lut_NAND3X1
+AMUX2X1_43 [ULA_A_8_ ULA_A_9_ ULA_B_0_bF$buf0] _288_ d_lut_MUX2X1
+AMUX2X1_44 [_288_ _261_ _24__bF$buf0] _289_ d_lut_MUX2X1
+AAOI22X1_4 [_219_ _30_ _15_ _289_] _290_ d_lut_AOI22X1
+AAOI21X1_26 [_287_ _290_ _278_] _291_ d_lut_AOI21X1
+ANOR2X1_34 [_270_ _74_] _292_ d_lut_NOR2X1
+AOAI21X1_69 [_18_ _420_ _416_] _293_ d_lut_OAI21X1
+ANAND2X1_50 [_423_ _427_] _294_ d_lut_NAND2X1
+AINVX1_25 [ULA_A_9_] _295_ d_lut_INVX1
+AINVX1_26 [ULA_B_9_] _296_ d_lut_INVX1
+ANOR2X1_35 [_295_ _296_] _297_ d_lut_NOR2X1
+AOAI21X1_70 [_426__bF$buf1 _297_ _425__bF$buf1] _298_ d_lut_OAI21X1
+AOAI21X1_71 [ULA_A_9_ ULA_B_9_ _298_] _299_ d_lut_OAI21X1
+AOAI21X1_72 [_294_ _293_ _299_] _300_ d_lut_OAI21X1
+ANOR3X1_4 [_292_ _300_ _291_] _301_ d_lut_NOR3X1
+AOAI21X1_73 [_295_ _296_ _442_] _302_ d_lut_OAI21X1
+ANAND2X1_51 [ULA_ctrl_0_bF$buf3 _297_] _303_ d_lut_NAND2X1
+AAOI21X1_27 [_302_ _303_ _428_] _304_ d_lut_AOI21X1
+AAOI21X1_28 [_286_ _301_ _304_] _458__9_ d_lut_AOI21X1
+ANAND2X1_52 [_102_ _105_] _305_ d_lut_NAND2X1
+ANAND2X1_53 [_276_ _305_] _306_ d_lut_NAND2X1
+AINVX2_8 [_278_] _307_ d_lut_INVX2
+ANAND2X1_54 [_438__bF$buf1 _128_] _308_ d_lut_NAND2X1
+AMUX2X1_45 [ULA_A_9_ ULA_A_10_ ULA_B_0_bF$buf5] _309_ d_lut_MUX2X1
+AMUX2X1_46 [_309_ _280_ _24__bF$buf4] _310_ d_lut_MUX2X1
+AAOI22X1_5 [_241_ _30_ _15_ _310_] _311_ d_lut_AOI22X1
+AOAI21X1_74 [_431_ _308_ _311_] _312_ d_lut_OAI21X1
+ANAND2X1_55 [_307_ _312_] _313_ d_lut_NAND2X1
+AINVX1_27 [ULA_A_10_] _314_ d_lut_INVX1
+AINVX1_28 [ULA_B_10_] _315_ d_lut_INVX1
+ANOR2X1_36 [_314_ _315_] _316_ d_lut_NOR2X1
+AOAI21X1_75 [_426__bF$buf0 _316_ _425__bF$buf0] _317_ d_lut_OAI21X1
+AOAI21X1_76 [ULA_A_10_ ULA_B_10_ _317_] _318_ d_lut_OAI21X1
+AOAI21X1_77 [_118_ _270_ _318_] _319_ d_lut_OAI21X1
+ANOR2X1_37 [_94__bF$buf2 _319_] _320_ d_lut_NOR2X1
+ANAND3X1_48 [_313_ _320_ _306_] _321_ d_lut_NAND3X1
+AXNOR2X1_8 [_316_ ULA_ctrl_0_bF$buf2] _322_ d_lut_XNOR2X1
+ANAND2X1_56 [_322_ _94__bF$buf1] _323_ d_lut_NAND2X1
+AAND2X2_21 [_321_ _323_] _458__10_ d_lut_AND2X2
+ANAND2X1_57 [_276_ _139_] _324_ d_lut_NAND2X1
+ANAND3X1_49 [_438__bF$buf0 ULA_B_3_bF$buf1 _160_] _325_ d_lut_NAND3X1
+AMUX2X1_47 [ULA_A_10_ ULA_A_11_ ULA_B_0_bF$buf4] _326_ d_lut_MUX2X1
+AMUX2X1_48 [_326_ _288_ _24__bF$buf3] _327_ d_lut_MUX2X1
+AAOI22X1_6 [_262_ _30_ _15_ _327_] _328_ d_lut_AOI22X1
+AAOI21X1_29 [_325_ _328_ _278_] _329_ d_lut_AOI21X1
+AAND2X2_22 [ULA_A_11_ ULA_B_11_] _330_ d_lut_AND2X2
+AOAI21X1_78 [_426__bF$buf3 _330_ _425__bF$buf3] _331_ d_lut_OAI21X1
+AOAI21X1_79 [ULA_A_11_ ULA_B_11_ _331_] _332_ d_lut_OAI21X1
+AOAI21X1_80 [_151_ _270_ _332_] _333_ d_lut_OAI21X1
+ANOR3X1_5 [_333_ _94__bF$buf0 _329_] _334_ d_lut_NOR3X1
+AXNOR2X1_9 [_330_ ULA_ctrl_0_bF$buf1] _335_ d_lut_XNOR2X1
+AAOI22X1_7 [_94__bF$buf3 _335_ _334_ _324_] _458__11_ d_lut_AOI22X1
+ANOR2X1_38 [_431_ _193_] _336_ d_lut_NOR2X1
+AINVX1_29 [_309_] _337_ d_lut_INVX1
+AMUX2X1_49 [ULA_A_11_ ULA_A_12_ ULA_B_0_bF$buf3] _338_ d_lut_MUX2X1
+ANAND2X1_58 [_24__bF$buf2 _338_] _339_ d_lut_NAND2X1
+AOAI21X1_81 [_337_ _24__bF$buf1 _339_] _340_ d_lut_OAI21X1
+ANAND2X1_59 [_30_ _281_] _341_ d_lut_NAND2X1
+AOAI21X1_82 [_340_ _434_ _341_] _342_ d_lut_OAI21X1
+AOAI21X1_83 [_336_ _342_ _307_] _343_ d_lut_OAI21X1
+AINVX1_30 [_449_] _344_ d_lut_INVX1
+ANAND2X1_60 [_19_ _440_] _345_ d_lut_NAND2X1
+ANOR3X1_6 [_436_ _345_ _17_] _346_ d_lut_NOR3X1
+ANAND3X1_50 [_438__bF$buf3 _269_ _25_] _347_ d_lut_NAND3X1
+AAND2X2_23 [ULA_A_12_ ULA_B_12_] _348_ d_lut_AND2X2
+AOAI21X1_84 [_426__bF$buf2 _348_ _425__bF$buf2] _349_ d_lut_OAI21X1
+AOAI21X1_85 [ULA_A_12_ ULA_B_12_ _349_] _350_ d_lut_OAI21X1
+ANAND3X1_51 [_347_ _350_ _428_] _351_ d_lut_NAND3X1
+AAOI21X1_30 [_344_ _346_ _351_] _352_ d_lut_AOI21X1
+AXNOR2X1_10 [_348_ ULA_ctrl_0_bF$buf0] _353_ d_lut_XNOR2X1
+AAOI22X1_8 [_94__bF$buf2 _353_ _352_ _343_] _458__12_ d_lut_AOI22X1
+ANOR2X1_39 [_431_ _220_] _354_ d_lut_NOR2X1
+ANAND2X1_61 [_30_ _289_] _355_ d_lut_NAND2X1
+AMUX2X1_50 [ULA_A_12_ ULA_A_13_ ULA_B_0_bF$buf2] _356_ d_lut_MUX2X1
+ANOR2X1_40 [ULA_B_1_bF$buf4 _356_] _357_ d_lut_NOR2X1
+ANOR2X1_41 [_24__bF$buf0 _326_] _358_ d_lut_NOR2X1
+AOAI21X1_86 [_357_ _358_ _438__bF$buf2] _359_ d_lut_OAI21X1
+AOAI21X1_87 [_359_ ULA_B_3_bF$buf0 _355_] _360_ d_lut_OAI21X1
+AOAI21X1_88 [_360_ _354_ _307_] _361_ d_lut_OAI21X1
+AAND2X2_24 [ULA_A_13_ ULA_B_13_] _362_ d_lut_AND2X2
+AOAI21X1_89 [_426__bF$buf1 _362_ _425__bF$buf1] _363_ d_lut_OAI21X1
+AOAI21X1_90 [ULA_A_13_ ULA_B_13_ _363_] _364_ d_lut_OAI21X1
+AOAI21X1_91 [_208_ _270_ _364_] _365_ d_lut_OAI21X1
+AAOI21X1_31 [_47_ _346_ _365_] _366_ d_lut_AOI21X1
+ANOR2X1_42 [_442_ _362_] _367_ d_lut_NOR2X1
+AAND2X2_25 [_362_ _442_] _368_ d_lut_AND2X2
+AOAI21X1_92 [_367_ _368_ _94__bF$buf1] _369_ d_lut_OAI21X1
+ANAND3X1_52 [_361_ _369_ _366_] _458__13_ d_lut_NAND3X1
+AAND2X2_26 [ULA_A_14_ ULA_B_14_] _370_ d_lut_AND2X2
+AXNOR2X1_11 [_370_ ULA_ctrl_0_bF$buf3] _371_ d_lut_XNOR2X1
+AINVX1_31 [ULA_A_13_] _372_ d_lut_INVX1
+AAOI21X1_32 [ULA_A_14_ _413_ ULA_B_1_bF$buf3] _373_ d_lut_AOI21X1
+AOAI21X1_93 [_413_ _372_ _373_] _374_ d_lut_OAI21X1
+AAOI21X1_33 [ULA_B_1_bF$buf2 _338_ _434_] _375_ d_lut_AOI21X1
+AAOI22X1_9 [_375_ _374_ _30_ _310_] _376_ d_lut_AOI22X1
+AOAI21X1_94 [_242_ _431_ _376_] _377_ d_lut_OAI21X1
+ANAND2X1_62 [_307_ _377_] _378_ d_lut_NAND2X1
+ANAND2X1_63 [_269_ _233_] _379_ d_lut_NAND2X1
+AOAI21X1_95 [_426__bF$buf0 _370_ _425__bF$buf0] _380_ d_lut_OAI21X1
+AOAI21X1_96 [ULA_A_14_ ULA_B_14_ _380_] _381_ d_lut_OAI21X1
+ANAND3X1_53 [_379_ _381_ _428_] _382_ d_lut_NAND3X1
+AAOI21X1_34 [_101_ _346_ _382_] _383_ d_lut_AOI21X1
+AAOI22X1_10 [_94__bF$buf0 _371_ _383_ _378_] _458__14_ d_lut_AOI22X1
+AINVX1_32 [_421_] _384_ d_lut_INVX1
+ANOR2X1_43 [_436_ _17_] _385_ d_lut_NOR2X1
+AAOI21X1_35 [_384_ _385_ _269_] _386_ d_lut_AOI21X1
+ANAND3X1_54 [ULA_B_3_bF$buf3 _13_ _293_] _387_ d_lut_NAND3X1
+ANOR2X1_44 [_387_ _263_] _388_ d_lut_NOR2X1
+AOAI21X1_97 [_356_ _24__bF$buf4 _135_] _389_ d_lut_OAI21X1
+ANAND2X1_64 [ULA_B_0_bF$buf1 ULA_A_14_] _390_ d_lut_NAND2X1
+AOAI21X1_98 [_390_ ULA_B_1_bF$buf1 _438__bF$buf1] _391_ d_lut_OAI21X1
+AOAI22X1_5 [_389_ _391_ _327_ _438__bF$buf0] _392_ d_lut_OAI22X1
+ANOR2X1_45 [_186_ _392_] _393_ d_lut_NOR2X1
+AAND2X2_27 [ULA_A_15_ ULA_B_15_] _394_ d_lut_AND2X2
+AOAI21X1_99 [_426__bF$buf3 _394_ _425__bF$buf3] _395_ d_lut_OAI21X1
+AOAI21X1_100 [ULA_A_15_ ULA_B_15_ _395_] _396_ d_lut_OAI21X1
+AOAI21X1_101 [_294_ _293_ _396_] _397_ d_lut_OAI21X1
+ANOR3X1_7 [_388_ _397_ _393_] _398_ d_lut_NOR3X1
+AOAI21X1_102 [_249_ _386_ _398_] _399_ d_lut_OAI21X1
+AXNOR2X1_12 [_394_ ULA_ctrl_0_bF$buf2] _400_ d_lut_XNOR2X1
+ANAND2X1_65 [_400_ _94__bF$buf3] _401_ d_lut_NAND2X1
+AAND2X2_28 [_399_ _401_] _458__15_ d_lut_AND2X2
+ANOR2X1_46 [_458__7_ _458__4_] _402_ d_lut_NOR2X1
+AAOI22X1_11 [_168_ _171_ _430_ _43_] _403_ d_lut_AOI22X1
+ANOR3X1_8 [_458__9_ _458__14_ _458__11_] _404_ d_lut_NOR3X1
+ANAND3X1_55 [_402_ _403_ _404_] _405_ d_lut_NAND3X1
+AOR2X2_5 [_428_ _225_] _406_ d_lut_OR2X2
+ANAND3X1_56 [_224_ _406_ _248_] _407_ d_lut_NAND3X1
+AAOI22X1_12 [_134_ _100_ _93_ _96_] _408_ d_lut_AOI22X1
+AAOI22X1_13 [_321_ _323_ _399_ _401_] _409_ d_lut_AOI22X1
+ANOR3X1_9 [_458__12_ _458__13_ _458__8_] _410_ d_lut_NOR3X1
+ANAND3X1_57 [_408_ _409_ _410_] _411_ d_lut_NAND3X1
+ANOR3X1_10 [_407_ _411_ _405_] zero d_lut_NOR3X1
+ABUFX2_1 [_458__0_] ULA_OUT_0_ d_lut_BUFX2
+ABUFX2_2 [_458__1_] ULA_OUT_1_ d_lut_BUFX2
+ABUFX2_3 [_458__2_] ULA_OUT_2_ d_lut_BUFX2
+ABUFX2_4 [_458__3_] ULA_OUT_3_ d_lut_BUFX2
+ABUFX2_5 [_458__4_] ULA_OUT_4_ d_lut_BUFX2
+ABUFX2_6 [_458__5_] ULA_OUT_5_ d_lut_BUFX2
+ABUFX2_7 [_458__6_] ULA_OUT_6_ d_lut_BUFX2
+ABUFX2_8 [_458__7_] ULA_OUT_7_ d_lut_BUFX2
+ABUFX2_9 [_458__8_] ULA_OUT_8_ d_lut_BUFX2
+ABUFX2_10 [_458__9_] ULA_OUT_9_ d_lut_BUFX2
+ABUFX2_11 [_458__10_] ULA_OUT_10_ d_lut_BUFX2
+ABUFX2_12 [_458__11_] ULA_OUT_11_ d_lut_BUFX2
+ABUFX2_13 [_458__12_] ULA_OUT_12_ d_lut_BUFX2
+ABUFX2_14 [_458__13_] ULA_OUT_13_ d_lut_BUFX2
+ABUFX2_15 [_458__14_] ULA_OUT_14_ d_lut_BUFX2
+ABUFX2_16 [_458__15_] ULA_OUT_15_ d_lut_BUFX2
+ABUFX2_17 [gnd] ULA_flags_0_ d_lut_BUFX2
+ABUFX2_18 [zero] ULA_flags_1_ d_lut_BUFX2
+ABUFX2_19 [$undef] ULA_flags_2_ d_lut_BUFX2
+
+.model todig_3v adc_bridge(in_high=2.0 in_low=1.0 rise_delay=10n fall_delay=10n)
+.model toana_3v dac_bridge(out_high=3.0 out_low=0.0)
+
+.model ddflop d_dff(ic=0 rise_delay=1n fall_delay=1n)
+.model dzero d_pulldown(load=1p)
+.model done d_pullup(load=1p)
+
+AA2D1 [a_gnd] [gnd] todig_3v
+AA2D2 [a_ULA_A_0_] [ULA_A_0_] todig_3v
+AA2D3 [a_ULA_A_1_] [ULA_A_1_] todig_3v
+AA2D4 [a_ULA_A_2_] [ULA_A_2_] todig_3v
+AA2D5 [a_ULA_A_3_] [ULA_A_3_] todig_3v
+AA2D6 [a_ULA_A_4_] [ULA_A_4_] todig_3v
+AA2D7 [a_ULA_A_5_] [ULA_A_5_] todig_3v
+AA2D8 [a_ULA_A_6_] [ULA_A_6_] todig_3v
+AA2D9 [a_ULA_A_7_] [ULA_A_7_] todig_3v
+AA2D10 [a_ULA_A_8_] [ULA_A_8_] todig_3v
+AA2D11 [a_ULA_A_9_] [ULA_A_9_] todig_3v
+AA2D12 [a_ULA_A_10_] [ULA_A_10_] todig_3v
+AA2D13 [a_ULA_A_11_] [ULA_A_11_] todig_3v
+AA2D14 [a_ULA_A_12_] [ULA_A_12_] todig_3v
+AA2D15 [a_ULA_A_13_] [ULA_A_13_] todig_3v
+AA2D16 [a_ULA_A_14_] [ULA_A_14_] todig_3v
+AA2D17 [a_ULA_A_15_] [ULA_A_15_] todig_3v
+AA2D18 [a_ULA_B_0_] [ULA_B_0_] todig_3v
+AA2D19 [a_ULA_B_1_] [ULA_B_1_] todig_3v
+AA2D20 [a_ULA_B_2_] [ULA_B_2_] todig_3v
+AA2D21 [a_ULA_B_3_] [ULA_B_3_] todig_3v
+AA2D22 [a_ULA_B_4_] [ULA_B_4_] todig_3v
+AA2D23 [a_ULA_B_5_] [ULA_B_5_] todig_3v
+AA2D24 [a_ULA_B_6_] [ULA_B_6_] todig_3v
+AA2D25 [a_ULA_B_7_] [ULA_B_7_] todig_3v
+AA2D26 [a_ULA_B_8_] [ULA_B_8_] todig_3v
+AA2D27 [a_ULA_B_9_] [ULA_B_9_] todig_3v
+AA2D28 [a_ULA_B_10_] [ULA_B_10_] todig_3v
+AA2D29 [a_ULA_B_11_] [ULA_B_11_] todig_3v
+AA2D30 [a_ULA_B_12_] [ULA_B_12_] todig_3v
+AA2D31 [a_ULA_B_13_] [ULA_B_13_] todig_3v
+AA2D32 [a_ULA_B_14_] [ULA_B_14_] todig_3v
+AA2D33 [a_ULA_B_15_] [ULA_B_15_] todig_3v
+AA2D34 [a_ULA_ctrl_0_] [ULA_ctrl_0_] todig_3v
+AA2D35 [a_ULA_ctrl_1_] [ULA_ctrl_1_] todig_3v
+AA2D36 [a_ULA_ctrl_2_] [ULA_ctrl_2_] todig_3v
+AA2D37 [a_ULA_ctrl_3_] [ULA_ctrl_3_] todig_3v
+AD2A1 [ULA_OUT_0_] [a_ULA_OUT_0_] toana_3v
+AD2A2 [ULA_OUT_1_] [a_ULA_OUT_1_] toana_3v
+AD2A3 [ULA_OUT_2_] [a_ULA_OUT_2_] toana_3v
+AD2A4 [ULA_OUT_3_] [a_ULA_OUT_3_] toana_3v
+AD2A5 [ULA_OUT_4_] [a_ULA_OUT_4_] toana_3v
+AD2A6 [ULA_OUT_5_] [a_ULA_OUT_5_] toana_3v
+AD2A7 [ULA_OUT_6_] [a_ULA_OUT_6_] toana_3v
+AD2A8 [ULA_OUT_7_] [a_ULA_OUT_7_] toana_3v
+AD2A9 [ULA_OUT_8_] [a_ULA_OUT_8_] toana_3v
+AD2A10 [ULA_OUT_9_] [a_ULA_OUT_9_] toana_3v
+AD2A11 [ULA_OUT_10_] [a_ULA_OUT_10_] toana_3v
+AD2A12 [ULA_OUT_11_] [a_ULA_OUT_11_] toana_3v
+AD2A13 [ULA_OUT_12_] [a_ULA_OUT_12_] toana_3v
+AD2A14 [ULA_OUT_13_] [a_ULA_OUT_13_] toana_3v
+AD2A15 [ULA_OUT_14_] [a_ULA_OUT_14_] toana_3v
+AD2A16 [ULA_OUT_15_] [a_ULA_OUT_15_] toana_3v
+AD2A17 [ULA_flags_0_] [a_ULA_flags_0_] toana_3v
+AD2A18 [ULA_flags_1_] [a_ULA_flags_1_] toana_3v
+AD2A19 [ULA_flags_2_] [a_ULA_flags_2_] toana_3v
+
+.ends NRISC_ULA
+ 
+
+* BUFX4 A
+.model d_lut_BUFX4 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "01")
+* INVX1 (!A)
+.model d_lut_INVX1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "10")
+* INVX2 (!A)
+.model d_lut_INVX2 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "10")
+* NOR2X1 (!(A+B))
+.model d_lut_NOR2X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "1000")
+* NAND3X1 (!((A B) C))
+.model d_lut_NAND3X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "11111110")
+* AND2X2 (A B)
+.model d_lut_AND2X2 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "0001")
+* AOI21X1 (!((A B)+C))
+.model d_lut_AOI21X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "11100000")
+* OAI21X1 (!((A+B) C))
+.model d_lut_OAI21X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "11111000")
+* INVX8 (!A)
+.model d_lut_INVX8 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "10")
+* OR2X2 (A+B)
+.model d_lut_OR2X2 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "0111")
+* NOR3X1 (!((A+B)+C))
+.model d_lut_NOR3X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "10000000")
+* OAI22X1 (!((A+B) (C+D)))
+.model d_lut_OAI22X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "1111100010001000")
+* MUX2X1 (!((S A) + (!S B)))
+.model d_lut_MUX2X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "11001010")
+* XNOR2X1 (!(A^B))
+.model d_lut_XNOR2X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "1001")
+* INVX4 (!A)
+.model d_lut_INVX4 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "10")
+* NAND2X1 (!(A B))
+.model d_lut_NAND2X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "1110")
+* AOI22X1 (!((A B)+(C D)))
+.model d_lut_AOI22X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "1110111011100000")
+* XOR2X1 (A^B)
+.model d_lut_XOR2X1 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "0110")
+* BUFX2 A
+.model d_lut_BUFX2 d_lut (rise_delay=1n fall_delay=1n input_load=10f
++ table_values "01")
+.end

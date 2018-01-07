@@ -1,0 +1,2444 @@
+Qflow route logfile created on dom jan 7 12:20:55 -02 2018
+qrouter -nog  -s NRISC_InstructionDecoder.cfg
+Qrouter detail maze router version 1.3.96.T
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+LEF Read, Line 144: Don't know how to parse layer "via"
+LEF Read, Line 145: No layer defined for RECT.
+LEF Read, Line 153: Don't know how to parse layer "via2"
+LEF Read, Line 154: No layer defined for RECT.
+LEF Read, Line 162: Don't know how to parse layer "via3"
+LEF Read, Line 163: No layer defined for RECT.
+LEF Read, Line 171: Don't know how to parse layer "via4"
+LEF Read, Line 172: No layer defined for RECT.
+LEF Read, Line 180: Don't know how to parse layer "via5"
+LEF Read, Line 181: No layer defined for RECT.
+LEF Read, Line 187: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 191: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 192: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 196: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 197: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 198: Don't know how to parse layer "via"
+LEF Read, Line 199: No layer defined for RECT.
+LEF Read, Line 203: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 207: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 208: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 212: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 213: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 214: Don't know how to parse layer "via2"
+LEF Read, Line 215: No layer defined for RECT.
+LEF Read, Line 219: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 223: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 224: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 228: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 229: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 230: Don't know how to parse layer "via3"
+LEF Read, Line 231: No layer defined for RECT.
+LEF Read, Line 235: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 239: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 240: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 244: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 245: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 246: Don't know how to parse layer "via4"
+LEF Read, Line 247: No layer defined for RECT.
+LEF Read, Line 251: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 255: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 256: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 260: Unknown keyword "OVERHANG" in LEF file; ignoring.
+LEF Read, Line 261: Unknown keyword "METALOVERHANG" in LEF file; ignoring.
+LEF Read, Line 262: Don't know how to parse layer "via5"
+LEF Read, Line 263: No layer defined for RECT.
+LEF Read, Line 267: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 274: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 281: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 288: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 295: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF Read, Line 302: Unknown keyword "GENERATE" in LEF file; ignoring.
+LEF file:  Defines site core (ignored)
+LEF Read, Line 325: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 334: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 367: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 387: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 435: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 455: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 510: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 533: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 589: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 612: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 646: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 665: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 701: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 722: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 765: Don't know how to parse layer "via"
+LEF Read, Line 791: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 804: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 857: Don't know how to parse layer "via"
+LEF Read, Line 900: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 926: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1000: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1013: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1062: Don't know how to parse layer "via"
+LEF Read, Line 1146: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1160: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1207: Don't know how to parse layer "via"
+LEF Read, Line 1232: Don't know how to parse layer "via"
+LEF Read, Line 1280: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1292: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1327: Don't know how to parse layer "via"
+LEF Read, Line 1350: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1367: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1393: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1410: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1436: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1454: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1481: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1504: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1539: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1558: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1599: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1623: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1657: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1679: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1722: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1743: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1798: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1820: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read, Line 1863: Unknown keyword "SHAPE" in LEF file; ignoring.
+LEF Read:  Further errors will not be reported.
+LEF read: Processed 2941 lines.
+LEF Read: encountered 128 errors total.
+Multiple vertical route layers at different pitches.  Using smaller pitch 0.8, will route on 1-of-N tracks if necessary.
+Reading DEF data from file NRISC_InstructionDecoder.def.
+Diagnostic: Design name: "NRISC_InstructionDecoder"
+Multiple vertical route layers at different pitches.  Using pitch 0.8 and routing on 1-of-N tracks for larger pitches.
+Multiple vertical route layers at different pitches.  Using pitch 0.8 and routing on 1-of-N tracks for larger pitches.
+  Processed 387 subcell instances total.
+  Processed 73 pins total.
+  Processed 368 nets total.
+LEF Read, Line 2125: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2126: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2127: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2129: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2130: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2131: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2133: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2134: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2136: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2137: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2138: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2140: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2141: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2143: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2144: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2145: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2147: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2148: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2149: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2151: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2152: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2154: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2155: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2156: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2158: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2159: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2161: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2162: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2163: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2165: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2166: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2167: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2169: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2170: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2172: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2173: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2174: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2176: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2177: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2179: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2180: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2181: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2183: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2184: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2185: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2187: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2188: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2190: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2191: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2192: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2194: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2195: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2197: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2198: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2199: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2201: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2202: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2203: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2205: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2206: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2208: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2209: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2210: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2212: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2213: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2215: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2216: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2217: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2219: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2220: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2221: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2223: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2224: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2226: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2227: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2228: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2230: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2231: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2233: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2234: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2235: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2237: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2238: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2239: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2241: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2242: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2244: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2245: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2246: Via "M5_M4" does not define a metal layer!
+LEF Read, Line 2248: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2249: Via "M6_M5" does not define a metal layer!
+LEF Read, Line 2251: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2252: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2253: Via "M2_M1" does not define a metal layer!
+LEF Read, Line 2255: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2256: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2257: Via "M3_M2" does not define a metal layer!
+LEF Read, Line 2259: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2260: Via "M4_M3" does not define a metal layer!
+LEF Read, Line 2262: Via "M5_M4" does not define a metal layer!
+LEF Read:  Further errors will not be reported.
+  Processed 2 special nets total.
+DEF read: Processed 2454 lines.
+LEF Read: encountered 234 errors total.
+Output scale = microns / 100, precision 1
+There are 370 nets in this design.
+*** Running stage1 routing with defaults
+Finished routing net CORE_InstructionIN<14>
+Nets remaining: 369
+Finished routing net CORE_InstructionIN<11>
+Nets remaining: 368
+Finished routing net _17_
+Nets remaining: 367
+Finished routing net clk_bF$buf5
+Nets remaining: 366
+Finished routing net clk_bF$buf4
+Nets remaining: 365
+Finished routing net CORE_InstructionIN<8>
+Nets remaining: 364
+Finished routing net _27_
+Nets remaining: 363
+Finished routing net _30_
+Nets remaining: 362
+Finished routing net _35_
+Nets remaining: 361
+Finished routing net _158_
+Nets remaining: 360
+Finished routing net clk_bF$buf3
+Nets remaining: 359
+Finished routing net clk_bF$buf2
+Nets remaining: 358
+Finished routing net clk_bF$buf1
+Nets remaining: 357
+Finished routing net clk_bF$buf0
+Nets remaining: 356
+Finished routing net _16__bF$buf3
+Nets remaining: 355
+Finished routing net _16__bF$buf2
+Nets remaining: 354
+Finished routing net _16__bF$buf1
+Nets remaining: 353
+Finished routing net _16__bF$buf0
+Nets remaining: 352
+Failed to route net clk
+Finished routing net _18_
+Nets remaining: 351
+Finished routing net CORE_InstructionIN<12>
+Nets remaining: 350
+Finished routing net CORE_InstructionIN<10>
+Nets remaining: 349
+Finished routing net CORE_InstructionIN<9>
+Nets remaining: 348
+Finished routing net _37_
+Nets remaining: 347
+Finished routing net _57_
+Nets remaining: 346
+Finished routing net CORE_InstructionIN_15_bF$buf3
+Nets remaining: 345
+Finished routing net CORE_InstructionIN_15_bF$buf2
+Nets remaining: 344
+Finished routing net CORE_InstructionIN<13>
+Nets remaining: 343
+Finished routing net _20_
+Nets remaining: 342
+Finished routing net _21_
+Nets remaining: 341
+Finished routing net CORE_InstructionIN<0>
+Nets remaining: 340
+Finished routing net CORE_InstructionIN<2>
+Nets remaining: 339
+Finished routing net _50_
+Nets remaining: 338
+Finished routing net _99_
+Nets remaining: 337
+Finished routing net _170_
+Nets remaining: 336
+Finished routing net _16_
+Nets remaining: 335
+Finished routing net CORE_InstructionIN<15>
+Nets remaining: 334
+Finished routing net CORE_InstructionIN_15_bF$buf1
+Nets remaining: 333
+Finished routing net CORE_InstructionIN_15_bF$buf0
+Nets remaining: 332
+Finished routing net _23_
+Nets remaining: 331
+Finished routing net _28_
+Nets remaining: 330
+Finished routing net _34_
+Nets remaining: 329
+Finished routing net CORE_InstructionIN<1>
+Nets remaining: 328
+Finished routing net CORE_InstructionIN<3>
+Nets remaining: 327
+Finished routing net _41_
+Nets remaining: 326
+Finished routing net CORE_InstructionIN<4>
+Nets remaining: 325
+Finished routing net _53_
+Nets remaining: 324
+Finished routing net _218_<0>
+Nets remaining: 323
+Finished routing net _61_
+Nets remaining: 322
+Finished routing net _72_
+Nets remaining: 321
+Finished routing net _80_
+Nets remaining: 320
+Finished routing net _84_
+Nets remaining: 319
+Finished routing net _91_
+Nets remaining: 318
+Finished routing net _212_<0>
+Nets remaining: 317
+Finished routing net _94_
+Nets remaining: 316
+Finished routing net _102_
+Nets remaining: 315
+Finished routing net _212_<2>
+Nets remaining: 314
+Finished routing net _126_
+Nets remaining: 313
+Finished routing net _135_
+Nets remaining: 312
+Finished routing net _137_
+Nets remaining: 311
+Finished routing net _180_
+Nets remaining: 310
+Finished routing net _19_
+Nets remaining: 309
+Finished routing net _216_<0>
+Nets remaining: 308
+Finished routing net _24_
+Nets remaining: 307
+Finished routing net _216_<1>
+Nets remaining: 306
+Finished routing net _31_
+Nets remaining: 305
+Finished routing net _39_
+Nets remaining: 304
+Finished routing net CORE_InstructionIN<5>
+Nets remaining: 303
+Finished routing net CORE_InstructionIN<6>
+Nets remaining: 302
+Finished routing net CORE_InstructionIN<7>
+Nets remaining: 301
+Finished routing net _62_
+Nets remaining: 300
+Finished routing net _218_<1>
+Nets remaining: 299
+Finished routing net _67_
+Nets remaining: 298
+Finished routing net _223_<0>
+Nets remaining: 297
+Finished routing net _211_
+Nets remaining: 296
+Finished routing net _88_
+Nets remaining: 295
+Finished routing net _101_
+Nets remaining: 294
+Finished routing net _212_<1>
+Nets remaining: 293
+Finished routing net _121_
+Nets remaining: 292
+Finished routing net _136_
+Nets remaining: 291
+Finished routing net _220_<0>
+Nets remaining: 290
+Finished routing net _151_
+Nets remaining: 289
+Finished routing net _154_
+Nets remaining: 288
+Finished routing net _157_
+Nets remaining: 287
+Finished routing net _160_
+Nets remaining: 286
+Finished routing net _200_
+Nets remaining: 285
+Finished routing net _25_
+Nets remaining: 284
+Finished routing net _215_<0>
+Nets remaining: 283
+Finished routing net _215_<1>
+Nets remaining: 282
+Finished routing net _215_<2>
+Nets remaining: 281
+Finished routing net _215_<3>
+Nets remaining: 280
+Finished routing net _215_<4>
+Nets remaining: 279
+Finished routing net _43_
+Nets remaining: 278
+Finished routing net _215_<5>
+Nets remaining: 277
+Finished routing net _215_<6>
+Nets remaining: 276
+Finished routing net _215_<7>
+Nets remaining: 275
+Finished routing net _56_
+Nets remaining: 274
+Finished routing net _66_
+Nets remaining: 273
+Finished routing net _223_<1>
+Nets remaining: 272
+Finished routing net _78_
+Nets remaining: 271
+Finished routing net _81_
+Nets remaining: 270
+Finished routing net _82_
+Nets remaining: 269
+Finished routing net _83_
+Nets remaining: 268
+Finished routing net _85_
+Nets remaining: 267
+Finished routing net _87_
+Nets remaining: 266
+Finished routing net _90_
+Nets remaining: 265
+Finished routing net _97_
+Nets remaining: 264
+Finished routing net _98_
+Nets remaining: 263
+Finished routing net _106_
+Nets remaining: 262
+Finished routing net _107_
+Nets remaining: 261
+Finished routing net _108_
+Nets remaining: 260
+Finished routing net _118_
+Nets remaining: 259
+Finished routing net _122_
+Nets remaining: 258
+Finished routing net _210_
+Nets remaining: 257
+Finished routing net _129_
+Nets remaining: 256
+Finished routing net _213_
+Nets remaining: 255
+Finished routing net _214_
+Nets remaining: 254
+Finished routing net _133_
+Nets remaining: 253
+Finished routing net _221_<0>
+Nets remaining: 252
+Finished routing net _221_<1>
+Nets remaining: 251
+Finished routing net _221_<2>
+Nets remaining: 250
+Finished routing net _221_<3>
+Nets remaining: 249
+Finished routing net _144_
+Nets remaining: 248
+Finished routing net _152_
+Nets remaining: 247
+Finished routing net _220_<1>
+Nets remaining: 246
+Finished routing net _156_
+Nets remaining: 245
+Finished routing net _220_<2>
+Nets remaining: 244
+Finished routing net _220_<3>
+Nets remaining: 243
+Finished routing net _219_<0>
+Nets remaining: 242
+Finished routing net _219_<1>
+Nets remaining: 241
+Finished routing net _219_<2>
+Nets remaining: 240
+Finished routing net _219_<3>
+Nets remaining: 239
+Finished routing net _225_<0>
+Nets remaining: 238
+Finished routing net _225_<1>
+Nets remaining: 237
+Finished routing net _225_<2>
+Nets remaining: 236
+Finished routing net _225_<3>
+Nets remaining: 235
+Finished routing net _217_<0>
+Nets remaining: 234
+Finished routing net _217_<1>
+Nets remaining: 233
+Finished routing net _184_
+Nets remaining: 232
+Finished routing net _190_
+Nets remaining: 231
+Finished routing net _191_
+Nets remaining: 230
+Finished routing net _224_<0>
+Nets remaining: 229
+Finished routing net _196_
+Nets remaining: 228
+Finished routing net _197_
+Nets remaining: 227
+Finished routing net _199_
+Nets remaining: 226
+Finished routing net _224_<1>
+Nets remaining: 225
+Finished routing net _224_<2>
+Nets remaining: 224
+Finished routing net _224_<3>
+Nets remaining: 223
+Finished routing net _222_
+Nets remaining: 222
+Finished routing net $undef
+Nets remaining: 221
+Finished routing net _22_
+Nets remaining: 220
+Finished routing net _26_
+Nets remaining: 219
+Finished routing net _6_<0>
+Nets remaining: 218
+Finished routing net _29_
+Nets remaining: 217
+Finished routing net _32_
+Nets remaining: 216
+Finished routing net _6_<1>
+Nets remaining: 215
+Finished routing net _33_
+Nets remaining: 214
+Finished routing net _5_<0>
+Nets remaining: 213
+Finished routing net _36_
+Nets remaining: 212
+Finished routing net _5_<1>
+Nets remaining: 211
+Finished routing net _38_
+Nets remaining: 210
+Finished routing net _5_<2>
+Nets remaining: 209
+Finished routing net _40_
+Nets remaining: 208
+Finished routing net _5_<3>
+Nets remaining: 207
+Finished routing net _42_
+Nets remaining: 206
+Finished routing net _5_<4>
+Nets remaining: 205
+Finished routing net _44_
+Nets remaining: 204
+Finished routing net _45_
+Nets remaining: 203
+Finished routing net _5_<5>
+Nets remaining: 202
+Finished routing net _46_
+Nets remaining: 201
+Finished routing net _47_
+Nets remaining: 200
+Finished routing net _5_<6>
+Nets remaining: 199
+Finished routing net _48_
+Nets remaining: 198
+Finished routing net _49_
+Nets remaining: 197
+Finished routing net _5_<7>
+Nets remaining: 196
+Finished routing net CORE_ULA_flags<1>
+Nets remaining: 195
+Finished routing net _51_
+Nets remaining: 194
+Finished routing net CORE_ULA_flags<0>
+Nets remaining: 193
+Finished routing net _52_
+Nets remaining: 192
+Finished routing net CORE_ULA_flags<2>
+Nets remaining: 191
+Finished routing net _54_
+Nets remaining: 190
+Finished routing net _55_
+Nets remaining: 189
+Finished routing net _58_
+Nets remaining: 188
+Finished routing net _59_
+Nets remaining: 187
+Finished routing net _60_
+Nets remaining: 186
+Finished routing net _63_
+Nets remaining: 185
+Finished routing net _64_
+Nets remaining: 184
+Finished routing net _65_
+Nets remaining: 183
+Finished routing net _8_<0>
+Nets remaining: 182
+Finished routing net _68_
+Nets remaining: 181
+Finished routing net _69_
+Nets remaining: 180
+Finished routing net _70_
+Nets remaining: 179
+Finished routing net _71_
+Nets remaining: 178
+Finished routing net _8_<1>
+Nets remaining: 177
+Finished routing net _73_
+Nets remaining: 176
+Finished routing net _74_
+Nets remaining: 175
+Finished routing net _75_
+Nets remaining: 174
+Finished routing net _13_<0>
+Nets remaining: 173
+Finished routing net _76_
+Nets remaining: 172
+Finished routing net _77_
+Nets remaining: 171
+Finished routing net _79_
+Nets remaining: 170
+Finished routing net _13_<1>
+Nets remaining: 169
+Finished routing net _86_
+Nets remaining: 168
+Finished routing net _89_
+Nets remaining: 167
+Finished routing net _1_
+Nets remaining: 166
+Finished routing net _92_
+Nets remaining: 165
+Finished routing net _93_
+Nets remaining: 164
+Finished routing net _95_
+Nets remaining: 163
+Finished routing net _96_
+Nets remaining: 162
+Finished routing net _100_
+Nets remaining: 161
+Finished routing net _103_
+Nets remaining: 160
+Finished routing net _104_
+Nets remaining: 159
+Finished routing net _105_
+Nets remaining: 158
+Finished routing net _2_<0>
+Nets remaining: 157
+Finished routing net _109_
+Nets remaining: 156
+Finished routing net _110_
+Nets remaining: 155
+Finished routing net _111_
+Nets remaining: 154
+Finished routing net _112_
+Nets remaining: 153
+Finished routing net _2_<1>
+Nets remaining: 152
+Finished routing net _113_
+Nets remaining: 151
+Finished routing net _114_
+Nets remaining: 150
+Finished routing net _115_
+Nets remaining: 149
+Finished routing net _116_
+Nets remaining: 148
+Finished routing net _117_
+Nets remaining: 147
+Finished routing net _119_
+Nets remaining: 146
+Finished routing net _120_
+Nets remaining: 145
+Finished routing net _123_
+Nets remaining: 144
+Finished routing net _124_
+Nets remaining: 143
+Finished routing net _125_
+Nets remaining: 142
+Finished routing net _2_<2>
+Nets remaining: 141
+Finished routing net _127_
+Nets remaining: 140
+Finished routing net _0_
+Nets remaining: 139
+Finished routing net _128_
+Nets remaining: 138
+Finished routing net _130_
+Nets remaining: 137
+Finished routing net _131_
+Nets remaining: 136
+Finished routing net _3_
+Nets remaining: 135
+Finished routing net _132_
+Nets remaining: 134
+Finished routing net _4_
+Nets remaining: 133
+Finished routing net _134_
+Nets remaining: 132
+Finished routing net _138_
+Nets remaining: 131
+Finished routing net _11_<0>
+Nets remaining: 130
+Finished routing net _139_
+Nets remaining: 129
+Finished routing net _11_<1>
+Nets remaining: 128
+Finished routing net _140_
+Nets remaining: 127
+Finished routing net _11_<2>
+Nets remaining: 126
+Finished routing net _141_
+Nets remaining: 125
+Finished routing net _11_<3>
+Nets remaining: 124
+Finished routing net _142_
+Nets remaining: 123
+Finished routing net _143_
+Nets remaining: 122
+Finished routing net _145_
+Nets remaining: 121
+Finished routing net _146_
+Nets remaining: 120
+Finished routing net _147_
+Nets remaining: 119
+Finished routing net _148_
+Nets remaining: 118
+Finished routing net _149_
+Nets remaining: 117
+Finished routing net _150_
+Nets remaining: 116
+Finished routing net _10_<0>
+Nets remaining: 115
+Finished routing net _153_
+Nets remaining: 114
+Finished routing net _155_
+Nets remaining: 113
+Finished routing net _159_
+Nets remaining: 112
+Finished routing net _161_
+Nets remaining: 111
+Finished routing net _10_<1>
+Nets remaining: 110
+Finished routing net _162_
+Nets remaining: 109
+Finished routing net _163_
+Nets remaining: 108
+Finished routing net _10_<2>
+Nets remaining: 107
+Finished routing net _164_
+Nets remaining: 106
+Finished routing net _165_
+Nets remaining: 105
+Finished routing net _10_<3>
+Nets remaining: 104
+Finished routing net _166_
+Nets remaining: 103
+Finished routing net _9_<0>
+Nets remaining: 102
+Finished routing net _167_
+Nets remaining: 101
+Finished routing net _9_<1>
+Nets remaining: 100
+Finished routing net _168_
+Nets remaining: 99
+Finished routing net _9_<2>
+Nets remaining: 98
+Finished routing net _169_
+Nets remaining: 97
+Finished routing net _9_<3>
+Nets remaining: 96
+Finished routing net _171_
+Nets remaining: 95
+Finished routing net _172_
+Nets remaining: 94
+Finished routing net _173_
+Nets remaining: 93
+Finished routing net _15_<0>
+Nets remaining: 92
+Finished routing net _174_
+Nets remaining: 91
+Finished routing net _175_
+Nets remaining: 90
+Finished routing net _176_
+Nets remaining: 89
+Finished routing net _15_<1>
+Nets remaining: 88
+Finished routing net _177_
+Nets remaining: 87
+Finished routing net _178_
+Nets remaining: 86
+Finished routing net _15_<2>
+Nets remaining: 85
+Finished routing net _179_
+Nets remaining: 84
+Finished routing net _15_<3>
+Nets remaining: 83
+Finished routing net _181_
+Nets remaining: 82
+Finished routing net _182_
+Nets remaining: 81
+Finished routing net _183_
+Nets remaining: 80
+Finished routing net _7_<0>
+Nets remaining: 79
+Finished routing net _185_
+Nets remaining: 78
+Finished routing net _186_
+Nets remaining: 77
+Finished routing net _187_
+Nets remaining: 76
+Finished routing net _7_<1>
+Nets remaining: 75
+Finished routing net _188_
+Nets remaining: 74
+Finished routing net _189_
+Nets remaining: 73
+Finished routing net _192_
+Nets remaining: 72
+Finished routing net _193_
+Nets remaining: 71
+Finished routing net _194_
+Nets remaining: 70
+Finished routing net _14_<0>
+Nets remaining: 69
+Finished routing net _195_
+Nets remaining: 68
+Finished routing net _198_
+Nets remaining: 67
+Finished routing net _201_
+Nets remaining: 66
+Finished routing net _202_
+Nets remaining: 65
+Finished routing net _203_
+Nets remaining: 64
+Finished routing net _204_
+Nets remaining: 63
+Finished routing net _14_<1>
+Nets remaining: 62
+Finished routing net _205_
+Nets remaining: 61
+Finished routing net _14_<2>
+Nets remaining: 60
+Finished routing net _206_
+Nets remaining: 59
+Finished routing net _207_
+Nets remaining: 58
+Finished routing net _208_
+Nets remaining: 57
+Finished routing net _14_<3>
+Nets remaining: 56
+Finished routing net _209_
+Nets remaining: 55
+Finished routing net _12_
+Nets remaining: 54
+Finished routing net CORE_DATA_ADDR_mux
+Nets remaining: 53
+Finished routing net CORE_DATA_REGMux
+Nets remaining: 52
+Finished routing net CORE_DATA_ctrl<0>
+Nets remaining: 51
+Finished routing net CORE_DATA_ctrl<1>
+Nets remaining: 50
+Finished routing net CORE_DATA_ctrl<2>
+Nets remaining: 49
+Finished routing net CORE_DATA_load
+Nets remaining: 48
+Finished routing net CORE_DATA_write
+Nets remaining: 47
+Finished routing net CORE_INT_CHA<0>
+Nets remaining: 46
+Finished routing net CORE_INT_CHA<1>
+Nets remaining: 45
+Finished routing net CORE_INT_CHA<2>
+Nets remaining: 44
+Finished routing net CORE_INT_CHA<3>
+Nets remaining: 43
+Finished routing net CORE_INT_CHA<4>
+Nets remaining: 42
+Finished routing net CORE_INT_CHA<5>
+Nets remaining: 41
+Finished routing net CORE_INT_CHA<6>
+Nets remaining: 40
+Finished routing net CORE_INT_CHA<7>
+Nets remaining: 39
+Finished routing net CORE_INT_ctrl<0>
+Nets remaining: 38
+Finished routing net CORE_INT_ctrl<1>
+Nets remaining: 37
+Finished routing net CORE_InstructionToULAMux<0>
+Nets remaining: 36
+Finished routing net CORE_InstructionToULAMux<1>
+Nets remaining: 35
+Finished routing net CORE_PC_clk
+Nets remaining: 34
+Finished routing net CORE_PC_ctrl<0>
+Nets remaining: 33
+Finished routing net CORE_PC_ctrl<1>
+Nets remaining: 32
+Finished routing net CORE_REG_RD<0>
+Nets remaining: 31
+Finished routing net CORE_REG_RD<1>
+Nets remaining: 30
+Finished routing net CORE_REG_RD<2>
+Nets remaining: 29
+Finished routing net CORE_REG_RD<3>
+Nets remaining: 28
+Finished routing net CORE_REG_RF1<0>
+Nets remaining: 27
+Finished routing net CORE_REG_RF1<1>
+Nets remaining: 26
+Finished routing net CORE_REG_RF1<2>
+Nets remaining: 25
+Failed to route net CORE_REG_RF1<3>
+Finished routing net CORE_REG_RF2<0>
+Nets remaining: 24
+Finished routing net CORE_REG_RF2<1>
+Nets remaining: 23
+Finished routing net CORE_REG_RF2<2>
+Nets remaining: 22
+Finished routing net CORE_REG_RF2<3>
+Nets remaining: 21
+Finished routing net CORE_REG_write
+Nets remaining: 20
+Finished routing net CORE_STACK_ctrl<0>
+Nets remaining: 19
+Finished routing net CORE_STACK_ctrl<1>
+Nets remaining: 18
+Finished routing net CORE_Status_ctrl<0>
+Nets remaining: 17
+Finished routing net CORE_Status_ctrl<1>
+Nets remaining: 16
+Finished routing net CORE_Status_ctrl<2>
+Nets remaining: 15
+Finished routing net CORE_Status_ctrl<3>
+Nets remaining: 14
+Finished routing net CORE_Status_ctrl<4>
+Nets remaining: 13
+Finished routing net CORE_ULAMux_inc_dec
+Nets remaining: 12
+Finished routing net CORE_ULA_ctrl<0>
+Nets remaining: 11
+Finished routing net CORE_ULA_ctrl<1>
+Nets remaining: 10
+Finished routing net CORE_ULA_ctrl<2>
+Nets remaining: 9
+Finished routing net CORE_ULA_ctrl<3>
+Nets remaining: 8
+
+----------------------------------------------
+Progress: Stage 1 total routes completed: 752
+Failed net routes: 2
+----------------------------------------------
+*** Running stage2 routing with options mask 10, effort 10
+Nets remaining: 2
+Best route of CORE_REG_RF1<3> collides with nets: CORE_InstructionIN<15> 
+Ripping up blocking net CORE_InstructionIN<15>
+Nets remaining: 2
+Error:  Failure to find route end node/route!
+Best route of clk collides with nets: _16__bF$buf3 
+Ripping up blocking net _16__bF$buf3
+Nets remaining: 2
+Nets remaining: 1
+
+----------------------------------------------
+Progress: Stage 2 total routes completed: 927
+No failed routes!
+----------------------------------------------
+*** Running stage3 routing with defaults, 1st round
+Finished routing net CORE_InstructionIN<14>
+Nets remaining: 369
+Finished routing net CORE_InstructionIN<11>
+Nets remaining: 368
+Finished routing net _17_
+Nets remaining: 367
+Finished routing net clk_bF$buf5
+Nets remaining: 366
+Finished routing net clk_bF$buf4
+Nets remaining: 365
+Finished routing net CORE_InstructionIN<8>
+Nets remaining: 364
+Finished routing net _27_
+Nets remaining: 363
+Finished routing net _30_
+Nets remaining: 362
+Finished routing net _35_
+Nets remaining: 361
+Finished routing net _158_
+Nets remaining: 360
+Finished routing net clk_bF$buf3
+Nets remaining: 359
+Finished routing net clk_bF$buf2
+Nets remaining: 358
+Finished routing net clk_bF$buf1
+Nets remaining: 357
+Finished routing net clk_bF$buf0
+Nets remaining: 356
+Finished routing net _16__bF$buf3
+Nets remaining: 355
+Finished routing net _16__bF$buf2
+Nets remaining: 354
+Finished routing net _16__bF$buf1
+Nets remaining: 353
+Finished routing net _16__bF$buf0
+Nets remaining: 352
+Finished routing net clk
+Nets remaining: 351
+Finished routing net _18_
+Nets remaining: 350
+Finished routing net CORE_InstructionIN<12>
+Nets remaining: 349
+Finished routing net CORE_InstructionIN<10>
+Nets remaining: 348
+Finished routing net CORE_InstructionIN<9>
+Nets remaining: 347
+Finished routing net _37_
+Nets remaining: 346
+Finished routing net _57_
+Nets remaining: 345
+Finished routing net CORE_InstructionIN_15_bF$buf3
+Nets remaining: 344
+Finished routing net CORE_InstructionIN_15_bF$buf2
+Nets remaining: 343
+Finished routing net CORE_InstructionIN<13>
+Nets remaining: 342
+Finished routing net _20_
+Nets remaining: 341
+Finished routing net _21_
+Nets remaining: 340
+Finished routing net CORE_InstructionIN<0>
+Nets remaining: 339
+Finished routing net CORE_InstructionIN<2>
+Nets remaining: 338
+Finished routing net _50_
+Nets remaining: 337
+Finished routing net _99_
+Nets remaining: 336
+Finished routing net _170_
+Nets remaining: 335
+Finished routing net _16_
+Nets remaining: 334
+Finished routing net CORE_InstructionIN<15>
+Nets remaining: 333
+Finished routing net CORE_InstructionIN_15_bF$buf1
+Nets remaining: 332
+Finished routing net CORE_InstructionIN_15_bF$buf0
+Nets remaining: 331
+Finished routing net _23_
+Nets remaining: 330
+Finished routing net _28_
+Nets remaining: 329
+Finished routing net _34_
+Nets remaining: 328
+Finished routing net CORE_InstructionIN<1>
+Nets remaining: 327
+Finished routing net CORE_InstructionIN<3>
+Nets remaining: 326
+Finished routing net _41_
+Nets remaining: 325
+Finished routing net CORE_InstructionIN<4>
+Nets remaining: 324
+Finished routing net _53_
+Nets remaining: 323
+Finished routing net _218_<0>
+Nets remaining: 322
+Finished routing net _61_
+Nets remaining: 321
+Finished routing net _72_
+Nets remaining: 320
+Finished routing net _80_
+Nets remaining: 319
+Finished routing net _84_
+Nets remaining: 318
+Finished routing net _91_
+Nets remaining: 317
+Finished routing net _212_<0>
+Nets remaining: 316
+Finished routing net _94_
+Nets remaining: 315
+Finished routing net _102_
+Nets remaining: 314
+Finished routing net _212_<2>
+Nets remaining: 313
+Finished routing net _126_
+Nets remaining: 312
+Finished routing net _135_
+Nets remaining: 311
+Finished routing net _137_
+Nets remaining: 310
+Finished routing net _180_
+Nets remaining: 309
+Finished routing net _19_
+Nets remaining: 308
+Finished routing net _216_<0>
+Nets remaining: 307
+Finished routing net _24_
+Nets remaining: 306
+Finished routing net _216_<1>
+Nets remaining: 305
+Finished routing net _31_
+Nets remaining: 304
+Finished routing net _39_
+Nets remaining: 303
+Finished routing net CORE_InstructionIN<5>
+Nets remaining: 302
+Finished routing net CORE_InstructionIN<6>
+Nets remaining: 301
+Finished routing net CORE_InstructionIN<7>
+Nets remaining: 300
+Finished routing net _62_
+Nets remaining: 299
+Finished routing net _218_<1>
+Nets remaining: 298
+Finished routing net _67_
+Nets remaining: 297
+Finished routing net _223_<0>
+Nets remaining: 296
+Finished routing net _211_
+Nets remaining: 295
+Finished routing net _88_
+Nets remaining: 294
+Finished routing net _101_
+Nets remaining: 293
+Finished routing net _212_<1>
+Nets remaining: 292
+Finished routing net _121_
+Nets remaining: 291
+Finished routing net _136_
+Nets remaining: 290
+Finished routing net _220_<0>
+Nets remaining: 289
+Finished routing net _151_
+Nets remaining: 288
+Finished routing net _154_
+Nets remaining: 287
+Finished routing net _157_
+Nets remaining: 286
+Finished routing net _160_
+Nets remaining: 285
+Finished routing net _200_
+Nets remaining: 284
+Finished routing net _25_
+Nets remaining: 283
+Finished routing net _215_<0>
+Nets remaining: 282
+Finished routing net _215_<1>
+Nets remaining: 281
+Finished routing net _215_<2>
+Nets remaining: 280
+Finished routing net _215_<3>
+Nets remaining: 279
+Finished routing net _215_<4>
+Nets remaining: 278
+Finished routing net _43_
+Nets remaining: 277
+Finished routing net _215_<5>
+Nets remaining: 276
+Finished routing net _215_<6>
+Nets remaining: 275
+Finished routing net _215_<7>
+Nets remaining: 274
+Finished routing net _56_
+Nets remaining: 273
+Finished routing net _66_
+Nets remaining: 272
+Finished routing net _223_<1>
+Nets remaining: 271
+Finished routing net _78_
+Nets remaining: 270
+Finished routing net _81_
+Nets remaining: 269
+Finished routing net _82_
+Nets remaining: 268
+Finished routing net _83_
+Nets remaining: 267
+Finished routing net _85_
+Nets remaining: 266
+Finished routing net _87_
+Nets remaining: 265
+Finished routing net _90_
+Nets remaining: 264
+Finished routing net _97_
+Nets remaining: 263
+Finished routing net _98_
+Nets remaining: 262
+Finished routing net _106_
+Nets remaining: 261
+Finished routing net _107_
+Nets remaining: 260
+Finished routing net _108_
+Nets remaining: 259
+Finished routing net _118_
+Nets remaining: 258
+Finished routing net _122_
+Nets remaining: 257
+Finished routing net _210_
+Nets remaining: 256
+Finished routing net _129_
+Nets remaining: 255
+Finished routing net _213_
+Nets remaining: 254
+Finished routing net _214_
+Nets remaining: 253
+Finished routing net _133_
+Nets remaining: 252
+Finished routing net _221_<0>
+Nets remaining: 251
+Finished routing net _221_<1>
+Nets remaining: 250
+Finished routing net _221_<2>
+Nets remaining: 249
+Finished routing net _221_<3>
+Nets remaining: 248
+Finished routing net _144_
+Nets remaining: 247
+Finished routing net _152_
+Nets remaining: 246
+Finished routing net _220_<1>
+Nets remaining: 245
+Finished routing net _156_
+Nets remaining: 244
+Finished routing net _220_<2>
+Nets remaining: 243
+Finished routing net _220_<3>
+Nets remaining: 242
+Finished routing net _219_<0>
+Nets remaining: 241
+Finished routing net _219_<1>
+Nets remaining: 240
+Finished routing net _219_<2>
+Nets remaining: 239
+Finished routing net _219_<3>
+Nets remaining: 238
+Finished routing net _225_<0>
+Nets remaining: 237
+Finished routing net _225_<1>
+Nets remaining: 236
+Finished routing net _225_<2>
+Nets remaining: 235
+Finished routing net _225_<3>
+Nets remaining: 234
+Finished routing net _217_<0>
+Nets remaining: 233
+Finished routing net _217_<1>
+Nets remaining: 232
+Finished routing net _184_
+Nets remaining: 231
+Finished routing net _190_
+Nets remaining: 230
+Finished routing net _191_
+Nets remaining: 229
+Finished routing net _224_<0>
+Nets remaining: 228
+Finished routing net _196_
+Nets remaining: 227
+Finished routing net _197_
+Nets remaining: 226
+Finished routing net _199_
+Nets remaining: 225
+Finished routing net _224_<1>
+Nets remaining: 224
+Finished routing net _224_<2>
+Nets remaining: 223
+Finished routing net _224_<3>
+Nets remaining: 222
+Finished routing net _222_
+Nets remaining: 221
+Finished routing net $undef
+Nets remaining: 220
+Finished routing net _22_
+Nets remaining: 219
+Finished routing net _26_
+Nets remaining: 218
+Finished routing net _6_<0>
+Nets remaining: 217
+Finished routing net _29_
+Nets remaining: 216
+Finished routing net _32_
+Nets remaining: 215
+Finished routing net _6_<1>
+Nets remaining: 214
+Finished routing net _33_
+Nets remaining: 213
+Finished routing net _5_<0>
+Nets remaining: 212
+Finished routing net _36_
+Nets remaining: 211
+Finished routing net _5_<1>
+Nets remaining: 210
+Finished routing net _38_
+Nets remaining: 209
+Finished routing net _5_<2>
+Nets remaining: 208
+Finished routing net _40_
+Nets remaining: 207
+Finished routing net _5_<3>
+Nets remaining: 206
+Finished routing net _42_
+Nets remaining: 205
+Finished routing net _5_<4>
+Nets remaining: 204
+Finished routing net _44_
+Nets remaining: 203
+Finished routing net _45_
+Nets remaining: 202
+Finished routing net _5_<5>
+Nets remaining: 201
+Finished routing net _46_
+Nets remaining: 200
+Finished routing net _47_
+Nets remaining: 199
+Finished routing net _5_<6>
+Nets remaining: 198
+Finished routing net _48_
+Nets remaining: 197
+Finished routing net _49_
+Nets remaining: 196
+Finished routing net _5_<7>
+Nets remaining: 195
+Finished routing net CORE_ULA_flags<1>
+Nets remaining: 194
+Finished routing net _51_
+Nets remaining: 193
+Finished routing net CORE_ULA_flags<0>
+Nets remaining: 192
+Finished routing net _52_
+Nets remaining: 191
+Finished routing net CORE_ULA_flags<2>
+Nets remaining: 190
+Finished routing net _54_
+Nets remaining: 189
+Finished routing net _55_
+Nets remaining: 188
+Finished routing net _58_
+Nets remaining: 187
+Finished routing net _59_
+Nets remaining: 186
+Finished routing net _60_
+Nets remaining: 185
+Finished routing net _63_
+Nets remaining: 184
+Finished routing net _64_
+Nets remaining: 183
+Finished routing net _65_
+Nets remaining: 182
+Finished routing net _8_<0>
+Nets remaining: 181
+Finished routing net _68_
+Nets remaining: 180
+Finished routing net _69_
+Nets remaining: 179
+Finished routing net _70_
+Nets remaining: 178
+Finished routing net _71_
+Nets remaining: 177
+Finished routing net _8_<1>
+Nets remaining: 176
+Finished routing net _73_
+Nets remaining: 175
+Finished routing net _74_
+Nets remaining: 174
+Finished routing net _75_
+Nets remaining: 173
+Finished routing net _13_<0>
+Nets remaining: 172
+Finished routing net _76_
+Nets remaining: 171
+Finished routing net _77_
+Nets remaining: 170
+Finished routing net _79_
+Nets remaining: 169
+Finished routing net _13_<1>
+Nets remaining: 168
+Finished routing net _86_
+Nets remaining: 167
+Finished routing net _89_
+Nets remaining: 166
+Finished routing net _1_
+Nets remaining: 165
+Finished routing net _92_
+Nets remaining: 164
+Finished routing net _93_
+Nets remaining: 163
+Finished routing net _95_
+Nets remaining: 162
+Finished routing net _96_
+Nets remaining: 161
+Finished routing net _100_
+Nets remaining: 160
+Finished routing net _103_
+Nets remaining: 159
+Finished routing net _104_
+Nets remaining: 158
+Finished routing net _105_
+Nets remaining: 157
+Finished routing net _2_<0>
+Nets remaining: 156
+Finished routing net _109_
+Nets remaining: 155
+Finished routing net _110_
+Nets remaining: 154
+Finished routing net _111_
+Nets remaining: 153
+Finished routing net _112_
+Nets remaining: 152
+Finished routing net _2_<1>
+Nets remaining: 151
+Finished routing net _113_
+Nets remaining: 150
+Finished routing net _114_
+Nets remaining: 149
+Finished routing net _115_
+Nets remaining: 148
+Finished routing net _116_
+Nets remaining: 147
+Finished routing net _117_
+Nets remaining: 146
+Finished routing net _119_
+Nets remaining: 145
+Finished routing net _120_
+Nets remaining: 144
+Finished routing net _123_
+Nets remaining: 143
+Finished routing net _124_
+Nets remaining: 142
+Finished routing net _125_
+Nets remaining: 141
+Finished routing net _2_<2>
+Nets remaining: 140
+Finished routing net _127_
+Nets remaining: 139
+Finished routing net _0_
+Nets remaining: 138
+Finished routing net _128_
+Nets remaining: 137
+Finished routing net _130_
+Nets remaining: 136
+Finished routing net _131_
+Nets remaining: 135
+Finished routing net _3_
+Nets remaining: 134
+Finished routing net _132_
+Nets remaining: 133
+Finished routing net _4_
+Nets remaining: 132
+Finished routing net _134_
+Nets remaining: 131
+Finished routing net _138_
+Nets remaining: 130
+Finished routing net _11_<0>
+Nets remaining: 129
+Finished routing net _139_
+Nets remaining: 128
+Finished routing net _11_<1>
+Nets remaining: 127
+Finished routing net _140_
+Nets remaining: 126
+Finished routing net _11_<2>
+Nets remaining: 125
+Finished routing net _141_
+Nets remaining: 124
+Finished routing net _11_<3>
+Nets remaining: 123
+Finished routing net _142_
+Nets remaining: 122
+Finished routing net _143_
+Nets remaining: 121
+Finished routing net _145_
+Nets remaining: 120
+Finished routing net _146_
+Nets remaining: 119
+Finished routing net _147_
+Nets remaining: 118
+Finished routing net _148_
+Nets remaining: 117
+Finished routing net _149_
+Nets remaining: 116
+Finished routing net _150_
+Nets remaining: 115
+Finished routing net _10_<0>
+Nets remaining: 114
+Finished routing net _153_
+Nets remaining: 113
+Finished routing net _155_
+Nets remaining: 112
+Finished routing net _159_
+Nets remaining: 111
+Finished routing net _161_
+Nets remaining: 110
+Finished routing net _10_<1>
+Nets remaining: 109
+Finished routing net _162_
+Nets remaining: 108
+Finished routing net _163_
+Nets remaining: 107
+Finished routing net _10_<2>
+Nets remaining: 106
+Finished routing net _164_
+Nets remaining: 105
+Finished routing net _165_
+Nets remaining: 104
+Finished routing net _10_<3>
+Nets remaining: 103
+Finished routing net _166_
+Nets remaining: 102
+Finished routing net _9_<0>
+Nets remaining: 101
+Finished routing net _167_
+Nets remaining: 100
+Finished routing net _9_<1>
+Nets remaining: 99
+Finished routing net _168_
+Nets remaining: 98
+Finished routing net _9_<2>
+Nets remaining: 97
+Finished routing net _169_
+Nets remaining: 96
+Finished routing net _9_<3>
+Nets remaining: 95
+Finished routing net _171_
+Nets remaining: 94
+Finished routing net _172_
+Nets remaining: 93
+Finished routing net _173_
+Nets remaining: 92
+Finished routing net _15_<0>
+Nets remaining: 91
+Finished routing net _174_
+Nets remaining: 90
+Finished routing net _175_
+Nets remaining: 89
+Finished routing net _176_
+Nets remaining: 88
+Finished routing net _15_<1>
+Nets remaining: 87
+Finished routing net _177_
+Nets remaining: 86
+Finished routing net _178_
+Nets remaining: 85
+Finished routing net _15_<2>
+Nets remaining: 84
+Finished routing net _179_
+Nets remaining: 83
+Finished routing net _15_<3>
+Nets remaining: 82
+Finished routing net _181_
+Nets remaining: 81
+Finished routing net _182_
+Nets remaining: 80
+Finished routing net _183_
+Nets remaining: 79
+Finished routing net _7_<0>
+Nets remaining: 78
+Finished routing net _185_
+Nets remaining: 77
+Finished routing net _186_
+Nets remaining: 76
+Finished routing net _187_
+Nets remaining: 75
+Finished routing net _7_<1>
+Nets remaining: 74
+Finished routing net _188_
+Nets remaining: 73
+Finished routing net _189_
+Nets remaining: 72
+Finished routing net _192_
+Nets remaining: 71
+Finished routing net _193_
+Nets remaining: 70
+Finished routing net _194_
+Nets remaining: 69
+Finished routing net _14_<0>
+Nets remaining: 68
+Finished routing net _195_
+Nets remaining: 67
+Finished routing net _198_
+Nets remaining: 66
+Finished routing net _201_
+Nets remaining: 65
+Finished routing net _202_
+Nets remaining: 64
+Finished routing net _203_
+Nets remaining: 63
+Finished routing net _204_
+Nets remaining: 62
+Finished routing net _14_<1>
+Nets remaining: 61
+Finished routing net _205_
+Nets remaining: 60
+Finished routing net _14_<2>
+Nets remaining: 59
+Finished routing net _206_
+Nets remaining: 58
+Finished routing net _207_
+Nets remaining: 57
+Finished routing net _208_
+Nets remaining: 56
+Finished routing net _14_<3>
+Nets remaining: 55
+Finished routing net _209_
+Nets remaining: 54
+Finished routing net _12_
+Nets remaining: 53
+Finished routing net CORE_DATA_ADDR_mux
+Nets remaining: 52
+Finished routing net CORE_DATA_REGMux
+Nets remaining: 51
+Finished routing net CORE_DATA_ctrl<0>
+Nets remaining: 50
+Finished routing net CORE_DATA_ctrl<1>
+Nets remaining: 49
+Finished routing net CORE_DATA_ctrl<2>
+Nets remaining: 48
+Finished routing net CORE_DATA_load
+Nets remaining: 47
+Finished routing net CORE_DATA_write
+Nets remaining: 46
+Finished routing net CORE_INT_CHA<0>
+Nets remaining: 45
+Finished routing net CORE_INT_CHA<1>
+Nets remaining: 44
+Finished routing net CORE_INT_CHA<2>
+Nets remaining: 43
+Finished routing net CORE_INT_CHA<3>
+Nets remaining: 42
+Finished routing net CORE_INT_CHA<4>
+Nets remaining: 41
+Finished routing net CORE_INT_CHA<5>
+Nets remaining: 40
+Finished routing net CORE_INT_CHA<6>
+Nets remaining: 39
+Finished routing net CORE_INT_CHA<7>
+Nets remaining: 38
+Finished routing net CORE_INT_ctrl<0>
+Nets remaining: 37
+Finished routing net CORE_INT_ctrl<1>
+Nets remaining: 36
+Finished routing net CORE_InstructionToULAMux<0>
+Nets remaining: 35
+Finished routing net CORE_InstructionToULAMux<1>
+Nets remaining: 34
+Finished routing net CORE_PC_clk
+Nets remaining: 33
+Finished routing net CORE_PC_ctrl<0>
+Nets remaining: 32
+Finished routing net CORE_PC_ctrl<1>
+Nets remaining: 31
+Finished routing net CORE_REG_RD<0>
+Nets remaining: 30
+Finished routing net CORE_REG_RD<1>
+Nets remaining: 29
+Finished routing net CORE_REG_RD<2>
+Nets remaining: 28
+Finished routing net CORE_REG_RD<3>
+Nets remaining: 27
+Finished routing net CORE_REG_RF1<0>
+Nets remaining: 26
+Finished routing net CORE_REG_RF1<1>
+Nets remaining: 25
+Finished routing net CORE_REG_RF1<2>
+Nets remaining: 24
+Finished routing net CORE_REG_RF1<3>
+Nets remaining: 23
+Finished routing net CORE_REG_RF2<0>
+Nets remaining: 22
+Finished routing net CORE_REG_RF2<1>
+Nets remaining: 21
+Finished routing net CORE_REG_RF2<2>
+Nets remaining: 20
+Finished routing net CORE_REG_RF2<3>
+Nets remaining: 19
+Finished routing net CORE_REG_write
+Nets remaining: 18
+Finished routing net CORE_STACK_ctrl<0>
+Nets remaining: 17
+Finished routing net CORE_STACK_ctrl<1>
+Nets remaining: 16
+Finished routing net CORE_Status_ctrl<0>
+Nets remaining: 15
+Finished routing net CORE_Status_ctrl<1>
+Nets remaining: 14
+Finished routing net CORE_Status_ctrl<2>
+Nets remaining: 13
+Finished routing net CORE_Status_ctrl<3>
+Nets remaining: 12
+Finished routing net CORE_Status_ctrl<4>
+Nets remaining: 11
+Finished routing net CORE_ULAMux_inc_dec
+Nets remaining: 10
+Finished routing net CORE_ULA_ctrl<0>
+Nets remaining: 9
+Finished routing net CORE_ULA_ctrl<1>
+Nets remaining: 8
+Finished routing net CORE_ULA_ctrl<2>
+Nets remaining: 7
+Finished routing net CORE_ULA_ctrl<3>
+Nets remaining: 6
+
+----------------------------------------------
+Progress: Stage 3 total routes completed: 1681
+No failed routes!
+----------------------------------------------
+*** Running stage3 routing with defaults, 2nd round
+Finished routing net CORE_InstructionIN<14>
+Nets remaining: 369
+Finished routing net CORE_InstructionIN<11>
+Nets remaining: 368
+Finished routing net _17_
+Nets remaining: 367
+Finished routing net clk_bF$buf5
+Nets remaining: 366
+Finished routing net clk_bF$buf4
+Nets remaining: 365
+Finished routing net CORE_InstructionIN<8>
+Nets remaining: 364
+Finished routing net _27_
+Nets remaining: 363
+Finished routing net _30_
+Nets remaining: 362
+Finished routing net _35_
+Nets remaining: 361
+Finished routing net _158_
+Nets remaining: 360
+Finished routing net clk_bF$buf3
+Nets remaining: 359
+Finished routing net clk_bF$buf2
+Nets remaining: 358
+Finished routing net clk_bF$buf1
+Nets remaining: 357
+Finished routing net clk_bF$buf0
+Nets remaining: 356
+Finished routing net _16__bF$buf3
+Nets remaining: 355
+Finished routing net _16__bF$buf2
+Nets remaining: 354
+Finished routing net _16__bF$buf1
+Nets remaining: 353
+Finished routing net _16__bF$buf0
+Nets remaining: 352
+Finished routing net clk
+Nets remaining: 351
+Finished routing net _18_
+Nets remaining: 350
+Finished routing net CORE_InstructionIN<12>
+Nets remaining: 349
+Finished routing net CORE_InstructionIN<10>
+Nets remaining: 348
+Finished routing net CORE_InstructionIN<9>
+Nets remaining: 347
+Finished routing net _37_
+Nets remaining: 346
+Finished routing net _57_
+Nets remaining: 345
+Finished routing net CORE_InstructionIN_15_bF$buf3
+Nets remaining: 344
+Finished routing net CORE_InstructionIN_15_bF$buf2
+Nets remaining: 343
+Finished routing net CORE_InstructionIN<13>
+Nets remaining: 342
+Finished routing net _20_
+Nets remaining: 341
+Finished routing net _21_
+Nets remaining: 340
+Finished routing net CORE_InstructionIN<0>
+Nets remaining: 339
+Finished routing net CORE_InstructionIN<2>
+Nets remaining: 338
+Finished routing net _50_
+Nets remaining: 337
+Finished routing net _99_
+Nets remaining: 336
+Finished routing net _170_
+Nets remaining: 335
+Finished routing net _16_
+Nets remaining: 334
+Finished routing net CORE_InstructionIN<15>
+Nets remaining: 333
+Finished routing net CORE_InstructionIN_15_bF$buf1
+Nets remaining: 332
+Finished routing net CORE_InstructionIN_15_bF$buf0
+Nets remaining: 331
+Finished routing net _23_
+Nets remaining: 330
+Finished routing net _28_
+Nets remaining: 329
+Finished routing net _34_
+Nets remaining: 328
+Finished routing net CORE_InstructionIN<1>
+Nets remaining: 327
+Finished routing net CORE_InstructionIN<3>
+Nets remaining: 326
+Finished routing net _41_
+Nets remaining: 325
+Finished routing net CORE_InstructionIN<4>
+Nets remaining: 324
+Finished routing net _53_
+Nets remaining: 323
+Finished routing net _218_<0>
+Nets remaining: 322
+Finished routing net _61_
+Nets remaining: 321
+Finished routing net _72_
+Nets remaining: 320
+Finished routing net _80_
+Nets remaining: 319
+Finished routing net _84_
+Nets remaining: 318
+Finished routing net _91_
+Nets remaining: 317
+Finished routing net _212_<0>
+Nets remaining: 316
+Finished routing net _94_
+Nets remaining: 315
+Finished routing net _102_
+Nets remaining: 314
+Finished routing net _212_<2>
+Nets remaining: 313
+Finished routing net _126_
+Nets remaining: 312
+Finished routing net _135_
+Nets remaining: 311
+Finished routing net _137_
+Nets remaining: 310
+Finished routing net _180_
+Nets remaining: 309
+Finished routing net _19_
+Nets remaining: 308
+Finished routing net _216_<0>
+Nets remaining: 307
+Finished routing net _24_
+Nets remaining: 306
+Finished routing net _216_<1>
+Nets remaining: 305
+Finished routing net _31_
+Nets remaining: 304
+Finished routing net _39_
+Nets remaining: 303
+Finished routing net CORE_InstructionIN<5>
+Nets remaining: 302
+Finished routing net CORE_InstructionIN<6>
+Nets remaining: 301
+Finished routing net CORE_InstructionIN<7>
+Nets remaining: 300
+Finished routing net _62_
+Nets remaining: 299
+Finished routing net _218_<1>
+Nets remaining: 298
+Finished routing net _67_
+Nets remaining: 297
+Finished routing net _223_<0>
+Nets remaining: 296
+Finished routing net _211_
+Nets remaining: 295
+Finished routing net _88_
+Nets remaining: 294
+Finished routing net _101_
+Nets remaining: 293
+Finished routing net _212_<1>
+Nets remaining: 292
+Finished routing net _121_
+Nets remaining: 291
+Finished routing net _136_
+Nets remaining: 290
+Finished routing net _220_<0>
+Nets remaining: 289
+Finished routing net _151_
+Nets remaining: 288
+Finished routing net _154_
+Nets remaining: 287
+Finished routing net _157_
+Nets remaining: 286
+Finished routing net _160_
+Nets remaining: 285
+Finished routing net _200_
+Nets remaining: 284
+Finished routing net _25_
+Nets remaining: 283
+Finished routing net _215_<0>
+Nets remaining: 282
+Finished routing net _215_<1>
+Nets remaining: 281
+Finished routing net _215_<2>
+Nets remaining: 280
+Finished routing net _215_<3>
+Nets remaining: 279
+Finished routing net _215_<4>
+Nets remaining: 278
+Finished routing net _43_
+Nets remaining: 277
+Finished routing net _215_<5>
+Nets remaining: 276
+Finished routing net _215_<6>
+Nets remaining: 275
+Finished routing net _215_<7>
+Nets remaining: 274
+Finished routing net _56_
+Nets remaining: 273
+Finished routing net _66_
+Nets remaining: 272
+Finished routing net _223_<1>
+Nets remaining: 271
+Finished routing net _78_
+Nets remaining: 270
+Finished routing net _81_
+Nets remaining: 269
+Finished routing net _82_
+Nets remaining: 268
+Finished routing net _83_
+Nets remaining: 267
+Finished routing net _85_
+Nets remaining: 266
+Finished routing net _87_
+Nets remaining: 265
+Finished routing net _90_
+Nets remaining: 264
+Finished routing net _97_
+Nets remaining: 263
+Finished routing net _98_
+Nets remaining: 262
+Finished routing net _106_
+Nets remaining: 261
+Finished routing net _107_
+Nets remaining: 260
+Finished routing net _108_
+Nets remaining: 259
+Finished routing net _118_
+Nets remaining: 258
+Finished routing net _122_
+Nets remaining: 257
+Finished routing net _210_
+Nets remaining: 256
+Finished routing net _129_
+Nets remaining: 255
+Finished routing net _213_
+Nets remaining: 254
+Finished routing net _214_
+Nets remaining: 253
+Finished routing net _133_
+Nets remaining: 252
+Finished routing net _221_<0>
+Nets remaining: 251
+Finished routing net _221_<1>
+Nets remaining: 250
+Finished routing net _221_<2>
+Nets remaining: 249
+Finished routing net _221_<3>
+Nets remaining: 248
+Finished routing net _144_
+Nets remaining: 247
+Finished routing net _152_
+Nets remaining: 246
+Finished routing net _220_<1>
+Nets remaining: 245
+Finished routing net _156_
+Nets remaining: 244
+Finished routing net _220_<2>
+Nets remaining: 243
+Finished routing net _220_<3>
+Nets remaining: 242
+Finished routing net _219_<0>
+Nets remaining: 241
+Finished routing net _219_<1>
+Nets remaining: 240
+Finished routing net _219_<2>
+Nets remaining: 239
+Finished routing net _219_<3>
+Nets remaining: 238
+Finished routing net _225_<0>
+Nets remaining: 237
+Finished routing net _225_<1>
+Nets remaining: 236
+Finished routing net _225_<2>
+Nets remaining: 235
+Finished routing net _225_<3>
+Nets remaining: 234
+Finished routing net _217_<0>
+Nets remaining: 233
+Finished routing net _217_<1>
+Nets remaining: 232
+Finished routing net _184_
+Nets remaining: 231
+Finished routing net _190_
+Nets remaining: 230
+Finished routing net _191_
+Nets remaining: 229
+Finished routing net _224_<0>
+Nets remaining: 228
+Finished routing net _196_
+Nets remaining: 227
+Finished routing net _197_
+Nets remaining: 226
+Finished routing net _199_
+Nets remaining: 225
+Finished routing net _224_<1>
+Nets remaining: 224
+Finished routing net _224_<2>
+Nets remaining: 223
+Finished routing net _224_<3>
+Nets remaining: 222
+Finished routing net _222_
+Nets remaining: 221
+Finished routing net $undef
+Nets remaining: 220
+Finished routing net _22_
+Nets remaining: 219
+Finished routing net _26_
+Nets remaining: 218
+Finished routing net _6_<0>
+Nets remaining: 217
+Finished routing net _29_
+Nets remaining: 216
+Finished routing net _32_
+Nets remaining: 215
+Finished routing net _6_<1>
+Nets remaining: 214
+Finished routing net _33_
+Nets remaining: 213
+Finished routing net _5_<0>
+Nets remaining: 212
+Finished routing net _36_
+Nets remaining: 211
+Finished routing net _5_<1>
+Nets remaining: 210
+Finished routing net _38_
+Nets remaining: 209
+Finished routing net _5_<2>
+Nets remaining: 208
+Finished routing net _40_
+Nets remaining: 207
+Finished routing net _5_<3>
+Nets remaining: 206
+Finished routing net _42_
+Nets remaining: 205
+Finished routing net _5_<4>
+Nets remaining: 204
+Finished routing net _44_
+Nets remaining: 203
+Finished routing net _45_
+Nets remaining: 202
+Finished routing net _5_<5>
+Nets remaining: 201
+Finished routing net _46_
+Nets remaining: 200
+Finished routing net _47_
+Nets remaining: 199
+Finished routing net _5_<6>
+Nets remaining: 198
+Finished routing net _48_
+Nets remaining: 197
+Finished routing net _49_
+Nets remaining: 196
+Finished routing net _5_<7>
+Nets remaining: 195
+Finished routing net CORE_ULA_flags<1>
+Nets remaining: 194
+Finished routing net _51_
+Nets remaining: 193
+Finished routing net CORE_ULA_flags<0>
+Nets remaining: 192
+Finished routing net _52_
+Nets remaining: 191
+Finished routing net CORE_ULA_flags<2>
+Nets remaining: 190
+Finished routing net _54_
+Nets remaining: 189
+Finished routing net _55_
+Nets remaining: 188
+Finished routing net _58_
+Nets remaining: 187
+Finished routing net _59_
+Nets remaining: 186
+Finished routing net _60_
+Nets remaining: 185
+Finished routing net _63_
+Nets remaining: 184
+Finished routing net _64_
+Nets remaining: 183
+Finished routing net _65_
+Nets remaining: 182
+Finished routing net _8_<0>
+Nets remaining: 181
+Finished routing net _68_
+Nets remaining: 180
+Finished routing net _69_
+Nets remaining: 179
+Finished routing net _70_
+Nets remaining: 178
+Finished routing net _71_
+Nets remaining: 177
+Finished routing net _8_<1>
+Nets remaining: 176
+Finished routing net _73_
+Nets remaining: 175
+Finished routing net _74_
+Nets remaining: 174
+Finished routing net _75_
+Nets remaining: 173
+Finished routing net _13_<0>
+Nets remaining: 172
+Finished routing net _76_
+Nets remaining: 171
+Finished routing net _77_
+Nets remaining: 170
+Finished routing net _79_
+Nets remaining: 169
+Finished routing net _13_<1>
+Nets remaining: 168
+Finished routing net _86_
+Nets remaining: 167
+Finished routing net _89_
+Nets remaining: 166
+Finished routing net _1_
+Nets remaining: 165
+Finished routing net _92_
+Nets remaining: 164
+Finished routing net _93_
+Nets remaining: 163
+Finished routing net _95_
+Nets remaining: 162
+Finished routing net _96_
+Nets remaining: 161
+Finished routing net _100_
+Nets remaining: 160
+Finished routing net _103_
+Nets remaining: 159
+Finished routing net _104_
+Nets remaining: 158
+Finished routing net _105_
+Nets remaining: 157
+Finished routing net _2_<0>
+Nets remaining: 156
+Finished routing net _109_
+Nets remaining: 155
+Finished routing net _110_
+Nets remaining: 154
+Finished routing net _111_
+Nets remaining: 153
+Finished routing net _112_
+Nets remaining: 152
+Finished routing net _2_<1>
+Nets remaining: 151
+Finished routing net _113_
+Nets remaining: 150
+Finished routing net _114_
+Nets remaining: 149
+Finished routing net _115_
+Nets remaining: 148
+Finished routing net _116_
+Nets remaining: 147
+Finished routing net _117_
+Nets remaining: 146
+Finished routing net _119_
+Nets remaining: 145
+Finished routing net _120_
+Nets remaining: 144
+Finished routing net _123_
+Nets remaining: 143
+Finished routing net _124_
+Nets remaining: 142
+Finished routing net _125_
+Nets remaining: 141
+Finished routing net _2_<2>
+Nets remaining: 140
+Finished routing net _127_
+Nets remaining: 139
+Finished routing net _0_
+Nets remaining: 138
+Finished routing net _128_
+Nets remaining: 137
+Finished routing net _130_
+Nets remaining: 136
+Finished routing net _131_
+Nets remaining: 135
+Finished routing net _3_
+Nets remaining: 134
+Finished routing net _132_
+Nets remaining: 133
+Finished routing net _4_
+Nets remaining: 132
+Finished routing net _134_
+Nets remaining: 131
+Finished routing net _138_
+Nets remaining: 130
+Finished routing net _11_<0>
+Nets remaining: 129
+Finished routing net _139_
+Nets remaining: 128
+Finished routing net _11_<1>
+Nets remaining: 127
+Finished routing net _140_
+Nets remaining: 126
+Finished routing net _11_<2>
+Nets remaining: 125
+Finished routing net _141_
+Nets remaining: 124
+Finished routing net _11_<3>
+Nets remaining: 123
+Finished routing net _142_
+Nets remaining: 122
+Finished routing net _143_
+Nets remaining: 121
+Finished routing net _145_
+Nets remaining: 120
+Finished routing net _146_
+Nets remaining: 119
+Finished routing net _147_
+Nets remaining: 118
+Finished routing net _148_
+Nets remaining: 117
+Finished routing net _149_
+Nets remaining: 116
+Finished routing net _150_
+Nets remaining: 115
+Finished routing net _10_<0>
+Nets remaining: 114
+Finished routing net _153_
+Nets remaining: 113
+Finished routing net _155_
+Nets remaining: 112
+Finished routing net _159_
+Nets remaining: 111
+Finished routing net _161_
+Nets remaining: 110
+Finished routing net _10_<1>
+Nets remaining: 109
+Finished routing net _162_
+Nets remaining: 108
+Finished routing net _163_
+Nets remaining: 107
+Finished routing net _10_<2>
+Nets remaining: 106
+Finished routing net _164_
+Nets remaining: 105
+Finished routing net _165_
+Nets remaining: 104
+Finished routing net _10_<3>
+Nets remaining: 103
+Finished routing net _166_
+Nets remaining: 102
+Finished routing net _9_<0>
+Nets remaining: 101
+Finished routing net _167_
+Nets remaining: 100
+Finished routing net _9_<1>
+Nets remaining: 99
+Finished routing net _168_
+Nets remaining: 98
+Finished routing net _9_<2>
+Nets remaining: 97
+Finished routing net _169_
+Nets remaining: 96
+Finished routing net _9_<3>
+Nets remaining: 95
+Finished routing net _171_
+Nets remaining: 94
+Finished routing net _172_
+Nets remaining: 93
+Finished routing net _173_
+Nets remaining: 92
+Finished routing net _15_<0>
+Nets remaining: 91
+Finished routing net _174_
+Nets remaining: 90
+Finished routing net _175_
+Nets remaining: 89
+Finished routing net _176_
+Nets remaining: 88
+Finished routing net _15_<1>
+Nets remaining: 87
+Finished routing net _177_
+Nets remaining: 86
+Finished routing net _178_
+Nets remaining: 85
+Finished routing net _15_<2>
+Nets remaining: 84
+Finished routing net _179_
+Nets remaining: 83
+Finished routing net _15_<3>
+Nets remaining: 82
+Finished routing net _181_
+Nets remaining: 81
+Finished routing net _182_
+Nets remaining: 80
+Finished routing net _183_
+Nets remaining: 79
+Finished routing net _7_<0>
+Nets remaining: 78
+Finished routing net _185_
+Nets remaining: 77
+Finished routing net _186_
+Nets remaining: 76
+Finished routing net _187_
+Nets remaining: 75
+Finished routing net _7_<1>
+Nets remaining: 74
+Finished routing net _188_
+Nets remaining: 73
+Finished routing net _189_
+Nets remaining: 72
+Finished routing net _192_
+Nets remaining: 71
+Finished routing net _193_
+Nets remaining: 70
+Finished routing net _194_
+Nets remaining: 69
+Finished routing net _14_<0>
+Nets remaining: 68
+Finished routing net _195_
+Nets remaining: 67
+Finished routing net _198_
+Nets remaining: 66
+Finished routing net _201_
+Nets remaining: 65
+Finished routing net _202_
+Nets remaining: 64
+Finished routing net _203_
+Nets remaining: 63
+Finished routing net _204_
+Nets remaining: 62
+Finished routing net _14_<1>
+Nets remaining: 61
+Finished routing net _205_
+Nets remaining: 60
+Finished routing net _14_<2>
+Nets remaining: 59
+Finished routing net _206_
+Nets remaining: 58
+Finished routing net _207_
+Nets remaining: 57
+Finished routing net _208_
+Nets remaining: 56
+Finished routing net _14_<3>
+Nets remaining: 55
+Finished routing net _209_
+Nets remaining: 54
+Finished routing net _12_
+Nets remaining: 53
+Finished routing net CORE_DATA_ADDR_mux
+Nets remaining: 52
+Finished routing net CORE_DATA_REGMux
+Nets remaining: 51
+Finished routing net CORE_DATA_ctrl<0>
+Nets remaining: 50
+Finished routing net CORE_DATA_ctrl<1>
+Nets remaining: 49
+Finished routing net CORE_DATA_ctrl<2>
+Nets remaining: 48
+Finished routing net CORE_DATA_load
+Nets remaining: 47
+Finished routing net CORE_DATA_write
+Nets remaining: 46
+Finished routing net CORE_INT_CHA<0>
+Nets remaining: 45
+Finished routing net CORE_INT_CHA<1>
+Nets remaining: 44
+Finished routing net CORE_INT_CHA<2>
+Nets remaining: 43
+Finished routing net CORE_INT_CHA<3>
+Nets remaining: 42
+Finished routing net CORE_INT_CHA<4>
+Nets remaining: 41
+Finished routing net CORE_INT_CHA<5>
+Nets remaining: 40
+Finished routing net CORE_INT_CHA<6>
+Nets remaining: 39
+Finished routing net CORE_INT_CHA<7>
+Nets remaining: 38
+Finished routing net CORE_INT_ctrl<0>
+Nets remaining: 37
+Finished routing net CORE_INT_ctrl<1>
+Nets remaining: 36
+Finished routing net CORE_InstructionToULAMux<0>
+Nets remaining: 35
+Finished routing net CORE_InstructionToULAMux<1>
+Nets remaining: 34
+Finished routing net CORE_PC_clk
+Nets remaining: 33
+Finished routing net CORE_PC_ctrl<0>
+Nets remaining: 32
+Finished routing net CORE_PC_ctrl<1>
+Nets remaining: 31
+Finished routing net CORE_REG_RD<0>
+Nets remaining: 30
+Finished routing net CORE_REG_RD<1>
+Nets remaining: 29
+Finished routing net CORE_REG_RD<2>
+Nets remaining: 28
+Finished routing net CORE_REG_RD<3>
+Nets remaining: 27
+Finished routing net CORE_REG_RF1<0>
+Nets remaining: 26
+Finished routing net CORE_REG_RF1<1>
+Nets remaining: 25
+Finished routing net CORE_REG_RF1<2>
+Nets remaining: 24
+Finished routing net CORE_REG_RF1<3>
+Nets remaining: 23
+Finished routing net CORE_REG_RF2<0>
+Nets remaining: 22
+Finished routing net CORE_REG_RF2<1>
+Nets remaining: 21
+Finished routing net CORE_REG_RF2<2>
+Nets remaining: 20
+Finished routing net CORE_REG_RF2<3>
+Nets remaining: 19
+Finished routing net CORE_REG_write
+Nets remaining: 18
+Finished routing net CORE_STACK_ctrl<0>
+Nets remaining: 17
+Finished routing net CORE_STACK_ctrl<1>
+Nets remaining: 16
+Finished routing net CORE_Status_ctrl<0>
+Nets remaining: 15
+Finished routing net CORE_Status_ctrl<1>
+Nets remaining: 14
+Finished routing net CORE_Status_ctrl<2>
+Nets remaining: 13
+Finished routing net CORE_Status_ctrl<3>
+Nets remaining: 12
+Finished routing net CORE_Status_ctrl<4>
+Nets remaining: 11
+Finished routing net CORE_ULAMux_inc_dec
+Nets remaining: 10
+Finished routing net CORE_ULA_ctrl<0>
+Nets remaining: 9
+Finished routing net CORE_ULA_ctrl<1>
+Nets remaining: 8
+Finished routing net CORE_ULA_ctrl<2>
+Nets remaining: 7
+Finished routing net CORE_ULA_ctrl<3>
+Nets remaining: 6
+
+----------------------------------------------
+Progress: Stage 3 total routes completed: 2435
+No failed routes!
+----------------------------------------------
+*** Writing DEF file NRISC_InstructionDecoder_route.def
+----------------------------------------------
+Final: No failed routes!
+----------------------------------------------
+Route segment 3 was not walked!
+No driver for net $undef
+Router script ended on dom jan 7 12:20:57 -02 2018

@@ -3,10 +3,11 @@
 .model NRISC_InstructionDecoder
 .inputs CORE_InstructionIN<0> CORE_InstructionIN<1> CORE_InstructionIN<2> CORE_InstructionIN<3> CORE_InstructionIN<4> CORE_InstructionIN<5> CORE_InstructionIN<6> CORE_InstructionIN<7> CORE_InstructionIN<8> CORE_InstructionIN<9> CORE_InstructionIN<10> CORE_InstructionIN<11> CORE_InstructionIN<12> CORE_InstructionIN<13> CORE_InstructionIN<14> CORE_InstructionIN<15> CORE_ctrl<0> CORE_ctrl<1> CORE_ctrl<2> CORE_ULA_flags<0> CORE_ULA_flags<1> CORE_ULA_flags<2> clk rst
 .outputs CORE_InstructionToULAMux<0> CORE_InstructionToULAMux<1> CORE_Status_ctrl<0> CORE_Status_ctrl<1> CORE_Status_ctrl<2> CORE_Status_ctrl<3> CORE_Status_ctrl<4> CORE_ULA_ctrl<0> CORE_ULA_ctrl<1> CORE_ULA_ctrl<2> CORE_ULA_ctrl<3> CORE_ULAMux_inc_dec CORE_REG_RF1<0> CORE_REG_RF1<1> CORE_REG_RF1<2> CORE_REG_RF1<3> CORE_REG_RF2<0> CORE_REG_RF2<1> CORE_REG_RF2<2> CORE_REG_RF2<3> CORE_REG_RD<0> CORE_REG_RD<1> CORE_REG_RD<2> CORE_REG_RD<3> CORE_REG_write CORE_DATA_write CORE_DATA_load CORE_DATA_ctrl<0> CORE_DATA_ctrl<1> CORE_DATA_ctrl<2> CORE_DATA_ADDR_mux CORE_DATA_REGMux CORE_STACK_ctrl<0> CORE_STACK_ctrl<1> CORE_PC_ctrl<0> CORE_PC_ctrl<1> CORE_PC_clk CORE_INT_CHA<0> CORE_INT_CHA<1> CORE_INT_CHA<2> CORE_INT_CHA<3> CORE_INT_CHA<4> CORE_INT_CHA<5> CORE_INT_CHA<6> CORE_INT_CHA<7> CORE_INT_ctrl<0> CORE_INT_ctrl<1>
+.gate BUFX4 A=_16_ Y=_16__bF$buf4
 .gate BUFX4 A=_16_ Y=_16__bF$buf3
-.gate BUFX4 A=_16_ Y=_16__bF$buf2
-.gate BUFX4 A=_16_ Y=_16__bF$buf1
-.gate BUFX4 A=_16_ Y=_16__bF$buf0
+.gate BUFX2 A=_16_ Y=_16__bF$buf2
+.gate BUFX2 A=_16_ Y=_16__bF$buf1
+.gate BUFX2 A=_16_ Y=_16__bF$buf0
 .gate BUFX4 A=clk Y=clk_bF$buf5
 .gate BUFX4 A=clk Y=clk_bF$buf4
 .gate BUFX4 A=clk Y=clk_bF$buf3
@@ -16,334 +17,329 @@
 .gate BUFX4 A=CORE_InstructionIN<15> Y=CORE_InstructionIN_15_bF$buf3
 .gate BUFX4 A=CORE_InstructionIN<15> Y=CORE_InstructionIN_15_bF$buf2
 .gate BUFX4 A=CORE_InstructionIN<15> Y=CORE_InstructionIN_15_bF$buf1
-.gate BUFX4 A=CORE_InstructionIN<15> Y=CORE_InstructionIN_15_bF$buf0
-.gate INVX8 A=CORE_InstructionIN_15_bF$buf2 Y=_16_
-.gate INVX8 A=CORE_InstructionIN<11> Y=_17_
-.gate INVX4 A=CORE_InstructionIN<13> Y=_18_
+.gate BUFX2 A=CORE_InstructionIN<15> Y=CORE_InstructionIN_15_bF$buf0
+.gate INVX8 A=CORE_InstructionIN_15_bF$buf0 Y=_16_
+.gate INVX4 A=CORE_InstructionIN<11> Y=_17_
+.gate INVX2 A=CORE_InstructionIN<13> Y=_18_
 .gate NOR2X1 A=CORE_InstructionIN<14> B=CORE_InstructionIN<12> Y=_19_
 .gate AND2X2 A=_19_ B=_18_ Y=_20_
-.gate NAND3X1 A=_16__bF$buf1 B=_17_ C=_20_ Y=_21_
-.gate NAND3X1 A=_216_<0> B=CORE_InstructionIN<14> C=_16__bF$buf1 Y=_22_
-.gate INVX2 A=CORE_InstructionIN<10> Y=_23_
-.gate NAND2X1 A=CORE_InstructionIN<9> B=_23_ Y=_24_
-.gate NOR2X1 A=CORE_InstructionIN<8> B=_24_ Y=_25_
-.gate AOI21X1 A=_216_<0> B=CORE_InstructionIN<10> C=_25_ Y=_26_
-.gate OAI21X1 A=_26_ B=_21_ C=_22_ Y=_6_<0>
+.gate NAND3X1 A=_16__bF$buf2 B=_17_ C=_20_ Y=_21_
+.gate NAND2X1 A=_211_<0> B=CORE_InstructionIN<14> Y=_22_
+.gate INVX4 A=CORE_InstructionIN<10> Y=_23_
+.gate INVX2 A=CORE_InstructionIN<9> Y=_24_
+.gate OAI21X1 A=CORE_InstructionIN<8> B=_24_ C=_23_ Y=_25_
+.gate OAI21X1 A=_211_<0> B=_23_ C=_25_ Y=_26_
+.gate OAI22X1 A=CORE_InstructionIN_15_bF$buf2 B=_22_ C=_26_ D=_21_ Y=_6_<0>
 .gate INVX4 A=CORE_InstructionIN<14> Y=_27_
-.gate NOR2X1 A=CORE_InstructionIN_15_bF$buf1 B=_27_ Y=_28_
-.gate NAND2X1 A=_216_<1> B=_28_ Y=_29_
+.gate NOR2X1 A=CORE_InstructionIN_15_bF$buf3 B=_27_ Y=_28_
+.gate NAND2X1 A=_211_<1> B=_28_ Y=_29_
 .gate AOI21X1 A=CORE_InstructionIN<8> B=CORE_InstructionIN<9> C=CORE_InstructionIN<10> Y=_30_
-.gate INVX2 A=_30_ Y=_31_
-.gate OAI21X1 A=_23_ B=_216_<1> C=_31_ Y=_32_
-.gate OAI21X1 A=_21_ B=_32_ C=_29_ Y=_6_<1>
-.gate INVX1 A=_215_<0> Y=_33_
-.gate INVX2 A=CORE_InstructionIN<0> Y=_34_
-.gate NOR2X1 A=_24_ B=_21_ Y=_35_
-.gate MUX2X1 A=_34_ B=_33_ S=_35_ Y=_5_<0>
-.gate INVX1 A=_215_<1> Y=_36_
-.gate INVX4 A=CORE_InstructionIN<1> Y=_37_
-.gate MUX2X1 A=_37_ B=_36_ S=_35_ Y=_5_<1>
-.gate INVX1 A=_215_<2> Y=_38_
-.gate INVX2 A=CORE_InstructionIN<2> Y=_39_
-.gate MUX2X1 A=_39_ B=_38_ S=_35_ Y=_5_<2>
-.gate INVX1 A=_215_<3> Y=_40_
-.gate INVX2 A=CORE_InstructionIN<3> Y=_41_
-.gate MUX2X1 A=_41_ B=_40_ S=_35_ Y=_5_<3>
-.gate INVX1 A=_215_<4> Y=_42_
-.gate INVX1 A=CORE_InstructionIN<4> Y=_43_
-.gate MUX2X1 A=_43_ B=_42_ S=_35_ Y=_5_<4>
-.gate INVX1 A=_215_<5> Y=_44_
-.gate INVX1 A=CORE_InstructionIN<5> Y=_45_
-.gate MUX2X1 A=_45_ B=_44_ S=_35_ Y=_5_<5>
-.gate INVX1 A=_215_<6> Y=_46_
-.gate INVX1 A=CORE_InstructionIN<6> Y=_47_
-.gate MUX2X1 A=_47_ B=_46_ S=_35_ Y=_5_<6>
-.gate INVX1 A=_215_<7> Y=_48_
-.gate INVX1 A=CORE_InstructionIN<7> Y=_49_
-.gate MUX2X1 A=_49_ B=_48_ S=_35_ Y=_5_<7>
-.gate INVX4 A=CORE_InstructionIN<9> Y=_50_
-.gate NAND3X1 A=CORE_InstructionIN<8> B=CORE_ULA_flags<1> C=_50_ Y=_51_
+.gate INVX1 A=_30_ Y=_31_
+.gate OAI21X1 A=_23_ B=_211_<1> C=_31_ Y=_32_
+.gate OAI21X1 A=_32_ B=_21_ C=_29_ Y=_6_<1>
+.gate INVX1 A=_210_<0> Y=_33_
+.gate INVX1 A=CORE_InstructionIN<0> Y=_34_
+.gate NAND2X1 A=CORE_InstructionIN<9> B=_23_ Y=_35_
+.gate NOR2X1 A=_35_ B=_21_ Y=_36_
+.gate MUX2X1 A=_34_ B=_33_ S=_36_ Y=_5_<0>
+.gate INVX1 A=_210_<1> Y=_37_
+.gate INVX1 A=CORE_InstructionIN<1> Y=_38_
+.gate MUX2X1 A=_38_ B=_37_ S=_36_ Y=_5_<1>
+.gate INVX1 A=_210_<2> Y=_39_
+.gate INVX2 A=CORE_InstructionIN<2> Y=_40_
+.gate MUX2X1 A=_40_ B=_39_ S=_36_ Y=_5_<2>
+.gate INVX1 A=_210_<3> Y=_41_
+.gate INVX2 A=CORE_InstructionIN<3> Y=_42_
+.gate MUX2X1 A=_42_ B=_41_ S=_36_ Y=_5_<3>
+.gate INVX1 A=_210_<4> Y=_43_
+.gate INVX1 A=CORE_InstructionIN<4> Y=_44_
+.gate MUX2X1 A=_44_ B=_43_ S=_36_ Y=_5_<4>
+.gate INVX1 A=_210_<5> Y=_45_
+.gate INVX1 A=CORE_InstructionIN<5> Y=_46_
+.gate MUX2X1 A=_46_ B=_45_ S=_36_ Y=_5_<5>
+.gate INVX1 A=_210_<6> Y=_47_
+.gate INVX1 A=CORE_InstructionIN<6> Y=_48_
+.gate MUX2X1 A=_48_ B=_47_ S=_36_ Y=_5_<6>
+.gate INVX1 A=_210_<7> Y=_49_
+.gate INVX1 A=CORE_InstructionIN<7> Y=_50_
+.gate MUX2X1 A=_50_ B=_49_ S=_36_ Y=_5_<7>
+.gate NAND3X1 A=CORE_InstructionIN<8> B=CORE_ULA_flags<1> C=_24_ Y=_51_
 .gate NAND3X1 A=CORE_InstructionIN<8> B=CORE_InstructionIN<9> C=CORE_ULA_flags<0> Y=_52_
 .gate INVX2 A=CORE_InstructionIN<8> Y=_53_
-.gate OAI21X1 A=_50_ B=CORE_ULA_flags<2> C=_53_ Y=_54_
-.gate NAND3X1 A=_52_ B=_51_ C=_54_ Y=_55_
-.gate NAND2X1 A=CORE_InstructionIN<12> B=_27_ Y=_56_
-.gate OR2X2 A=_56_ B=CORE_InstructionIN<13> Y=_57_
-.gate NOR2X1 A=_218_<0> B=_17_ Y=_58_
-.gate NOR2X1 A=_58_ B=_57_ Y=_59_
-.gate OAI21X1 A=_55_ B=CORE_InstructionIN<11> C=_59_ Y=_60_
-.gate NAND2X1 A=_18_ B=_19_ Y=_61_
-.gate NOR2X1 A=_17_ B=_61_ Y=_62_
-.gate OAI21X1 A=_23_ B=_50_ C=_218_<0> Y=_63_
-.gate NAND2X1 A=_31_ B=_63_ Y=_64_
-.gate AOI22X1 A=CORE_InstructionIN<14> B=_218_<0> C=_62_ D=_64_ Y=_65_
-.gate AOI21X1 A=_65_ B=_60_ C=CORE_InstructionIN_15_bF$buf3 Y=_8_<0>
-.gate INVX1 A=_218_<1> Y=_66_
-.gate NAND2X1 A=CORE_InstructionIN<10> B=CORE_InstructionIN<9> Y=_67_
-.gate AOI21X1 A=_66_ B=_67_ C=_30_ Y=_68_
-.gate NOR2X1 A=_66_ B=_57_ Y=_69_
-.gate AOI22X1 A=_62_ B=_68_ C=_69_ D=CORE_InstructionIN<11> Y=_70_
-.gate NAND2X1 A=CORE_InstructionIN<14> B=_218_<1> Y=_71_
-.gate AOI21X1 A=_71_ B=_70_ C=CORE_InstructionIN_15_bF$buf1 Y=_8_<1>
-.gate NAND2X1 A=CORE_InstructionIN<11> B=_20_ Y=_72_
-.gate NAND2X1 A=CORE_InstructionIN<14> B=_223_<0> Y=_73_
-.gate AOI21X1 A=_223_<0> B=_67_ C=_30_ Y=_74_
-.gate OAI21X1 A=_72_ B=_74_ C=_73_ Y=_75_
-.gate AND2X2 A=_75_ B=_16__bF$buf3 Y=_13_<0>
-.gate NOR2X1 A=_67_ B=_72_ Y=_76_
-.gate NOR2X1 A=_223_<1> B=_76_ Y=_77_
-.gate OAI21X1 A=_72_ B=_30_ C=_27_ Y=_78_
-.gate NAND2X1 A=_16__bF$buf1 B=_78_ Y=_79_
-.gate NOR2X1 A=_77_ B=_79_ Y=_13_<1>
-.gate NAND3X1 A=CORE_InstructionIN<2> B=_37_ C=_41_ Y=_80_
-.gate NOR2X1 A=CORE_InstructionIN<0> B=CORE_InstructionIN<1> Y=_81_
-.gate OR2X2 A=CORE_InstructionIN<2> B=CORE_InstructionIN<3> Y=_82_
-.gate OAI21X1 A=_81_ B=_82_ C=_80_ Y=_83_
-.gate NOR2X1 A=CORE_InstructionIN<2> B=CORE_InstructionIN<3> Y=_84_
-.gate NAND2X1 A=_81_ B=_84_ Y=_85_
-.gate AOI21X1 A=_211_ B=_85_ C=_83_ Y=_86_
-.gate NOR3X1 A=CORE_InstructionIN<14> B=CORE_InstructionIN<12> C=_18_ Y=_87_
-.gate NAND2X1 A=_16__bF$buf0 B=_87_ Y=_88_
-.gate NAND2X1 A=_211_ B=_28_ Y=_89_
-.gate OAI21X1 A=_86_ B=_88_ C=_89_ Y=_1_
-.gate NOR2X1 A=CORE_InstructionIN<14> B=_18_ Y=_90_
-.gate INVX2 A=_90_ Y=_91_
-.gate OAI21X1 A=_91_ B=CORE_InstructionIN_15_bF$buf0 C=_212_<0> Y=_92_
-.gate INVX1 A=_212_<0> Y=_93_
-.gate OAI21X1 A=CORE_InstructionIN<0> B=CORE_InstructionIN<1> C=_84_ Y=_94_
-.gate NAND3X1 A=_93_ B=_80_ C=_94_ Y=_95_
-.gate NOR3X1 A=CORE_InstructionIN<1> B=CORE_InstructionIN<3> C=_39_ Y=_96_
-.gate NAND2X1 A=CORE_InstructionIN<0> B=_37_ Y=_97_
-.gate NOR2X1 A=_82_ B=_97_ Y=_98_
-.gate NAND2X1 A=CORE_InstructionIN<13> B=_19_ Y=_99_
-.gate NOR3X1 A=_96_ B=_99_ C=_98_ Y=_100_
-.gate OR2X2 A=_56_ B=_18_ Y=_101_
-.gate NAND2X1 A=CORE_InstructionIN<10> B=CORE_InstructionIN<11> Y=_102_
-.gate OAI22X1 A=CORE_InstructionIN<8> B=CORE_InstructionIN<11> C=_102_ D=_212_<0> Y=_103_
-.gate NOR2X1 A=_103_ B=_101_ Y=_104_
-.gate AOI21X1 A=_95_ B=_100_ C=_104_ Y=_105_
-.gate OAI21X1 A=_105_ B=CORE_InstructionIN_15_bF$buf0 C=_92_ Y=_2_<0>
-.gate INVX1 A=_212_<1> Y=_106_
-.gate NOR2X1 A=CORE_InstructionIN_15_bF$buf3 B=_91_ Y=_107_
-.gate INVX1 A=_101_ Y=_108_
-.gate NOR2X1 A=_212_<1> B=_102_ Y=_109_
-.gate AOI21X1 A=_17_ B=_24_ C=_109_ Y=_110_
-.gate AOI21X1 A=_106_ B=_80_ C=_99_ Y=_111_
-.gate AOI22X1 A=_94_ B=_111_ C=_108_ D=_110_ Y=_112_
-.gate OAI22X1 A=_106_ B=_107_ C=_112_ D=CORE_InstructionIN_15_bF$buf3 Y=_2_<1>
-.gate OAI21X1 A=_91_ B=CORE_InstructionIN_15_bF$buf0 C=_212_<2> Y=_113_
-.gate INVX1 A=_212_<2> Y=_114_
-.gate NAND3X1 A=_114_ B=_80_ C=_94_ Y=_115_
-.gate NAND2X1 A=CORE_InstructionIN<2> B=_41_ Y=_116_
-.gate NOR2X1 A=_116_ B=_97_ Y=_117_
-.gate NAND2X1 A=CORE_InstructionIN<0> B=_84_ Y=_118_
-.gate NAND2X1 A=_118_ B=_87_ Y=_119_
-.gate NOR2X1 A=_117_ B=_119_ Y=_120_
-.gate NOR2X1 A=CORE_InstructionIN<10> B=CORE_InstructionIN<11> Y=_121_
-.gate INVX1 A=_121_ Y=_122_
-.gate OAI21X1 A=_212_<2> B=_102_ C=_122_ Y=_123_
-.gate NOR2X1 A=_123_ B=_101_ Y=_124_
-.gate AOI21X1 A=_115_ B=_120_ C=_124_ Y=_125_
-.gate OAI21X1 A=_125_ B=CORE_InstructionIN_15_bF$buf0 C=_113_ Y=_2_<2>
-.gate AOI21X1 A=CORE_InstructionIN<13> B=CORE_InstructionIN<12> C=CORE_InstructionIN<14> Y=_126_
-.gate OAI21X1 A=_27_ B=_210_ C=_16__bF$buf2 Y=_127_
-.gate NOR2X1 A=_126_ B=_127_ Y=_0_
-.gate INVX1 A=_83_ Y=_128_
-.gate INVX1 A=_85_ Y=_129_
-.gate NOR2X1 A=_129_ B=_88_ Y=_130_
-.gate OAI21X1 A=_130_ B=_28_ C=_213_ Y=_131_
-.gate OAI21X1 A=_128_ B=_88_ C=_131_ Y=_3_
-.gate OAI21X1 A=_27_ B=_214_ C=_16__bF$buf3 Y=_132_
-.gate NOR2X1 A=_126_ B=_132_ Y=_4_
-.gate INVX1 A=CORE_InstructionIN<12> Y=_133_
-.gate OAI21X1 A=_133_ B=CORE_InstructionIN<14> C=_16__bF$buf3 Y=_134_
-.gate AOI21X1 A=_30_ B=_62_ C=_134_ Y=_135_
-.gate NAND2X1 A=CORE_InstructionIN<11> B=_30_ Y=_136_
-.gate AOI21X1 A=_136_ B=_20_ C=CORE_InstructionIN<14> Y=_137_
-.gate NAND2X1 A=_221_<0> B=_16__bF$buf0 Y=_138_
-.gate OAI22X1 A=_137_ B=_138_ C=_135_ D=_34_ Y=_11_<0>
-.gate NAND2X1 A=_221_<1> B=_16__bF$buf0 Y=_139_
-.gate OAI22X1 A=_137_ B=_139_ C=_135_ D=_37_ Y=_11_<1>
-.gate NAND2X1 A=_221_<2> B=_16__bF$buf0 Y=_140_
-.gate OAI22X1 A=_137_ B=_140_ C=_135_ D=_39_ Y=_11_<2>
-.gate NAND2X1 A=_221_<3> B=_16__bF$buf0 Y=_141_
-.gate OAI22X1 A=_137_ B=_141_ C=_135_ D=_41_ Y=_11_<3>
-.gate NOR2X1 A=_53_ B=_17_ Y=_142_
-.gate AOI21X1 A=_30_ B=_142_ C=CORE_InstructionIN_15_bF$buf2 Y=_143_
-.gate INVX1 A=_220_<0> Y=_144_
-.gate AOI21X1 A=_144_ B=_136_ C=_61_ Y=_145_
-.gate OAI21X1 A=_143_ B=CORE_InstructionIN<4> C=_145_ Y=_146_
-.gate OAI21X1 A=_90_ B=CORE_InstructionIN_15_bF$buf2 C=CORE_InstructionIN<4> Y=_147_
-.gate AOI21X1 A=CORE_InstructionIN<11> B=_144_ C=_57_ Y=_148_
-.gate OAI21X1 A=_121_ B=CORE_InstructionIN_15_bF$buf3 C=_43_ Y=_149_
-.gate AOI22X1 A=_220_<0> B=_28_ C=_148_ D=_149_ Y=_150_
-.gate NAND3X1 A=_146_ B=_147_ C=_150_ Y=_10_<0>
-.gate NOR2X1 A=_17_ B=_57_ Y=_151_
-.gate OAI21X1 A=_17_ B=_31_ C=_20_ Y=_152_
-.gate NAND2X1 A=_27_ B=_152_ Y=_153_
-.gate NOR2X1 A=_151_ B=_153_ Y=_154_
-.gate NAND2X1 A=_220_<1> B=_16__bF$buf2 Y=_155_
-.gate NAND2X1 A=CORE_InstructionIN<8> B=_30_ Y=_156_
-.gate NOR2X1 A=_156_ B=_72_ Y=_157_
-.gate OAI21X1 A=_18_ B=CORE_InstructionIN<14> C=_16__bF$buf3 Y=_158_
-.gate INVX1 A=_158_ Y=_159_
-.gate OAI21X1 A=_57_ B=_122_ C=_159_ Y=_160_
-.gate OAI21X1 A=_157_ B=_160_ C=CORE_InstructionIN<5> Y=_161_
-.gate OAI21X1 A=_154_ B=_155_ C=_161_ Y=_10_<1>
-.gate NAND2X1 A=_220_<2> B=_16__bF$buf0 Y=_162_
-.gate OAI21X1 A=_157_ B=_160_ C=CORE_InstructionIN<6> Y=_163_
-.gate OAI21X1 A=_154_ B=_162_ C=_163_ Y=_10_<2>
-.gate NAND2X1 A=_220_<3> B=_16__bF$buf2 Y=_164_
-.gate OAI21X1 A=_157_ B=_160_ C=CORE_InstructionIN<7> Y=_165_
-.gate OAI21X1 A=_154_ B=_164_ C=_165_ Y=_10_<3>
-.gate NOR2X1 A=_219_<0> B=_158_ Y=_166_
-.gate AOI21X1 A=_53_ B=_158_ C=_166_ Y=_9_<0>
-.gate NOR2X1 A=_219_<1> B=_158_ Y=_167_
-.gate AOI21X1 A=_50_ B=_158_ C=_167_ Y=_9_<1>
-.gate NOR2X1 A=_219_<2> B=_158_ Y=_168_
-.gate AOI21X1 A=_23_ B=_158_ C=_168_ Y=_9_<2>
-.gate NOR2X1 A=_219_<3> B=_158_ Y=_169_
-.gate AOI21X1 A=_17_ B=_107_ C=_169_ Y=_9_<3>
-.gate NAND2X1 A=_126_ B=_152_ Y=_170_
-.gate NAND2X1 A=_225_<0> B=_170_ Y=_171_
-.gate OAI21X1 A=_99_ B=_17_ C=_57_ Y=_172_
-.gate NAND2X1 A=CORE_InstructionIN_15_bF$buf2 B=_172_ Y=_173_
-.gate OAI21X1 A=_171_ B=CORE_InstructionIN_15_bF$buf2 C=_173_ Y=_15_<0>
-.gate OAI21X1 A=_27_ B=_133_ C=_99_ Y=_174_
-.gate AOI21X1 A=CORE_InstructionIN<11> B=_108_ C=_174_ Y=_175_
-.gate NAND3X1 A=_16__bF$buf1 B=_225_<1> C=_170_ Y=_176_
-.gate OAI21X1 A=_16__bF$buf1 B=_175_ C=_176_ Y=_15_<1>
-.gate OAI21X1 A=CORE_InstructionIN<14> B=CORE_InstructionIN<12> C=CORE_InstructionIN<13> Y=_177_
-.gate NAND3X1 A=_16__bF$buf3 B=_225_<2> C=_170_ Y=_178_
-.gate OAI21X1 A=_16__bF$buf2 B=_177_ C=_178_ Y=_15_<2>
-.gate NAND3X1 A=_16__bF$buf2 B=_225_<3> C=_170_ Y=_179_
-.gate OAI21X1 A=_16__bF$buf2 B=_27_ C=_179_ Y=_15_<3>
-.gate NOR2X1 A=CORE_InstructionIN_15_bF$buf3 B=_61_ Y=_180_
-.gate AOI22X1 A=CORE_InstructionIN_15_bF$buf1 B=_91_ C=_180_ D=_25_ Y=_181_
-.gate AND2X2 A=_16__bF$buf1 B=_217_<0> Y=_182_
-.gate OAI21X1 A=_170_ B=_151_ C=_182_ Y=_183_
-.gate OAI21X1 A=_17_ B=_181_ C=_183_ Y=_7_<0>
-.gate INVX1 A=_217_<1> Y=_184_
-.gate OR2X2 A=_126_ B=_184_ Y=_185_
-.gate OAI21X1 A=_136_ B=_61_ C=_184_ Y=_186_
-.gate OAI21X1 A=_151_ B=_20_ C=_186_ Y=_187_
-.gate AOI21X1 A=_185_ B=_187_ C=CORE_InstructionIN_15_bF$buf1 Y=_7_<1>
-.gate NOR2X1 A=CORE_InstructionIN<4> B=CORE_InstructionIN<5> Y=_188_
-.gate NOR2X1 A=CORE_InstructionIN<6> B=CORE_InstructionIN<7> Y=_189_
-.gate NAND2X1 A=_188_ B=_189_ Y=_190_
-.gate NOR2X1 A=_190_ B=_156_ Y=_191_
-.gate NAND2X1 A=_98_ B=_191_ Y=_192_
-.gate OAI21X1 A=_192_ B=_21_ C=_224_<0> Y=_193_
-.gate NAND2X1 A=_129_ B=_191_ Y=_194_
-.gate OAI21X1 A=_21_ B=_194_ C=_193_ Y=_14_<0>
-.gate INVX1 A=_94_ Y=_195_
-.gate OAI21X1 A=_34_ B=_37_ C=_195_ Y=_196_
-.gate INVX1 A=_190_ Y=_197_
-.gate NAND3X1 A=_53_ B=_50_ C=_121_ Y=_198_
-.gate INVX1 A=_198_ Y=_199_
-.gate NAND3X1 A=_197_ B=_199_ C=_180_ Y=_200_
-.gate NAND2X1 A=_199_ B=_180_ Y=_201_
-.gate NOR2X1 A=_34_ B=_37_ Y=_202_
-.gate NAND3X1 A=_84_ B=_202_ C=_197_ Y=_203_
-.gate OAI21X1 A=_201_ B=_203_ C=_224_<1> Y=_204_
-.gate OAI21X1 A=_196_ B=_200_ C=_204_ Y=_14_<1>
-.gate OAI21X1 A=_200_ B=_196_ C=_224_<2> Y=_205_
-.gate OAI21X1 A=_118_ B=_200_ C=_205_ Y=_14_<2>
-.gate INVX1 A=_224_<3> Y=_206_
-.gate NAND2X1 A=CORE_InstructionIN<8> B=CORE_InstructionIN<9> Y=_207_
-.gate NOR2X1 A=_207_ B=_102_ Y=_208_
-.gate AOI21X1 A=_208_ B=_180_ C=_206_ Y=_14_<3>
-.gate NAND2X1 A=_222_ B=_78_ Y=_209_
-.gate NAND3X1 A=_16__bF$buf3 B=_99_ C=_209_ Y=_12_
-.gate BUFX2 A=_210_ Y=CORE_DATA_ADDR_mux
-.gate BUFX2 A=_211_ Y=CORE_DATA_REGMux
-.gate BUFX2 A=_212_<0> Y=CORE_DATA_ctrl<0>
-.gate BUFX2 A=_212_<1> Y=CORE_DATA_ctrl<1>
-.gate BUFX2 A=_212_<2> Y=CORE_DATA_ctrl<2>
-.gate BUFX2 A=_213_ Y=CORE_DATA_load
-.gate BUFX2 A=_214_ Y=CORE_DATA_write
-.gate BUFX2 A=_215_<0> Y=CORE_INT_CHA<0>
-.gate BUFX2 A=_215_<1> Y=CORE_INT_CHA<1>
-.gate BUFX2 A=_215_<2> Y=CORE_INT_CHA<2>
-.gate BUFX2 A=_215_<3> Y=CORE_INT_CHA<3>
-.gate BUFX2 A=_215_<4> Y=CORE_INT_CHA<4>
-.gate BUFX2 A=_215_<5> Y=CORE_INT_CHA<5>
-.gate BUFX2 A=_215_<6> Y=CORE_INT_CHA<6>
-.gate BUFX2 A=_215_<7> Y=CORE_INT_CHA<7>
-.gate BUFX2 A=_216_<0> Y=CORE_INT_ctrl<0>
-.gate BUFX2 A=_216_<1> Y=CORE_INT_ctrl<1>
-.gate BUFX2 A=_217_<0> Y=CORE_InstructionToULAMux<0>
-.gate BUFX2 A=_217_<1> Y=CORE_InstructionToULAMux<1>
+.gate OAI21X1 A=CORE_ULA_flags<2> B=_24_ C=_53_ Y=_54_
+.gate NAND3X1 A=_51_ B=_52_ C=_54_ Y=_55_
+.gate INVX1 A=_213_<0> Y=_56_
+.gate NAND3X1 A=CORE_InstructionIN<12> B=_27_ C=_18_ Y=_57_
+.gate AOI21X1 A=CORE_InstructionIN<11> B=_56_ C=_57_ Y=_58_
+.gate OAI21X1 A=CORE_InstructionIN<11> B=_55_ C=_58_ Y=_59_
+.gate NAND3X1 A=_18_ B=CORE_InstructionIN<11> C=_19_ Y=_60_
+.gate INVX2 A=_60_ Y=_61_
+.gate NOR2X1 A=_23_ B=_24_ Y=_62_
+.gate OAI21X1 A=_56_ B=_62_ C=_31_ Y=_63_
+.gate AOI22X1 A=CORE_InstructionIN<14> B=_213_<0> C=_61_ D=_63_ Y=_64_
+.gate AOI21X1 A=_64_ B=_59_ C=CORE_InstructionIN_15_bF$buf1 Y=_8_<0>
+.gate INVX1 A=_213_<1> Y=_65_
+.gate NAND2X1 A=_62_ B=_61_ Y=_66_
+.gate NOR2X1 A=_17_ B=_57_ Y=_67_
+.gate OAI21X1 A=_30_ B=_60_ C=_27_ Y=_68_
+.gate OAI21X1 A=_67_ B=_68_ C=_16__bF$buf4 Y=_69_
+.gate AOI21X1 A=_65_ B=_66_ C=_69_ Y=_8_<1>
+.gate OAI21X1 A=_23_ B=_24_ C=_218_<0> Y=_70_
+.gate NAND2X1 A=_70_ B=_31_ Y=_71_
+.gate AOI22X1 A=CORE_InstructionIN<14> B=_218_<0> C=_61_ D=_71_ Y=_72_
+.gate NOR2X1 A=CORE_InstructionIN_15_bF$buf1 B=_72_ Y=_13_<0>
+.gate INVX1 A=_218_<1> Y=_73_
+.gate NOR2X1 A=_30_ B=_60_ Y=_74_
+.gate OAI21X1 A=CORE_InstructionIN<14> B=_74_ C=_16__bF$buf4 Y=_75_
+.gate AOI21X1 A=_73_ B=_66_ C=_75_ Y=_13_<1>
+.gate NAND3X1 A=CORE_InstructionIN<2> B=_38_ C=_42_ Y=_76_
+.gate NOR2X1 A=CORE_InstructionIN<0> B=CORE_InstructionIN<1> Y=_77_
+.gate NOR2X1 A=CORE_InstructionIN<2> B=CORE_InstructionIN<3> Y=_78_
+.gate INVX1 A=_78_ Y=_79_
+.gate OAI21X1 A=_77_ B=_79_ C=_76_ Y=_80_
+.gate NAND2X1 A=_77_ B=_78_ Y=_81_
+.gate AOI21X1 A=_206_ B=_81_ C=_80_ Y=_82_
+.gate NAND2X1 A=CORE_InstructionIN<13> B=_19_ Y=_83_
+.gate INVX1 A=_83_ Y=_84_
+.gate NAND2X1 A=_16__bF$buf2 B=_84_ Y=_85_
+.gate NAND2X1 A=_206_ B=_28_ Y=_86_
+.gate OAI21X1 A=_85_ B=_82_ C=_86_ Y=_1_
+.gate NOR2X1 A=CORE_InstructionIN<14> B=_18_ Y=_87_
+.gate INVX1 A=_87_ Y=_88_
+.gate OAI21X1 A=CORE_InstructionIN_15_bF$buf3 B=_88_ C=_207_<0> Y=_89_
+.gate NAND2X1 A=CORE_InstructionIN<13> B=CORE_InstructionIN<12> Y=_90_
+.gate NOR2X1 A=CORE_InstructionIN<14> B=_90_ Y=_91_
+.gate INVX1 A=_207_<0> Y=_92_
+.gate OAI21X1 A=CORE_InstructionIN<0> B=CORE_InstructionIN<1> C=_78_ Y=_93_
+.gate NAND3X1 A=_92_ B=_76_ C=_93_ Y=_94_
+.gate NOR2X1 A=CORE_InstructionIN<1> B=_34_ Y=_95_
+.gate NAND3X1 A=CORE_InstructionIN<13> B=_19_ C=_76_ Y=_96_
+.gate AOI21X1 A=_78_ B=_95_ C=_96_ Y=_97_
+.gate NOR2X1 A=_23_ B=_17_ Y=_98_
+.gate AOI22X1 A=_53_ B=_17_ C=_92_ D=_98_ Y=_99_
+.gate AOI22X1 A=_91_ B=_99_ C=_94_ D=_97_ Y=_100_
+.gate OAI21X1 A=CORE_InstructionIN_15_bF$buf3 B=_100_ C=_89_ Y=_2_<0>
+.gate INVX1 A=_207_<1> Y=_101_
+.gate NOR2X1 A=CORE_InstructionIN_15_bF$buf3 B=_88_ Y=_102_
+.gate AOI22X1 A=_17_ B=_35_ C=_101_ D=_98_ Y=_103_
+.gate AOI21X1 A=_76_ B=_101_ C=_83_ Y=_104_
+.gate AOI22X1 A=_103_ B=_91_ C=_93_ D=_104_ Y=_105_
+.gate OAI22X1 A=_101_ B=_102_ C=CORE_InstructionIN_15_bF$buf3 D=_105_ Y=_2_<1>
+.gate OAI21X1 A=CORE_InstructionIN_15_bF$buf2 B=_88_ C=_207_<2> Y=_106_
+.gate INVX1 A=_207_<2> Y=_107_
+.gate NAND3X1 A=_107_ B=_76_ C=_93_ Y=_108_
+.gate NOR2X1 A=CORE_InstructionIN<3> B=_40_ Y=_109_
+.gate NAND3X1 A=CORE_InstructionIN<0> B=_40_ C=_42_ Y=_110_
+.gate NAND3X1 A=CORE_InstructionIN<13> B=_19_ C=_110_ Y=_111_
+.gate AOI21X1 A=_109_ B=_95_ C=_111_ Y=_112_
+.gate NOR2X1 A=CORE_InstructionIN<10> B=CORE_InstructionIN<11> Y=_113_
+.gate AOI21X1 A=_98_ B=_107_ C=_113_ Y=_114_
+.gate AOI22X1 A=_91_ B=_114_ C=_108_ D=_112_ Y=_115_
+.gate OAI21X1 A=CORE_InstructionIN_15_bF$buf2 B=_115_ C=_106_ Y=_2_<2>
+.gate INVX1 A=CORE_InstructionIN<12> Y=_116_
+.gate OAI21X1 A=_18_ B=_116_ C=_27_ Y=_117_
+.gate INVX1 A=_117_ Y=_118_
+.gate OAI21X1 A=_205_ B=_27_ C=_16__bF$buf3 Y=_119_
+.gate NOR2X1 A=_119_ B=_118_ Y=_0_
+.gate NAND2X1 A=CORE_InstructionIN<14> B=_208_ Y=_120_
+.gate AND2X2 A=_81_ B=_208_ Y=_121_
+.gate OAI21X1 A=_80_ B=_121_ C=_84_ Y=_122_
+.gate AOI21X1 A=_122_ B=_120_ C=CORE_InstructionIN_15_bF$buf2 Y=_3_
+.gate OAI21X1 A=_209_ B=_27_ C=_16__bF$buf3 Y=_123_
+.gate NOR2X1 A=_123_ B=_118_ Y=_4_
+.gate OAI21X1 A=CORE_InstructionIN<14> B=_116_ C=_16__bF$buf1 Y=_124_
+.gate AOI21X1 A=_61_ B=_30_ C=_124_ Y=_125_
+.gate NAND2X1 A=CORE_InstructionIN<11> B=_30_ Y=_126_
+.gate AOI21X1 A=_20_ B=_126_ C=CORE_InstructionIN<14> Y=_127_
+.gate NAND2X1 A=_216_<0> B=_16__bF$buf1 Y=_128_
+.gate OAI22X1 A=_127_ B=_128_ C=_34_ D=_125_ Y=_11_<0>
+.gate NAND2X1 A=_216_<1> B=_16__bF$buf1 Y=_129_
+.gate OAI22X1 A=_127_ B=_129_ C=_38_ D=_125_ Y=_11_<1>
+.gate NAND2X1 A=_216_<2> B=_16__bF$buf3 Y=_130_
+.gate OAI22X1 A=_127_ B=_130_ C=_40_ D=_125_ Y=_11_<2>
+.gate NAND2X1 A=_216_<3> B=_16__bF$buf1 Y=_131_
+.gate OAI22X1 A=_127_ B=_131_ C=_42_ D=_125_ Y=_11_<3>
+.gate NOR2X1 A=_53_ B=_17_ Y=_132_
+.gate AOI21X1 A=_132_ B=_30_ C=CORE_InstructionIN_15_bF$buf0 Y=_133_
+.gate INVX1 A=_215_<0> Y=_134_
+.gate NAND2X1 A=_18_ B=_19_ Y=_135_
+.gate AOI21X1 A=_126_ B=_134_ C=_135_ Y=_136_
+.gate OAI21X1 A=CORE_InstructionIN<4> B=_133_ C=_136_ Y=_137_
+.gate OAI21X1 A=CORE_InstructionIN_15_bF$buf1 B=_87_ C=CORE_InstructionIN<4> Y=_138_
+.gate AOI21X1 A=CORE_InstructionIN<11> B=_134_ C=_57_ Y=_139_
+.gate OAI21X1 A=CORE_InstructionIN_15_bF$buf1 B=_113_ C=_44_ Y=_140_
+.gate AOI22X1 A=_215_<0> B=_28_ C=_140_ D=_139_ Y=_141_
+.gate NAND3X1 A=_138_ B=_141_ C=_137_ Y=_10_<0>
+.gate OAI21X1 A=_17_ B=_57_ C=_127_ Y=_142_
+.gate AND2X2 A=_16__bF$buf4 B=_215_<1> Y=_143_
+.gate NAND2X1 A=_143_ B=_142_ Y=_144_
+.gate NAND2X1 A=CORE_InstructionIN<8> B=_30_ Y=_145_
+.gate NOR2X1 A=_145_ B=_60_ Y=_146_
+.gate INVX1 A=_113_ Y=_147_
+.gate OAI21X1 A=CORE_InstructionIN<14> B=_18_ C=_16__bF$buf2 Y=_148_
+.gate INVX1 A=_148_ Y=_149_
+.gate OAI21X1 A=_147_ B=_57_ C=_149_ Y=_150_
+.gate OAI21X1 A=_146_ B=_150_ C=CORE_InstructionIN<5> Y=_151_
+.gate NAND2X1 A=_151_ B=_144_ Y=_10_<1>
+.gate AND2X2 A=_16__bF$buf4 B=_215_<2> Y=_152_
+.gate NAND2X1 A=_152_ B=_142_ Y=_153_
+.gate OAI21X1 A=_146_ B=_150_ C=CORE_InstructionIN<6> Y=_154_
+.gate NAND2X1 A=_154_ B=_153_ Y=_10_<2>
+.gate AND2X2 A=_16__bF$buf4 B=_215_<3> Y=_155_
+.gate NAND2X1 A=_155_ B=_142_ Y=_156_
+.gate OAI21X1 A=_146_ B=_150_ C=CORE_InstructionIN<7> Y=_157_
+.gate NAND2X1 A=_157_ B=_156_ Y=_10_<3>
+.gate NOR2X1 A=_214_<0> B=_148_ Y=_158_
+.gate AOI21X1 A=_53_ B=_148_ C=_158_ Y=_9_<0>
+.gate NOR2X1 A=_214_<1> B=_148_ Y=_159_
+.gate AOI21X1 A=_24_ B=_148_ C=_159_ Y=_9_<1>
+.gate NOR2X1 A=_214_<2> B=_148_ Y=_160_
+.gate AOI21X1 A=_23_ B=_148_ C=_160_ Y=_9_<2>
+.gate INVX1 A=_214_<3> Y=_161_
+.gate AOI22X1 A=_161_ B=_149_ C=_17_ D=_102_ Y=_9_<3>
+.gate AOI21X1 A=_20_ B=_126_ C=_117_ Y=_162_
+.gate INVX1 A=_57_ Y=_163_
+.gate AOI21X1 A=_84_ B=CORE_InstructionIN<11> C=_163_ Y=_164_
+.gate NAND2X1 A=_220_<0> B=_16__bF$buf3 Y=_165_
+.gate OAI22X1 A=_162_ B=_165_ C=_16__bF$buf3 D=_164_ Y=_15_<0>
+.gate OAI21X1 A=_27_ B=_116_ C=_83_ Y=_166_
+.gate AOI21X1 A=CORE_InstructionIN<11> B=_91_ C=_166_ Y=_167_
+.gate NAND2X1 A=_220_<1> B=_16__bF$buf0 Y=_168_
+.gate OAI22X1 A=_162_ B=_168_ C=_16__bF$buf0 D=_167_ Y=_15_<1>
+.gate OAI21X1 A=CORE_InstructionIN<14> B=CORE_InstructionIN<12> C=CORE_InstructionIN<13> Y=_169_
+.gate NAND2X1 A=_220_<2> B=_16__bF$buf3 Y=_170_
+.gate OAI22X1 A=_16__bF$buf1 B=_169_ C=_170_ D=_162_ Y=_15_<2>
+.gate NAND2X1 A=_220_<3> B=_16__bF$buf0 Y=_171_
+.gate OAI22X1 A=_16__bF$buf0 B=_27_ C=_171_ D=_162_ Y=_15_<3>
+.gate NAND2X1 A=_16__bF$buf2 B=_20_ Y=_172_
+.gate OR2X2 A=_35_ B=CORE_InstructionIN<8> Y=_173_
+.gate OAI22X1 A=_16__bF$buf2 B=_87_ C=_173_ D=_172_ Y=_174_
+.gate NAND2X1 A=CORE_InstructionIN<11> B=_174_ Y=_175_
+.gate NAND2X1 A=CORE_InstructionIN<11> B=_163_ Y=_176_
+.gate AND2X2 A=_162_ B=_176_ Y=_177_
+.gate NAND2X1 A=_212_<0> B=_16__bF$buf0 Y=_178_
+.gate OAI21X1 A=_177_ B=_178_ C=_175_ Y=_7_<0>
+.gate NAND2X1 A=_212_<1> B=_117_ Y=_179_
+.gate INVX1 A=_212_<1> Y=_180_
+.gate OAI21X1 A=_135_ B=_126_ C=_180_ Y=_181_
+.gate OAI21X1 A=_20_ B=_67_ C=_181_ Y=_182_
+.gate AOI21X1 A=_182_ B=_179_ C=CORE_InstructionIN_15_bF$buf0 Y=_7_<1>
+.gate NOR2X1 A=CORE_InstructionIN<1> B=_110_ Y=_183_
+.gate NOR2X1 A=CORE_InstructionIN<4> B=CORE_InstructionIN<5> Y=_184_
+.gate NOR2X1 A=CORE_InstructionIN<6> B=CORE_InstructionIN<7> Y=_185_
+.gate NAND2X1 A=_184_ B=_185_ Y=_186_
+.gate NOR2X1 A=_186_ B=_145_ Y=_187_
+.gate NAND2X1 A=_183_ B=_187_ Y=_188_
+.gate OAI21X1 A=_21_ B=_188_ C=_219_<0> Y=_189_
+.gate NAND3X1 A=_77_ B=_78_ C=_187_ Y=_190_
+.gate OAI21X1 A=_21_ B=_190_ C=_189_ Y=_14_<0>
+.gate INVX1 A=_219_<1> Y=_191_
+.gate NAND2X1 A=CORE_InstructionIN<0> B=CORE_InstructionIN<1> Y=_192_
+.gate NOR2X1 A=_192_ B=_79_ Y=_193_
+.gate NOR2X1 A=CORE_InstructionIN_15_bF$buf0 B=_135_ Y=_194_
+.gate NAND3X1 A=_53_ B=_24_ C=_113_ Y=_195_
+.gate NOR2X1 A=_186_ B=_195_ Y=_196_
+.gate NAND2X1 A=_194_ B=_196_ Y=_197_
+.gate INVX1 A=_197_ Y=_198_
+.gate AOI21X1 A=CORE_InstructionIN<0> B=CORE_InstructionIN<1> C=_93_ Y=_199_
+.gate NAND3X1 A=_194_ B=_199_ C=_196_ Y=_200_
+.gate AOI22X1 A=_200_ B=_191_ C=_193_ D=_198_ Y=_14_<1>
+.gate NAND2X1 A=_219_<2> B=_200_ Y=_201_
+.gate OAI21X1 A=_110_ B=_197_ C=_201_ Y=_14_<2>
+.gate NAND3X1 A=CORE_InstructionIN<8> B=CORE_InstructionIN<9> C=_98_ Y=_202_
+.gate OAI21X1 A=_202_ B=_172_ C=_219_<3> Y=_203_
+.gate INVX1 A=_203_ Y=_14_<3>
+.gate OAI21X1 A=CORE_InstructionIN<14> B=_74_ C=_217_ Y=_204_
+.gate NAND3X1 A=_16__bF$buf4 B=_83_ C=_204_ Y=_12_
+.gate BUFX2 A=_205_ Y=CORE_DATA_ADDR_mux
+.gate BUFX2 A=_206_ Y=CORE_DATA_REGMux
+.gate BUFX2 A=_207_<0> Y=CORE_DATA_ctrl<0>
+.gate BUFX2 A=_207_<1> Y=CORE_DATA_ctrl<1>
+.gate BUFX2 A=_207_<2> Y=CORE_DATA_ctrl<2>
+.gate BUFX2 A=_208_ Y=CORE_DATA_load
+.gate BUFX2 A=_209_ Y=CORE_DATA_write
+.gate BUFX2 A=_210_<0> Y=CORE_INT_CHA<0>
+.gate BUFX2 A=_210_<1> Y=CORE_INT_CHA<1>
+.gate BUFX2 A=_210_<2> Y=CORE_INT_CHA<2>
+.gate BUFX2 A=_210_<3> Y=CORE_INT_CHA<3>
+.gate BUFX2 A=_210_<4> Y=CORE_INT_CHA<4>
+.gate BUFX2 A=_210_<5> Y=CORE_INT_CHA<5>
+.gate BUFX2 A=_210_<6> Y=CORE_INT_CHA<6>
+.gate BUFX2 A=_210_<7> Y=CORE_INT_CHA<7>
+.gate BUFX2 A=_211_<0> Y=CORE_INT_ctrl<0>
+.gate BUFX2 A=_211_<1> Y=CORE_INT_ctrl<1>
+.gate BUFX2 A=_212_<0> Y=CORE_InstructionToULAMux<0>
+.gate BUFX2 A=_212_<1> Y=CORE_InstructionToULAMux<1>
 .gate BUFX2 A=$undef Y=CORE_PC_clk
-.gate BUFX2 A=_218_<0> Y=CORE_PC_ctrl<0>
-.gate BUFX2 A=_218_<1> Y=CORE_PC_ctrl<1>
-.gate BUFX2 A=_219_<0> Y=CORE_REG_RD<0>
-.gate BUFX2 A=_219_<1> Y=CORE_REG_RD<1>
-.gate BUFX2 A=_219_<2> Y=CORE_REG_RD<2>
-.gate BUFX2 A=_219_<3> Y=CORE_REG_RD<3>
-.gate BUFX2 A=_220_<0> Y=CORE_REG_RF1<0>
-.gate BUFX2 A=_220_<1> Y=CORE_REG_RF1<1>
-.gate BUFX2 A=_220_<2> Y=CORE_REG_RF1<2>
-.gate BUFX2 A=_220_<3> Y=CORE_REG_RF1<3>
-.gate BUFX2 A=_221_<0> Y=CORE_REG_RF2<0>
-.gate BUFX2 A=_221_<1> Y=CORE_REG_RF2<1>
-.gate BUFX2 A=_221_<2> Y=CORE_REG_RF2<2>
-.gate BUFX2 A=_221_<3> Y=CORE_REG_RF2<3>
-.gate BUFX2 A=_222_ Y=CORE_REG_write
-.gate BUFX2 A=_223_<0> Y=CORE_STACK_ctrl<0>
-.gate BUFX2 A=_223_<1> Y=CORE_STACK_ctrl<1>
-.gate BUFX2 A=_224_<0> Y=CORE_Status_ctrl<0>
-.gate BUFX2 A=_224_<1> Y=CORE_Status_ctrl<1>
-.gate BUFX2 A=_224_<2> Y=CORE_Status_ctrl<2>
-.gate BUFX2 A=_224_<3> Y=CORE_Status_ctrl<3>
+.gate BUFX2 A=_213_<0> Y=CORE_PC_ctrl<0>
+.gate BUFX2 A=_213_<1> Y=CORE_PC_ctrl<1>
+.gate BUFX2 A=_214_<0> Y=CORE_REG_RD<0>
+.gate BUFX2 A=_214_<1> Y=CORE_REG_RD<1>
+.gate BUFX2 A=_214_<2> Y=CORE_REG_RD<2>
+.gate BUFX2 A=_214_<3> Y=CORE_REG_RD<3>
+.gate BUFX2 A=_215_<0> Y=CORE_REG_RF1<0>
+.gate BUFX2 A=_215_<1> Y=CORE_REG_RF1<1>
+.gate BUFX2 A=_215_<2> Y=CORE_REG_RF1<2>
+.gate BUFX2 A=_215_<3> Y=CORE_REG_RF1<3>
+.gate BUFX2 A=_216_<0> Y=CORE_REG_RF2<0>
+.gate BUFX2 A=_216_<1> Y=CORE_REG_RF2<1>
+.gate BUFX2 A=_216_<2> Y=CORE_REG_RF2<2>
+.gate BUFX2 A=_216_<3> Y=CORE_REG_RF2<3>
+.gate BUFX2 A=_217_ Y=CORE_REG_write
+.gate BUFX2 A=_218_<0> Y=CORE_STACK_ctrl<0>
+.gate BUFX2 A=_218_<1> Y=CORE_STACK_ctrl<1>
+.gate BUFX2 A=_219_<0> Y=CORE_Status_ctrl<0>
+.gate BUFX2 A=_219_<1> Y=CORE_Status_ctrl<1>
+.gate BUFX2 A=_219_<2> Y=CORE_Status_ctrl<2>
+.gate BUFX2 A=_219_<3> Y=CORE_Status_ctrl<3>
 .gate BUFX2 A=$undef Y=CORE_Status_ctrl<4>
 .gate BUFX2 A=$undef Y=CORE_ULAMux_inc_dec
-.gate BUFX2 A=_225_<0> Y=CORE_ULA_ctrl<0>
-.gate BUFX2 A=_225_<1> Y=CORE_ULA_ctrl<1>
-.gate BUFX2 A=_225_<2> Y=CORE_ULA_ctrl<2>
-.gate BUFX2 A=_225_<3> Y=CORE_ULA_ctrl<3>
-.gate DFFPOSX1 CLK=clk_bF$buf4 D=_14_<0> Q=_224_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf1 D=_14_<1> Q=_224_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf3 D=_14_<2> Q=_224_<2>
-.gate DFFPOSX1 CLK=clk_bF$buf5 D=_14_<3> Q=_224_<3>
-.gate DFFPOSX1 CLK=clk_bF$buf0 D=_7_<0> Q=_217_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf2 D=_7_<1> Q=_217_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf0 D=_15_<0> Q=_225_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf2 D=_15_<1> Q=_225_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf0 D=_15_<2> Q=_225_<2>
-.gate DFFPOSX1 CLK=clk_bF$buf0 D=_15_<3> Q=_225_<3>
-.gate DFFPOSX1 CLK=clk_bF$buf4 D=_9_<0> Q=_219_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf4 D=_9_<1> Q=_219_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf4 D=_9_<2> Q=_219_<2>
-.gate DFFPOSX1 CLK=clk_bF$buf4 D=_9_<3> Q=_219_<3>
-.gate DFFPOSX1 CLK=clk_bF$buf1 D=_10_<0> Q=_220_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf1 D=_10_<1> Q=_220_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf3 D=_10_<2> Q=_220_<2>
-.gate DFFPOSX1 CLK=clk_bF$buf1 D=_10_<3> Q=_220_<3>
-.gate DFFPOSX1 CLK=clk_bF$buf3 D=_11_<0> Q=_221_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf5 D=_11_<1> Q=_221_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf5 D=_11_<2> Q=_221_<2>
-.gate DFFPOSX1 CLK=clk_bF$buf5 D=_11_<3> Q=_221_<3>
-.gate DFFPOSX1 CLK=clk_bF$buf0 D=_12_ Q=_222_
-.gate DFFPOSX1 CLK=clk_bF$buf2 D=_4_ Q=_214_
-.gate DFFPOSX1 CLK=clk_bF$buf5 D=_3_ Q=_213_
-.gate DFFPOSX1 CLK=clk_bF$buf0 D=_0_ Q=_210_
-.gate DFFPOSX1 CLK=clk_bF$buf4 D=_2_<0> Q=_212_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf4 D=_2_<1> Q=_212_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf5 D=_2_<2> Q=_212_<2>
-.gate DFFPOSX1 CLK=clk_bF$buf5 D=_1_ Q=_211_
-.gate DFFPOSX1 CLK=clk_bF$buf0 D=_13_<0> Q=_223_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf2 D=_13_<1> Q=_223_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf4 D=_8_<0> Q=_218_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf2 D=_8_<1> Q=_218_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf3 D=_5_<0> Q=_215_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf5 D=_5_<1> Q=_215_<1>
-.gate DFFPOSX1 CLK=clk_bF$buf3 D=_5_<2> Q=_215_<2>
-.gate DFFPOSX1 CLK=clk_bF$buf3 D=_5_<3> Q=_215_<3>
-.gate DFFPOSX1 CLK=clk_bF$buf1 D=_5_<4> Q=_215_<4>
-.gate DFFPOSX1 CLK=clk_bF$buf1 D=_5_<5> Q=_215_<5>
-.gate DFFPOSX1 CLK=clk_bF$buf3 D=_5_<6> Q=_215_<6>
-.gate DFFPOSX1 CLK=clk_bF$buf1 D=_5_<7> Q=_215_<7>
-.gate DFFPOSX1 CLK=clk_bF$buf2 D=_6_<0> Q=_216_<0>
-.gate DFFPOSX1 CLK=clk_bF$buf2 D=_6_<1> Q=_216_<1>
+.gate BUFX2 A=_220_<0> Y=CORE_ULA_ctrl<0>
+.gate BUFX2 A=_220_<1> Y=CORE_ULA_ctrl<1>
+.gate BUFX2 A=_220_<2> Y=CORE_ULA_ctrl<2>
+.gate BUFX2 A=_220_<3> Y=CORE_ULA_ctrl<3>
+.gate DFFPOSX1 CLK=clk_bF$buf4 D=_14_<0> Q=_219_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf4 D=_14_<1> Q=_219_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf4 D=_14_<2> Q=_219_<2>
+.gate DFFPOSX1 CLK=clk_bF$buf3 D=_14_<3> Q=_219_<3>
+.gate DFFPOSX1 CLK=clk_bF$buf0 D=_7_<0> Q=_212_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf5 D=_7_<1> Q=_212_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf5 D=_15_<0> Q=_220_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf0 D=_15_<1> Q=_220_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf5 D=_15_<2> Q=_220_<2>
+.gate DFFPOSX1 CLK=clk_bF$buf0 D=_15_<3> Q=_220_<3>
+.gate DFFPOSX1 CLK=clk_bF$buf3 D=_9_<0> Q=_214_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf2 D=_9_<1> Q=_214_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf2 D=_9_<2> Q=_214_<2>
+.gate DFFPOSX1 CLK=clk_bF$buf2 D=_9_<3> Q=_214_<3>
+.gate DFFPOSX1 CLK=clk_bF$buf1 D=_10_<0> Q=_215_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf3 D=_10_<1> Q=_215_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf3 D=_10_<2> Q=_215_<2>
+.gate DFFPOSX1 CLK=clk_bF$buf0 D=_10_<3> Q=_215_<3>
+.gate DFFPOSX1 CLK=clk_bF$buf4 D=_11_<0> Q=_216_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf5 D=_11_<1> Q=_216_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf5 D=_11_<2> Q=_216_<2>
+.gate DFFPOSX1 CLK=clk_bF$buf4 D=_11_<3> Q=_216_<3>
+.gate DFFPOSX1 CLK=clk_bF$buf3 D=_12_ Q=_217_
+.gate DFFPOSX1 CLK=clk_bF$buf5 D=_4_ Q=_209_
+.gate DFFPOSX1 CLK=clk_bF$buf1 D=_3_ Q=_208_
+.gate DFFPOSX1 CLK=clk_bF$buf0 D=_0_ Q=_205_
+.gate DFFPOSX1 CLK=clk_bF$buf1 D=_2_<0> Q=_207_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf4 D=_2_<1> Q=_207_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf1 D=_2_<2> Q=_207_<2>
+.gate DFFPOSX1 CLK=clk_bF$buf1 D=_1_ Q=_206_
+.gate DFFPOSX1 CLK=clk_bF$buf2 D=_13_<0> Q=_218_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf3 D=_13_<1> Q=_218_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf3 D=_8_<0> Q=_213_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf0 D=_8_<1> Q=_213_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf5 D=_5_<0> Q=_210_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf4 D=_5_<1> Q=_210_<1>
+.gate DFFPOSX1 CLK=clk_bF$buf5 D=_5_<2> Q=_210_<2>
+.gate DFFPOSX1 CLK=clk_bF$buf4 D=_5_<3> Q=_210_<3>
+.gate DFFPOSX1 CLK=clk_bF$buf2 D=_5_<4> Q=_210_<4>
+.gate DFFPOSX1 CLK=clk_bF$buf2 D=_5_<5> Q=_210_<5>
+.gate DFFPOSX1 CLK=clk_bF$buf0 D=_5_<6> Q=_210_<6>
+.gate DFFPOSX1 CLK=clk_bF$buf2 D=_5_<7> Q=_210_<7>
+.gate DFFPOSX1 CLK=clk_bF$buf1 D=_6_<0> Q=_211_<0>
+.gate DFFPOSX1 CLK=clk_bF$buf1 D=_6_<1> Q=_211_<1>
 .end

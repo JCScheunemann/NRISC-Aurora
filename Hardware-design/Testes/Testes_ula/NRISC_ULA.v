@@ -22,23 +22,24 @@ module NRISC_ULA(
                     ULA_B,      //ULA input B
                     ULA_OUT,    // output output
                     ULA_ctrl,   //input comando
-                    ULA_flags  //output minus, carry, zero
-                    );
+                    ULA_flags,  //output minus, carry, zero
+                    clk);
 
 
 
 
     //Parameter numero de bits
-    parameter TAM = 16;
+    parameter TAM = 32;
     //-------------portas de entrada------------------------------------------------------------------
     input wire [TAM-1:0] ULA_A;
     input wire [TAM-1:0] ULA_B;
-    //input wire incdec;
+    input wire clk;
 	input wire [3:0] ULA_ctrl;// 3fios operacao 1 fio complemento
 
+
     //-------------portas de saida--------------------------------------------------------------------
-    output wire [TAM-1:0] ULA_OUT;
-    output wire [2:0] ULA_flags;
+    output reg [TAM-1:0] ULA_OUT;
+    output reg [2:0] ULA_flags;
 
     //-------------fios-registradores-----------------------------------------------------------------
     wire [TAM-1:0] A;
@@ -94,7 +95,11 @@ module NRISC_ULA(
     assign OUT[7]=OUT[4] | OUT[6]; //31 posicoes max
 
     //saida
-    assign ULA_OUT = OUT[ULA_ctrl[3:1]];
+    always @ ( posedge clk ) begin
+      ULA_OUT = OUT[ULA_ctrl[3:1]];
+      ULA_flags = {minus, zero, carry};
+    end
+
 
     //FLAGS
     assign carryl = (A[TAM-1] & ~(cmd) & ctrla[2] & ctrla[1] & ~(ctrla[0]));//so eh 1 se a selecao estiver nele e se carry da operacao foi setado
@@ -104,9 +109,12 @@ module NRISC_ULA(
     assign minsom = ((((A[TAM-1] & OUT[0][TAM-1])|(B[TAM-1] & (A[TAM-1] | OUT[0][TAM-1])))) & ~(ctrla[2]) & ~(ctrla[1]) & ~(ctrla[0]));// || verificar se faz no bit de sinal ou no anterior
     assign minsub = ((((A[TAM-1] & OUT[0][TAM-1])|(~B[TAM-1] & (A[TAM-1] | OUT[0][TAM-1])))) & ~(ctrla[2]) & ~(ctrla[1]) & ctrla[0]);//
     assign carry = ((carrysom & ~ctrla[2] & ~(ctrla[1]) & ~carrymin0) )   | carryl | carryr; //verifica se carry
-    assign zero = ULA_OUT ? 1'b0 : 1'b1;      //flag zero ativa quando a saida e zero
+    assign zero = OUT[ULA_ctrl[3:1]] ? 1'b0 : 1'b1;      //flag zero ativa quando a saida e zero
     assign minus = minsom | minsub; //apenas operacoes de soma que retornam menos
-    assign ULA_flags = {minus, zero, carry};  //concatena as flags para enviar para a saida
+    //assign ULA_flags = {minus, zero, carry};  //concatena as flags para enviar para a saida
+
+
+
 
 
 endmodule

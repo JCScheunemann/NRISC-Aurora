@@ -1,142 +1,144 @@
 Vesta static timing analysis, register-to-register maximum timing
 
 Top 20 maximum delay paths:
-Path DFFPOSX1_28/CLK to DFFPOSX1_28/D delay 572.964 ps
-      0.0 ps  clk_bF_buf4:     BUFX4_6/Y -> DFFPOSX1_28/CLK
-    222.5 ps     _212__1_: DFFPOSX1_28/Q ->    INVX1_15/A
-    316.6 ps        _106_:    INVX1_15/Y ->  AOI21X1_10/A
-    411.0 ps        _111_:  AOI21X1_10/Y ->   AOI22X1_3/B
-    504.0 ps        _112_:   AOI22X1_3/Y ->   OAI22X1_2/C
-    573.0 ps       _2__1_:   OAI22X1_2/Y -> DFFPOSX1_28/D
+Path DFFPOSX1_27/CLK to DFFPOSX1_27/D delay 905.797 ps
+      0.0 ps  clk_bF_buf1:     BUFX4_7/Y -> DFFPOSX1_27/CLK
+    324.0 ps     _207__0_: DFFPOSX1_27/Q ->    INVX1_22/A
+    470.7 ps         _92_:    INVX1_22/Y ->   NAND3X1_8/A
+    653.7 ps         _94_:   NAND3X1_8/Y ->   AOI22X1_4/C
+    796.3 ps        _100_:   AOI22X1_4/Y ->  OAI21X1_16/B
+    905.8 ps       _2__0_:  OAI21X1_16/Y -> DFFPOSX1_27/D
 
-Path DFFPOSX1_34/CLK to DFFPOSX1_34/D delay 561.978 ps
-      0.0 ps  clk_bF_buf2:     BUFX4_8/Y -> DFFPOSX1_34/CLK
-    222.2 ps     _218__1_: DFFPOSX1_34/Q ->    INVX1_13/A
-    311.0 ps         _66_:    INVX1_13/Y ->   AOI21X1_4/A
-    404.2 ps         _68_:   AOI21X1_4/Y ->   AOI22X1_2/B
-    496.9 ps         _70_:   AOI22X1_2/Y ->   AOI21X1_5/B
-    562.0 ps       _8__1_:   AOI21X1_5/Y -> DFFPOSX1_34/D
+Path DFFPOSX1_29/CLK to DFFPOSX1_29/D delay 904.34 ps
+      0.0 ps  clk_bF_buf1:     BUFX4_7/Y -> DFFPOSX1_29/CLK
+    324.0 ps     _207__2_: DFFPOSX1_29/Q ->    INVX1_24/A
+    469.7 ps        _107_:    INVX1_24/Y ->  NAND3X1_10/A
+    652.3 ps        _108_:  NAND3X1_10/Y ->   AOI22X1_7/C
+    794.9 ps        _115_:   AOI22X1_7/Y ->  OAI21X1_18/B
+    904.3 ps       _2__2_:  OAI21X1_18/Y -> DFFPOSX1_29/D
 
-Path DFFPOSX1_15/CLK to DFFPOSX1_15/D delay 561.66 ps
-      0.0 ps  clk_bF_buf1:     BUFX4_9/Y -> DFFPOSX1_15/CLK
-    222.9 ps     _220__0_: DFFPOSX1_15/Q ->    INVX1_22/A
-    317.9 ps        _144_:    INVX1_22/Y ->  AOI21X1_16/A
-    404.4 ps        _145_:  AOI21X1_16/Y ->  OAI21X1_22/C
-    473.7 ps        _146_:  OAI21X1_22/Y ->   NAND3X1_9/A
-    561.7 ps      _10__0_:   NAND3X1_9/Y -> DFFPOSX1_15/D
+Path DFFPOSX1_28/CLK to DFFPOSX1_28/D delay 890.764 ps
+      0.0 ps  clk_bF_buf4:     BUFX4_4/Y -> DFFPOSX1_28/CLK
+    282.1 ps     _207__1_: DFFPOSX1_28/Q ->    INVX1_23/A
+    480.0 ps        _101_:    INVX1_23/Y ->   AOI22X1_5/C
+    639.3 ps        _103_:   AOI22X1_5/Y ->   AOI22X1_6/A
+    788.8 ps        _105_:   AOI22X1_6/Y ->   OAI22X1_2/D
+    890.8 ps       _2__1_:   OAI22X1_2/Y -> DFFPOSX1_28/D
 
-Path DFFPOSX1_27/CLK to DFFPOSX1_27/D delay 554.155 ps
-      0.0 ps  clk_bF_buf4:     BUFX4_6/Y -> DFFPOSX1_27/CLK
-    224.9 ps     _212__0_: DFFPOSX1_27/Q ->    INVX1_14/A
-    288.0 ps         _93_:    INVX1_14/Y ->   NAND3X1_7/A
-    385.9 ps         _95_:   NAND3X1_7/Y ->   AOI21X1_8/A
-    478.6 ps        _105_:   AOI21X1_8/Y ->  OAI21X1_13/A
-    554.2 ps       _2__0_:  OAI21X1_13/Y -> DFFPOSX1_27/D
+Path DFFPOSX1_33/CLK to DFFPOSX1_33/D delay 848.164 ps
+      0.0 ps  clk_bF_buf3:     BUFX4_5/Y -> DFFPOSX1_33/CLK
+    328.9 ps     _213__0_: DFFPOSX1_33/Q ->    INVX1_16/A
+    483.2 ps         _56_:    INVX1_16/Y ->   OAI21X1_7/A
+    623.1 ps         _63_:   OAI21X1_7/Y ->   AOI22X1_1/D
+    742.9 ps         _64_:   AOI22X1_1/Y ->   AOI21X1_3/A
+    848.2 ps       _8__0_:   AOI21X1_3/Y -> DFFPOSX1_33/D
 
-Path DFFPOSX1_29/CLK to DFFPOSX1_29/D delay 553.886 ps
-      0.0 ps  clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_29/CLK
-    224.7 ps     _212__2_: DFFPOSX1_29/Q ->    INVX1_17/A
-    287.7 ps        _114_:    INVX1_17/Y ->   NAND3X1_8/A
-    385.6 ps        _115_:   NAND3X1_8/Y ->  AOI21X1_11/A
-    478.3 ps        _125_:  AOI21X1_11/Y ->  OAI21X1_16/A
-    553.9 ps       _2__2_:  OAI21X1_16/Y -> DFFPOSX1_29/D
+Path DFFPOSX1_15/CLK to DFFPOSX1_15/D delay 838.517 ps
+      0.0 ps  clk_bF_buf1:     BUFX4_7/Y -> DFFPOSX1_15/CLK
+    328.7 ps     _215__0_: DFFPOSX1_15/Q ->    INVX1_27/A
+    483.4 ps        _134_:    INVX1_27/Y ->  AOI21X1_16/B
+    613.5 ps        _139_:  AOI21X1_16/Y ->   AOI22X1_8/D
+    720.8 ps        _141_:   AOI22X1_8/Y ->  NAND3X1_13/B
+    838.5 ps      _10__0_:  NAND3X1_13/Y -> DFFPOSX1_15/D
 
-Path DFFPOSX1_33/CLK to DFFPOSX1_33/D delay 514.734 ps
-      0.0 ps  clk_bF_buf4:     BUFX4_6/Y -> DFFPOSX1_33/CLK
-    225.6 ps     _218__0_: DFFPOSX1_33/Q ->   OAI21X1_6/C
-    292.6 ps         _63_:   OAI21X1_6/Y ->   NAND2X1_5/B
-    364.6 ps         _64_:   NAND2X1_5/Y ->   AOI22X1_1/D
-    440.7 ps         _65_:   AOI22X1_1/Y ->   AOI21X1_3/A
-    514.7 ps       _8__0_:   AOI21X1_3/Y -> DFFPOSX1_33/D
+Path DFFPOSX1_31/CLK to DFFPOSX1_31/D delay 743.04 ps
+      0.0 ps  clk_bF_buf2:     BUFX4_6/Y -> DFFPOSX1_31/CLK
+    331.5 ps     _218__0_: DFFPOSX1_31/Q ->  OAI21X1_10/C
+    433.3 ps         _70_:  OAI21X1_10/Y ->   NAND2X1_5/A
+    559.3 ps         _71_:   NAND2X1_5/Y ->   AOI22X1_2/D
+    666.6 ps         _72_:   AOI22X1_2/Y ->    NOR2X1_6/B
+    743.0 ps      _13__0_:    NOR2X1_6/Y -> DFFPOSX1_31/D
 
-Path DFFPOSX1_6/CLK to DFFPOSX1_6/D delay 514.079 ps
-      0.0 ps  clk_bF_buf2:    BUFX4_8/Y -> DFFPOSX1_6/CLK
-    224.5 ps     _217__1_: DFFPOSX1_6/Q ->   INVX1_24/A
-    308.6 ps        _184_:   INVX1_24/Y -> OAI21X1_43/C
-    376.5 ps        _186_: OAI21X1_43/Y -> OAI21X1_44/C
-    448.9 ps        _187_: OAI21X1_44/Y -> AOI21X1_23/B
-    514.1 ps       _7__1_: AOI21X1_23/Y -> DFFPOSX1_6/D
+Path DFFPOSX1_25/CLK to DFFPOSX1_25/D delay 739.302 ps
+      0.0 ps  clk_bF_buf1:     BUFX4_7/Y -> DFFPOSX1_25/CLK
+    326.4 ps        _208_: DFFPOSX1_25/Q ->    AND2X2_2/B
+    517.5 ps        _121_:    AND2X2_2/Y ->  OAI21X1_21/B
+    632.9 ps        _122_:  OAI21X1_21/Y ->  AOI21X1_11/A
+    739.3 ps          _3_:  AOI21X1_11/Y -> DFFPOSX1_25/D
 
-Path DFFPOSX1_31/CLK to DFFPOSX1_31/D delay 492.264 ps
-      0.0 ps  clk_bF_buf0:    BUFX4_10/Y -> DFFPOSX1_31/CLK
-    223.4 ps     _223__0_: DFFPOSX1_31/Q ->   AOI21X1_6/A
-    315.5 ps         _74_:   AOI21X1_6/Y ->   OAI21X1_7/B
-    396.9 ps         _75_:   OAI21X1_7/Y ->    AND2X2_2/A
-    492.3 ps      _13__0_:    AND2X2_2/Y -> DFFPOSX1_31/D
+Path DFFPOSX1_6/CLK to DFFPOSX1_6/D delay 714.341 ps
+      0.0 ps  clk_bF_buf5:    BUFX4_3/Y -> DFFPOSX1_6/CLK
+    323.8 ps     _212__1_: DFFPOSX1_6/Q ->   INVX1_32/A
+    405.9 ps        _180_:   INVX1_32/Y -> OAI21X1_36/C
+    495.3 ps        _181_: OAI21X1_36/Y -> OAI21X1_37/C
+    608.2 ps        _182_: OAI21X1_37/Y -> AOI21X1_23/A
+    714.3 ps       _7__1_: AOI21X1_23/Y -> DFFPOSX1_6/D
 
-Path DFFPOSX1_5/CLK to DFFPOSX1_5/D delay 445.57 ps
-      0.0 ps  clk_bF_buf0:   BUFX4_10/Y -> DFFPOSX1_5/CLK
-    223.0 ps     _217__0_: DFFPOSX1_5/Q ->   AND2X2_3/B
-    335.8 ps        _182_:   AND2X2_3/Y -> OAI21X1_41/C
-    391.2 ps        _183_: OAI21X1_41/Y -> OAI21X1_42/C
-    445.6 ps       _7__0_: OAI21X1_42/Y -> DFFPOSX1_5/D
+Path DFFPOSX1_18/CLK to DFFPOSX1_18/D delay 635.172 ps
+      0.0 ps  clk_bF_buf0:     BUFX4_8/Y -> DFFPOSX1_18/CLK
+    294.9 ps     _215__3_: DFFPOSX1_18/Q ->    AND2X2_5/B
+    469.6 ps        _155_:    AND2X2_5/Y ->  NAND2X1_23/A
+    560.4 ps        _156_:  NAND2X1_23/Y ->  NAND2X1_24/B
+    635.2 ps      _10__3_:  NAND2X1_24/Y -> DFFPOSX1_18/D
 
-Path DFFPOSX1_19/CLK to DFFPOSX1_19/D delay 390.317 ps
-      0.0 ps  clk_bF_buf3:     BUFX4_7/Y -> DFFPOSX1_19/CLK
-    223.0 ps     _221__0_: DFFPOSX1_19/Q ->  NAND2X1_21/A
-    306.5 ps        _138_:  NAND2X1_21/Y ->   OAI22X1_3/B
-    390.3 ps      _11__0_:   OAI22X1_3/Y -> DFFPOSX1_19/D
+Path DFFPOSX1_17/CLK to DFFPOSX1_17/D delay 635.172 ps
+      0.0 ps  clk_bF_buf3:     BUFX4_5/Y -> DFFPOSX1_17/CLK
+    294.9 ps     _215__2_: DFFPOSX1_17/Q ->    AND2X2_4/B
+    469.6 ps        _152_:    AND2X2_4/Y ->  NAND2X1_21/A
+    560.4 ps        _153_:  NAND2X1_21/Y ->  NAND2X1_22/B
+    635.2 ps      _10__2_:  NAND2X1_22/Y -> DFFPOSX1_17/D
 
-Path DFFPOSX1_22/CLK to DFFPOSX1_22/D delay 390.317 ps
-      0.0 ps  clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_22/CLK
-    223.0 ps     _221__3_: DFFPOSX1_22/Q ->  NAND2X1_24/A
-    306.5 ps        _141_:  NAND2X1_24/Y ->   OAI22X1_6/B
-    390.3 ps      _11__3_:   OAI22X1_6/Y -> DFFPOSX1_22/D
+Path DFFPOSX1_16/CLK to DFFPOSX1_16/D delay 635.172 ps
+      0.0 ps  clk_bF_buf3:     BUFX4_5/Y -> DFFPOSX1_16/CLK
+    294.9 ps     _215__1_: DFFPOSX1_16/Q ->    AND2X2_3/B
+    469.6 ps        _143_:    AND2X2_3/Y ->  NAND2X1_18/A
+    560.4 ps        _144_:  NAND2X1_18/Y ->  NAND2X1_20/B
+    635.2 ps      _10__1_:  NAND2X1_20/Y -> DFFPOSX1_16/D
 
-Path DFFPOSX1_21/CLK to DFFPOSX1_21/D delay 390.317 ps
-      0.0 ps  clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_21/CLK
-    223.0 ps     _221__2_: DFFPOSX1_21/Q ->  NAND2X1_23/A
-    306.5 ps        _140_:  NAND2X1_23/Y ->   OAI22X1_5/B
-    390.3 ps      _11__2_:   OAI22X1_5/Y -> DFFPOSX1_21/D
+Path DFFPOSX1_43/CLK to DFFPOSX1_43/D delay 580.042 ps
+      0.0 ps  clk_bF_buf1:     BUFX4_7/Y -> DFFPOSX1_43/CLK
+    331.1 ps     _211__0_: DFFPOSX1_43/Q ->   NAND2X1_1/A
+    461.6 ps         _22_:   NAND2X1_1/Y ->   OAI22X1_1/B
+    580.0 ps       _6__0_:   OAI22X1_1/Y -> DFFPOSX1_43/D
 
-Path DFFPOSX1_20/CLK to DFFPOSX1_20/D delay 390.317 ps
-      0.0 ps  clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_20/CLK
-    223.0 ps     _221__1_: DFFPOSX1_20/Q ->  NAND2X1_22/A
-    306.5 ps        _139_:  NAND2X1_22/Y ->   OAI22X1_4/B
-    390.3 ps      _11__1_:   OAI22X1_4/Y -> DFFPOSX1_20/D
+Path DFFPOSX1_30/CLK to DFFPOSX1_30/D delay 570.463 ps
+      0.0 ps  clk_bF_buf1:     BUFX4_7/Y -> DFFPOSX1_30/CLK
+    331.1 ps        _206_: DFFPOSX1_30/Q ->   AOI21X1_6/A
+    462.9 ps         _82_:   AOI21X1_6/Y ->  OAI21X1_13/B
+    570.5 ps          _1_:  OAI21X1_13/Y -> DFFPOSX1_30/D
 
-Path DFFPOSX1_43/CLK to DFFPOSX1_43/D delay 389.312 ps
-      0.0 ps  clk_bF_buf2:     BUFX4_8/Y -> DFFPOSX1_43/CLK
-    223.8 ps     _216__0_: DFFPOSX1_43/Q ->   AOI21X1_1/A
-    314.1 ps         _26_:   AOI21X1_1/Y ->   OAI21X1_1/A
-    389.3 ps       _6__0_:   OAI21X1_1/Y -> DFFPOSX1_43/D
+Path DFFPOSX1_44/CLK to DFFPOSX1_44/D delay 569.272 ps
+      0.0 ps  clk_bF_buf1:     BUFX4_7/Y -> DFFPOSX1_44/CLK
+    331.4 ps     _211__1_: DFFPOSX1_44/Q ->   OAI21X1_3/B
+    461.1 ps         _32_:   OAI21X1_3/Y ->   OAI21X1_4/A
+    569.3 ps       _6__1_:   OAI21X1_4/Y -> DFFPOSX1_44/D
 
-Path DFFPOSX1_30/CLK to DFFPOSX1_30/D delay 388.759 ps
-      0.0 ps  clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_30/CLK
-    223.3 ps        _211_: DFFPOSX1_30/Q ->   AOI21X1_7/A
-    313.5 ps         _86_:   AOI21X1_7/Y ->  OAI21X1_10/A
-    388.8 ps          _1_:  OAI21X1_10/Y -> DFFPOSX1_30/D
+Path DFFPOSX1_26/CLK to DFFPOSX1_26/D delay 550.798 ps
+      0.0 ps  clk_bF_buf0:     BUFX4_8/Y -> DFFPOSX1_26/CLK
+    321.1 ps        _205_: DFFPOSX1_26/Q ->  OAI21X1_20/A
+    442.9 ps        _119_:  OAI21X1_20/Y ->   NOR2X1_17/A
+    550.8 ps          _0_:   NOR2X1_17/Y -> DFFPOSX1_26/D
 
-Path DFFPOSX1_44/CLK to DFFPOSX1_44/D delay 388.276 ps
-      0.0 ps  clk_bF_buf2:     BUFX4_8/Y -> DFFPOSX1_44/CLK
-    223.4 ps     _216__1_: DFFPOSX1_44/Q ->   OAI21X1_2/B
-    313.8 ps         _32_:   OAI21X1_2/Y ->   OAI21X1_3/B
-    388.3 ps       _6__1_:   OAI21X1_3/Y -> DFFPOSX1_44/D
+Path DFFPOSX1_24/CLK to DFFPOSX1_24/D delay 550.798 ps
+      0.0 ps  clk_bF_buf5:     BUFX4_3/Y -> DFFPOSX1_24/CLK
+    321.1 ps        _209_: DFFPOSX1_24/Q ->  OAI21X1_22/A
+    442.9 ps        _123_:  OAI21X1_22/Y ->   NOR2X1_18/A
+    550.8 ps          _4_:   NOR2X1_18/Y -> DFFPOSX1_24/D
 
-Path DFFPOSX1_7/CLK to DFFPOSX1_7/D delay 379.361 ps
-      0.0 ps  clk_bF_buf0:   BUFX4_10/Y -> DFFPOSX1_7/CLK
-    223.0 ps     _225__0_: DFFPOSX1_7/Q -> NAND2X1_31/A
-    304.4 ps        _171_: NAND2X1_31/Y -> OAI21X1_35/A
-    379.4 ps      _15__0_: OAI21X1_35/Y -> DFFPOSX1_7/D
+Path DFFPOSX1_8/CLK to DFFPOSX1_8/D delay 535.934 ps
+      0.0 ps  clk_bF_buf0:    BUFX4_8/Y -> DFFPOSX1_8/CLK
+    294.9 ps     _220__1_: DFFPOSX1_8/Q -> NAND2X1_26/A
+    418.2 ps        _168_: NAND2X1_26/Y ->  OAI22X1_8/B
+    535.9 ps      _15__1_:  OAI22X1_8/Y -> DFFPOSX1_8/D
 
-Path DFFPOSX1_18/CLK to DFFPOSX1_18/D delay 379.232 ps
-      0.0 ps  clk_bF_buf1:     BUFX4_9/Y -> DFFPOSX1_18/CLK
-    223.0 ps     _220__3_: DFFPOSX1_18/Q ->  NAND2X1_29/A
-    306.5 ps        _164_:  NAND2X1_29/Y ->  OAI21X1_33/B
-    379.2 ps      _10__3_:  OAI21X1_33/Y -> DFFPOSX1_18/D
+Path DFFPOSX1_22/CLK to DFFPOSX1_22/D delay 535.934 ps
+      0.0 ps  clk_bF_buf4:     BUFX4_4/Y -> DFFPOSX1_22/CLK
+    294.9 ps     _216__3_: DFFPOSX1_22/Q ->  NAND2X1_16/A
+    418.2 ps        _131_:  NAND2X1_16/Y ->   OAI22X1_6/B
+    535.9 ps      _11__3_:   OAI22X1_6/Y -> DFFPOSX1_22/D
 
-Path DFFPOSX1_16/CLK to DFFPOSX1_16/D delay 379.232 ps
-      0.0 ps  clk_bF_buf1:     BUFX4_9/Y -> DFFPOSX1_16/CLK
-    223.0 ps     _220__1_: DFFPOSX1_16/Q ->  NAND2X1_26/A
-    306.5 ps        _155_:  NAND2X1_26/Y ->  OAI21X1_29/B
-    379.2 ps      _10__1_:  OAI21X1_29/Y -> DFFPOSX1_16/D
+Path DFFPOSX1_19/CLK to DFFPOSX1_19/D delay 535.934 ps
+      0.0 ps  clk_bF_buf4:     BUFX4_4/Y -> DFFPOSX1_19/CLK
+    294.9 ps     _216__0_: DFFPOSX1_19/Q ->  NAND2X1_13/A
+    418.2 ps        _128_:  NAND2X1_13/Y ->   OAI22X1_3/B
+    535.9 ps      _11__0_:   OAI22X1_3/Y -> DFFPOSX1_19/D
 
-Path DFFPOSX1_17/CLK to DFFPOSX1_17/D delay 379.232 ps
-      0.0 ps  clk_bF_buf3:     BUFX4_7/Y -> DFFPOSX1_17/CLK
-    223.0 ps     _220__2_: DFFPOSX1_17/Q ->  NAND2X1_28/A
-    306.5 ps        _162_:  NAND2X1_28/Y ->  OAI21X1_31/B
-    379.2 ps      _10__2_:  OAI21X1_31/Y -> DFFPOSX1_17/D
+Path DFFPOSX1_21/CLK to DFFPOSX1_21/D delay 535.934 ps
+      0.0 ps  clk_bF_buf5:     BUFX4_3/Y -> DFFPOSX1_21/CLK
+    294.9 ps     _216__2_: DFFPOSX1_21/Q ->  NAND2X1_15/A
+    418.2 ps        _130_:  NAND2X1_15/Y ->   OAI22X1_5/B
+    535.9 ps      _11__2_:   OAI22X1_5/Y -> DFFPOSX1_21/D
 
-Computed maximum clock frequency (zero slack) = 1745.31 MHz
+Computed maximum clock frequency (zero slack) = 1104 MHz
 -----------------------------------------
 

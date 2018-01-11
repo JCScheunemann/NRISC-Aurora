@@ -13,327 +13,322 @@
 .subckt NOR2X1 A=CORE_InstructionIN[14] B=CORE_InstructionIN[12] Y=_19_
 .subckt AND2X2 A=_19_ B=_18_ Y=_20_
 .subckt NAND3X1 A=_16_ B=_17_ C=_20_ Y=_21_
-.subckt NAND3X1 A=_216_[0] B=CORE_InstructionIN[14] C=_16_ Y=_22_
+.subckt NAND2X1 A=_211_[0] B=CORE_InstructionIN[14] Y=_22_
 .subckt INVX1 A=CORE_InstructionIN[10] Y=_23_
-.subckt NAND2X1 A=CORE_InstructionIN[9] B=_23_ Y=_24_
-.subckt NOR2X1 A=CORE_InstructionIN[8] B=_24_ Y=_25_
-.subckt AOI21X1 A=_216_[0] B=CORE_InstructionIN[10] C=_25_ Y=_26_
-.subckt OAI21X1 A=_26_ B=_21_ C=_22_ Y=_6_[0]
+.subckt INVX1 A=CORE_InstructionIN[9] Y=_24_
+.subckt OAI21X1 A=CORE_InstructionIN[8] B=_24_ C=_23_ Y=_25_
+.subckt OAI21X1 A=_211_[0] B=_23_ C=_25_ Y=_26_
+.subckt OAI22X1 A=CORE_InstructionIN[15] B=_22_ C=_26_ D=_21_ Y=_6_[0]
 .subckt INVX1 A=CORE_InstructionIN[14] Y=_27_
 .subckt NOR2X1 A=CORE_InstructionIN[15] B=_27_ Y=_28_
-.subckt NAND2X1 A=_216_[1] B=_28_ Y=_29_
+.subckt NAND2X1 A=_211_[1] B=_28_ Y=_29_
 .subckt AOI21X1 A=CORE_InstructionIN[8] B=CORE_InstructionIN[9] C=CORE_InstructionIN[10] Y=_30_
 .subckt INVX1 A=_30_ Y=_31_
-.subckt OAI21X1 A=_23_ B=_216_[1] C=_31_ Y=_32_
-.subckt OAI21X1 A=_21_ B=_32_ C=_29_ Y=_6_[1]
-.subckt INVX1 A=_215_[0] Y=_33_
+.subckt OAI21X1 A=_23_ B=_211_[1] C=_31_ Y=_32_
+.subckt OAI21X1 A=_32_ B=_21_ C=_29_ Y=_6_[1]
+.subckt INVX1 A=_210_[0] Y=_33_
 .subckt INVX1 A=CORE_InstructionIN[0] Y=_34_
-.subckt NOR2X1 A=_24_ B=_21_ Y=_35_
-.subckt MUX2X1 A=_34_ B=_33_ S=_35_ Y=_5_[0]
-.subckt INVX1 A=_215_[1] Y=_36_
-.subckt INVX1 A=CORE_InstructionIN[1] Y=_37_
-.subckt MUX2X1 A=_37_ B=_36_ S=_35_ Y=_5_[1]
-.subckt INVX1 A=_215_[2] Y=_38_
-.subckt INVX1 A=CORE_InstructionIN[2] Y=_39_
-.subckt MUX2X1 A=_39_ B=_38_ S=_35_ Y=_5_[2]
-.subckt INVX1 A=_215_[3] Y=_40_
-.subckt INVX1 A=CORE_InstructionIN[3] Y=_41_
-.subckt MUX2X1 A=_41_ B=_40_ S=_35_ Y=_5_[3]
-.subckt INVX1 A=_215_[4] Y=_42_
-.subckt INVX1 A=CORE_InstructionIN[4] Y=_43_
-.subckt MUX2X1 A=_43_ B=_42_ S=_35_ Y=_5_[4]
-.subckt INVX1 A=_215_[5] Y=_44_
-.subckt INVX1 A=CORE_InstructionIN[5] Y=_45_
-.subckt MUX2X1 A=_45_ B=_44_ S=_35_ Y=_5_[5]
-.subckt INVX1 A=_215_[6] Y=_46_
-.subckt INVX1 A=CORE_InstructionIN[6] Y=_47_
-.subckt MUX2X1 A=_47_ B=_46_ S=_35_ Y=_5_[6]
-.subckt INVX1 A=_215_[7] Y=_48_
-.subckt INVX1 A=CORE_InstructionIN[7] Y=_49_
-.subckt MUX2X1 A=_49_ B=_48_ S=_35_ Y=_5_[7]
-.subckt INVX1 A=CORE_InstructionIN[9] Y=_50_
-.subckt NAND3X1 A=CORE_InstructionIN[8] B=CORE_ULA_flags[1] C=_50_ Y=_51_
+.subckt NAND2X1 A=CORE_InstructionIN[9] B=_23_ Y=_35_
+.subckt NOR2X1 A=_35_ B=_21_ Y=_36_
+.subckt MUX2X1 A=_34_ B=_33_ S=_36_ Y=_5_[0]
+.subckt INVX1 A=_210_[1] Y=_37_
+.subckt INVX1 A=CORE_InstructionIN[1] Y=_38_
+.subckt MUX2X1 A=_38_ B=_37_ S=_36_ Y=_5_[1]
+.subckt INVX1 A=_210_[2] Y=_39_
+.subckt INVX1 A=CORE_InstructionIN[2] Y=_40_
+.subckt MUX2X1 A=_40_ B=_39_ S=_36_ Y=_5_[2]
+.subckt INVX1 A=_210_[3] Y=_41_
+.subckt INVX1 A=CORE_InstructionIN[3] Y=_42_
+.subckt MUX2X1 A=_42_ B=_41_ S=_36_ Y=_5_[3]
+.subckt INVX1 A=_210_[4] Y=_43_
+.subckt INVX1 A=CORE_InstructionIN[4] Y=_44_
+.subckt MUX2X1 A=_44_ B=_43_ S=_36_ Y=_5_[4]
+.subckt INVX1 A=_210_[5] Y=_45_
+.subckt INVX1 A=CORE_InstructionIN[5] Y=_46_
+.subckt MUX2X1 A=_46_ B=_45_ S=_36_ Y=_5_[5]
+.subckt INVX1 A=_210_[6] Y=_47_
+.subckt INVX1 A=CORE_InstructionIN[6] Y=_48_
+.subckt MUX2X1 A=_48_ B=_47_ S=_36_ Y=_5_[6]
+.subckt INVX1 A=_210_[7] Y=_49_
+.subckt INVX1 A=CORE_InstructionIN[7] Y=_50_
+.subckt MUX2X1 A=_50_ B=_49_ S=_36_ Y=_5_[7]
+.subckt NAND3X1 A=CORE_InstructionIN[8] B=CORE_ULA_flags[1] C=_24_ Y=_51_
 .subckt NAND3X1 A=CORE_InstructionIN[8] B=CORE_InstructionIN[9] C=CORE_ULA_flags[0] Y=_52_
 .subckt INVX1 A=CORE_InstructionIN[8] Y=_53_
-.subckt OAI21X1 A=_50_ B=CORE_ULA_flags[2] C=_53_ Y=_54_
-.subckt NAND3X1 A=_52_ B=_51_ C=_54_ Y=_55_
-.subckt NAND2X1 A=CORE_InstructionIN[12] B=_27_ Y=_56_
-.subckt OR2X2 A=_56_ B=CORE_InstructionIN[13] Y=_57_
-.subckt NOR2X1 A=_218_[0] B=_17_ Y=_58_
-.subckt NOR2X1 A=_58_ B=_57_ Y=_59_
-.subckt OAI21X1 A=_55_ B=CORE_InstructionIN[11] C=_59_ Y=_60_
-.subckt NAND2X1 A=_18_ B=_19_ Y=_61_
-.subckt NOR2X1 A=_17_ B=_61_ Y=_62_
-.subckt OAI21X1 A=_23_ B=_50_ C=_218_[0] Y=_63_
-.subckt NAND2X1 A=_31_ B=_63_ Y=_64_
-.subckt AOI22X1 A=CORE_InstructionIN[14] B=_218_[0] C=_62_ D=_64_ Y=_65_
-.subckt AOI21X1 A=_65_ B=_60_ C=CORE_InstructionIN[15] Y=_8_[0]
-.subckt INVX1 A=_218_[1] Y=_66_
-.subckt NAND2X1 A=CORE_InstructionIN[10] B=CORE_InstructionIN[9] Y=_67_
-.subckt AOI21X1 A=_66_ B=_67_ C=_30_ Y=_68_
-.subckt NOR2X1 A=_66_ B=_57_ Y=_69_
-.subckt AOI22X1 A=_62_ B=_68_ C=_69_ D=CORE_InstructionIN[11] Y=_70_
-.subckt NAND2X1 A=CORE_InstructionIN[14] B=_218_[1] Y=_71_
-.subckt AOI21X1 A=_71_ B=_70_ C=CORE_InstructionIN[15] Y=_8_[1]
-.subckt NAND2X1 A=CORE_InstructionIN[11] B=_20_ Y=_72_
-.subckt NAND2X1 A=CORE_InstructionIN[14] B=_223_[0] Y=_73_
-.subckt AOI21X1 A=_223_[0] B=_67_ C=_30_ Y=_74_
-.subckt OAI21X1 A=_72_ B=_74_ C=_73_ Y=_75_
-.subckt AND2X2 A=_75_ B=_16_ Y=_13_[0]
-.subckt NOR2X1 A=_67_ B=_72_ Y=_76_
-.subckt NOR2X1 A=_223_[1] B=_76_ Y=_77_
-.subckt OAI21X1 A=_72_ B=_30_ C=_27_ Y=_78_
-.subckt NAND2X1 A=_16_ B=_78_ Y=_79_
-.subckt NOR2X1 A=_77_ B=_79_ Y=_13_[1]
-.subckt NAND3X1 A=CORE_InstructionIN[2] B=_37_ C=_41_ Y=_80_
-.subckt NOR2X1 A=CORE_InstructionIN[0] B=CORE_InstructionIN[1] Y=_81_
-.subckt OR2X2 A=CORE_InstructionIN[2] B=CORE_InstructionIN[3] Y=_82_
-.subckt OAI21X1 A=_81_ B=_82_ C=_80_ Y=_83_
-.subckt NOR2X1 A=CORE_InstructionIN[2] B=CORE_InstructionIN[3] Y=_84_
-.subckt NAND2X1 A=_81_ B=_84_ Y=_85_
-.subckt AOI21X1 A=_211_ B=_85_ C=_83_ Y=_86_
-.subckt NOR3X1 A=CORE_InstructionIN[14] B=CORE_InstructionIN[12] C=_18_ Y=_87_
-.subckt NAND2X1 A=_16_ B=_87_ Y=_88_
-.subckt NAND2X1 A=_211_ B=_28_ Y=_89_
-.subckt OAI21X1 A=_86_ B=_88_ C=_89_ Y=_1_
-.subckt NOR2X1 A=CORE_InstructionIN[14] B=_18_ Y=_90_
-.subckt INVX1 A=_90_ Y=_91_
-.subckt OAI21X1 A=_91_ B=CORE_InstructionIN[15] C=_212_[0] Y=_92_
-.subckt INVX1 A=_212_[0] Y=_93_
-.subckt OAI21X1 A=CORE_InstructionIN[0] B=CORE_InstructionIN[1] C=_84_ Y=_94_
-.subckt NAND3X1 A=_93_ B=_80_ C=_94_ Y=_95_
-.subckt NOR3X1 A=CORE_InstructionIN[1] B=CORE_InstructionIN[3] C=_39_ Y=_96_
-.subckt NAND2X1 A=CORE_InstructionIN[0] B=_37_ Y=_97_
-.subckt NOR2X1 A=_82_ B=_97_ Y=_98_
-.subckt NAND2X1 A=CORE_InstructionIN[13] B=_19_ Y=_99_
-.subckt NOR3X1 A=_96_ B=_99_ C=_98_ Y=_100_
-.subckt OR2X2 A=_56_ B=_18_ Y=_101_
-.subckt NAND2X1 A=CORE_InstructionIN[10] B=CORE_InstructionIN[11] Y=_102_
-.subckt OAI22X1 A=CORE_InstructionIN[8] B=CORE_InstructionIN[11] C=_102_ D=_212_[0] Y=_103_
-.subckt NOR2X1 A=_103_ B=_101_ Y=_104_
-.subckt AOI21X1 A=_95_ B=_100_ C=_104_ Y=_105_
-.subckt OAI21X1 A=_105_ B=CORE_InstructionIN[15] C=_92_ Y=_2_[0]
-.subckt INVX1 A=_212_[1] Y=_106_
-.subckt NOR2X1 A=CORE_InstructionIN[15] B=_91_ Y=_107_
-.subckt INVX1 A=_101_ Y=_108_
-.subckt NOR2X1 A=_212_[1] B=_102_ Y=_109_
-.subckt AOI21X1 A=_17_ B=_24_ C=_109_ Y=_110_
-.subckt AOI21X1 A=_106_ B=_80_ C=_99_ Y=_111_
-.subckt AOI22X1 A=_94_ B=_111_ C=_108_ D=_110_ Y=_112_
-.subckt OAI22X1 A=_106_ B=_107_ C=_112_ D=CORE_InstructionIN[15] Y=_2_[1]
-.subckt OAI21X1 A=_91_ B=CORE_InstructionIN[15] C=_212_[2] Y=_113_
-.subckt INVX1 A=_212_[2] Y=_114_
-.subckt NAND3X1 A=_114_ B=_80_ C=_94_ Y=_115_
-.subckt NAND2X1 A=CORE_InstructionIN[2] B=_41_ Y=_116_
-.subckt NOR2X1 A=_116_ B=_97_ Y=_117_
-.subckt NAND2X1 A=CORE_InstructionIN[0] B=_84_ Y=_118_
-.subckt NAND2X1 A=_118_ B=_87_ Y=_119_
-.subckt NOR2X1 A=_117_ B=_119_ Y=_120_
-.subckt NOR2X1 A=CORE_InstructionIN[10] B=CORE_InstructionIN[11] Y=_121_
-.subckt INVX1 A=_121_ Y=_122_
-.subckt OAI21X1 A=_212_[2] B=_102_ C=_122_ Y=_123_
-.subckt NOR2X1 A=_123_ B=_101_ Y=_124_
-.subckt AOI21X1 A=_115_ B=_120_ C=_124_ Y=_125_
-.subckt OAI21X1 A=_125_ B=CORE_InstructionIN[15] C=_113_ Y=_2_[2]
-.subckt AOI21X1 A=CORE_InstructionIN[13] B=CORE_InstructionIN[12] C=CORE_InstructionIN[14] Y=_126_
-.subckt OAI21X1 A=_27_ B=_210_ C=_16_ Y=_127_
-.subckt NOR2X1 A=_126_ B=_127_ Y=_0_
-.subckt INVX1 A=_83_ Y=_128_
-.subckt INVX1 A=_85_ Y=_129_
-.subckt NOR2X1 A=_129_ B=_88_ Y=_130_
-.subckt OAI21X1 A=_130_ B=_28_ C=_213_ Y=_131_
-.subckt OAI21X1 A=_128_ B=_88_ C=_131_ Y=_3_
-.subckt OAI21X1 A=_27_ B=_214_ C=_16_ Y=_132_
-.subckt NOR2X1 A=_126_ B=_132_ Y=_4_
-.subckt INVX1 A=CORE_InstructionIN[12] Y=_133_
-.subckt OAI21X1 A=_133_ B=CORE_InstructionIN[14] C=_16_ Y=_134_
-.subckt AOI21X1 A=_30_ B=_62_ C=_134_ Y=_135_
-.subckt NAND2X1 A=CORE_InstructionIN[11] B=_30_ Y=_136_
-.subckt AOI21X1 A=_136_ B=_20_ C=CORE_InstructionIN[14] Y=_137_
-.subckt NAND2X1 A=_221_[0] B=_16_ Y=_138_
-.subckt OAI22X1 A=_137_ B=_138_ C=_135_ D=_34_ Y=_11_[0]
-.subckt NAND2X1 A=_221_[1] B=_16_ Y=_139_
-.subckt OAI22X1 A=_137_ B=_139_ C=_135_ D=_37_ Y=_11_[1]
-.subckt NAND2X1 A=_221_[2] B=_16_ Y=_140_
-.subckt OAI22X1 A=_137_ B=_140_ C=_135_ D=_39_ Y=_11_[2]
-.subckt NAND2X1 A=_221_[3] B=_16_ Y=_141_
-.subckt OAI22X1 A=_137_ B=_141_ C=_135_ D=_41_ Y=_11_[3]
-.subckt NOR2X1 A=_53_ B=_17_ Y=_142_
-.subckt AOI21X1 A=_30_ B=_142_ C=CORE_InstructionIN[15] Y=_143_
-.subckt INVX1 A=_220_[0] Y=_144_
-.subckt AOI21X1 A=_144_ B=_136_ C=_61_ Y=_145_
-.subckt OAI21X1 A=_143_ B=CORE_InstructionIN[4] C=_145_ Y=_146_
-.subckt OAI21X1 A=_90_ B=CORE_InstructionIN[15] C=CORE_InstructionIN[4] Y=_147_
-.subckt AOI21X1 A=CORE_InstructionIN[11] B=_144_ C=_57_ Y=_148_
-.subckt OAI21X1 A=_121_ B=CORE_InstructionIN[15] C=_43_ Y=_149_
-.subckt AOI22X1 A=_220_[0] B=_28_ C=_148_ D=_149_ Y=_150_
-.subckt NAND3X1 A=_146_ B=_147_ C=_150_ Y=_10_[0]
-.subckt NOR2X1 A=_17_ B=_57_ Y=_151_
-.subckt OAI21X1 A=_17_ B=_31_ C=_20_ Y=_152_
-.subckt NAND2X1 A=_27_ B=_152_ Y=_153_
-.subckt NOR2X1 A=_151_ B=_153_ Y=_154_
-.subckt NAND2X1 A=_220_[1] B=_16_ Y=_155_
-.subckt NAND2X1 A=CORE_InstructionIN[8] B=_30_ Y=_156_
-.subckt NOR2X1 A=_156_ B=_72_ Y=_157_
-.subckt OAI21X1 A=_18_ B=CORE_InstructionIN[14] C=_16_ Y=_158_
-.subckt INVX1 A=_158_ Y=_159_
-.subckt OAI21X1 A=_57_ B=_122_ C=_159_ Y=_160_
-.subckt OAI21X1 A=_157_ B=_160_ C=CORE_InstructionIN[5] Y=_161_
-.subckt OAI21X1 A=_154_ B=_155_ C=_161_ Y=_10_[1]
-.subckt NAND2X1 A=_220_[2] B=_16_ Y=_162_
-.subckt OAI21X1 A=_157_ B=_160_ C=CORE_InstructionIN[6] Y=_163_
-.subckt OAI21X1 A=_154_ B=_162_ C=_163_ Y=_10_[2]
-.subckt NAND2X1 A=_220_[3] B=_16_ Y=_164_
-.subckt OAI21X1 A=_157_ B=_160_ C=CORE_InstructionIN[7] Y=_165_
-.subckt OAI21X1 A=_154_ B=_164_ C=_165_ Y=_10_[3]
-.subckt NOR2X1 A=_219_[0] B=_158_ Y=_166_
-.subckt AOI21X1 A=_53_ B=_158_ C=_166_ Y=_9_[0]
-.subckt NOR2X1 A=_219_[1] B=_158_ Y=_167_
-.subckt AOI21X1 A=_50_ B=_158_ C=_167_ Y=_9_[1]
-.subckt NOR2X1 A=_219_[2] B=_158_ Y=_168_
-.subckt AOI21X1 A=_23_ B=_158_ C=_168_ Y=_9_[2]
-.subckt NOR2X1 A=_219_[3] B=_158_ Y=_169_
-.subckt AOI21X1 A=_17_ B=_107_ C=_169_ Y=_9_[3]
-.subckt NAND2X1 A=_126_ B=_152_ Y=_170_
-.subckt NAND2X1 A=_225_[0] B=_170_ Y=_171_
-.subckt OAI21X1 A=_99_ B=_17_ C=_57_ Y=_172_
-.subckt NAND2X1 A=CORE_InstructionIN[15] B=_172_ Y=_173_
-.subckt OAI21X1 A=_171_ B=CORE_InstructionIN[15] C=_173_ Y=_15_[0]
-.subckt OAI21X1 A=_27_ B=_133_ C=_99_ Y=_174_
-.subckt AOI21X1 A=CORE_InstructionIN[11] B=_108_ C=_174_ Y=_175_
-.subckt NAND3X1 A=_16_ B=_225_[1] C=_170_ Y=_176_
-.subckt OAI21X1 A=_16_ B=_175_ C=_176_ Y=_15_[1]
-.subckt OAI21X1 A=CORE_InstructionIN[14] B=CORE_InstructionIN[12] C=CORE_InstructionIN[13] Y=_177_
-.subckt NAND3X1 A=_16_ B=_225_[2] C=_170_ Y=_178_
-.subckt OAI21X1 A=_16_ B=_177_ C=_178_ Y=_15_[2]
-.subckt NAND3X1 A=_16_ B=_225_[3] C=_170_ Y=_179_
-.subckt OAI21X1 A=_16_ B=_27_ C=_179_ Y=_15_[3]
-.subckt NOR2X1 A=CORE_InstructionIN[15] B=_61_ Y=_180_
-.subckt AOI22X1 A=CORE_InstructionIN[15] B=_91_ C=_180_ D=_25_ Y=_181_
-.subckt AND2X2 A=_16_ B=_217_[0] Y=_182_
-.subckt OAI21X1 A=_170_ B=_151_ C=_182_ Y=_183_
-.subckt OAI21X1 A=_17_ B=_181_ C=_183_ Y=_7_[0]
-.subckt INVX1 A=_217_[1] Y=_184_
-.subckt OR2X2 A=_126_ B=_184_ Y=_185_
-.subckt OAI21X1 A=_136_ B=_61_ C=_184_ Y=_186_
-.subckt OAI21X1 A=_151_ B=_20_ C=_186_ Y=_187_
-.subckt AOI21X1 A=_185_ B=_187_ C=CORE_InstructionIN[15] Y=_7_[1]
-.subckt NOR2X1 A=CORE_InstructionIN[4] B=CORE_InstructionIN[5] Y=_188_
-.subckt NOR2X1 A=CORE_InstructionIN[6] B=CORE_InstructionIN[7] Y=_189_
-.subckt NAND2X1 A=_188_ B=_189_ Y=_190_
-.subckt NOR2X1 A=_190_ B=_156_ Y=_191_
-.subckt NAND2X1 A=_98_ B=_191_ Y=_192_
-.subckt OAI21X1 A=_192_ B=_21_ C=_224_[0] Y=_193_
-.subckt NAND2X1 A=_129_ B=_191_ Y=_194_
-.subckt OAI21X1 A=_21_ B=_194_ C=_193_ Y=_14_[0]
-.subckt INVX1 A=_94_ Y=_195_
-.subckt OAI21X1 A=_34_ B=_37_ C=_195_ Y=_196_
-.subckt INVX1 A=_190_ Y=_197_
-.subckt NAND3X1 A=_53_ B=_50_ C=_121_ Y=_198_
-.subckt INVX1 A=_198_ Y=_199_
-.subckt NAND3X1 A=_197_ B=_199_ C=_180_ Y=_200_
-.subckt NAND2X1 A=_199_ B=_180_ Y=_201_
-.subckt NOR2X1 A=_34_ B=_37_ Y=_202_
-.subckt NAND3X1 A=_84_ B=_202_ C=_197_ Y=_203_
-.subckt OAI21X1 A=_201_ B=_203_ C=_224_[1] Y=_204_
-.subckt OAI21X1 A=_196_ B=_200_ C=_204_ Y=_14_[1]
-.subckt OAI21X1 A=_200_ B=_196_ C=_224_[2] Y=_205_
-.subckt OAI21X1 A=_118_ B=_200_ C=_205_ Y=_14_[2]
-.subckt INVX1 A=_224_[3] Y=_206_
-.subckt NAND2X1 A=CORE_InstructionIN[8] B=CORE_InstructionIN[9] Y=_207_
-.subckt NOR2X1 A=_207_ B=_102_ Y=_208_
-.subckt AOI21X1 A=_208_ B=_180_ C=_206_ Y=_14_[3]
-.subckt NAND2X1 A=_222_ B=_78_ Y=_209_
-.subckt NAND3X1 A=_16_ B=_99_ C=_209_ Y=_12_
-.subckt BUFX2 A=_210_ Y=CORE_DATA_ADDR_mux
-.subckt BUFX2 A=_211_ Y=CORE_DATA_REGMux
-.subckt BUFX2 A=_212_[0] Y=CORE_DATA_ctrl[0]
-.subckt BUFX2 A=_212_[1] Y=CORE_DATA_ctrl[1]
-.subckt BUFX2 A=_212_[2] Y=CORE_DATA_ctrl[2]
-.subckt BUFX2 A=_213_ Y=CORE_DATA_load
-.subckt BUFX2 A=_214_ Y=CORE_DATA_write
-.subckt BUFX2 A=_215_[0] Y=CORE_INT_CHA[0]
-.subckt BUFX2 A=_215_[1] Y=CORE_INT_CHA[1]
-.subckt BUFX2 A=_215_[2] Y=CORE_INT_CHA[2]
-.subckt BUFX2 A=_215_[3] Y=CORE_INT_CHA[3]
-.subckt BUFX2 A=_215_[4] Y=CORE_INT_CHA[4]
-.subckt BUFX2 A=_215_[5] Y=CORE_INT_CHA[5]
-.subckt BUFX2 A=_215_[6] Y=CORE_INT_CHA[6]
-.subckt BUFX2 A=_215_[7] Y=CORE_INT_CHA[7]
-.subckt BUFX2 A=_216_[0] Y=CORE_INT_ctrl[0]
-.subckt BUFX2 A=_216_[1] Y=CORE_INT_ctrl[1]
-.subckt BUFX2 A=_217_[0] Y=CORE_InstructionToULAMux[0]
-.subckt BUFX2 A=_217_[1] Y=CORE_InstructionToULAMux[1]
+.subckt OAI21X1 A=CORE_ULA_flags[2] B=_24_ C=_53_ Y=_54_
+.subckt NAND3X1 A=_51_ B=_52_ C=_54_ Y=_55_
+.subckt INVX1 A=_213_[0] Y=_56_
+.subckt NAND3X1 A=CORE_InstructionIN[12] B=_27_ C=_18_ Y=_57_
+.subckt AOI21X1 A=CORE_InstructionIN[11] B=_56_ C=_57_ Y=_58_
+.subckt OAI21X1 A=CORE_InstructionIN[11] B=_55_ C=_58_ Y=_59_
+.subckt NAND3X1 A=_18_ B=CORE_InstructionIN[11] C=_19_ Y=_60_
+.subckt INVX1 A=_60_ Y=_61_
+.subckt NOR2X1 A=_23_ B=_24_ Y=_62_
+.subckt OAI21X1 A=_56_ B=_62_ C=_31_ Y=_63_
+.subckt AOI22X1 A=CORE_InstructionIN[14] B=_213_[0] C=_61_ D=_63_ Y=_64_
+.subckt AOI21X1 A=_64_ B=_59_ C=CORE_InstructionIN[15] Y=_8_[0]
+.subckt INVX1 A=_213_[1] Y=_65_
+.subckt NAND2X1 A=_62_ B=_61_ Y=_66_
+.subckt NOR2X1 A=_17_ B=_57_ Y=_67_
+.subckt OAI21X1 A=_30_ B=_60_ C=_27_ Y=_68_
+.subckt OAI21X1 A=_67_ B=_68_ C=_16_ Y=_69_
+.subckt AOI21X1 A=_65_ B=_66_ C=_69_ Y=_8_[1]
+.subckt OAI21X1 A=_23_ B=_24_ C=_218_[0] Y=_70_
+.subckt NAND2X1 A=_70_ B=_31_ Y=_71_
+.subckt AOI22X1 A=CORE_InstructionIN[14] B=_218_[0] C=_61_ D=_71_ Y=_72_
+.subckt NOR2X1 A=CORE_InstructionIN[15] B=_72_ Y=_13_[0]
+.subckt INVX1 A=_218_[1] Y=_73_
+.subckt NOR2X1 A=_30_ B=_60_ Y=_74_
+.subckt OAI21X1 A=CORE_InstructionIN[14] B=_74_ C=_16_ Y=_75_
+.subckt AOI21X1 A=_73_ B=_66_ C=_75_ Y=_13_[1]
+.subckt NAND3X1 A=CORE_InstructionIN[2] B=_38_ C=_42_ Y=_76_
+.subckt NOR2X1 A=CORE_InstructionIN[0] B=CORE_InstructionIN[1] Y=_77_
+.subckt NOR2X1 A=CORE_InstructionIN[2] B=CORE_InstructionIN[3] Y=_78_
+.subckt INVX1 A=_78_ Y=_79_
+.subckt OAI21X1 A=_77_ B=_79_ C=_76_ Y=_80_
+.subckt NAND2X1 A=_77_ B=_78_ Y=_81_
+.subckt AOI21X1 A=_206_ B=_81_ C=_80_ Y=_82_
+.subckt NAND2X1 A=CORE_InstructionIN[13] B=_19_ Y=_83_
+.subckt INVX1 A=_83_ Y=_84_
+.subckt NAND2X1 A=_16_ B=_84_ Y=_85_
+.subckt NAND2X1 A=_206_ B=_28_ Y=_86_
+.subckt OAI21X1 A=_85_ B=_82_ C=_86_ Y=_1_
+.subckt NOR2X1 A=CORE_InstructionIN[14] B=_18_ Y=_87_
+.subckt INVX1 A=_87_ Y=_88_
+.subckt OAI21X1 A=CORE_InstructionIN[15] B=_88_ C=_207_[0] Y=_89_
+.subckt NAND2X1 A=CORE_InstructionIN[13] B=CORE_InstructionIN[12] Y=_90_
+.subckt NOR2X1 A=CORE_InstructionIN[14] B=_90_ Y=_91_
+.subckt INVX1 A=_207_[0] Y=_92_
+.subckt OAI21X1 A=CORE_InstructionIN[0] B=CORE_InstructionIN[1] C=_78_ Y=_93_
+.subckt NAND3X1 A=_92_ B=_76_ C=_93_ Y=_94_
+.subckt NOR2X1 A=CORE_InstructionIN[1] B=_34_ Y=_95_
+.subckt NAND3X1 A=CORE_InstructionIN[13] B=_19_ C=_76_ Y=_96_
+.subckt AOI21X1 A=_78_ B=_95_ C=_96_ Y=_97_
+.subckt NOR2X1 A=_23_ B=_17_ Y=_98_
+.subckt AOI22X1 A=_53_ B=_17_ C=_92_ D=_98_ Y=_99_
+.subckt AOI22X1 A=_91_ B=_99_ C=_94_ D=_97_ Y=_100_
+.subckt OAI21X1 A=CORE_InstructionIN[15] B=_100_ C=_89_ Y=_2_[0]
+.subckt INVX1 A=_207_[1] Y=_101_
+.subckt NOR2X1 A=CORE_InstructionIN[15] B=_88_ Y=_102_
+.subckt AOI22X1 A=_17_ B=_35_ C=_101_ D=_98_ Y=_103_
+.subckt AOI21X1 A=_76_ B=_101_ C=_83_ Y=_104_
+.subckt AOI22X1 A=_103_ B=_91_ C=_93_ D=_104_ Y=_105_
+.subckt OAI22X1 A=_101_ B=_102_ C=CORE_InstructionIN[15] D=_105_ Y=_2_[1]
+.subckt OAI21X1 A=CORE_InstructionIN[15] B=_88_ C=_207_[2] Y=_106_
+.subckt INVX1 A=_207_[2] Y=_107_
+.subckt NAND3X1 A=_107_ B=_76_ C=_93_ Y=_108_
+.subckt NOR2X1 A=CORE_InstructionIN[3] B=_40_ Y=_109_
+.subckt NAND3X1 A=CORE_InstructionIN[0] B=_40_ C=_42_ Y=_110_
+.subckt NAND3X1 A=CORE_InstructionIN[13] B=_19_ C=_110_ Y=_111_
+.subckt AOI21X1 A=_109_ B=_95_ C=_111_ Y=_112_
+.subckt NOR2X1 A=CORE_InstructionIN[10] B=CORE_InstructionIN[11] Y=_113_
+.subckt AOI21X1 A=_98_ B=_107_ C=_113_ Y=_114_
+.subckt AOI22X1 A=_91_ B=_114_ C=_108_ D=_112_ Y=_115_
+.subckt OAI21X1 A=CORE_InstructionIN[15] B=_115_ C=_106_ Y=_2_[2]
+.subckt INVX1 A=CORE_InstructionIN[12] Y=_116_
+.subckt OAI21X1 A=_18_ B=_116_ C=_27_ Y=_117_
+.subckt INVX1 A=_117_ Y=_118_
+.subckt OAI21X1 A=_205_ B=_27_ C=_16_ Y=_119_
+.subckt NOR2X1 A=_119_ B=_118_ Y=_0_
+.subckt NAND2X1 A=CORE_InstructionIN[14] B=_208_ Y=_120_
+.subckt AND2X2 A=_81_ B=_208_ Y=_121_
+.subckt OAI21X1 A=_80_ B=_121_ C=_84_ Y=_122_
+.subckt AOI21X1 A=_122_ B=_120_ C=CORE_InstructionIN[15] Y=_3_
+.subckt OAI21X1 A=_209_ B=_27_ C=_16_ Y=_123_
+.subckt NOR2X1 A=_123_ B=_118_ Y=_4_
+.subckt OAI21X1 A=CORE_InstructionIN[14] B=_116_ C=_16_ Y=_124_
+.subckt AOI21X1 A=_61_ B=_30_ C=_124_ Y=_125_
+.subckt NAND2X1 A=CORE_InstructionIN[11] B=_30_ Y=_126_
+.subckt AOI21X1 A=_20_ B=_126_ C=CORE_InstructionIN[14] Y=_127_
+.subckt NAND2X1 A=_216_[0] B=_16_ Y=_128_
+.subckt OAI22X1 A=_127_ B=_128_ C=_34_ D=_125_ Y=_11_[0]
+.subckt NAND2X1 A=_216_[1] B=_16_ Y=_129_
+.subckt OAI22X1 A=_127_ B=_129_ C=_38_ D=_125_ Y=_11_[1]
+.subckt NAND2X1 A=_216_[2] B=_16_ Y=_130_
+.subckt OAI22X1 A=_127_ B=_130_ C=_40_ D=_125_ Y=_11_[2]
+.subckt NAND2X1 A=_216_[3] B=_16_ Y=_131_
+.subckt OAI22X1 A=_127_ B=_131_ C=_42_ D=_125_ Y=_11_[3]
+.subckt NOR2X1 A=_53_ B=_17_ Y=_132_
+.subckt AOI21X1 A=_132_ B=_30_ C=CORE_InstructionIN[15] Y=_133_
+.subckt INVX1 A=_215_[0] Y=_134_
+.subckt NAND2X1 A=_18_ B=_19_ Y=_135_
+.subckt AOI21X1 A=_126_ B=_134_ C=_135_ Y=_136_
+.subckt OAI21X1 A=CORE_InstructionIN[4] B=_133_ C=_136_ Y=_137_
+.subckt OAI21X1 A=CORE_InstructionIN[15] B=_87_ C=CORE_InstructionIN[4] Y=_138_
+.subckt AOI21X1 A=CORE_InstructionIN[11] B=_134_ C=_57_ Y=_139_
+.subckt OAI21X1 A=CORE_InstructionIN[15] B=_113_ C=_44_ Y=_140_
+.subckt AOI22X1 A=_215_[0] B=_28_ C=_140_ D=_139_ Y=_141_
+.subckt NAND3X1 A=_138_ B=_141_ C=_137_ Y=_10_[0]
+.subckt OAI21X1 A=_17_ B=_57_ C=_127_ Y=_142_
+.subckt AND2X2 A=_16_ B=_215_[1] Y=_143_
+.subckt NAND2X1 A=_143_ B=_142_ Y=_144_
+.subckt NAND2X1 A=CORE_InstructionIN[8] B=_30_ Y=_145_
+.subckt NOR2X1 A=_145_ B=_60_ Y=_146_
+.subckt INVX1 A=_113_ Y=_147_
+.subckt OAI21X1 A=CORE_InstructionIN[14] B=_18_ C=_16_ Y=_148_
+.subckt INVX1 A=_148_ Y=_149_
+.subckt OAI21X1 A=_147_ B=_57_ C=_149_ Y=_150_
+.subckt OAI21X1 A=_146_ B=_150_ C=CORE_InstructionIN[5] Y=_151_
+.subckt NAND2X1 A=_151_ B=_144_ Y=_10_[1]
+.subckt AND2X2 A=_16_ B=_215_[2] Y=_152_
+.subckt NAND2X1 A=_152_ B=_142_ Y=_153_
+.subckt OAI21X1 A=_146_ B=_150_ C=CORE_InstructionIN[6] Y=_154_
+.subckt NAND2X1 A=_154_ B=_153_ Y=_10_[2]
+.subckt AND2X2 A=_16_ B=_215_[3] Y=_155_
+.subckt NAND2X1 A=_155_ B=_142_ Y=_156_
+.subckt OAI21X1 A=_146_ B=_150_ C=CORE_InstructionIN[7] Y=_157_
+.subckt NAND2X1 A=_157_ B=_156_ Y=_10_[3]
+.subckt NOR2X1 A=_214_[0] B=_148_ Y=_158_
+.subckt AOI21X1 A=_53_ B=_148_ C=_158_ Y=_9_[0]
+.subckt NOR2X1 A=_214_[1] B=_148_ Y=_159_
+.subckt AOI21X1 A=_24_ B=_148_ C=_159_ Y=_9_[1]
+.subckt NOR2X1 A=_214_[2] B=_148_ Y=_160_
+.subckt AOI21X1 A=_23_ B=_148_ C=_160_ Y=_9_[2]
+.subckt INVX1 A=_214_[3] Y=_161_
+.subckt AOI22X1 A=_161_ B=_149_ C=_17_ D=_102_ Y=_9_[3]
+.subckt AOI21X1 A=_20_ B=_126_ C=_117_ Y=_162_
+.subckt INVX1 A=_57_ Y=_163_
+.subckt AOI21X1 A=_84_ B=CORE_InstructionIN[11] C=_163_ Y=_164_
+.subckt NAND2X1 A=_220_[0] B=_16_ Y=_165_
+.subckt OAI22X1 A=_162_ B=_165_ C=_16_ D=_164_ Y=_15_[0]
+.subckt OAI21X1 A=_27_ B=_116_ C=_83_ Y=_166_
+.subckt AOI21X1 A=CORE_InstructionIN[11] B=_91_ C=_166_ Y=_167_
+.subckt NAND2X1 A=_220_[1] B=_16_ Y=_168_
+.subckt OAI22X1 A=_162_ B=_168_ C=_16_ D=_167_ Y=_15_[1]
+.subckt OAI21X1 A=CORE_InstructionIN[14] B=CORE_InstructionIN[12] C=CORE_InstructionIN[13] Y=_169_
+.subckt NAND2X1 A=_220_[2] B=_16_ Y=_170_
+.subckt OAI22X1 A=_16_ B=_169_ C=_170_ D=_162_ Y=_15_[2]
+.subckt NAND2X1 A=_220_[3] B=_16_ Y=_171_
+.subckt OAI22X1 A=_16_ B=_27_ C=_171_ D=_162_ Y=_15_[3]
+.subckt NAND2X1 A=_16_ B=_20_ Y=_172_
+.subckt OR2X2 A=_35_ B=CORE_InstructionIN[8] Y=_173_
+.subckt OAI22X1 A=_16_ B=_87_ C=_173_ D=_172_ Y=_174_
+.subckt NAND2X1 A=CORE_InstructionIN[11] B=_174_ Y=_175_
+.subckt NAND2X1 A=CORE_InstructionIN[11] B=_163_ Y=_176_
+.subckt AND2X2 A=_162_ B=_176_ Y=_177_
+.subckt NAND2X1 A=_212_[0] B=_16_ Y=_178_
+.subckt OAI21X1 A=_177_ B=_178_ C=_175_ Y=_7_[0]
+.subckt NAND2X1 A=_212_[1] B=_117_ Y=_179_
+.subckt INVX1 A=_212_[1] Y=_180_
+.subckt OAI21X1 A=_135_ B=_126_ C=_180_ Y=_181_
+.subckt OAI21X1 A=_20_ B=_67_ C=_181_ Y=_182_
+.subckt AOI21X1 A=_182_ B=_179_ C=CORE_InstructionIN[15] Y=_7_[1]
+.subckt NOR2X1 A=CORE_InstructionIN[1] B=_110_ Y=_183_
+.subckt NOR2X1 A=CORE_InstructionIN[4] B=CORE_InstructionIN[5] Y=_184_
+.subckt NOR2X1 A=CORE_InstructionIN[6] B=CORE_InstructionIN[7] Y=_185_
+.subckt NAND2X1 A=_184_ B=_185_ Y=_186_
+.subckt NOR2X1 A=_186_ B=_145_ Y=_187_
+.subckt NAND2X1 A=_183_ B=_187_ Y=_188_
+.subckt OAI21X1 A=_21_ B=_188_ C=_219_[0] Y=_189_
+.subckt NAND3X1 A=_77_ B=_78_ C=_187_ Y=_190_
+.subckt OAI21X1 A=_21_ B=_190_ C=_189_ Y=_14_[0]
+.subckt INVX1 A=_219_[1] Y=_191_
+.subckt NAND2X1 A=CORE_InstructionIN[0] B=CORE_InstructionIN[1] Y=_192_
+.subckt NOR2X1 A=_192_ B=_79_ Y=_193_
+.subckt NOR2X1 A=CORE_InstructionIN[15] B=_135_ Y=_194_
+.subckt NAND3X1 A=_53_ B=_24_ C=_113_ Y=_195_
+.subckt NOR2X1 A=_186_ B=_195_ Y=_196_
+.subckt NAND2X1 A=_194_ B=_196_ Y=_197_
+.subckt INVX1 A=_197_ Y=_198_
+.subckt AOI21X1 A=CORE_InstructionIN[0] B=CORE_InstructionIN[1] C=_93_ Y=_199_
+.subckt NAND3X1 A=_194_ B=_199_ C=_196_ Y=_200_
+.subckt AOI22X1 A=_200_ B=_191_ C=_193_ D=_198_ Y=_14_[1]
+.subckt NAND2X1 A=_219_[2] B=_200_ Y=_201_
+.subckt OAI21X1 A=_110_ B=_197_ C=_201_ Y=_14_[2]
+.subckt NAND3X1 A=CORE_InstructionIN[8] B=CORE_InstructionIN[9] C=_98_ Y=_202_
+.subckt OAI21X1 A=_202_ B=_172_ C=_219_[3] Y=_203_
+.subckt INVX1 A=_203_ Y=_14_[3]
+.subckt OAI21X1 A=CORE_InstructionIN[14] B=_74_ C=_217_ Y=_204_
+.subckt NAND3X1 A=_16_ B=_83_ C=_204_ Y=_12_
+.subckt BUFX2 A=_205_ Y=CORE_DATA_ADDR_mux
+.subckt BUFX2 A=_206_ Y=CORE_DATA_REGMux
+.subckt BUFX2 A=_207_[0] Y=CORE_DATA_ctrl[0]
+.subckt BUFX2 A=_207_[1] Y=CORE_DATA_ctrl[1]
+.subckt BUFX2 A=_207_[2] Y=CORE_DATA_ctrl[2]
+.subckt BUFX2 A=_208_ Y=CORE_DATA_load
+.subckt BUFX2 A=_209_ Y=CORE_DATA_write
+.subckt BUFX2 A=_210_[0] Y=CORE_INT_CHA[0]
+.subckt BUFX2 A=_210_[1] Y=CORE_INT_CHA[1]
+.subckt BUFX2 A=_210_[2] Y=CORE_INT_CHA[2]
+.subckt BUFX2 A=_210_[3] Y=CORE_INT_CHA[3]
+.subckt BUFX2 A=_210_[4] Y=CORE_INT_CHA[4]
+.subckt BUFX2 A=_210_[5] Y=CORE_INT_CHA[5]
+.subckt BUFX2 A=_210_[6] Y=CORE_INT_CHA[6]
+.subckt BUFX2 A=_210_[7] Y=CORE_INT_CHA[7]
+.subckt BUFX2 A=_211_[0] Y=CORE_INT_ctrl[0]
+.subckt BUFX2 A=_211_[1] Y=CORE_INT_ctrl[1]
+.subckt BUFX2 A=_212_[0] Y=CORE_InstructionToULAMux[0]
+.subckt BUFX2 A=_212_[1] Y=CORE_InstructionToULAMux[1]
 .subckt BUFX2 A=$undef Y=CORE_PC_clk
-.subckt BUFX2 A=_218_[0] Y=CORE_PC_ctrl[0]
-.subckt BUFX2 A=_218_[1] Y=CORE_PC_ctrl[1]
-.subckt BUFX2 A=_219_[0] Y=CORE_REG_RD[0]
-.subckt BUFX2 A=_219_[1] Y=CORE_REG_RD[1]
-.subckt BUFX2 A=_219_[2] Y=CORE_REG_RD[2]
-.subckt BUFX2 A=_219_[3] Y=CORE_REG_RD[3]
-.subckt BUFX2 A=_220_[0] Y=CORE_REG_RF1[0]
-.subckt BUFX2 A=_220_[1] Y=CORE_REG_RF1[1]
-.subckt BUFX2 A=_220_[2] Y=CORE_REG_RF1[2]
-.subckt BUFX2 A=_220_[3] Y=CORE_REG_RF1[3]
-.subckt BUFX2 A=_221_[0] Y=CORE_REG_RF2[0]
-.subckt BUFX2 A=_221_[1] Y=CORE_REG_RF2[1]
-.subckt BUFX2 A=_221_[2] Y=CORE_REG_RF2[2]
-.subckt BUFX2 A=_221_[3] Y=CORE_REG_RF2[3]
-.subckt BUFX2 A=_222_ Y=CORE_REG_write
-.subckt BUFX2 A=_223_[0] Y=CORE_STACK_ctrl[0]
-.subckt BUFX2 A=_223_[1] Y=CORE_STACK_ctrl[1]
-.subckt BUFX2 A=_224_[0] Y=CORE_Status_ctrl[0]
-.subckt BUFX2 A=_224_[1] Y=CORE_Status_ctrl[1]
-.subckt BUFX2 A=_224_[2] Y=CORE_Status_ctrl[2]
-.subckt BUFX2 A=_224_[3] Y=CORE_Status_ctrl[3]
+.subckt BUFX2 A=_213_[0] Y=CORE_PC_ctrl[0]
+.subckt BUFX2 A=_213_[1] Y=CORE_PC_ctrl[1]
+.subckt BUFX2 A=_214_[0] Y=CORE_REG_RD[0]
+.subckt BUFX2 A=_214_[1] Y=CORE_REG_RD[1]
+.subckt BUFX2 A=_214_[2] Y=CORE_REG_RD[2]
+.subckt BUFX2 A=_214_[3] Y=CORE_REG_RD[3]
+.subckt BUFX2 A=_215_[0] Y=CORE_REG_RF1[0]
+.subckt BUFX2 A=_215_[1] Y=CORE_REG_RF1[1]
+.subckt BUFX2 A=_215_[2] Y=CORE_REG_RF1[2]
+.subckt BUFX2 A=_215_[3] Y=CORE_REG_RF1[3]
+.subckt BUFX2 A=_216_[0] Y=CORE_REG_RF2[0]
+.subckt BUFX2 A=_216_[1] Y=CORE_REG_RF2[1]
+.subckt BUFX2 A=_216_[2] Y=CORE_REG_RF2[2]
+.subckt BUFX2 A=_216_[3] Y=CORE_REG_RF2[3]
+.subckt BUFX2 A=_217_ Y=CORE_REG_write
+.subckt BUFX2 A=_218_[0] Y=CORE_STACK_ctrl[0]
+.subckt BUFX2 A=_218_[1] Y=CORE_STACK_ctrl[1]
+.subckt BUFX2 A=_219_[0] Y=CORE_Status_ctrl[0]
+.subckt BUFX2 A=_219_[1] Y=CORE_Status_ctrl[1]
+.subckt BUFX2 A=_219_[2] Y=CORE_Status_ctrl[2]
+.subckt BUFX2 A=_219_[3] Y=CORE_Status_ctrl[3]
 .subckt BUFX2 A=$undef Y=CORE_Status_ctrl[4]
 .subckt BUFX2 A=$undef Y=CORE_ULAMux_inc_dec
-.subckt BUFX2 A=_225_[0] Y=CORE_ULA_ctrl[0]
-.subckt BUFX2 A=_225_[1] Y=CORE_ULA_ctrl[1]
-.subckt BUFX2 A=_225_[2] Y=CORE_ULA_ctrl[2]
-.subckt BUFX2 A=_225_[3] Y=CORE_ULA_ctrl[3]
-.subckt DFFPOSX1 CLK=clk D=_14_[0] Q=_224_[0]
-.subckt DFFPOSX1 CLK=clk D=_14_[1] Q=_224_[1]
-.subckt DFFPOSX1 CLK=clk D=_14_[2] Q=_224_[2]
-.subckt DFFPOSX1 CLK=clk D=_14_[3] Q=_224_[3]
-.subckt DFFPOSX1 CLK=clk D=_7_[0] Q=_217_[0]
-.subckt DFFPOSX1 CLK=clk D=_7_[1] Q=_217_[1]
-.subckt DFFPOSX1 CLK=clk D=_15_[0] Q=_225_[0]
-.subckt DFFPOSX1 CLK=clk D=_15_[1] Q=_225_[1]
-.subckt DFFPOSX1 CLK=clk D=_15_[2] Q=_225_[2]
-.subckt DFFPOSX1 CLK=clk D=_15_[3] Q=_225_[3]
-.subckt DFFPOSX1 CLK=clk D=_9_[0] Q=_219_[0]
-.subckt DFFPOSX1 CLK=clk D=_9_[1] Q=_219_[1]
-.subckt DFFPOSX1 CLK=clk D=_9_[2] Q=_219_[2]
-.subckt DFFPOSX1 CLK=clk D=_9_[3] Q=_219_[3]
-.subckt DFFPOSX1 CLK=clk D=_10_[0] Q=_220_[0]
-.subckt DFFPOSX1 CLK=clk D=_10_[1] Q=_220_[1]
-.subckt DFFPOSX1 CLK=clk D=_10_[2] Q=_220_[2]
-.subckt DFFPOSX1 CLK=clk D=_10_[3] Q=_220_[3]
-.subckt DFFPOSX1 CLK=clk D=_11_[0] Q=_221_[0]
-.subckt DFFPOSX1 CLK=clk D=_11_[1] Q=_221_[1]
-.subckt DFFPOSX1 CLK=clk D=_11_[2] Q=_221_[2]
-.subckt DFFPOSX1 CLK=clk D=_11_[3] Q=_221_[3]
-.subckt DFFPOSX1 CLK=clk D=_12_ Q=_222_
-.subckt DFFPOSX1 CLK=clk D=_4_ Q=_214_
-.subckt DFFPOSX1 CLK=clk D=_3_ Q=_213_
-.subckt DFFPOSX1 CLK=clk D=_0_ Q=_210_
-.subckt DFFPOSX1 CLK=clk D=_2_[0] Q=_212_[0]
-.subckt DFFPOSX1 CLK=clk D=_2_[1] Q=_212_[1]
-.subckt DFFPOSX1 CLK=clk D=_2_[2] Q=_212_[2]
-.subckt DFFPOSX1 CLK=clk D=_1_ Q=_211_
-.subckt DFFPOSX1 CLK=clk D=_13_[0] Q=_223_[0]
-.subckt DFFPOSX1 CLK=clk D=_13_[1] Q=_223_[1]
-.subckt DFFPOSX1 CLK=clk D=_8_[0] Q=_218_[0]
-.subckt DFFPOSX1 CLK=clk D=_8_[1] Q=_218_[1]
-.subckt DFFPOSX1 CLK=clk D=_5_[0] Q=_215_[0]
-.subckt DFFPOSX1 CLK=clk D=_5_[1] Q=_215_[1]
-.subckt DFFPOSX1 CLK=clk D=_5_[2] Q=_215_[2]
-.subckt DFFPOSX1 CLK=clk D=_5_[3] Q=_215_[3]
-.subckt DFFPOSX1 CLK=clk D=_5_[4] Q=_215_[4]
-.subckt DFFPOSX1 CLK=clk D=_5_[5] Q=_215_[5]
-.subckt DFFPOSX1 CLK=clk D=_5_[6] Q=_215_[6]
-.subckt DFFPOSX1 CLK=clk D=_5_[7] Q=_215_[7]
-.subckt DFFPOSX1 CLK=clk D=_6_[0] Q=_216_[0]
-.subckt DFFPOSX1 CLK=clk D=_6_[1] Q=_216_[1]
+.subckt BUFX2 A=_220_[0] Y=CORE_ULA_ctrl[0]
+.subckt BUFX2 A=_220_[1] Y=CORE_ULA_ctrl[1]
+.subckt BUFX2 A=_220_[2] Y=CORE_ULA_ctrl[2]
+.subckt BUFX2 A=_220_[3] Y=CORE_ULA_ctrl[3]
+.subckt DFFPOSX1 CLK=clk D=_14_[0] Q=_219_[0]
+.subckt DFFPOSX1 CLK=clk D=_14_[1] Q=_219_[1]
+.subckt DFFPOSX1 CLK=clk D=_14_[2] Q=_219_[2]
+.subckt DFFPOSX1 CLK=clk D=_14_[3] Q=_219_[3]
+.subckt DFFPOSX1 CLK=clk D=_7_[0] Q=_212_[0]
+.subckt DFFPOSX1 CLK=clk D=_7_[1] Q=_212_[1]
+.subckt DFFPOSX1 CLK=clk D=_15_[0] Q=_220_[0]
+.subckt DFFPOSX1 CLK=clk D=_15_[1] Q=_220_[1]
+.subckt DFFPOSX1 CLK=clk D=_15_[2] Q=_220_[2]
+.subckt DFFPOSX1 CLK=clk D=_15_[3] Q=_220_[3]
+.subckt DFFPOSX1 CLK=clk D=_9_[0] Q=_214_[0]
+.subckt DFFPOSX1 CLK=clk D=_9_[1] Q=_214_[1]
+.subckt DFFPOSX1 CLK=clk D=_9_[2] Q=_214_[2]
+.subckt DFFPOSX1 CLK=clk D=_9_[3] Q=_214_[3]
+.subckt DFFPOSX1 CLK=clk D=_10_[0] Q=_215_[0]
+.subckt DFFPOSX1 CLK=clk D=_10_[1] Q=_215_[1]
+.subckt DFFPOSX1 CLK=clk D=_10_[2] Q=_215_[2]
+.subckt DFFPOSX1 CLK=clk D=_10_[3] Q=_215_[3]
+.subckt DFFPOSX1 CLK=clk D=_11_[0] Q=_216_[0]
+.subckt DFFPOSX1 CLK=clk D=_11_[1] Q=_216_[1]
+.subckt DFFPOSX1 CLK=clk D=_11_[2] Q=_216_[2]
+.subckt DFFPOSX1 CLK=clk D=_11_[3] Q=_216_[3]
+.subckt DFFPOSX1 CLK=clk D=_12_ Q=_217_
+.subckt DFFPOSX1 CLK=clk D=_4_ Q=_209_
+.subckt DFFPOSX1 CLK=clk D=_3_ Q=_208_
+.subckt DFFPOSX1 CLK=clk D=_0_ Q=_205_
+.subckt DFFPOSX1 CLK=clk D=_2_[0] Q=_207_[0]
+.subckt DFFPOSX1 CLK=clk D=_2_[1] Q=_207_[1]
+.subckt DFFPOSX1 CLK=clk D=_2_[2] Q=_207_[2]
+.subckt DFFPOSX1 CLK=clk D=_1_ Q=_206_
+.subckt DFFPOSX1 CLK=clk D=_13_[0] Q=_218_[0]
+.subckt DFFPOSX1 CLK=clk D=_13_[1] Q=_218_[1]
+.subckt DFFPOSX1 CLK=clk D=_8_[0] Q=_213_[0]
+.subckt DFFPOSX1 CLK=clk D=_8_[1] Q=_213_[1]
+.subckt DFFPOSX1 CLK=clk D=_5_[0] Q=_210_[0]
+.subckt DFFPOSX1 CLK=clk D=_5_[1] Q=_210_[1]
+.subckt DFFPOSX1 CLK=clk D=_5_[2] Q=_210_[2]
+.subckt DFFPOSX1 CLK=clk D=_5_[3] Q=_210_[3]
+.subckt DFFPOSX1 CLK=clk D=_5_[4] Q=_210_[4]
+.subckt DFFPOSX1 CLK=clk D=_5_[5] Q=_210_[5]
+.subckt DFFPOSX1 CLK=clk D=_5_[6] Q=_210_[6]
+.subckt DFFPOSX1 CLK=clk D=_5_[7] Q=_210_[7]
+.subckt DFFPOSX1 CLK=clk D=_6_[0] Q=_211_[0]
+.subckt DFFPOSX1 CLK=clk D=_6_[1] Q=_211_[1]
 .end

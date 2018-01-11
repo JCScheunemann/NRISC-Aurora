@@ -1,0 +1,1209 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+
+                    Cadence Encounter(R) RTL Compiler
+            Version v08.10-s222_1 (64-bit), built Mar 25 2009
+
+
+
+==========================================================================
+               Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  checkpoint_dofile_naming_style
+       design  checkpoint_netlist_naming_style
+       design  multipass_mux_optimization
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+     instance  write_positional_connections
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  bit_blast_constants
+         root  bit_blast_mapped_ports
+         root  checkpoint_flow
+         root  checkpoint_gzipped_netlist
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  exact_match_seqs_async_controls
+         root  gen_no_negative_index
+         root  gen_unconnected_port_style
+         root  gen_write_empty_module_for_logic_abstract
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_new_hier_comp
+         root  wlec_no_exit
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_verbose
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+==========================================================================
+
+Sourcing './setupe_NRisc.tcl' (Tue Jan 09 10:57:04 -02 2018)...
+model name	: Intel(R) Core(TM)2 Quad CPU    Q8300  @ 2.50GHz
+model name	: Intel(R) Core(TM)2 Quad CPU    Q8300  @ 2.50GHz
+model name	: Intel(R) Core(TM)2 Quad CPU    Q8300  @ 2.50GHz
+model name	: Intel(R) Core(TM)2 Quad CPU    Q8300  @ 2.50GHz
+cpu MHz		: 2003.000
+cpu MHz		: 2003.000
+cpu MHz		: 2499.000
+cpu MHz		: 2003.000
+Hostname : localhost
+Sourcing '/tools/cadence/soc81/tools/lib/etc/load_etc.tcl' (Tue Jan 09 10:57:04 -02 2018)...
+Sourcing '/tools/cadence/soc81/tools/lib/etc/toolbox/insert_io_buffers.tcl' (Tue Jan 09 10:57:04 -02 2018)...
+
+
+
+
+
+  Setting attribute of root '/': 'lib_search_path' = . /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/ /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/verilog/ /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/
+  Setting attribute of root '/': 'script_search_path' = . ../scripts
+  Setting attribute of root '/': 'hdl_search_path' = . ./
+  Setting attribute of root '/': 'wireload_mode' = top
+  Setting attribute of root '/': 'information_level' = 5
+  Setting attribute of root '/': 'lp_power_unit' = uW
+  Setting attribute of root '/': 'hdl_latch_keep_feedback' = true
+    Loading library NangateOpenCellLibrary_typical_conditional_ecsm.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:48:18: Construct 'library_features' is not supported.
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:63:8: Construct 'define' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:74:31: Construct 'slew_lower_threshold_pct_fall' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:75:31: Construct 'slew_lower_threshold_pct_rise' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:76:31: Construct 'slew_upper_threshold_pct_fall' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:77:31: Construct 'slew_upper_threshold_pct_rise' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:92:14: Construct 'define_group' is not supported.
+Warning : Found CCS construct in the cell. [LBR-408]
+        : Found 'CCS' construct in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 281, column 27.
+        : Currently, CCS constructs are only parsed & ignored.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X1', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 123004, column 22.
+        : Currently, state tables are only supported for scan cells for the clocked LSSD scan style and for clock-gating cells whose Liberty attribute 'clock_gating_integrated_cell' is set to 'generic'.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X2', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 123767, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X4', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 124530, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X8', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 125293, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X1', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 126056, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X2', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 126705, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X4', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 127354, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X8', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 128003, column 19.
+        Cell 'ANTENNA_X1' has no outputs.
+        Cell 'ANTENNA_X1' has no outputs.
+        Cell 'FILLCELL_X1' has no outputs.
+        Cell 'FILLCELL_X1' has no outputs.
+        Cell 'FILLCELL_X16' has no outputs.
+        Cell 'FILLCELL_X16' has no outputs.
+        Cell 'FILLCELL_X2' has no outputs.
+        Cell 'FILLCELL_X2' has no outputs.
+        Cell 'FILLCELL_X32' has no outputs.
+        Cell 'FILLCELL_X32' has no outputs.
+        Cell 'FILLCELL_X4' has no outputs.
+        Cell 'FILLCELL_X4' has no outputs.
+        Cell 'FILLCELL_X8' has no outputs.
+        Cell 'FILLCELL_X8' has no outputs.
+  Setting attribute of root '/': 'library' =  NangateOpenCellLibrary_typical_conditional_ecsm.lib 
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+
+  There are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.07, 0.8) of 'WIDTH' for layers 'metal3' and 'metal9' is too large.
+        : Make sure to check the consistency of the parameters.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'PITCH' for layers 'metal3' and 'metal9' is too large.
+  Setting attribute of root '/': 'lef_library' = /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef//NangateOpenCellLibrary.lef
+  Setting attribute of root '/': 'interconnect_mode' = ple
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+Reading HDLs...
+Elaborate Design...
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+  Elaborating top-level block 'NRISC_UP' from file './src/NRISC_UP.v'.
+    Elaborating block 'NRISC_ULA' from file './src/NRISC_ULA.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'OUT' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 62.
+    Elaborating block 'somaUla_TAM16' from file './src/NRISC_ULA.v'.
+Warning : Connection width mismatch. [CDFG-420]
+        : Actual width 1 does not match port width 16 for port number 4 ('Outsum') of module 'somaUla_TAM16' in file './src/NRISC_ULA.v' on line 68.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'OUT[0]' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 112, column 19.
+        : Use the 'hdl_undriven_signal_value' attribute to control treatment of undriven net during elaboration.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'OUT[0]' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 99, column 15.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'A' of instance 'sumsub' of module 'somaUla_TAM16' in file './src/NRISC_ULA.v' on line 68, column 32.
+        : Use the 'hdl_undriven_signal_value' attribute to control treatment of undriven input port during elaboration.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'B' of instance 'sumsub' of module 'somaUla_TAM16' in file './src/NRISC_ULA.v' on line 68, column 32.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'cmd' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 106, column 29.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'A' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 105, column 31.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 105, column 40.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 105, column 51.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 109, column 123.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'A' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 106, column 27.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 106, column 36.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 111, column 45.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 106, column 61.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 107, column 48.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 111, column 33.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'A' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 109, column 34.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'OUT[0]' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 109, column 34.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'A' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 109, column 73.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'OUT[0]' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 109, column 73.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'B' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 109, column 61.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'A' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 110, column 34.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'OUT[0]' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 110, column 34.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'B' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 110, column 52.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'A' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 110, column 74.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'OUT[0]' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 110, column 74.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 110, column 122.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'B' in module 'NRISC_ULA' in file './src/NRISC_ULA.v' on line 107, column 28.
+    Elaborating block 'NRISC_InstructionDecoder' from file './src/NRISC_InstructionDecoder.v'.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'rst' is not used in module 'NRISC_InstructionDecoder' in file './src/NRISC_InstructionDecoder.v' on line 46.
+        : The value of the input port is not used within the design.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'CORE_ctrl' is not used in module 'NRISC_InstructionDecoder' in file './src/NRISC_InstructionDecoder.v' on line 47.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CORE_Status_ctrl' in module 'NRISC_InstructionDecoder' in file './src/NRISC_InstructionDecoder.v' on line 48, column 36.
+        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CORE_ULAMux_inc_dec' in module 'NRISC_InstructionDecoder' in file './src/NRISC_InstructionDecoder.v' on line 55, column 33.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CORE_PC_clk' in module 'NRISC_InstructionDecoder' in file './src/NRISC_InstructionDecoder.v' on line 71, column 25.
+Warning : Connection width mismatch. [CDFG-420]
+        : Actual width 1 does not match port width 4 for port number 8 ('CORE_REG_RF1') of module 'NRISC_InstructionDecoder' in file './src/NRISC_UP.v' on line 84.
+Warning : Connection width mismatch. [CDFG-420]
+        : Actual width 1 does not match port width 4 for port number 9 ('CORE_REG_RF2') of module 'NRISC_InstructionDecoder' in file './src/NRISC_UP.v' on line 84.
+Warning : Connection width mismatch. [CDFG-420]
+        : Actual width 1 does not match port width 4 for port number 10 ('CORE_REG_RD') of module 'NRISC_InstructionDecoder' in file './src/NRISC_UP.v' on line 84.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CORE_wire_RF1' in module 'NRISC_UP' in file './src/NRISC_UP.v' on line 58, column 32.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CORE_wire_RF2' in module 'NRISC_UP' in file './src/NRISC_UP.v' on line 59, column 32.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CORE_wire_RD' in module 'NRISC_UP' in file './src/NRISC_UP.v' on line 57, column 31.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CORE_wire_write' in module 'NRISC_UP' in file './src/NRISC_UP.v' on line 60, column 28.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'CORE_DATA_wireMux' in module 'NRISC_UP' in file './src/NRISC_UP.v' on line 66, column 30.
+  Done elaborating 'NRISC_UP'.
+Runtime & Memory after 'read_hdl'
+===========================================
+The RUNTIME after Elaboration is 5 secs
+and the MEMORY_USAGE after Elaboration is 47.06 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'NRISC_UP'
+
+No empty modules in design 'NRISC_UP'
+
+  Done Checking the design.
+Statistics for commands executed by read_sdc:
+ "all_inputs"              - successful      1 , failed      0 (runtime  0.00)
+ "all_outputs"             - successful      1 , failed      0 (runtime  0.00)
+Total runtime 0
+The number of exceptions is 0
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Jan 09 2018  10:57:06 AM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+No problems found.
+
+  Setting attribute of root '/': 'dp_perform_csa_operations' = false
+  Setting attribute of root '/': 'dp_perform_shannon_operations' = false
+  Setting attribute of root '/': 'dp_perform_sharing_operations' = false
+  Setting attribute of root '/': 'dp_perform_speculation_operations' = false
+ Reading VCD file  
+Cannot open "./multiplication.vcd"
+---------------------------------------------------------------
+Asserted primary inputs in design         : 0 (0.00%)
+Total connected primary inputs in design  : 60 (100.00%)
+---------------------------------------------------------------
+Asserted sequential outputs               : 0 (0.00%)
+Total connected sequential outputs        : 63 (100.00%)
+------------------------------------------------------------------------------------
+Total nets in design                      : 2239 (100.00%)
+Nets asserted                             : 0 (0.00%)
+Constant nets                             : 5 (0.22)
+Nets with no assertions                   : 2239 (100.00%)
+------------------------------------------------------------------------------------
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+        : The RTL power analysis results are more accurate when detailed power models are used. Use command 'build_rtl_power_models' to build detailed power models.
+  Setting attribute of design 'NRISC_UP': 'lp_optimize_dynamic_power_first' = true
+  Setting attribute of design 'NRISC_UP': 'max_dynamic_power' = 0.0
+Info    : Resetting power analysis results. [PA-7]
+        : Power analysis effort level changed from 'medium' to 'high'.
+        : All computed switching activities are removed.
+  Setting attribute of root '/': 'lp_power_analysis_effort' = high
+  Setting attribute of design 'NRISC_UP': 'lp_power_optimization_weight' = 1.0
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+  The '-incremental' option can only be used with a
+  mapped design.  Disabling '-incremental' option.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Site size           : 1.59 um (from lef [tech+cell])
+
+                   Capacitance  
+Layer               / Length         Data source:
+Name    Direction  (pF/micron)       lef_library
+--------------------------------
+metal1      H         0.000083  
+metal2      V         0.000044  
+metal3      H         0.000030  
+metal4      V         0.000024  
+metal5      H         0.000015  
+metal6      V         0.000011  
+metal7      H         0.000011  
+metal8      V         0.000007  
+metal9      H         0.000007  
+metal10     V         0.000004  
+
+                    Resistance   
+Layer                / Length         Data source:
+Name    Direction  (ohm/micron)       lef_library
+---------------------------------
+metal1      H          5.428571  
+metal2      V          3.571429  
+metal3      H          3.571429  
+metal4      V          1.500000  
+metal5      H          1.500000  
+metal6      V          1.500000  
+metal7      H          0.187500  
+metal8      V          0.187500  
+metal9      H          0.037500  
+metal10     V          0.037500  
+
+                        Area     
+Layer                 / Length        Data source:
+Name    Direction     (micron)        lef_library
+---------------------------------
+metal1      H          0.070000  
+metal2      V          0.070000  
+metal3      H          0.070000  
+metal4      V          0.140000  
+metal5      H          0.140000  
+metal6      V          0.140000  
+metal7      H          0.400000  
+metal8      V          0.400000  
+metal9      H          0.800000  
+metal10     V          0.800000  
+
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 1 hierarchical instance. 
+Following instance is deleted as they do not drive any primary output:
+'ULA/mux_112_19'.
+        : To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
+      Removing temporary intermediate hierarchies under NRISC_UP
+Info    : Found floating hierarchical output. [GLO-33]
+        : Found 5 floating hierarchical outputs:
+'ID/CORE_DATA_REGMux', 'ID/CORE_REG_RD[0:3]', 'ID/CORE_REG_RF1[0:3]', 
+'ID/CORE_REG_RF2[0:3]', 'ID/CORE_REG_write'.
+        : To see the list of floating hierarchical instances, set the 'information_level' attribute to 2 or above.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 14 sequential instances. 
+Following instances are deleted as they do not drive any primary output:
+'ID/CORE_DATA_REGMux_reg', 'ID/CORE_REG_RD_reg[0]', 
+'ID/CORE_REG_RD_reg[1]', 'ID/CORE_REG_RD_reg[2]', 'ID/CORE_REG_RD_reg[3]', 
+'ID/CORE_REG_RF1_reg[0]', 'ID/CORE_REG_RF1_reg[1]', 
+'ID/CORE_REG_RF1_reg[2]', 'ID/CORE_REG_RF1_reg[3]', 
+'ID/CORE_REG_RF2_reg[0]', 'ID/CORE_REG_RF2_reg[1]', 
+'ID/CORE_REG_RF2_reg[2]', 'ID/CORE_REG_RF2_reg[3]', 
+'ID/CORE_REG_write_reg'.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 9 hierarchical instances. 
+Following instances are deleted as they do not drive any primary output:
+'ID/mux_149_33', 'ID/mux_CORE_REG_RD_80_9', 'ID/mux_CORE_REG_RF1_80_9', 
+'ID/mux_CORE_REG_RF1_82_15', 'ID/mux_CORE_REG_RF1_184_17', 
+'ID/mux_CORE_REG_RF2_80_9', 'ID/mux_CORE_REG_RF2_82_15', 
+'ID/mux_CORE_REG_write_80_9', 'ID/mux_CORE_REG_write_82_15'.
+Mapping NRISC_UP to gates.
+      Mapping 'NRISC_UP'...
+        Preparing the circuit
+          Pruning unused logic
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'ID/CORE_Status_ctrl_reg[3]'.
+        : This optimization was enabled by the root attribute 'optimize_constant_0_flops'.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 1 sequential instance. 
+Following instance is deleted as they do not drive any primary output:
+'ID/CORE_Status_ctrl_reg[3] (floating root)'.
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) NRISC_UP...
+          Done structuring (delay-based) NRISC_UP
+          Structuring (delay-based) shift_left_vlog_unsigned...
+          Done structuring (delay-based) shift_left_vlog_unsigned
+        Mapping component shift_left_vlog_unsigned...
+          Structuring (delay-based) logic partition in NRISC_ULA...
+          Done structuring (delay-based) logic partition in NRISC_ULA
+        Mapping logic partition in NRISC_ULA...
+          Structuring (delay-based) somaUla_TAM16...
+          Done structuring (delay-based) somaUla_TAM16
+        Mapping component somaUla_TAM16...
+        Rebalancing component 'rsh_0_0'...
+          Structuring (delay-based) shift_right_vlog_unsigned...
+          Done structuring (delay-based) shift_right_vlog_unsigned
+        Mapping component shift_right_vlog_unsigned...
+          Structuring (delay-based) shift_right_vlog_unsigned_145...
+          Done structuring (delay-based) shift_right_vlog_unsigned_145
+        Mapping component shift_right_vlog_unsigned_145...
+          Structuring (delay-based) cb_seq...
+          Done structuring (delay-based) cb_seq
+        Mapping component cb_seq...
+          Structuring (delay-based) cb_part_205...
+          Done structuring (delay-based) cb_part_205
+        Mapping component cb_part_205...
+          Structuring (delay-based) logic partition in NRISC_ULA...
+          Done structuring (delay-based) logic partition in NRISC_ULA
+        Mapping logic partition in NRISC_ULA...
+ 
+Global mapping target info
+==========================
+Cost Group 'default' target slack:   298 ps
+Target path end-point (Pin: ID/CORE_DATA_ctrl_reg[2]/d)
+
+            Pin                         Type          Fanout Load Arrival   
+                                                             (fF)   (ps)    
+----------------------------------------------------------------------------
+(clock clk)                   <<<  launch                               0 R 
+ID
+  cb_seqi
+    CORE_DATA_ctrl_reg[2]/clk                                               
+    CORE_DATA_ctrl_reg[2]/q   (u)  unmapped_d_flop         3 10.2           
+    g4209/in_0                                                              
+    g4209/z                   (u)  unmapped_nand2          1  5.0           
+    g4190/in_0                                                              
+    g4190/z                   (u)  unmapped_complex2       1  5.0           
+    g4119/in_1                                                              
+    g4119/z                   (u)  unmapped_nand2          1  5.0           
+    g4093/in_0                                                              
+    g4093/z                   (u)  unmapped_complex2       1  5.0           
+    g4071/in_0                                                              
+    g4071/z                   (u)  unmapped_nand2          1  5.0           
+    g4062/in_1                                                              
+    g4062/z                   (u)  unmapped_complex2       1  5.0           
+    g4053/in_0                                                              
+    g4053/z                   (u)  unmapped_complex2       1  5.0           
+    CORE_DATA_ctrl_reg[2]/d   <<<  unmapped_d_flop                          
+    CORE_DATA_ctrl_reg[2]/clk      setup                                    
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                        capture                          10000 R 
+----------------------------------------------------------------------------
+Start-point  : ID/cb_seqi/CORE_DATA_ctrl_reg[2]/clk
+End-point    : ID/cb_seqi/CORE_DATA_ctrl_reg[2]/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 6822ps.
+ 
+          Restructuring (delay-based) logic partition in NRISC_ULA...
+          Done restructuring (delay-based) logic partition in NRISC_ULA
+        Optimizing logic partition in NRISC_ULA...
+          Restructuring (delay-based) cb_seq...
+          Done restructuring (delay-based) cb_seq
+        Optimizing component cb_seq...
+          Restructuring (delay-based) cb_part_205...
+          Done restructuring (delay-based) cb_part_205
+        Optimizing component cb_part_205...
+          Restructuring (delay-based) shift_right_vlog_unsigned_145...
+          Done restructuring (delay-based) shift_right_vlog_unsigned_145
+        Optimizing component shift_right_vlog_unsigned_145...
+        Early Area Reclamation for shift_right_vlog_unsigned_145 'very_fast' (slack=8843, area=97)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Pre-mapped Exploration for shift_right_vlog_unsigned_145 'slow' (slack=8836, area=88)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Early Area Reclamation for shift_right_vlog_unsigned 'very_fast' (slack=8909, area=97)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Pre-mapped Exploration for shift_right_vlog_unsigned 'slow' (slack=8935, area=83)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+          Restructuring (delay-based) somaUla_TAM16...
+          Done restructuring (delay-based) somaUla_TAM16
+        Optimizing component somaUla_TAM16...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+        Early Area Reclamation for shift_left_vlog_unsigned 'very_fast' (slack=8786, area=97)...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+        Pre-mapped Exploration for shift_left_vlog_unsigned 'slow' (slack=8843, area=83)...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+          Restructuring (delay-based) logic partition in NRISC_ULA...
+          Done restructuring (delay-based) logic partition in NRISC_ULA
+        Optimizing logic partition in NRISC_ULA...
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+ 
+Global mapping timing result
+============================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+         Pin                  Type      Fanout Load Slew Delay Arrival   
+                                               (fF) (ps)  (ps)   (ps)    
+-------------------------------------------------------------------------
+(clock clk)                  launch                                  0 R 
+(in_del_1)                   ext delay                     +10      10 R 
+ULA_ctrl[0]                  in port        15 13.0    0    +0      10 R 
+ULA/ULA_ctrl[0] 
+  sumsub/cin 
+    g931/A                                                  +0      10   
+    g931/ZN                  INV_X4         11 12.6   17   +21      31 F 
+    g914/A                                                  +0      31   
+    g914/ZN                  OAI21_X1        1  0.8   37   +50      80 R 
+    g904/A                                                  +0      80   
+    g904/ZN                  OAI21_X1        1  0.9   18   +40     120 F 
+    g903/A1                                                 +0     120   
+    g903/ZN                  AOI222_X1       1  1.0   72   +81     201 R 
+    g902/B1                                                 +0     201   
+    g902/ZN                  OAI21_X1        1  0.7   26   +34     235 F 
+    g901/A                                                  +0     235   
+    g901/ZN                  OAI21_X1        1  0.8   37   +54     289 R 
+    g900/A1                                                 +0     289   
+    g900/ZN                  NAND2_X1        1  0.7   16   +25     314 F 
+    g899/A                                                  +0     314   
+    g899/ZN                  OAI21_X1        1  0.8   37   +49     363 R 
+    g898/A1                                                 +0     363   
+    g898/ZN                  NAND2_X1        2  1.6   20   +33     396 F 
+    g897/A1                                                 +0     396   
+    g897/ZN                  OAI22_X1        1  0.8   59   +50     446 R 
+    g896/A                                                  +0     446   
+    g896/ZN                  AOI21_X1        1  0.7   28   +42     488 F 
+    g895/A                                                  +0     488   
+    g895/ZN                  AOI21_X1        2  2.1   63  +100     588 R 
+    g894/A                                                  +0     588   
+    g894/ZN                  INV_X2          1  0.8   16   +14     602 F 
+    g893/B1                                                 +0     602   
+    g893/ZN                  OAI21_X1        1  0.8   37   +47     648 R 
+    g892/A                                                  +0     648   
+    g892/ZN                  OAI21_X1        1  0.7   24   +38     686 F 
+    g891/A                                                  +0     686   
+    g891/ZN                  OAI21_X1        1  0.8   37   +53     740 R 
+    g890/A1                                                 +0     740   
+    g890/ZN                  NAND2_X1        1  0.7   16   +25     764 F 
+    g889/A                                                  +0     764   
+    g889/ZN                  OAI21_X1        1  0.8   37   +49     813 R 
+    g888/A1                                                 +0     813   
+    g888/ZN                  NAND2_X1        2  1.6   20   +33     846 F 
+    g887/A1                                                 +0     846   
+    g887/ZN                  OAI22_X1        1  0.8   59   +50     896 R 
+    g886/A                                                  +0     896   
+    g886/ZN                  AOI21_X1        1  0.7   28   +42     938 F 
+    g885/A                                                  +0     938   
+    g885/ZN                  AOI21_X1        2  2.1   63  +100    1038 R 
+    g884/A                                                  +0    1038   
+    g884/ZN                  INV_X2          1  0.8   16   +14    1052 F 
+    g883/B1                                                 +0    1052   
+    g883/ZN                  OAI21_X1        1  0.8   37   +47    1099 R 
+    g882/A                                                  +0    1099   
+    g882/ZN                  OAI21_X1        2  1.6   28   +45    1144 F 
+    g881/A1                                                 +0    1144   
+    g881/ZN                  OAI22_X1        1  0.8   59   +54    1197 R 
+    g880/A                                                  +0    1197   
+    g880/ZN                  AOI21_X1        1  0.7   28   +42    1239 F 
+    g879/A                                                  +0    1239   
+    g879/ZN                  AOI21_X1        2  2.1   63  +100    1339 R 
+    g878/A                                                  +0    1339   
+    g878/ZN                  INV_X2          1  0.8   16   +14    1353 F 
+    g877/B1                                                 +0    1353   
+    g877/ZN                  OAI21_X1        1  0.8   37   +47    1400 R 
+    g876/A                                                  +0    1400   
+    g876/ZN                  OAI21_X1        1  0.7   24   +38    1438 F 
+    g875/A                                                  +0    1438   
+    g875/ZN                  OAI21_X1        1  0.8   37   +53    1491 R 
+    g874/A1                                                 +0    1491   
+    g874/ZN                  NAND2_X1        1  0.7   16   +25    1515 F 
+    g873/A                                                  +0    1515   
+    g873/ZN                  OAI21_X1        1  0.8   37   +49    1565 R 
+    g872/A1                                                 +0    1565   
+    g872/ZN                  NAND2_X1        1  0.8   17   +26    1590 F 
+  sumsub/carrysom 
+  cb_parti1242/sumsub_carrysom 
+    g3881/A1                                                +0    1590   
+    g3881/ZN                 NAND2_X1        2  1.7   30   +42    1633 R 
+    g3855/A                                                 +0    1633   
+    g3855/ZN                 AOI21_X1        1  0.7   20   +34    1666 F 
+    g3803/A                                                 +0    1666   
+    g3803/ZN                 AOI21_X1        1  0.8   43   +74    1741 R 
+    g3785/A                                                 +0    1741   
+    g3785/ZN                 OAI21_X1        1  1.1   20   +42    1783 F 
+    ULA_flags_reg[0]/D  <<<  DFF_X1                         +0    1783   
+    ULA_flags_reg[0]/CK      setup                     0   +45    1828 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)                  capture                             10000 R 
+-------------------------------------------------------------------------
+Timing slack :    8172ps 
+Start-point  : ULA_ctrl[0]
+End-point    : ULA/cb_parti1242/ULA_flags_reg[0]/D
+
+ 
+ 
+Global mapping status
+=====================
+                         Worst  
+                 Total    Neg       Switching  
+Operation         Area   Slack        Power  
+-------------------------------------------------------------------------------
+ global_map       3598       0 -9223372036855 
+ 
+Global incremental target info
+==============================
+Cost Group 'default' target slack:   199 ps
+Target path end-point (Pin: ID/CORE_InstructionToULAMux_reg[0]/D (DFF_X1/D))
+
+                 Pin                         Type     Fanout Load Arrival   
+                                                             (fF)   (ps)    
+----------------------------------------------------------------------------
+(clock clk)                            <<<  launch                      0 R 
+ID
+  cb_seqi
+    CORE_InstructionToULAMux_reg[0]/CK                                      
+    CORE_InstructionToULAMux_reg[0]/Q       DFF_X1         4  2.5           
+    g4999/A1                                                                
+    g4999/ZN                                OR2_X1         1  0.9           
+    g4964/A1                                                                
+    g4964/ZN                                AOI22_X1       1  1.1           
+    g4943/A1                                                                
+    g4943/ZN                                NOR3_X1        1  0.7           
+    g4927/A                                                                 
+    g4927/ZN                                AOI21_X1       1  0.8           
+    g4920/A1                                                                
+    g4920/ZN                                NAND2_X1       1  1.1           
+    CORE_InstructionToULAMux_reg[0]/D  <<<  DFF_X1                          
+    CORE_InstructionToULAMux_reg[0]/CK      setup                           
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                                 capture                 10000 R 
+----------------------------------------------------------------------------
+Start-point  : ID/cb_seqi/CORE_InstructionToULAMux_reg[0]/CK
+End-point    : ID/cb_seqi/CORE_InstructionToULAMux_reg[0]/D
+
+The global mapper estimates a slack for this path of 6668ps.
+ 
+ 
+Global incremental timing result
+================================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+         Pin                  Type      Fanout Load Slew Delay Arrival   
+                                               (fF) (ps)  (ps)   (ps)    
+-------------------------------------------------------------------------
+(clock clk)                  launch                                  0 R 
+(in_del_1)                   ext delay                     +10      10 R 
+ULA_ctrl[0]                  in port        15 13.0    0    +0      10 R 
+ULA/ULA_ctrl[0] 
+  sumsub/cin 
+    g931/A                                                  +0      10   
+    g931/ZN                  INV_X4         11 12.6   17   +21      31 F 
+    g914/A                                                  +0      31   
+    g914/ZN                  OAI21_X1        1  0.8   37   +50      80 R 
+    g904/A                                                  +0      80   
+    g904/ZN                  OAI21_X1        1  0.9   18   +40     120 F 
+    g903/A1                                                 +0     120   
+    g903/ZN                  AOI222_X1       1  1.0   72   +81     201 R 
+    g902/B1                                                 +0     201   
+    g902/ZN                  OAI21_X1        1  0.7   26   +34     235 F 
+    g901/A                                                  +0     235   
+    g901/ZN                  OAI21_X1        1  0.8   37   +54     289 R 
+    g900/A1                                                 +0     289   
+    g900/ZN                  NAND2_X1        1  0.7   16   +25     314 F 
+    g899/A                                                  +0     314   
+    g899/ZN                  OAI21_X1        1  0.8   37   +49     363 R 
+    g898/A1                                                 +0     363   
+    g898/ZN                  NAND2_X1        2  1.6   20   +33     396 F 
+    g897/A1                                                 +0     396   
+    g897/ZN                  OAI22_X1        1  0.8   59   +50     446 R 
+    g896/A                                                  +0     446   
+    g896/ZN                  AOI21_X1        1  0.7   28   +42     488 F 
+    g895/A                                                  +0     488   
+    g895/ZN                  AOI21_X1        2  2.1   63  +100     588 R 
+    g894/A                                                  +0     588   
+    g894/ZN                  INV_X2          1  0.8   16   +14     602 F 
+    g893/B1                                                 +0     602   
+    g893/ZN                  OAI21_X1        1  0.8   37   +47     648 R 
+    g892/A                                                  +0     648   
+    g892/ZN                  OAI21_X1        1  0.7   24   +38     686 F 
+    g891/A                                                  +0     686   
+    g891/ZN                  OAI21_X1        1  0.8   37   +53     740 R 
+    g890/A1                                                 +0     740   
+    g890/ZN                  NAND2_X1        1  0.7   16   +25     764 F 
+    g889/A                                                  +0     764   
+    g889/ZN                  OAI21_X1        1  0.8   37   +49     813 R 
+    g888/A1                                                 +0     813   
+    g888/ZN                  NAND2_X1        2  1.6   20   +33     846 F 
+    g887/A1                                                 +0     846   
+    g887/ZN                  OAI22_X1        1  0.8   59   +50     896 R 
+    g886/A                                                  +0     896   
+    g886/ZN                  AOI21_X1        1  0.7   28   +42     938 F 
+    g885/A                                                  +0     938   
+    g885/ZN                  AOI21_X1        2  2.1   63  +100    1038 R 
+    g884/A                                                  +0    1038   
+    g884/ZN                  INV_X2          1  0.8   16   +14    1052 F 
+    g883/B1                                                 +0    1052   
+    g883/ZN                  OAI21_X1        1  0.8   37   +47    1099 R 
+    g882/A                                                  +0    1099   
+    g882/ZN                  OAI21_X1        2  1.6   28   +45    1144 F 
+    g881/A1                                                 +0    1144   
+    g881/ZN                  OAI22_X1        1  0.8   59   +54    1197 R 
+    g880/A                                                  +0    1197   
+    g880/ZN                  AOI21_X1        1  0.7   28   +42    1239 F 
+    g879/A                                                  +0    1239   
+    g879/ZN                  AOI21_X1        2  2.1   63  +100    1339 R 
+    g878/A                                                  +0    1339   
+    g878/ZN                  INV_X2          1  0.8   16   +14    1353 F 
+    g877/B1                                                 +0    1353   
+    g877/ZN                  OAI21_X1        1  0.8   37   +47    1400 R 
+    g876/A                                                  +0    1400   
+    g876/ZN                  OAI21_X1        1  0.7   24   +38    1438 F 
+    g875/A                                                  +0    1438   
+    g875/ZN                  OAI21_X1        1  0.8   37   +53    1491 R 
+    g874/A1                                                 +0    1491   
+    g874/ZN                  NAND2_X1        1  0.7   16   +25    1515 F 
+    g873/A                                                  +0    1515   
+    g873/ZN                  OAI21_X1        1  0.8   37   +49    1565 R 
+    g872/A1                                                 +0    1565   
+    g872/ZN                  NAND2_X1        1  0.8   17   +26    1590 F 
+  sumsub/carrysom 
+  cb_parti1242/sumsub_carrysom 
+    g3881/A1                                                +0    1590   
+    g3881/ZN                 NAND2_X1        2  1.7   30   +42    1633 R 
+    g3855/A                                                 +0    1633   
+    g3855/ZN                 AOI21_X1        1  0.7   20   +34    1666 F 
+    g3803/A                                                 +0    1666   
+    g3803/ZN                 AOI21_X1        1  0.8   43   +74    1741 R 
+    g3785/A                                                 +0    1741   
+    g3785/ZN                 OAI21_X1        1  1.1   20   +42    1783 F 
+    ULA_flags_reg[0]/D  <<<  DFF_X1                         +0    1783   
+    ULA_flags_reg[0]/CK      setup                     0   +45    1828 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)                  capture                             10000 R 
+-------------------------------------------------------------------------
+Timing slack :    8172ps 
+Start-point  : ULA_ctrl[0]
+End-point    : ULA/cb_parti1242/ULA_flags_reg[0]/D
+
+ 
+ 
+Global incremental optimization status
+======================================
+                         Worst  
+                 Total    Neg       Switching  
+Operation         Area   Slack        Power  
+-------------------------------------------------------------------------------
+ global_inc       3593       0 -9223372036855 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay       3593       0         0        0-9223372036855 
+ init_drc         3593       0         0        0-9223372036855 
+ init_power       3593       0         0        0-9223372036855 
+ init_area        3593       0         0        0-9223372036855 
+ merge_bi         3590       0         0        0-9223372036855 
+ gate_comp        3575       0         0        0-9223372036855 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay       3575       0         0        0-9223372036855 
+ init_drc         3575       0         0        0-9223372036855 
+ init_power       3575       0         0        0-9223372036855 
+ init_area        3575       0         0        0-9223372036855 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay       3575       0         0        0-9223372036855 
+ init_drc         3575       0         0        0-9223372036855 
+ init_power       3575       0         0        0-9223372036855 
+
+  Done mapping NRISC_UP
+  Synthesis succeeded.
+Runtime & Memory after incremental synthesis
+===========================================
+The RUNTIME after INCREMENTAL is 14 secs
+and the MEMORY_USAGE after INCREMENTAL is 57.76 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'NRISC_UP'
+
+No empty modules in design 'NRISC_UP'
+
+ Unloaded Pin(s), Port(s)
+ -------------------------
+No unloaded sequential element in 'NRISC_UP'
+
+design 'NRISC_UP' has the following unloaded port(s)
+/designs/NRISC_UP/ports_in/CORE_ctrl[0]
+/designs/NRISC_UP/ports_in/CORE_ctrl[1]
+/designs/NRISC_UP/ports_in/CORE_ctrl[2]
+/designs/NRISC_UP/ports_in/rst
+Total number of unloaded ports in design 'NRISC_UP' : 4
+
+ Assigns
+ ------- 
+Encountered an assign statement at port '/designs/NRISC_UP/ports_out/CORE_Status_ctrl[3]' in design NRISC_UP
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[3]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RF1[3]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RF1[2]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RF1[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RF1[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RF2[3]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RF2[2]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RF2[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RF2[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RD[3]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RD[2]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RD[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_RD[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_REG_write' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_DATA_REGMux' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[15]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[14]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[13]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[12]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[11]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[10]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[9]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[8]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[7]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[6]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[5]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[4]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[3]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[2]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[1]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[0]' in subdesign NRISC_ULA
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[15]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[14]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[13]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[12]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[11]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[10]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[9]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[8]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[7]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[6]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[5]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[4]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[3]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[2]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[1]' in subdesign somaUla_TAM16
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/subports_out/Outsum[0]' in subdesign somaUla_TAM16
+Total number of assign statements in design 'NRISC_UP' : 48
+
+ Undriven Port(s)/Pin(s)
+ ------------------------
+The following combinational pin(s) in design 'NRISC_UP' are undriven
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g2/pins_in/A
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g2/pins_in/CI
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3751/pins_in/C2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3767/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3769/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3770/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3771/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3772/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3773/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3774/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3775/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3776/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3777/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3778/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3779/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3780/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3781/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3782/pins_in/B2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3803/pins_in/B1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3838/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3855/pins_in/B1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3880/pins_in/S
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3888/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3888/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3888/pins_in/A3
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3888/pins_in/A4
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3889/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3889/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3889/pins_in/A3
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3889/pins_in/A4
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3890/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3890/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3890/pins_in/A3
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3890/pins_in/A4
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3891/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3891/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3891/pins_in/A3
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3891/pins_in/A4
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3892/pins_in/A
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3892/pins_in/B
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3893/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3898/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3898/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3899/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3899/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g3903/pins_in/A
+Total number of combinational undriven pins in design 'NRISC_UP' : 46
+
+No undriven sequential pin in 'NRISC_UP'
+
+The following hierarchical pin(s) in design 'NRISC_UP' are undriven
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[1] 	 (fanout : 4)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[0] 	 (fanout : 3)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[0] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[10] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[11] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[12] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[13] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[14] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[2] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[3] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[4] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[5] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[6] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[7] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[8] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[9] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[11] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[1] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[5] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[9] 	 (fanout : 2)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[10] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[12] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[13] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[14] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[2] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[3] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[4] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[6] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[7] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[8] 	 (fanout : 1)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/A[15] 	 (fanout : 0)
+/designs/NRISC_UP/instances_hier/ULA/instances_hier/sumsub/pins_in/B[15] 	 (fanout : 0)
+Total number of hierarchical undriven pins in design 'NRISC_UP' : 32
+
+The following port(s) in design 'NRISC_UP' are undriven
+/designs/NRISC_UP/ports_out/CORE_DATA_wireMux
+/designs/NRISC_UP/ports_out/CORE_PC_clk
+/designs/NRISC_UP/ports_out/CORE_ULAMux_inc_dec
+/designs/NRISC_UP/ports_out/CORE_wire_write
+{/designs/NRISC_UP/ports_out/CORE_Status_ctrl[4]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RD[0]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RD[1]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RD[2]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RD[3]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RF1[0]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RF1[1]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RF1[2]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RF1[3]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RF2[0]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RF2[1]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RF2[2]}
+{/designs/NRISC_UP/ports_out/CORE_wire_RF2[3]}
+Total number of undriven port(s) in design 'NRISC_UP' : 17
+
+ Multidriven Port(s)/Pin(s)
+--------------------------
+
+No multidriven combinational pin in 'NRISC_UP'
+
+No multidriven sequential pin in 'NRISC_UP'
+
+No multidriven hierarchical pin in 'NRISC_UP'
+
+No multidriven ports in 'NRISC_UP'
+
+  Constant Pin(s)
+  ----------------
+No constant combinational pin(s) in design 'NRISC_UP'
+
+No constant sequential pin(s) in design 'NRISC_UP'
+
+design 'NRISC_UP' has the following constant input hierarchical pin(s)
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[0]
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[1]
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[2]
+/designs/NRISC_UP/instances_hier/ID/pins_in/rst
+Total number of constant hierarchical pins in design 'NRISC_UP' : 4
+
+design 'NRISC_UP' has the following constant port(s)
+/designs/NRISC_UP/ports_out/CORE_Status_ctrl[3]
+Total number of constant port(s) in design 'NRISC_UP' : 1
+
+  Preserved instances(s)
+  ----------------
+No preserved combinational instance(s) in design 'NRISC_UP'
+No preserved sequential instance(s) in design 'NRISC_UP'
+No preserved hierarchical instance(s) in design 'NRISC_UP'
+
+Libcells with no corresponding LEF
+----------------------------------
+No libcell(s) found.
+
+LEF cells with no corresponding libcell
+---------------------------------------
+
+No physical (LEF) cells found.
+
+ Summary
+ ------- 
+
+                Name                 Total 
+-------------------------------------------
+Unresolved References                    0 
+Empty Modules                            0 
+Unloaded Port(s)                         4 
+Unloaded Sequential Pin(s)               0 
+Assigns                                 48 
+Undriven Port(s)                        17 
+Undriven Leaf Pin(s)                    46 
+Undriven hierarchical pin(s)            32 
+Multidriven Port(s)                      0 
+Multidriven Leaf Pin(s)                  0 
+Multidriven hierarchical Pin(s)          0 
+Constant Port(s)                         1 
+Constant Leaf Pin(s)                     0 
+Constant hierarchical Pin(s)             4 
+Preserved leaf instance(s)               0 
+Preserved hierarchical instance(s)       0 
+Libcells with no LEF cell                0 
+Physical (LEF) cells with no libcell     0 
+
+  Done Checking the design.
+Cannot open "./multiplication.vcd"
+---------------------------------------------------------------
+Asserted primary inputs in design         : 0 (0.00%)
+Total connected primary inputs in design  : 56 (100.00%)
+---------------------------------------------------------------
+Asserted sequential outputs               : 0 (0.00%)
+Total connected sequential outputs        : 51 (100.00%)
+------------------------------------------------------------------------------------
+Total nets in design                      : 991 (100.00%)
+Nets asserted                             : 0 (0.00%)
+Constant nets                             : 4 (0.40)
+Nets with no assertions                   : 991 (100.00%)
+------------------------------------------------------------------------------------
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Jan 09 2018  10:57:16 AM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+Timing
+------
+
+  Cost    Critical       Violating 
+ Group   Path Slack TNS    Paths   
+-----------------------------------
+default      8171.8   0          0 
+-----------------------------------
+Total                 0          0 
+
+Instance Count
+--------------
+
+Leaf Instance Count            607 
+Sequential Instance Count       48 
+Combinational Instance Count   559 
+Hierarchical Instance Count      6 
+
+Area & Power
+------------
+Total Area                         3575.012
+Cell Area                          879.130
+Leakage Power                      7.811 uW
+Dynamic Power                      72.167 uW
+Total Power                        79.978 uW
+
+
+Max Fanout                         50 (ULA_B[0])
+Min Fanout                         0 (ID/CORE_Status_ctrl[3])
+Average Fanout                     2.6
+Terms to net ratio                 2.4
+Terms to instance ratio            3.9
+Runtime                            15 seconds
+Hostname                           localhost
+Final Runtime & Memory.
+===========================================
+The RUNTIME after FINAL is 15 secs
+and the MEMORY_USAGE after FINAL is 57.76 MB
+===========================================
+============================
+Synthesis Finished .........
+============================
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Jan 09 2018  10:57:16 AM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP   607     7.811    72.167    79.978 
+  ULA      449     5.329    43.811    49.140 
+  ID       158     2.482    17.903    20.384 
+

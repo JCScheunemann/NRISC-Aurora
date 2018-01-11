@@ -1,4 +1,4 @@
-# osu018.par --- Parameter file for GrayWolf
+# osu035.par --- Parameter file for GrayWolf
 # NOTE:  all distance units are in centimicrons unless otherwise stated
 
 RULES
@@ -48,19 +48,19 @@ ENDRULES
 *vertical_path_weight : 1.0
 *padspacing           : variable
 *rowSep		      : 0.0   0
-*track.pitch	      : 80
-*minimum_pad_space    : 120
-*gridX		      : 80
-*gridY		      : 100
-*gridOffsetX	      : 0
-*gridOffsetY	      : 0
+*track.pitch	      : 160
+*minimum_pad_space    : 240
+*gridX		      : 160
+*gridY		      : 200
+*gridOffsetX 	      : 0
+*gridOffsetY 	      : 0
 *graphics.wait        : off
 *last_chance.wait     : off
 *random.seed	      : 12345
 
 TWMC*chip.aspect.ratio : 0.75
 
-TWSC*feedThruWidth    : 80 layer 1
+TWSC*feedThruWidth    : 160 layer 1
 TWSC*do.global.route  : on
 TWSC*ignore_feeds     : true
 TWSC*call_row_evener	: true

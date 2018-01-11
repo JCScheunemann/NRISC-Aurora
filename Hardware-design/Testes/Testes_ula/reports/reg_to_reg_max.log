@@ -1,6 +1,0 @@
-Vesta static timing analysis, register-to-register maximum timing
-
-Top 0 maximum delay paths:
-Computed maximum clock frequency (zero slack) = inf MHz
------------------------------------------
-

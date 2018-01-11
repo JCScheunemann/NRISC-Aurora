@@ -1,4 +1,4 @@
-Qflow synthesis logfile created on dom jan 7 12:20:45 -02 2018
+Qflow synthesis logfile created on seg jan 8 22:55:03 -02 2018
 Running yosys for verilog parsing and synthesis
 yosys  -s NRISC_InstructionDecoder.ys
 
@@ -28,7 +28,7 @@ yosys  -s NRISC_InstructionDecoder.ys
 -- Executing script file `NRISC_InstructionDecoder.ys' --
 
 1. Executing Liberty frontend.
-Imported 32 cell types from liberty file.
+Imported 39 cell types from liberty file.
 
 2. Executing Verilog-2005 frontend.
 Parsing Verilog input from `/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Teste_ID/NRISC_InstructionDecoder.v' to AST representation.
@@ -2906,9 +2906,9 @@ checking module NRISC_InstructionDecoder..
 found and reported 0 problems.
 
 4. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
-  cell DFFNEGX1 (noninv, pins=3, area=96.00) is a direct match for cell type $_DFF_N_.
-  cell DFFPOSX1 (noninv, pins=3, area=96.00) is a direct match for cell type $_DFF_P_.
-  cell DFFSR (noninv, pins=5, area=176.00) is a direct match for cell type $_DFFSR_PNN_.
+  cell DFFNEGX1 (noninv, pins=3, area=384.00) is a direct match for cell type $_DFF_N_.
+  cell DFFPOSX1 (noninv, pins=3, area=384.00) is a direct match for cell type $_DFF_P_.
+  cell DFFSR (noninv, pins=5, area=704.00) is a direct match for cell type $_DFFSR_PNN_.
   create mapping for $_DFFSR_PPN_ from mapping for $_DFFSR_PNN_.
   create mapping for $_DFFSR_PNP_ from mapping for $_DFFSR_PNN_.
   create mapping for $_DFFSR_PPP_ from mapping for $_DFFSR_PNP_.
@@ -2987,16 +2987,21 @@ Running ABC command: /usr/local/share/qflow/bin/yosys-abc -s -f <abc-temp-dir>/a
 ABC: ABC command line: "source <abc-temp-dir>/abc.script".
 ABC: 
 ABC: + read_blif <abc-temp-dir>/input.blif 
-ABC: + read_lib -w /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib 
+ABC: + read_lib -w /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib 
 ABC: Parsing finished successfully.  Parsing time =     0.00 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "PADINOUT".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
-ABC: Library "osu018_stdcells" from "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func).  Time =     0.00 sec
-ABC: Memory =    0.36 MB. Time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
+ABC: Library "osu035_stdcells" from "/usr/local/share/qflow/tech/osu035/osu035_stdcells.lib" has 28 cells (11 skipped: 4 seq; 3 tri-state; 4 no func).  Time =     0.00 sec
+ABC: Memory =    0.38 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + scorr 
@@ -3009,18 +3014,17 @@ ABC: + map -M 1
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
 6.1.2. Re-integrating ABC results.
-ABC RESULTS:            AND2X2 cells:        3
+ABC RESULTS:            AND2X2 cells:        6
 ABC RESULTS:           AOI21X1 cells:       24
-ABC RESULTS:           AOI22X1 cells:        5
-ABC RESULTS:             INVX1 cells:       41
+ABC RESULTS:           AOI22X1 cells:       10
+ABC RESULTS:             INVX1 cells:       45
 ABC RESULTS:            MUX2X1 cells:        8
 ABC RESULTS:           NAND2X1 cells:       38
-ABC RESULTS:           NAND3X1 cells:       16
-ABC RESULTS:            NOR2X1 cells:       39
-ABC RESULTS:            NOR3X1 cells:        3
-ABC RESULTS:           OAI21X1 cells:       51
-ABC RESULTS:           OAI22X1 cells:        6
-ABC RESULTS:             OR2X2 cells:        4
+ABC RESULTS:           NAND3X1 cells:       18
+ABC RESULTS:            NOR2X1 cells:       30
+ABC RESULTS:           OAI21X1 cells:       42
+ABC RESULTS:           OAI22X1 cells:       11
+ABC RESULTS:             OR2X2 cells:        1
 ABC RESULTS:        internal signals:      303
 ABC RESULTS:           input signals:       63
 ABC RESULTS:          output signals:       44
@@ -3092,117 +3096,110 @@ Finding unused cells or wires in module \NRISC_InstructionDecoder..
 
 === NRISC_InstructionDecoder ===
 
-   Number of wires:                249
-   Number of wire bits:            354
-   Number of public wires:         249
-   Number of public wire bits:     354
+   Number of wires:                244
+   Number of wire bits:            349
+   Number of public wires:         244
+   Number of public wire bits:     349
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                329
-     AND2X2                          3
+   Number of cells:                324
+     AND2X2                          6
      AOI21X1                        24
-     AOI22X1                         5
+     AOI22X1                        10
      BUFX2                          47
      DFFPOSX1                       44
-     INVX1                          41
+     INVX1                          45
      MUX2X1                          8
      NAND2X1                        38
-     NAND3X1                        16
-     NOR2X1                         39
-     NOR3X1                          3
-     OAI21X1                        51
-     OAI22X1                         6
-     OR2X2                           4
+     NAND3X1                        18
+     NOR2X1                         30
+     OAI21X1                        42
+     OAI22X1                        11
+     OR2X2                           1
 
-End of script. Logfile hash: f1fce653f4
-CPU: user 0.75s system 0.00s, MEM: 39.95 MB total, 13.11 MB resident
+End of script. Logfile hash: 0f727acb7d
+CPU: user 0.76s system 0.01s, MEM: 39.95 MB total, 13.05 MB resident
 Yosys 0.7 (git sha1 61f6811, gcc 6.2.0-11ubuntu1 -O2 -fdebug-prefix-map=/build/yosys-OIL3SR/yosys-0.7=. -fstack-protector-strong -fPIC -Os)
-Time spent: 16% 18x opt_expr (0 sec), 15% 17x opt_merge (0 sec), ...
+Time spent: 17% 18x opt_expr (0 sec), 15% 17x opt_merge (0 sec), ...
 Cleaning up output syntax
-ypostproc.tcl NRISC_InstructionDecoder_mapped.blif NRISC_InstructionDecoder /usr/local/share/qflow/tech/osu018/osu018.sh
+ypostproc.tcl NRISC_InstructionDecoder_mapped.blif NRISC_InstructionDecoder /usr/local/share/qflow/tech/osu035/osu035.sh
 Cleaning up blif file syntax
 Running blifFanout (iterative)
 Each iteration calls:
-blifFanout -l 100 -c 20 -I NRISC_InstructionDecoder_nofanout -p /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib  -b BUFX2 -i A -o Y tmp.blif NRISC_InstructionDecoder.blif
+blifFanout -l 200 -c 30 -I NRISC_InstructionDecoder_nofanout -p /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib  -b BUFX2 -i A -o Y tmp.blif NRISC_InstructionDecoder.blif
 
-Parsing library "osu018_stdcells"
-End of library at line 6141
-Lib Read:  Processed 6142 lines.
-Top internal fanout is 24 (load 357.397) from node _16_,
-driven by INVX1 with strength 58.615 (fF driven at latency 100)
-Top fanout load-to-strength ratio is 6.09737 (latency = 609.737 ps)
-Top input node fanout is 44 (load 1228.63) from node clk.
-Warning 1: load of 69.3481 is 1.19171 times greater than strongest gate NOR2X1
+Parsing library "osu035_stdcells"
+End of library at line 6636
+Lib Read:  Processed 6637 lines.
+Top internal fanout is 27 (load 552.25) from node _16_,
+driven by INVX1 with strength 102.797 (fF driven at latency 200)
+Top fanout load-to-strength ratio is 5.37225 (latency = 1074.45 ps)
+Top input node fanout is 44 (load 1782.7) from node clk.
+Warning 1: load of 150.066 is 1.38074 times greater than strongest gate NOR2X1
 This warning will only be repeated for larger overload ratios.  Warning count reflects
 the total number of overloaded nets.
-Warning 2: load of 170.583 is 1.51066 times greater than strongest gate AND2X2
-Warning 3: load of 120.85 is 2.09741 times greater than strongest gate NAND3X1
-Warning 6: load of 154.803 is 2.32916 times greater than strongest gate AOI21X1
-Warning 7: load of 193.94 is 3.33274 times greater than strongest gate NOR2X1
-87 gates exceed specified minimum load.
-14 buffers were added.
-13 gates were changed.
+Warning 3: load of 163.985 is 1.61808 times greater than strongest gate NAND3X1
+Warning 5: load of 265.636 is 2.44408 times greater than strongest gate NOR2X1
+18 gates exceed specified minimum load.
+15 buffers were added.
+10 gates were changed.
 
 Gate counts by drive strength:
 
-	"1" gates	In: 275    	Out: 262    	-13
-	"2" gates	In: 54    	Out: 62    	+8
+	"1" gates	In: 270    	Out: 260    	-10
+	"2" gates	In: 54    	Out: 60    	+6
 
-Number of gates changed: 27
-gates resized: 27
-Parsing library "osu018_stdcells"
-End of library at line 6141
-Lib Read:  Processed 6142 lines.
-Top internal fanout is 10 (load 304.136) from node _17_,
-driven by INVX4 with strength 228.066 (fF driven at latency 100)
-Top fanout load-to-strength ratio is 3.1609 (latency = 316.09 ps)
-Top input node fanout is 13 (load 228.186) from node CORE_InstructionIN<14>.
-Warning 1: load of 314.136 is 1.39623 times greater than strongest gate BUFX4
+Number of gates changed: 25
+gates resized: 25
+Parsing library "osu035_stdcells"
+End of library at line 6636
+Lib Read:  Processed 6637 lines.
+Top internal fanout is 8 (load 432.815) from node _17_,
+driven by INVX4 with strength 417.401 (fF driven at latency 200)
+Top fanout load-to-strength ratio is 2.35207 (latency = 470.414 ps)
+Top input node fanout is 14 (load 365.863) from node CORE_InstructionIN<14>.
+Warning 1: load of 442.815 is 1.07102 times greater than strongest gate BUFX4
 This warning will only be repeated for larger overload ratios.  Warning count reflects
 the total number of overloaded nets.
-Warning 9: load of 170.583 is 1.51066 times greater than strongest gate AND2X2
-Warning 10: load of 120.85 is 2.09741 times greater than strongest gate NAND3X1
-Warning 13: load of 164.135 is 2.46957 times greater than strongest gate AOI21X1
-Warning 14: load of 193.94 is 3.33274 times greater than strongest gate NOR2X1
-94 gates exceed specified minimum load.
+Warning 3: load of 150.066 is 1.38074 times greater than strongest gate NOR2X1
+Warning 5: load of 163.985 is 1.61808 times greater than strongest gate NAND3X1
+Warning 7: load of 265.636 is 2.44408 times greater than strongest gate NOR2X1
+20 gates exceed specified minimum load.
 0 buffers were added.
-16 gates were changed.
+11 gates were changed.
 
 Gate counts by drive strength:
 
-	"1" gates	In: 262    	Out: 262    	+0
-	"2" gates	In: 76    	Out: 61    	-15
-	"4" gates	In: 4    	Out: 18    	+14
-	"8" gates	In: 1    	Out: 2    	+1
+	"1" gates	In: 260    	Out: 260    	+0
+	"2" gates	In: 75    	Out: 64    	-11
+	"4" gates	In: 3    	Out: 14    	+11
+	"8" gates	In: 1    	Out: 1    	+0
 
-Number of gates changed: 16
-gates resized: 16
-Parsing library "osu018_stdcells"
-End of library at line 6141
-Lib Read:  Processed 6142 lines.
-Top internal fanout is 10 (load 415.95) from node _17_,
-driven by INVX8 with strength 456.133 (fF driven at latency 100)
-Top fanout load-to-strength ratio is 3.1609 (latency = 316.09 ps)
-Top input node fanout is 13 (load 228.186) from node CORE_InstructionIN<14>.
-Warning 1: load of 288.513 is 1.28235 times greater than strongest gate BUFX4
+Number of gates changed: 11
+gates resized: 11
+Parsing library "osu035_stdcells"
+End of library at line 6636
+Lib Read:  Processed 6637 lines.
+Top internal fanout is 8 (load 575.242) from node _17_,
+driven by INVX4 with strength 417.401 (fF driven at latency 200)
+Top fanout load-to-strength ratio is 2.35207 (latency = 470.414 ps)
+Top input node fanout is 14 (load 365.863) from node CORE_InstructionIN<14>.
+Warning 1: load of 585.242 is 1.41551 times greater than strongest gate BUFX4
 This warning will only be repeated for larger overload ratios.  Warning count reflects
 the total number of overloaded nets.
-Warning 2: load of 292.478 is 1.29997 times greater than strongest gate BUFX4
-Warning 5: load of 425.95 is 1.89321 times greater than strongest gate BUFX4
-Warning 17: load of 120.85 is 2.09741 times greater than strongest gate NAND3X1
-Warning 20: load of 164.135 is 2.46957 times greater than strongest gate AOI21X1
-Warning 21: load of 193.94 is 3.33274 times greater than strongest gate NOR2X1
-101 gates exceed specified minimum load.
+Warning 10: load of 163.985 is 1.61808 times greater than strongest gate NAND3X1
+Warning 12: load of 265.636 is 2.44408 times greater than strongest gate NOR2X1
+25 gates exceed specified minimum load.
 0 buffers were added.
 0 gates were changed.
 
 Gate counts by drive strength:
 
-	"1" gates	In: 262    	Out: 262    	+0
-	"2" gates	In: 61    	Out: 61    	+0
-	"4" gates	In: 18    	Out: 18    	+0
-	"8" gates	In: 2    	Out: 2    	+0
+	"1" gates	In: 260    	Out: 260    	+0
+	"2" gates	In: 64    	Out: 64    	+0
+	"4" gates	In: 14    	Out: 14    	+0
+	"8" gates	In: 1    	Out: 1    	+0
 
 Number of gates changed: 0
 gates resized: 0
@@ -3217,4 +3214,4 @@ Files:
 Running blif2Verilog.
 Running blif2BSpice.
 Running spi2xspice.py
-Synthesis script ended on dom jan 7 12:20:47 -02 2018
+Synthesis script ended on seg jan 8 22:55:04 -02 2018

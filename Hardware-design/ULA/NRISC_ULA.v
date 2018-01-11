@@ -29,7 +29,7 @@ module NRISC_ULA(
 
 
     //Parameter numero de bits
-    parameter TAM = 16;
+    parameter TAM = 32;
     //-------------portas de entrada------------------------------------------------------------------
     input wire [TAM-1:0] ULA_A;
     input wire [TAM-1:0] ULA_B;

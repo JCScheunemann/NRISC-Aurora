@@ -1,105 +1,105 @@
 Vesta static timing analysis, register-to-register minimum timing
 
 Top 20 minimum delay paths:
-Path DFFPOSX1_4/CLK to output pin CORE_Status_ctrl[3] delay 183.066 ps
-      0.0 ps          clk_bF_buf5:    BUFX4_5/Y -> DFFPOSX1_4/CLK
-    114.7 ps             _224__3_: DFFPOSX1_4/Q ->   BUFX2_41/A
-    183.1 ps  CORE_Status_ctrl[3]:   BUFX2_41/Y -> 
+Path DFFPOSX1_24/CLK to output pin CORE_DATA_write delay 224.781 ps
+      0.0 ps      clk_bF_buf5:     BUFX4_3/Y -> DFFPOSX1_24/CLK
+    119.7 ps            _209_: DFFPOSX1_24/Q ->    BUFX2_11/A
+    224.8 ps  CORE_DATA_write:    BUFX2_11/Y -> 
 
-Path DFFPOSX1_36/CLK to output pin CORE_INT_CHA[1] delay 183.066 ps
-      0.0 ps      clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_36/CLK
-    114.7 ps         _215__1_: DFFPOSX1_36/Q ->     BUFX2_9/A
-    183.1 ps  CORE_INT_CHA[1]:     BUFX2_9/Y -> 
+Path DFFPOSX1_26/CLK to output pin CORE_DATA_ADDR_mux delay 224.781 ps
+      0.0 ps         clk_bF_buf0:     BUFX4_8/Y -> DFFPOSX1_26/CLK
+    119.7 ps               _205_: DFFPOSX1_26/Q ->     BUFX2_5/A
+    224.8 ps  CORE_DATA_ADDR_mux:     BUFX2_5/Y -> 
 
-Path DFFPOSX1_35/CLK to output pin CORE_INT_CHA[0] delay 183.066 ps
-      0.0 ps      clk_bF_buf3:     BUFX4_7/Y -> DFFPOSX1_35/CLK
-    114.7 ps         _215__0_: DFFPOSX1_35/Q ->     BUFX2_8/A
-    183.1 ps  CORE_INT_CHA[0]:     BUFX2_8/Y -> 
+Path DFFPOSX1_11/CLK to output pin CORE_REG_RD[0] delay 229.904 ps
+      0.0 ps     clk_bF_buf3:     BUFX4_5/Y -> DFFPOSX1_11/CLK
+    124.2 ps        _214__0_: DFFPOSX1_11/Q ->    BUFX2_27/A
+    229.9 ps  CORE_REG_RD[0]:    BUFX2_27/Y -> 
 
-Path DFFPOSX1_37/CLK to output pin CORE_INT_CHA[2] delay 183.066 ps
-      0.0 ps      clk_bF_buf3:     BUFX4_7/Y -> DFFPOSX1_37/CLK
-    114.7 ps         _215__2_: DFFPOSX1_37/Q ->    BUFX2_10/A
-    183.1 ps  CORE_INT_CHA[2]:    BUFX2_10/Y -> 
+Path DFFPOSX1_12/CLK to output pin CORE_REG_RD[1] delay 229.904 ps
+      0.0 ps     clk_bF_buf2:     BUFX4_6/Y -> DFFPOSX1_12/CLK
+    124.2 ps        _214__1_: DFFPOSX1_12/Q ->    BUFX2_28/A
+    229.9 ps  CORE_REG_RD[1]:    BUFX2_28/Y -> 
 
-Path DFFPOSX1_38/CLK to output pin CORE_INT_CHA[3] delay 183.066 ps
-      0.0 ps      clk_bF_buf3:     BUFX4_7/Y -> DFFPOSX1_38/CLK
-    114.7 ps         _215__3_: DFFPOSX1_38/Q ->    BUFX2_11/A
-    183.1 ps  CORE_INT_CHA[3]:    BUFX2_11/Y -> 
+Path DFFPOSX1_13/CLK to output pin CORE_REG_RD[2] delay 229.904 ps
+      0.0 ps     clk_bF_buf2:     BUFX4_6/Y -> DFFPOSX1_13/CLK
+    124.2 ps        _214__2_: DFFPOSX1_13/Q ->    BUFX2_29/A
+    229.9 ps  CORE_REG_RD[2]:    BUFX2_29/Y -> 
 
-Path DFFPOSX1_41/CLK to output pin CORE_INT_CHA[6] delay 183.066 ps
-      0.0 ps      clk_bF_buf3:     BUFX4_7/Y -> DFFPOSX1_41/CLK
-    114.7 ps         _215__6_: DFFPOSX1_41/Q ->    BUFX2_14/A
-    183.1 ps  CORE_INT_CHA[6]:    BUFX2_14/Y -> 
+Path DFFPOSX1_1/CLK to output pin CORE_Status_ctrl[0] delay 234.645 ps
+      0.0 ps          clk_bF_buf4:    BUFX4_4/Y -> DFFPOSX1_1/CLK
+    128.4 ps             _219__0_: DFFPOSX1_1/Q ->   BUFX2_42/A
+    234.6 ps  CORE_Status_ctrl[0]:   BUFX2_42/Y -> 
 
-Path DFFPOSX1_6/CLK to output pin CORE_InstructionToULAMux[1] delay 183.066 ps
-      0.0 ps                  clk_bF_buf2:    BUFX4_8/Y -> DFFPOSX1_6/CLK
-    114.7 ps                     _217__1_: DFFPOSX1_6/Q ->   BUFX2_19/A
-    183.1 ps  CORE_InstructionToULAMux[1]:   BUFX2_19/Y -> 
+Path DFFPOSX1_4/CLK to output pin CORE_Status_ctrl[3] delay 234.645 ps
+      0.0 ps          clk_bF_buf3:    BUFX4_5/Y -> DFFPOSX1_4/CLK
+    128.4 ps             _219__3_: DFFPOSX1_4/Q ->   BUFX2_45/A
+    234.6 ps  CORE_Status_ctrl[3]:   BUFX2_45/Y -> 
 
-Path DFFPOSX1_39/CLK to output pin CORE_INT_CHA[4] delay 183.066 ps
-      0.0 ps      clk_bF_buf1:     BUFX4_9/Y -> DFFPOSX1_39/CLK
-    114.7 ps         _215__4_: DFFPOSX1_39/Q ->    BUFX2_12/A
-    183.1 ps  CORE_INT_CHA[4]:    BUFX2_12/Y -> 
+Path DFFPOSX1_23/CLK to output pin CORE_REG_write delay 234.645 ps
+      0.0 ps     clk_bF_buf3:     BUFX4_5/Y -> DFFPOSX1_23/CLK
+    128.4 ps           _217_: DFFPOSX1_23/Q ->    BUFX2_39/A
+    234.6 ps  CORE_REG_write:    BUFX2_39/Y -> 
 
-Path DFFPOSX1_40/CLK to output pin CORE_INT_CHA[5] delay 183.066 ps
-      0.0 ps      clk_bF_buf1:     BUFX4_9/Y -> DFFPOSX1_40/CLK
-    114.7 ps         _215__5_: DFFPOSX1_40/Q ->    BUFX2_13/A
-    183.1 ps  CORE_INT_CHA[5]:    BUFX2_13/Y -> 
+Path DFFPOSX1_16/CLK to output pin CORE_REG_RF1[1] delay 234.925 ps
+      0.0 ps      clk_bF_buf3:     BUFX4_5/Y -> DFFPOSX1_16/CLK
+    128.6 ps         _215__1_: DFFPOSX1_16/Q ->    BUFX2_32/A
+    234.9 ps  CORE_REG_RF1[1]:    BUFX2_32/Y -> 
 
-Path DFFPOSX1_42/CLK to output pin CORE_INT_CHA[7] delay 183.066 ps
-      0.0 ps      clk_bF_buf1:     BUFX4_9/Y -> DFFPOSX1_42/CLK
-    114.7 ps         _215__7_: DFFPOSX1_42/Q ->    BUFX2_15/A
-    183.1 ps  CORE_INT_CHA[7]:    BUFX2_15/Y -> 
+Path DFFPOSX1_17/CLK to output pin CORE_REG_RF1[2] delay 234.925 ps
+      0.0 ps      clk_bF_buf3:     BUFX4_5/Y -> DFFPOSX1_17/CLK
+    128.6 ps         _215__2_: DFFPOSX1_17/Q ->    BUFX2_33/A
+    234.9 ps  CORE_REG_RF1[2]:    BUFX2_33/Y -> 
 
-Path DFFPOSX1_20/CLK to output pin CORE_REG_RF2[1] delay 196.876 ps
-      0.0 ps      clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_20/CLK
-    128.1 ps         _221__1_: DFFPOSX1_20/Q ->    BUFX2_32/A
-    196.9 ps  CORE_REG_RF2[1]:    BUFX2_32/Y -> 
+Path DFFPOSX1_18/CLK to output pin CORE_REG_RF1[3] delay 234.925 ps
+      0.0 ps      clk_bF_buf0:     BUFX4_8/Y -> DFFPOSX1_18/CLK
+    128.6 ps         _215__3_: DFFPOSX1_18/Q ->    BUFX2_34/A
+    234.9 ps  CORE_REG_RF1[3]:    BUFX2_34/Y -> 
 
-Path DFFPOSX1_21/CLK to output pin CORE_REG_RF2[2] delay 196.876 ps
-      0.0 ps      clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_21/CLK
-    128.1 ps         _221__2_: DFFPOSX1_21/Q ->    BUFX2_33/A
-    196.9 ps  CORE_REG_RF2[2]:    BUFX2_33/Y -> 
+Path DFFPOSX1_7/CLK to output pin CORE_ULA_ctrl[0] delay 234.951 ps
+      0.0 ps       clk_bF_buf5:    BUFX4_3/Y -> DFFPOSX1_7/CLK
+    128.6 ps          _220__0_: DFFPOSX1_7/Q ->   BUFX2_48/A
+    235.0 ps  CORE_ULA_ctrl[0]:   BUFX2_48/Y -> 
 
-Path DFFPOSX1_22/CLK to output pin CORE_REG_RF2[3] delay 196.876 ps
-      0.0 ps      clk_bF_buf5:     BUFX4_5/Y -> DFFPOSX1_22/CLK
-    128.1 ps         _221__3_: DFFPOSX1_22/Q ->    BUFX2_34/A
-    196.9 ps  CORE_REG_RF2[3]:    BUFX2_34/Y -> 
+Path DFFPOSX1_9/CLK to output pin CORE_ULA_ctrl[2] delay 234.951 ps
+      0.0 ps       clk_bF_buf5:    BUFX4_3/Y -> DFFPOSX1_9/CLK
+    128.6 ps          _220__2_: DFFPOSX1_9/Q ->   BUFX2_50/A
+    235.0 ps  CORE_ULA_ctrl[2]:   BUFX2_50/Y -> 
 
-Path DFFPOSX1_17/CLK to output pin CORE_REG_RF1[2] delay 196.876 ps
-      0.0 ps      clk_bF_buf3:     BUFX4_7/Y -> DFFPOSX1_17/CLK
-    128.1 ps         _220__2_: DFFPOSX1_17/Q ->    BUFX2_29/A
-    196.9 ps  CORE_REG_RF1[2]:    BUFX2_29/Y -> 
+Path DFFPOSX1_20/CLK to output pin CORE_REG_RF2[1] delay 234.951 ps
+      0.0 ps      clk_bF_buf5:     BUFX4_3/Y -> DFFPOSX1_20/CLK
+    128.6 ps         _216__1_: DFFPOSX1_20/Q ->    BUFX2_36/A
+    235.0 ps  CORE_REG_RF2[1]:    BUFX2_36/Y -> 
 
-Path DFFPOSX1_19/CLK to output pin CORE_REG_RF2[0] delay 196.876 ps
-      0.0 ps      clk_bF_buf3:     BUFX4_7/Y -> DFFPOSX1_19/CLK
-    128.1 ps         _221__0_: DFFPOSX1_19/Q ->    BUFX2_31/A
-    196.9 ps  CORE_REG_RF2[0]:    BUFX2_31/Y -> 
+Path DFFPOSX1_21/CLK to output pin CORE_REG_RF2[2] delay 234.951 ps
+      0.0 ps      clk_bF_buf5:     BUFX4_3/Y -> DFFPOSX1_21/CLK
+    128.6 ps         _216__2_: DFFPOSX1_21/Q ->    BUFX2_37/A
+    235.0 ps  CORE_REG_RF2[2]:    BUFX2_37/Y -> 
 
-Path DFFPOSX1_16/CLK to output pin CORE_REG_RF1[1] delay 196.876 ps
-      0.0 ps      clk_bF_buf1:     BUFX4_9/Y -> DFFPOSX1_16/CLK
-    128.1 ps         _220__1_: DFFPOSX1_16/Q ->    BUFX2_28/A
-    196.9 ps  CORE_REG_RF1[1]:    BUFX2_28/Y -> 
+Path DFFPOSX1_3/CLK to output pin CORE_Status_ctrl[2] delay 234.951 ps
+      0.0 ps          clk_bF_buf4:    BUFX4_4/Y -> DFFPOSX1_3/CLK
+    128.6 ps             _219__2_: DFFPOSX1_3/Q ->   BUFX2_44/A
+    235.0 ps  CORE_Status_ctrl[2]:   BUFX2_44/Y -> 
 
-Path DFFPOSX1_18/CLK to output pin CORE_REG_RF1[3] delay 196.876 ps
-      0.0 ps      clk_bF_buf1:     BUFX4_9/Y -> DFFPOSX1_18/CLK
-    128.1 ps         _220__3_: DFFPOSX1_18/Q ->    BUFX2_30/A
-    196.9 ps  CORE_REG_RF1[3]:    BUFX2_30/Y -> 
+Path DFFPOSX1_19/CLK to output pin CORE_REG_RF2[0] delay 234.951 ps
+      0.0 ps      clk_bF_buf4:     BUFX4_4/Y -> DFFPOSX1_19/CLK
+    128.6 ps         _216__0_: DFFPOSX1_19/Q ->    BUFX2_35/A
+    235.0 ps  CORE_REG_RF2[0]:    BUFX2_35/Y -> 
 
-Path DFFPOSX1_7/CLK to output pin CORE_ULA_ctrl[0] delay 196.876 ps
-      0.0 ps       clk_bF_buf0:   BUFX4_10/Y -> DFFPOSX1_7/CLK
-    128.1 ps          _225__0_: DFFPOSX1_7/Q ->   BUFX2_44/A
-    196.9 ps  CORE_ULA_ctrl[0]:   BUFX2_44/Y -> 
+Path DFFPOSX1_22/CLK to output pin CORE_REG_RF2[3] delay 234.951 ps
+      0.0 ps      clk_bF_buf4:     BUFX4_4/Y -> DFFPOSX1_22/CLK
+    128.6 ps         _216__3_: DFFPOSX1_22/Q ->    BUFX2_38/A
+    235.0 ps  CORE_REG_RF2[3]:    BUFX2_38/Y -> 
 
-Path DFFPOSX1_23/CLK to output pin CORE_REG_write delay 196.876 ps
-      0.0 ps     clk_bF_buf0:    BUFX4_10/Y -> DFFPOSX1_23/CLK
-    128.1 ps           _222_: DFFPOSX1_23/Q ->    BUFX2_35/A
-    196.9 ps  CORE_REG_write:    BUFX2_35/Y -> 
+Path DFFPOSX1_5/CLK to output pin CORE_InstructionToULAMux[0] delay 234.951 ps
+      0.0 ps                  clk_bF_buf0:    BUFX4_8/Y -> DFFPOSX1_5/CLK
+    128.6 ps                     _212__0_: DFFPOSX1_5/Q ->   BUFX2_22/A
+    235.0 ps  CORE_InstructionToULAMux[0]:   BUFX2_22/Y -> 
 
-Path DFFPOSX1_5/CLK to output pin CORE_InstructionToULAMux[0] delay 196.925 ps
-      0.0 ps                  clk_bF_buf0:   BUFX4_10/Y -> DFFPOSX1_5/CLK
-    128.2 ps                     _217__0_: DFFPOSX1_5/Q ->   BUFX2_18/A
-    196.9 ps  CORE_InstructionToULAMux[0]:   BUFX2_18/Y -> 
+Path DFFPOSX1_8/CLK to output pin CORE_ULA_ctrl[1] delay 234.951 ps
+      0.0 ps       clk_bF_buf0:    BUFX4_8/Y -> DFFPOSX1_8/CLK
+    128.6 ps          _220__1_: DFFPOSX1_8/Q ->   BUFX2_49/A
+    235.0 ps  CORE_ULA_ctrl[1]:   BUFX2_49/Y -> 
 
 Design meets minimum hold timing.
 -----------------------------------------

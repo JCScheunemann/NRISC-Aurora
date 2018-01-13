@@ -1,0 +1,193 @@
+Vesta static timing analysis, pin-to-register and register-to-pin maximum timing
+
+Top 20 maximum delay paths:
+Path input pin REG_Interrupt_flag to DFFPOSX1_34/D delay 1093.33 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1175.5 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_84/A
+   1326.9 ps                        _81_: OAI21X1_84/Y -> DFFPOSX1_34/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_45/D delay 1092.45 ps
+     20.4 ps          REG_Interrupt_flag:               ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:   BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:   NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:   BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:     INVX4_1/Y ->  NAND2X1_89/A
+   1174.0 ps                      _1737_:  NAND2X1_89/Y -> OAI21X1_106/A
+   1326.0 ps                        _92_: OAI21X1_106/Y -> DFFPOSX1_45/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_46/D delay 1091.71 ps
+     20.4 ps          REG_Interrupt_flag:               ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:   BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:   NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:   BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:     INVX4_1/Y ->  NAND2X1_89/A
+   1175.7 ps                      _1737_:  NAND2X1_89/Y -> OAI21X1_108/A
+   1325.3 ps                        _93_: OAI21X1_108/Y -> DFFPOSX1_46/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_44/D delay 1091.34 ps
+     20.4 ps          REG_Interrupt_flag:               ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:   BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:   NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:   BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:     INVX4_1/Y ->  NAND2X1_89/A
+   1172.4 ps                      _1737_:  NAND2X1_89/Y -> OAI21X1_104/A
+   1324.9 ps                        _91_: OAI21X1_104/Y -> DFFPOSX1_44/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_47/D delay 1090.75 ps
+     20.4 ps          REG_Interrupt_flag:               ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:   BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:   NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:   BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:     INVX4_1/Y ->  NAND2X1_89/A
+   1171.8 ps                      _1737_:  NAND2X1_89/Y -> OAI21X1_110/A
+   1324.3 ps                        _94_: OAI21X1_110/Y -> DFFPOSX1_47/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_36/D delay 1090.71 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1172.6 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_88/A
+   1324.3 ps                        _83_: OAI21X1_88/Y -> DFFPOSX1_36/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_40/D delay 1090.34 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1172.1 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_96/A
+   1323.9 ps                        _87_: OAI21X1_96/Y -> DFFPOSX1_40/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_39/D delay 1090.33 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1171.9 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_94/A
+   1323.9 ps                        _86_: OAI21X1_94/Y -> DFFPOSX1_39/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_33/D delay 1090.13 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1174.6 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_82/A
+   1323.7 ps                        _80_: OAI21X1_82/Y -> DFFPOSX1_33/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_41/D delay 1090.13 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1175.4 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_98/A
+   1323.7 ps                        _88_: OAI21X1_98/Y -> DFFPOSX1_41/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_43/D delay 1090.13 ps
+     20.4 ps          REG_Interrupt_flag:               ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:   BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:   NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:   BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:     INVX4_1/Y ->  NAND2X1_89/A
+   1175.6 ps                      _1737_:  NAND2X1_89/Y -> OAI21X1_102/A
+   1323.7 ps                        _90_: OAI21X1_102/Y -> DFFPOSX1_43/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_37/D delay 1090.13 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1171.8 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_90/A
+   1323.7 ps                        _84_: OAI21X1_90/Y -> DFFPOSX1_37/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_48/D delay 1089.77 ps
+     20.4 ps          REG_Interrupt_flag:               ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:   BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:   NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:   BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:     INVX4_1/Y ->  NAND2X1_89/A
+   1175.1 ps                      _1737_:  NAND2X1_89/Y -> OAI21X1_112/A
+   1323.3 ps                        _95_: OAI21X1_112/Y -> DFFPOSX1_48/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_42/D delay 1089.74 ps
+     20.4 ps          REG_Interrupt_flag:               ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:   BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:   NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:   BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:     INVX4_1/Y ->  NAND2X1_89/A
+   1171.9 ps                      _1737_:  NAND2X1_89/Y -> OAI21X1_100/A
+   1323.3 ps                        _89_: OAI21X1_100/Y -> DFFPOSX1_42/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_38/D delay 1089.47 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1172.5 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_92/A
+   1323.0 ps                        _85_: OAI21X1_92/Y -> DFFPOSX1_38/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_35/D delay 1089.31 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.1 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_89/A
+   1172.7 ps                      _1737_: NAND2X1_89/Y ->  OAI21X1_86/A
+   1322.8 ps                        _82_: OAI21X1_86/Y -> DFFPOSX1_35/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_69/D delay 887.223 ps
+     20.4 ps          REG_Interrupt_flag:              ->   BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->   NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->   BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->     INVX4_1/A
+    622.4 ps                      _1623_:    INVX4_1/Y ->  NAND2X1_54/A
+    816.7 ps                      _1699_: NAND2X1_54/Y ->   BUFX4_160/A
+    994.2 ps              _1699__bF_buf3:  BUFX4_160/Y ->  NAND2X1_59/B
+   1063.4 ps                      _1704_: NAND2X1_59/Y ->  OAI21X1_53/C
+   1120.8 ps                        _52_: OAI21X1_53/Y -> DFFPOSX1_69/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_127/D delay 886.325 ps
+     20.4 ps          REG_Interrupt_flag:              ->    BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->    NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->    BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->      INVX4_1/A
+    623.3 ps                      _1623_:    INVX4_1/Y ->    NAND2X1_2/A
+    819.4 ps                      _1627_:  NAND2X1_2/Y ->     BUFX4_46/A
+    994.5 ps              _1627__bF_buf4:   BUFX4_46/Y ->   NAND2X1_17/B
+   1063.4 ps                      _1656_: NAND2X1_17/Y ->   OAI21X1_15/C
+   1119.9 ps                        _14_: OAI21X1_15/Y -> DFFPOSX1_127/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_124/D delay 885.958 ps
+     20.4 ps          REG_Interrupt_flag:              ->    BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->    NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->    BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->      INVX4_1/A
+    623.3 ps                      _1623_:    INVX4_1/Y ->    NAND2X1_2/A
+    819.4 ps                      _1627_:  NAND2X1_2/Y ->     BUFX4_46/A
+    994.2 ps              _1627__bF_buf4:   BUFX4_46/Y ->   NAND2X1_14/B
+   1063.4 ps                      _1650_: NAND2X1_14/Y ->   OAI21X1_12/C
+   1119.5 ps                        _11_: OAI21X1_12/Y -> DFFPOSX1_124/D
+
+Path input pin REG_Interrupt_flag to DFFPOSX1_122/D delay 885.633 ps
+     20.4 ps          REG_Interrupt_flag:              ->    BUFX4_287/A
+    190.0 ps  REG_Interrupt_flag_bF_buf0:  BUFX4_287/Y ->    NAND3X1_1/C
+    378.8 ps                      _1622_:  NAND3X1_1/Y ->    BUFX4_238/A
+    536.8 ps              _1622__bF_buf0:  BUFX4_238/Y ->      INVX4_1/A
+    623.3 ps                      _1623_:    INVX4_1/Y ->    NAND2X1_2/A
+    819.4 ps                      _1627_:  NAND2X1_2/Y ->     BUFX4_46/A
+    994.7 ps              _1627__bF_buf4:   BUFX4_46/Y ->   NAND2X1_12/B
+   1063.4 ps                      _1646_: NAND2X1_12/Y ->   OAI21X1_10/C
+   1119.2 ps                         _9_: OAI21X1_10/Y -> DFFPOSX1_122/D
+
+-----------------------------------------
+

@@ -6,36 +6,40 @@ module NRISC_PC_ctrl(
               CORE_PC_ctrl,
               CORE_STACK_ctrl,
               ULA_OUT,
-              REG_R0,
+              REG_R1,
               INTERRUPT_ch,
+              INTERRUPT_flag,
               clk,
               rst
               );
   parameter TAM = 16;
   parameter STACK_TAM=16;
+  parameter ADDR_TAM =10;
   //from IDATA
   input wire [15:0] IDATA_CORE_out;
-  output wire [TAM-1:0] IDATA_CORE_addr;
+  output wire [ADDR_TAM-1:0] IDATA_CORE_addr;
   output wire IDATA_clk;
   // From CORE
   output wire [15:0] CORE_InstructionIN;
   input wire [1:0] CORE_PC_ctrl;
+  input wire [1:0] CORE_STACK_ctrl;
 
   //from ULA
-  input wire [TAM-1:0] ULA_OUT;
+  input wire [ADDR_TAM-1:0] ULA_OUT;
   //from REGs
-  output wire [TAM-1:0] REG_R0;
+  output wire [ADDR_TAM-1:0] REG_R1;
   //from Interrupt
   input wire [7:0] INTERRUPT_ch;
+  input wire INTERRUPT_flag;
 
   input wire clk;
   input wire rst;
   //internal vars
   reg [1:0] delay;
-  reg [TAM-1:0] ADDR_stack [1:0];
+  reg [ADDR_TAM-1:0] ADDR_stack [1:0];
   reg [3:0] PC_pointer;
 
-  reg [TAM-1:0] PC_STACK [STACK_TAM-1:0];
+  reg [ADDR_TAM-1:0] PC_STACK [STACK_TAM-1:0];
 
 
 
@@ -52,13 +56,15 @@ module NRISC_PC_ctrl(
     delay[0]=(CORE_PC_ctrl[1] |CORE_PC_ctrl[0])&~rst;
     ADDR_stack[1]=ADDR_stack[0];
     ADDR_stack[0]=IDATA_CORE_addr;
-    case (CORE_PC_ctrl)
-      0: PC_STACK[PC_pointer]={TAM{~rst}} & (PC_STACK[PC_pointer]+1);
-      1: PC_STACK[PC_pointer]={TAM{~rst}} & ULA_OUT;
+    case ({INTERRUPT_flag, CORE_PC_ctrl[0]})
+      0: PC_STACK[PC_pointer]={ADDR_TAM{~rst}} & (PC_STACK[PC_pointer]+1);
+      1: PC_STACK[PC_pointer]={ADDR_TAM{~rst}} & ULA_OUT;
+      2: PC_STACK[PC_pointer]=INTERRUPT_ch;
     endcase
-    case (CORE_STACK_ctrl)
-      1: PC_pointer=PC_pointer+1;
+    case ({INTERRUPT_flag,CORE_STACK_ctrl})
+      1,4: PC_pointer=PC_pointer+1;
       2: PC_pointer=PC_pointer-1;
+      default: PC_pointer=PC_pointer;
     endcase
   end
 

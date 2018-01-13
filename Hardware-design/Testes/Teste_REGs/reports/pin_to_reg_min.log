@@ -1,0 +1,105 @@
+Vesta static timing analysis, pin-to-register and register-to-pin minimum timing
+
+Top 20 minimum delay paths:
+Path input pin clk to DFFPOSX1_117/CLK delay 301.316 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_84/A
+    301.3 ps       clk_bF_buf24: BUFX4_84/Y -> DFFPOSX1_117/CLK
+
+Path input pin clk to DFFPOSX1_119/CLK delay 301.6 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    120.6 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_98/A
+    301.6 ps       clk_bF_buf10: BUFX4_98/Y -> DFFPOSX1_119/CLK
+
+Path input pin clk to DFFPOSX1_118/CLK delay 301.612 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_84/A
+    301.6 ps       clk_bF_buf24: BUFX4_84/Y -> DFFPOSX1_118/CLK
+
+Path input pin clk to DFFPOSX1_28/CLK delay 301.699 ps
+      7.8 ps                clk:            ->     BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->    BUFX4_84/A
+    301.7 ps       clk_bF_buf24: BUFX4_84/Y -> DFFPOSX1_28/CLK
+
+Path input pin clk to DFFPOSX1_21/CLK delay 301.734 ps
+      7.8 ps                clk:            ->     BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->    BUFX4_84/A
+    301.7 ps       clk_bF_buf24: BUFX4_84/Y -> DFFPOSX1_21/CLK
+
+Path input pin clk to DFFPOSX1_229/CLK delay 301.772 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    121.1 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_79/A
+    301.8 ps       clk_bF_buf29: BUFX4_79/Y -> DFFPOSX1_229/CLK
+
+Path input pin clk to DFFPOSX1_95/CLK delay 301.785 ps
+      7.8 ps                clk:            ->     BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->    BUFX4_84/A
+    301.8 ps       clk_bF_buf24: BUFX4_84/Y -> DFFPOSX1_95/CLK
+
+Path input pin clk to DFFPOSX1_24/CLK delay 301.794 ps
+      7.8 ps                clk:            ->     BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->    BUFX4_84/A
+    301.8 ps       clk_bF_buf24: BUFX4_84/Y -> DFFPOSX1_24/CLK
+
+Path input pin clk to DFFPOSX1_149/CLK delay 301.837 ps
+      7.8 ps                clk:             ->      BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:   BUFX4_2/Y ->    BUFX4_106/A
+    301.8 ps        clk_bF_buf2: BUFX4_106/Y -> DFFPOSX1_149/CLK
+
+Path input pin clk to DFFPOSX1_189/CLK delay 301.869 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_84/A
+    301.9 ps       clk_bF_buf24: BUFX4_84/Y -> DFFPOSX1_189/CLK
+
+Path input pin clk to DFFPOSX1_116/CLK delay 301.966 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    120.6 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_98/A
+    302.0 ps       clk_bF_buf10: BUFX4_98/Y -> DFFPOSX1_116/CLK
+
+Path input pin clk to DFFPOSX1_188/CLK delay 301.978 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    120.6 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_98/A
+    302.0 ps       clk_bF_buf10: BUFX4_98/Y -> DFFPOSX1_188/CLK
+
+Path input pin clk to DFFPOSX1_204/CLK delay 302.068 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    121.1 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_78/A
+    302.1 ps       clk_bF_buf30: BUFX4_78/Y -> DFFPOSX1_204/CLK
+
+Path input pin clk to DFFPOSX1_120/CLK delay 302.16 ps
+      7.8 ps                clk:             ->      BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:   BUFX4_2/Y ->    BUFX4_106/A
+    302.2 ps        clk_bF_buf2: BUFX4_106/Y -> DFFPOSX1_120/CLK
+
+Path input pin clk to DFFPOSX1_150/CLK delay 302.234 ps
+      7.8 ps                clk:             ->      BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:   BUFX4_2/Y ->    BUFX4_106/A
+    302.2 ps        clk_bF_buf2: BUFX4_106/Y -> DFFPOSX1_150/CLK
+
+Path input pin clk to DFFPOSX1_182/CLK delay 302.364 ps
+      7.8 ps                clk:            ->      BUFX4_2/A
+    120.6 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->     BUFX4_98/A
+    302.4 ps       clk_bF_buf10: BUFX4_98/Y -> DFFPOSX1_182/CLK
+
+Path input pin clk to DFFPOSX1_47/CLK delay 302.45 ps
+      7.8 ps                clk:            ->     BUFX4_2/A
+    121.1 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->    BUFX4_79/A
+    302.5 ps       clk_bF_buf29: BUFX4_79/Y -> DFFPOSX1_47/CLK
+
+Path input pin clk to DFFPOSX1_163/CLK delay 302.456 ps
+      7.8 ps                clk:             ->      BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:   BUFX4_2/Y ->    BUFX4_106/A
+    302.5 ps        clk_bF_buf2: BUFX4_106/Y -> DFFPOSX1_163/CLK
+
+Path input pin clk to DFFPOSX1_26/CLK delay 302.46 ps
+      7.8 ps                clk:            ->     BUFX4_2/A
+    120.6 ps  clk_hier0_bF_buf5:  BUFX4_2/Y ->    BUFX4_98/A
+    302.5 ps       clk_bF_buf10: BUFX4_98/Y -> DFFPOSX1_26/CLK
+
+Path input pin clk to DFFPOSX1_22/CLK delay 302.49 ps
+      7.8 ps                clk:             ->     BUFX4_2/A
+    120.4 ps  clk_hier0_bF_buf5:   BUFX4_2/Y ->   BUFX4_106/A
+    302.5 ps        clk_bF_buf2: BUFX4_106/Y -> DFFPOSX1_22/CLK
+
+-----------------------------------------
+

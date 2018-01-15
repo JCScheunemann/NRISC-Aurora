@@ -1,0 +1,34 @@
+Use openwrapper to create a new GUI-based layout window
+Use closewrapper to remove a new GUI-based layout window
+
+Magic 8.1 revision 191 - Compiled on dom dez 31 18:54:52 -02 2017.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using TrueColor, VisualID 0x24 depth 24
+Processing system .magicrc file
+Input style lambda=0.20(p): scaleFactor=20, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+4 Magic internal units = 1 Lambda
+New windows will not have a title caption.
+New windows will not have scroll bars.
+New windows will not have a border.
+handling file entry load_NRISC_REGs.tcl extension .tcl
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+This action cannot be undone.
+LEF file:  Defines site core (ignored)
+LEF read: Processed 2941 lines.
+LEF Read: encountered 164 errors total.
+NRISC_REGs: 10000 rects
+NRISC_REGs: 20000 rects
+Processing timestamp mismatches: FILL, INVX1, DFFPOSX1, OAI21X1, NAND2X1, BUFX4, BUFX2, INVX8, INVX2, NOR2X1, AOI21X1, MUX2X1, NAND3X1, NOR3X1, OAI22X1, AND2X2, OR2X2, INVX4.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  408.30 x 285.30  ( -2.55, -2.15 ), ( 405.75,  283.15)  116487.99 
+lambda:   2041.50 x 1426.50  (-12.75, -10.75), ( 2028.75,  1415.75)  2912199.75
+internal:   8166 x 5706    (   -51, -43   ), (  8115,  5663 )  46595196  

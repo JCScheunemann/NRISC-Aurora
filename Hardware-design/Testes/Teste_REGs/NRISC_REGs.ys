@@ -1,5 +1,5 @@
 read_liberty -lib -ignore_miss_dir -setattr blackbox /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
-read_verilog  /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Teste_REGs/NRISC_REGs.v
+read_verilog  /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Teste_REGs/NRISC_REGs.rtlnopwr.v
 
 # High-level synthesis
 synth -top NRISC_REGs

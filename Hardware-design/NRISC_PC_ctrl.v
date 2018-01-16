@@ -1,3 +1,5 @@
+`include "const.v"
+
 module NRISC_PC_ctrl(
               IDATA_CORE_out,
               IDATA_CORE_addr,
@@ -12,9 +14,9 @@ module NRISC_PC_ctrl(
               clk,
               rst
               );
-  parameter TAM = 16;
-  parameter STACK_TAM=16;
-  parameter ADDR_TAM =10;
+  parameter TAM =`TAM;
+  parameter STACK_TAM= `STACK_TAM;
+  parameter ADDR_TAM = `ADDR_TAM;
   //from IDATA
   input wire [15:0] IDATA_CORE_out;
   output wire [ADDR_TAM-1:0] IDATA_CORE_addr;

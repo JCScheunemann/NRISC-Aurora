@@ -1,4 +1,4 @@
-
+`include "const.v"
 `timescale 1 ns / 1 ns
 
 module NRISC_IData(
@@ -10,8 +10,8 @@ module NRISC_IData(
                 clk,
                 rst
                   );
-    parameter length = 1024;
-    parameter TAM=16;
+    parameter N_IData = `N_IData;
+    parameter TAM=`TAM;
 
     //IDATA to CORE
     output reg [15:0] IDATA_CORE_out;
@@ -23,7 +23,7 @@ module NRISC_IData(
     input wire [9:0] IDATA_PROG_addr;
     input wire IDATA_PROG_write;
 
-    reg [15:0] data [length-1:0];
+    reg [15:0] data [(1<<N_IData)-1:0];
 
     always @ ( posedge clk ) begin
       if(IDATA_PROG_write)

@@ -1,4 +1,4 @@
-
+`include "const.v"
 
 `timescale 1 ns / 1 ns
 
@@ -15,9 +15,8 @@ module NRISC_REGs(
                     clk,
                     rst
                     );
-      parameter TAM = 16;
-      parameter nWindows=4;
-      parameter nOverlap=2;
+      parameter TAM = `TAM;
+
 
       //Standart REG signals
       output wire [TAM-1:0] REG_A;      //ULA input A

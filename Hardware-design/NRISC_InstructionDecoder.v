@@ -12,7 +12,7 @@
  * soma(inc, twc), sub(dec), xor, and, or, not, shr(rtr), shl(rtl)       *
  *                                                                       *
  *************************************************************************/
-
+`include "const.v"
 
 `timescale 1 ns / 1 ns
 module NRISC_InstructionDecoder(
@@ -22,7 +22,8 @@ module NRISC_InstructionDecoder(
 								CORE_Status_ctrl,					//CORE status output
 								CORE_ULA_ctrl,						//ULA output ctrl BUS
 								CORE_ULA_flags,						//ULA flags input {M,Z,C}
-								CORE_ULAMux_inc_dec,			//ULA Inc/dec output MUX ctrl
+								CORE_ULA_REGA_Stall,
+								CORE_ULA_REGB_Stall,
 								CORE_REG_RF1,							//REGs to ULA ctrl 1
 								CORE_REG_RF2,							//REGs to ULA ctrl 2
 								CORE_REG_RD,							//REGs inputs ctrl
@@ -52,7 +53,8 @@ module NRISC_InstructionDecoder(
 		//ULA
 		input wire [2:0] CORE_ULA_flags;
 		output reg [3:0] CORE_ULA_ctrl;
-		output reg CORE_ULAMux_inc_dec;
+		output reg CORE_ULA_REGA_Stall;
+		output reg CORE_ULA_REGB_Stall;
 		//REG ctrl
 		output reg [3:0] CORE_REG_RD;
 		output reg [3:0] CORE_REG_RF1;
@@ -72,6 +74,9 @@ module NRISC_InstructionDecoder(
 		//Interrupt Vector
 		output reg [7:0] CORE_INT_CHA ;
 		output reg [1:0] CORE_INT_ctrl ;
+
+		reg [3:0] old_rd;
+		reg rd_old_write;
 
 
 //==========================COMECA A DESCRICAO==================================
@@ -347,6 +352,30 @@ module NRISC_InstructionDecoder(
 										end
 										3'h4:begin //LOAD's Imediate
 
+												CORE_DATA_load=1'b0;	//no Data load from D-data
+												CORE_DATA_REGMux=1'b0;//REGs receive ULA_out
+												CORE_DATA_ctrl=3'b000; //Load unsigned half Word
+												//CORE Operations
+												//CORE_Status=2'b00;	//Normal operation
+												//REGs Operations
+												CORE_REG_RD=CORE_InstructionIN[11:8]; //
+												CORE_REG_RF1=4'h0;
+												//CORE_REG_RF2=4'h0;
+												CORE_REG_write=1'b1; //REGs data Write yes
+												//ULA Operations
+												CORE_InstructionToULAMux={1'b1,CORE_InstructionIN[11]};//No imediate load, ULA_B receie REG_B
+												CORE_ULA_ctrl=4'h0;//sum(ADD)
+
+												//MEM Operations
+
+												CORE_DATA_write=1'b0; //No Data Write
+												CORE_DATA_ADDR_mux=1'b0;//DATA addr receive ULA_OUT
+												//Interrupt Operations
+												CORE_INT_ctrl=2'b00; //no interrupt operations
+												//STACK Operations
+												CORE_STACK_ctrl=2'b00;// No STACK operation
+												//PC Operations
+												CORE_PC_ctrl=2'b0;	//normal operation (PC=PC+1)
 										end
 										//========================EXTENSION=========================
 									endcase
@@ -388,6 +417,8 @@ module NRISC_InstructionDecoder(
 									CORE_PC_ctrl=2'b0;	//normal operation (PC=PC+1)
 									end
 				endcase
-
+				CORE_ULA_REGB_Stall= (CORE_REG_RF2 == old_rd) & old_rd;
+				CORE_ULA_REGA_Stall= (CORE_REG_RF1 == old_rd) & old_rd;
+				old_rd=CORE_InstructionIN[15] | ((CORE_InstructionIN[15:12]==0'h2) & (CORE_InstructionIN[3:0]==0'h0));
 		end
 endmodule

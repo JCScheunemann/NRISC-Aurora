@@ -13,7 +13,7 @@
  * selecoes incdec e comp2 inclusas; sem registradores, menor tempo      *
  * shift não sinalizado                                                  *
  *************************************************************************/
-
+`include "const.v"
 
 `timescale 1 ns / 1 ns
 
@@ -29,12 +29,12 @@ module NRISC_ULA(
 
 
     //Parameter numero de bits
-    parameter TAM = 32;
+    parameter TAM = `TAM;
     //-------------portas de entrada------------------------------------------------------------------
     input wire [TAM-1:0] ULA_A;
     input wire [TAM-1:0] ULA_B;
     //input wire incdec;
-	input wire [3:0] ULA_ctrl;// 3fios operacao 1 fio complemento
+	  input wire [3:0] ULA_ctrl;// 3fios operacao 1 fio complemento
 
     //-------------portas de saida--------------------------------------------------------------------
     output wire [TAM-1:0] ULA_OUT;

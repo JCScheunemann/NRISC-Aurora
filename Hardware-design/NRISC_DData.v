@@ -1,4 +1,4 @@
-
+`include "const.v"
 `timescale 1 ns / 1 ns
 
 module NRISC_DData(
@@ -7,6 +7,7 @@ module NRISC_DData(
                 DDATA_CORE_in,
                 DDATA_CORE_load,
                 DDATA_CORE_write,
+                DDATA_CORE_ctrl,
                 DDATA_BUS_write,
                 DDATA_BUS_addr,
                 DDATA_BUS_in,
@@ -14,8 +15,8 @@ module NRISC_DData(
                 clk,
                 rst
                   );
-    parameter N_DData = 8; //2^N posicoes
-    parameter TAM=16;
+    parameter N_DData = `N_DData; //2^N posicoes
+    parameter TAM=`TAM;
 
     //DDATA to CORE
     output reg [TAM-1:0] DDATA_CORE_out;
@@ -23,6 +24,7 @@ module NRISC_DData(
     input  wire [TAM-1:0] DDATA_CORE_in;
     input  wire DDATA_CORE_load;
     input  wire DDATA_CORE_write;
+    input  wire [2:0] DDATA_CORE_ctrl;
     input wire clk;
     input wire rst;
     //BUS DDATA

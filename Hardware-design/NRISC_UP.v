@@ -192,7 +192,7 @@ NRISC_REGs REGs(
                     .REG_RF1(CORE_REG_RF1),
                     .REG_RF2(CORE_REG_RF2),
                     .REG_RFD(REG_RFD_wb_pipe),
-                    .REG_R1(STACK_R1),
+                    .REG_R1(REG_R1),
                     .REG_Write(REG_Write_exec_pipe),
                     .REG_Interrupt_flag(INTERRUPT_flag),
                     .clk(clk),

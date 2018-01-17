@@ -1,4 +1,4 @@
-`define TAM  32
+`include "Def_tam.v"
 //D-Data defs
 `define N_DData  8
 //I-Data Defs

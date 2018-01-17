@@ -10,7 +10,7 @@ print "sinteze para os seguintes tamanhos"
 print Tamanhos
 for i in Tamanhos:
 	print "Iniciando a sinteze para "+str(i)+" bits"
-	os.system("echo '`define TAM "+str(i)+" '>./src/const.v")
+	os.system("echo '`define TAM "+str(i)+" '> ../../Def_tam.v")
 	print ("Rodando a validacao")
 	#os.system("irun -64 *.v  -linedebug -access rwc -top tb_multipliers -q")
 	print "Rodando a sinteze"

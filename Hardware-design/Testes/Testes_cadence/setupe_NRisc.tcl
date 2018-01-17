@@ -96,7 +96,7 @@ set_attribute hdl_track_filename_row_col true /
 ## Load RTL Design verilog or vhdl, (create a single top file to call all others)
 ####################################################################
 puts "Reading HDLs..."
-read_hdl -v2001 ./src/NRISC_ULA.v ./src/const.v ./src/NRISC_UP.v ./src/NRISC_InstructionDecoder.v
+read_hdl -v2001 ../../NRISC_ULA.v ../../Def_tam.v  ../../const.v ../../NRISC_UP.v ../../NRISC_InstructionDecoder.v ../../NRISC_PC_ctrl.v ../../NRISC_REGs.v ../../*.v
 #read_hdl -vhdl BoothParalelo8b.vhd BoothParalelo16b.vhd BoothParalelo32b.vhd BoothParalelo64b.vhd
 # read_hdl -vhdl somador.vhd registrador.vhd mux_2entradas.vhd filtro_croma.vhd FSM.vhd multiplicador_8bits.vhd
 # read_hdl -vhdl MULT_PF_BIN32.vhd MULT_PF_BIN64.vhd MULT_PF_HIB32m2v2.vhd MULT_PF_HIB64m2v2.vhd
@@ -229,7 +229,7 @@ check_design -all
 #############################################################################
 # write sdf
 # write_sdf -design $DESIGN > ${_OUTPUTS_PATH}/${DESIGN}_SDF.sdf
-read_vcd -static -module $DESIGN -vcd_module $DUT  ./multiplication.vcd
+#read_vcd -static -module $DESIGN -vcd_module $DUT  ./multiplication.vcd
 
 
 
@@ -250,6 +250,8 @@ read_vcd -static -module $DESIGN -vcd_module $DUT  ./multiplication.vcd
 # Report worst timing
 report timing -worst 1 -through  ULA/*[*] > $_REPORTS_PATH/NRISC_ULA_timing.txt
 report timing -worst 1 -through  ID/*[*] > $_REPORTS_PATH/NRISC_ID_timing.txt
+report timing -worst 1 -through  PC/*[*] > $_REPORTS_PATH/NRISC_PC_timing.txt
+report timing -worst 1 -through  REGs/*[*] > $_REPORTS_PATH/NRISC_REGs_timing.txt
 #report timing -worst 1 -through booth_assign_modificado_v1/*[*] > $_REPORTS_PATH/V1_timing.txt
 #report timing -worst 1 -through booth_assign_modificado_v2/*[*] > $_REPORTS_PATH/V2_timing.txt
 #report timing -worst 1 -through booth_NewMBE/*[*] > $_REPORTS_PATH/NewMBE_timing.txt

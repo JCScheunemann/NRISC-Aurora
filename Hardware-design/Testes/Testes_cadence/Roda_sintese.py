@@ -4,13 +4,14 @@ import shutil
 import string
 import sys
 
-Tamanhos=[16,32]
+Tamanhos=[16]
 print "Iniciando..."
 print "sinteze para os seguintes tamanhos"
 print Tamanhos
 for i in Tamanhos:
 	print "Iniciando a sinteze para "+str(i)+" bits"
 	os.system("echo '`define TAM "+str(i)+" '> ../../Def_tam.v")
+	os.system("cat ../../Def_tam.v")
 	print ("Rodando a validacao")
 	#os.system("irun -64 *.v  -linedebug -access rwc -top tb_multipliers -q")
 	print "Rodando a sinteze"

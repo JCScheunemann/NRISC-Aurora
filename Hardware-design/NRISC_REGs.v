@@ -29,8 +29,8 @@ module NRISC_REGs(
       input wire REG_Write;
 
       input wire REG_Interrupt_flag;
-      input wire clk;
-      input wire rst;
+      input wire clk, rst;
+
 
       wire [TAM-1:0] REGS [15:0];
       reg [TAM-1:0] global_REGS [7:2];
@@ -58,7 +58,23 @@ module NRISC_REGs(
       assign REG_A= REGS[REG_RF1];
       assign REG_B= REGS[REG_RF2];
 
-      always @ ( posedge clk ) begin
+      always @ ( posedge clk  or rst) begin
+        if(rst) begin
+          global_REGS[2]=0;
+          global_REGS[3]=0;
+          global_REGS[4]=0;
+          global_REGS[5]=0;
+          global_REGS[6]=0;
+          global_REGS[7]=0;
+          USR_REGS[0]=0;FIRQ_REGS[0]=0;
+          USR_REGS[1]=0;FIRQ_REGS[1]=0;
+          USR_REGS[2]=0;FIRQ_REGS[2]=0;
+          USR_REGS[3]=0;FIRQ_REGS[3]=0;
+          USR_REGS[4]=0;FIRQ_REGS[4]=0;
+          USR_REGS[5]=0;FIRQ_REGS[5]=0;
+          USR_REGS[6]=0;FIRQ_REGS[6]=0;
+          USR_REGS[7]=0;FIRQ_REGS[7]=0;
+        end
         if(REG_Write)begin
           case(REG_RFD)
             2,3,4,5,6,7:global_REGS[REG_RFD]=REG_D;

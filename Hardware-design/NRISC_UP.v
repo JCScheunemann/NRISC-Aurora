@@ -11,6 +11,8 @@ DDATA_CORE_load,
 DDATA_CORE_write,
 DDATA_CORE_ctrl,
 CORE_ctrl,
+INTERRUPT_ch,
+INTERRUPT_flag,
 clk,											//Main clk source
 rst
 );
@@ -23,7 +25,7 @@ parameter N_DData =  `N_DData;
 parameter N_IData = `N_IData;
 //PC Defs
 parameter STACK_TAM =`STACK_TAM;
-parameter ADDR_TAM  =`ADDR_TAM;
+parameter ADDR_TAM  =`N_IData;
 
 
 input wire clk;
@@ -50,6 +52,8 @@ input wire rst;
  wire [TAM-1:0] REG_B;
  wire CORE_REG_write;
  wire [3:0] CORE_REG_RFD;
+ wire [3:0] CORE_REG_RF1;
+ wire [3:0] CORE_REG_RF2;
 
 //ULA
  wire [2:0] CORE_ULA_flags;
@@ -81,7 +85,7 @@ input wire rst;
   //D-Data
   output wire [N_DData-1:0] DDATA_CORE_addr;
   input wire [TAM-1:0] DDATA_CORE_out;
-  output wire [N_DData-1:0] DDATA_CORE_in;
+  output wire [TAM-1:0] DDATA_CORE_in;
   output wire DDATA_CORE_load;
   output wire DDATA_CORE_write;
   output wire [2:0] DDATA_CORE_ctrl;
@@ -93,55 +97,53 @@ input wire rst;
 
 // pc ctrl
   wire [TAM-1:0] REG_R1;
-  wire [7:0] INTERRUPT_ch;
-  wire INTERRUPT_flag;
+  input wire [7:0] INTERRUPT_ch;
+  input  wire INTERRUPT_flag;
+
 
 // Pipeline ID
   reg [7:0] InstructionIN;
+  // Pipeline EXEC
+  //REGS
+  reg [3:0] REG_RFD_exec_pipe;
+  reg REG_Write_exec_pipe;
+  //D-Data
+  reg CORE_DATA_write_exec_pipe;
+  reg CORE_DATA_load_exec_pipe;
+  reg [2:0]CORE_DATA_ctrl_exec_pipe;
+  reg CORE_DATA_ADDR_mux_exec_pipe;
+  reg CORE_DATA_REGMux_exec_pipe;
+  reg [TAM-1:0] ULA_out_exec_pipe;
+  //WB Pipeline regs
+  reg [3:0] REG_RFD_wb_pipe;
+  reg REG_Write_wb_pipe;
+  wire [TAM-1:0] REG_RD_wb_pipe = CORE_DATA_REGMux_exec_pipe ? DDATA_CORE_out : ULA_out_exec_pipe;
+
+  always @ ( negedge clk ) begin
+    REG_Write_wb_pipe=REG_Write_exec_pipe;
+  end
   always @ ( posedge clk ) begin
+    //WB Pipeline
+    REG_RFD_wb_pipe= REG_RFD_exec_pipe;
+    //EXEC pipeline
+    REG_RFD_exec_pipe= CORE_REG_RFD;
+    REG_Write_exec_pipe=CORE_REG_write;
+    CORE_DATA_write_exec_pipe = DDATA_CORE_write;
+    CORE_DATA_load_exec_pipe =DDATA_CORE_load;
+    CORE_DATA_ctrl_exec_pipe =DDATA_CORE_ctrl;
+    CORE_DATA_ADDR_mux_exec_pipe =	ULA_A;
+    CORE_DATA_REGMux_exec_pipe =CORE_DATA_REGMux;
+    ULA_out_exec_pipe=ULA_OUT;
+    //ID pipeline
     InstructionIN= CORE_InstructionIN[7:0];
   end
-
-// Pipeline EXEC
-    //REGS
-    reg [3:0] REG_RFD_exec_pipe;
-    reg REG_Write_exec_pipe;
-    //D-Data
-    reg CORE_DATA_write_exec_pipe;
-    reg CORE_DATA_load_exec_pipe;
-    reg [2:0]CORE_DATA_ctrl_exec_pipe;
-    reg CORE_DATA_ADDR_mux_exec_pipe;
-    reg CORE_DATA_REGMux_exec_pipe;
-    reg [TAM-1:0] ULA_out_exec_pipe;
-
-    always @ ( posedge clk ) begin
-      REG_RFD_exec_pipe= CORE_REG_RFD;
-      REG_Write_exec_pipe=CORE_REG_write;
-      CORE_DATA_write_exec_pipe = DDATA_CORE_write;
-      CORE_DATA_load_exec_pipe =DDATA_CORE_load;
-      CORE_DATA_ctrl_exec_pipe =DDATA_CORE_ctrl;
-      CORE_DATA_ADDR_mux_exec_pipe =	ULA_A;
-      CORE_DATA_REGMux_exec_pipe =CORE_DATA_REGMux;
-      ULA_out_exec_pipe=ULA_OUT;
-    end
-
-    assign ULA_B= CORE_InstructionToULAMux[0] | CORE_InstructionToULAMux[1] ?
-                  (CORE_InstructionToULAMux[1] ?
-                      {{(TAM-9){CORE_InstructionToULAMux[0]&InstructionIN[7]}},InstructionIN[7:0]} :
-                      {{(TAM-5){1'b0}},InstructionIN[3:0]} ) :
-                  CORE_ULA_REGB_Stall ? ULA_out_exec_pipe : REG_B;
-    assign ULA_A= CORE_ULA_REGA_Stall ? ULA_out_exec_pipe : REG_A;
-
-
-    //WB Pipeline
-    reg [3:0] REG_RFD_wb_pipe;
-    reg REG_Write_wb_pipe;
-    reg [TAM-1:0] REG_RD_wb_pipe;
-    always @ ( posedge clk ) begin
-      REG_RFD_wb_pipe= REG_RFD_exec_pipe;
-      REG_Write_wb_pipe=REG_Write_exec_pipe;
-      REG_RD_wb_pipe= CORE_DATA_REGMux_exec_pipe ? DDATA_CORE_out : ULA_out_exec_pipe;
-    end
+  assign ULA_B= CORE_InstructionToULAMux[0] | CORE_InstructionToULAMux[1] ?
+                (CORE_InstructionToULAMux[1] ?
+                    {{(TAM-9){CORE_InstructionToULAMux[0]&InstructionIN[7]}},InstructionIN[7:0]} :
+                    {{(TAM-5){1'b0}},InstructionIN[3:0]} ) :
+                CORE_ULA_REGB_Stall ? ULA_out_exec_pipe : REG_B;
+  assign ULA_A= CORE_ULA_REGA_Stall ? ULA_out_exec_pipe : REG_A;
+  assign DDATA_CORE_in= CORE_ULA_REGB_Stall ? ULA_out_exec_pipe : REG_B;
 
 NRISC_PC_ctrl PC(
                 .IDATA_CORE_out(IDATA_CORE_out),
@@ -150,7 +152,7 @@ NRISC_PC_ctrl PC(
                 .CORE_InstructionIN(CORE_InstructionIN),
                 .CORE_PC_ctrl(CORE_PC_ctrl),
                 .CORE_STACK_ctrl(CORE_STACK_ctrl),
-                .ULA_OUT(ULA_OUT),
+                .ULA_OUT(ULA_OUT[N_IData-1:0]),
                 .REG_R1(REG_R1),
                 .INTERRUPT_ch(INTERRUPT_ch),
                 .INTERRUPT_flag(INTERRUPT_flag),
@@ -169,7 +171,7 @@ NRISC_InstructionDecoder ID(
 								.CORE_ULA_REGB_Stall(CORE_ULA_REGB_Stall),
 								.CORE_REG_RF1(CORE_REG_RF1),							//REGs to ULA ctrl 1
 								.CORE_REG_RF2(CORE_REG_RF2),							//REGs to ULA ctrl 2
-								.CORE_REG_RFD(CORE_REG_RFD),							//REGs inputs ctrl
+								.CORE_REG_RD(CORE_REG_RFD),							//REGs inputs ctrl
 								.CORE_REG_write(CORE_REG_write),						//REGs write ctrl
 								.CORE_DATA_write(DDATA_CORE_write),					//DATA write ctrl
 								.CORE_DATA_load(DDATA_CORE_load),						//DATA load ctrl
@@ -178,7 +180,6 @@ NRISC_InstructionDecoder ID(
 								.CORE_DATA_REGMux(CORE_DATA_REGMux),					//DATA to REGs MUX
 								.CORE_STACK_ctrl(CORE_STACK_ctrl),					//CORE to STACK ctrl
 								.CORE_PC_ctrl(CORE_PC_ctrl),							//CORE to PC ctrl MUX
-								.CORE_PC_clk(CORE_PC_clk),							//PC clk
 								.CORE_INT_CHA(CORE_INT_CHA),							//CORE to interrupt vector channel
 								.CORE_INT_ctrl(CORE_INT_ctrl),						//CORE to interrupt vector control
 								.clk(clk),											//Main clk source
@@ -191,9 +192,9 @@ NRISC_REGs REGs(
                     .REG_D(REG_RD_wb_pipe),
                     .REG_RF1(CORE_REG_RF1),
                     .REG_RF2(CORE_REG_RF2),
-                    .REG_RFD(REG_RFD_wb_pipe),
+                    .REG_RFD(REG_RFD_exec_pipe),
                     .REG_R1(REG_R1),
-                    .REG_Write(REG_Write_exec_pipe),
+                    .REG_Write(REG_Write_wb_pipe),
                     .REG_Interrupt_flag(INTERRUPT_flag),
                     .clk(clk),
                     .rst(rst)

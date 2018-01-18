@@ -13,7 +13,8 @@
  * selecoes incdec e comp2 inclusas; sem registradores, menor tempo      *
  * shift não sinalizado                                                  *
  *************************************************************************/
-`include "const.v"
+
+`define TAM 16
 
 `timescale 1 ns / 1 ns
 

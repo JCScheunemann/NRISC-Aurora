@@ -1,0 +1,127 @@
+Vesta static timing analysis, register-to-register maximum timing
+
+Top 20 maximum delay paths:
+Path DFFPOSX1_1/CLK to output pin ULA_OUT[1] delay 475.553 ps
+      0.3 ps  clk_bF_buf2:   BUFX4_51/Y -> DFFPOSX1_1/CLK
+    203.4 ps    _1477__1_: DFFPOSX1_1/Q ->   BUFX2_34/A
+    305.0 ps    _1476__1_:   BUFX2_34/Y ->    BUFX2_2/A
+    399.4 ps       _0__1_:    BUFX2_2/Y ->   BUFX2_37/A
+    475.6 ps   ULA_OUT[1]:   BUFX2_37/Y -> 
+
+Path DFFPOSX1_12/CLK to output pin ULA_OUT[0] delay 407.437 ps
+      5.1 ps  clk_bF_buf4: BUFX4_49/Y -> DFFPOSX1_12/CLK
+    224.4 ps    _1476__0_: BUFX2_33/Y ->     BUFX2_1/A
+    330.3 ps       _0__0_:  BUFX2_1/Y ->    BUFX2_36/A
+    407.4 ps   ULA_OUT[0]: BUFX2_36/Y -> 
+
+Path DFFPOSX1_28/CLK to output pin ULA_OUT[2] delay 405.91 ps
+      0.6 ps  clk_bF_buf4: BUFX4_49/Y -> DFFPOSX1_28/CLK
+    224.4 ps    _1476__2_: BUFX2_35/Y ->     BUFX2_3/A
+    328.9 ps       _0__2_:  BUFX2_3/Y ->    BUFX2_38/A
+    405.9 ps   ULA_OUT[2]: BUFX2_38/Y -> 
+
+Path DFFPOSX1_1/CLK to DFFPOSX1_23/D delay 399.394 ps
+      0.3 ps  clk_bF_buf2:   BUFX4_51/Y ->  DFFPOSX1_1/CLK
+    203.4 ps    _1477__1_: DFFPOSX1_1/Q ->    BUFX2_34/A
+    305.0 ps    _1476__1_:   BUFX2_34/Y ->     BUFX2_2/A
+    399.4 ps       _0__1_:    BUFX2_2/Y -> DFFPOSX1_23/D
+
+Path DFFPOSX1_10/CLK to output pin ULA_OUT[16] delay 392.416 ps
+      1.0 ps  clk_bF_buf0:    BUFX4_54/Y -> DFFPOSX1_10/CLK
+    212.9 ps   _1476__16_: DFFPOSX1_10/Q ->    BUFX2_17/A
+    315.8 ps      _0__16_:    BUFX2_17/Y ->    BUFX2_52/A
+    392.4 ps  ULA_OUT[16]:    BUFX2_52/Y -> 
+
+Path DFFPOSX1_14/CLK to output pin ULA_OUT[19] delay 389.405 ps
+      1.3 ps  clk_bF_buf0:    BUFX4_54/Y -> DFFPOSX1_14/CLK
+    209.7 ps   _1476__19_: DFFPOSX1_14/Q ->    BUFX2_20/A
+    312.7 ps      _0__19_:    BUFX2_20/Y ->    BUFX2_55/A
+    389.4 ps  ULA_OUT[19]:    BUFX2_55/Y -> 
+
+Path DFFPOSX1_17/CLK to output pin ULA_OUT[22] delay 388.51 ps
+      2.9 ps  clk_bF_buf3:    BUFX4_50/Y -> DFFPOSX1_17/CLK
+    208.6 ps   _1476__22_: DFFPOSX1_17/Q ->    BUFX2_23/A
+    311.7 ps      _0__22_:    BUFX2_23/Y ->    BUFX2_58/A
+    388.5 ps  ULA_OUT[22]:    BUFX2_58/Y -> 
+
+Path DFFPOSX1_20/CLK to output pin ULA_OUT[25] delay 386.629 ps
+      3.9 ps  clk_bF_buf3:    BUFX4_50/Y -> DFFPOSX1_20/CLK
+    206.1 ps   _1476__25_: DFFPOSX1_20/Q ->    BUFX2_26/A
+    309.8 ps      _0__25_:    BUFX2_26/Y ->    BUFX2_61/A
+    386.6 ps  ULA_OUT[25]:    BUFX2_61/Y -> 
+
+Path DFFPOSX1_26/CLK to output pin ULA_OUT[30] delay 386.343 ps
+      2.8 ps  clk_bF_buf3:    BUFX4_50/Y -> DFFPOSX1_26/CLK
+    207.9 ps   _1476__30_: DFFPOSX1_26/Q ->    BUFX2_31/A
+    309.8 ps      _0__30_:    BUFX2_31/Y ->    BUFX2_66/A
+    386.3 ps  ULA_OUT[30]:    BUFX2_66/Y -> 
+
+Path DFFPOSX1_21/CLK to output pin ULA_OUT[26] delay 384.023 ps
+      5.6 ps  clk_bF_buf4:    BUFX4_49/Y -> DFFPOSX1_21/CLK
+    205.8 ps   _1476__26_: DFFPOSX1_21/Q ->    BUFX2_27/A
+    307.4 ps      _0__26_:    BUFX2_27/Y ->    BUFX2_62/A
+    384.0 ps  ULA_OUT[26]:    BUFX2_62/Y -> 
+
+Path DFFPOSX1_31/CLK to output pin ULA_OUT[5] delay 383.78 ps
+      3.1 ps  clk_bF_buf2:    BUFX4_51/Y -> DFFPOSX1_31/CLK
+    205.8 ps    _1476__5_: DFFPOSX1_31/Q ->     BUFX2_6/A
+    307.3 ps       _0__5_:     BUFX2_6/Y ->    BUFX2_41/A
+    383.8 ps   ULA_OUT[5]:    BUFX2_41/Y -> 
+
+Path DFFPOSX1_5/CLK to output pin ULA_OUT[11] delay 382.052 ps
+      0.6 ps  clk_bF_buf1:   BUFX4_53/Y -> DFFPOSX1_5/CLK
+    204.3 ps   _1476__11_: DFFPOSX1_5/Q ->   BUFX2_12/A
+    305.5 ps      _0__11_:   BUFX2_12/Y ->   BUFX2_47/A
+    382.1 ps  ULA_OUT[11]:   BUFX2_47/Y -> 
+
+Path DFFPOSX1_29/CLK to output pin ULA_OUT[3] delay 381.934 ps
+      2.3 ps  clk_bF_buf0:    BUFX4_54/Y -> DFFPOSX1_29/CLK
+    204.1 ps    _1476__3_: DFFPOSX1_29/Q ->     BUFX2_4/A
+    305.2 ps       _0__3_:     BUFX2_4/Y ->    BUFX2_39/A
+    381.9 ps   ULA_OUT[3]:    BUFX2_39/Y -> 
+
+Path DFFPOSX1_1/CLK to output pin ULA_flags[1] delay 381.595 ps
+      0.3 ps   clk_bF_buf2:   BUFX4_51/Y -> DFFPOSX1_1/CLK
+    203.4 ps     _1477__1_: DFFPOSX1_1/Q ->   BUFX2_34/A
+    305.0 ps     _1476__1_:   BUFX2_34/Y ->   BUFX2_69/A
+    381.6 ps  ULA_flags[1]:   BUFX2_69/Y -> 
+
+Path DFFPOSX1_8/CLK to output pin ULA_OUT[14] delay 381.53 ps
+      1.4 ps  clk_bF_buf1:   BUFX4_53/Y -> DFFPOSX1_8/CLK
+    202.8 ps   _1476__14_: DFFPOSX1_8/Q ->   BUFX2_15/A
+    304.8 ps      _0__14_:   BUFX2_15/Y ->   BUFX2_50/A
+    381.5 ps  ULA_OUT[14]:   BUFX2_50/Y -> 
+
+Path DFFPOSX1_2/CLK to output pin ULA_OUT[8] delay 380.538 ps
+      3.3 ps  clk_bF_buf4:   BUFX4_49/Y -> DFFPOSX1_2/CLK
+    202.8 ps    _1476__8_: DFFPOSX1_2/Q ->    BUFX2_9/A
+    303.7 ps       _0__8_:    BUFX2_9/Y ->   BUFX2_44/A
+    380.5 ps   ULA_OUT[8]:   BUFX2_44/Y -> 
+
+Path DFFPOSX1_19/CLK to output pin ULA_OUT[24] delay 380.313 ps
+      5.5 ps  clk_bF_buf4:    BUFX4_49/Y -> DFFPOSX1_19/CLK
+    202.2 ps   _1476__24_: DFFPOSX1_19/Q ->    BUFX2_25/A
+    303.5 ps      _0__24_:    BUFX2_25/Y ->    BUFX2_60/A
+    380.3 ps  ULA_OUT[24]:    BUFX2_60/Y -> 
+
+Path DFFPOSX1_7/CLK to output pin ULA_OUT[13] delay 379.677 ps
+      1.1 ps  clk_bF_buf1:   BUFX4_53/Y -> DFFPOSX1_7/CLK
+    201.8 ps   _1476__13_: DFFPOSX1_7/Q ->   BUFX2_14/A
+    303.0 ps      _0__13_:   BUFX2_14/Y ->   BUFX2_49/A
+    379.7 ps  ULA_OUT[13]:   BUFX2_49/Y -> 
+
+Path DFFPOSX1_27/CLK to output pin ULA_OUT[31] delay 379.493 ps
+      1.5 ps  clk_bF_buf1:    BUFX4_53/Y -> DFFPOSX1_27/CLK
+    202.2 ps   _1476__31_: DFFPOSX1_27/Q ->    BUFX2_32/A
+    303.0 ps      _0__31_:    BUFX2_32/Y ->    BUFX2_67/A
+    379.5 ps  ULA_OUT[31]:    BUFX2_67/Y -> 
+
+Path DFFPOSX1_9/CLK to output pin ULA_OUT[15] delay 378.927 ps
+      1.4 ps  clk_bF_buf1:   BUFX4_53/Y -> DFFPOSX1_9/CLK
+    201.1 ps   _1476__15_: DFFPOSX1_9/Q ->   BUFX2_16/A
+    302.3 ps      _0__15_:   BUFX2_16/Y ->   BUFX2_51/A
+    378.9 ps  ULA_OUT[15]:   BUFX2_51/Y -> 
+
+Computed maximum clock frequency (zero slack) = 2102.81 MHz
+-----------------------------------------
+

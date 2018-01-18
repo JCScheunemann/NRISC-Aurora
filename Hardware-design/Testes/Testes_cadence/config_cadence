@@ -1,0 +1,175 @@
+#!/bin/sh
+# Name: cadence_config
+
+# ##############################################
+# #         MENU - SELEÇÃO FERRAMENTA          #
+# ##############################################
+# Type "source cadence_config"
+
+  clear
+  echo `date`
+  export CDS_AUTO_64BIT=ALL
+  export CDS_DIR=/tools/cadence
+  export cds_root=/tools/cadence
+  export PATH=${PATH}:/tools/cadence/incisiv92/IUS92/tools/bin
+
+###SOC
+    SOC=$CDS_DIR/soc81
+    export SOC
+    export ENCOUNTERHOME=$SOC
+    export ENCOUNTER=$SOC
+    export PATH=$SOC/tools/bin:$PATH
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SOC/tools/lib
+    export MANPATH=$MANPATH:$SOC/share/man:$SOC/share/fe/man:$SOC/share/synth/man:$SOC/BuildGates/v05.17/man
+
+##IUS
+    IUS=${CDS_DIR}/INCISIV92/IUS92
+    export IUS
+    export IUSHOME=${IUS}
+    export AMSHOME=${IUS}
+    export LDVHOME=$IUS
+    #setenv OVMHOME=$OVM
+    export PATH=${PATH}:${IUS}/bin:${IUS}/tools/bin:$IUS/tools/fcheck/bin:$IUS/tools/dfII/bin:$IUS/share/bin
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$IUS/tools/lib:$IUS/tools/fcheck/lib:$IUS/tools/systemc/gcc/install/lib
+    export MANPATH=$MANPATH:$IUS/share/man:$IUS/tools/verilog/man:$IUS/tools/sc/man:$IUS/tools/fcheck/man:$IUS/tools/cospan/man  # não ha' o seguinte caminho :$IUS/tools/systemc/ddd/man:$IUS/tools/systemc/ddd/ddd3/man
+
+##MMSIM
+    MMSIM=$CDS_DIR/MMSIM72
+    export MMSIM
+    export PATH=$PATH:$MMSIM/tools/bin:$MMSIM/bin
+
+    echo
+    echo "Configurado IUS92, SOC81, MMSIM72"
+
+##AMS -- nao funfa sem IC
+    AMS=/tools/cadence/design_kits/ams35
+    export AMS_DIR=${AMS}
+    export PATH=$PATH:$AMS/cds/bin
+    #echo "Use o comando ams_cds para criar um novo projeto."
+
+
+
+# ##########################################
+# #         MENU - SELEÇÃO DK              #
+# ##########################################
+# colei direto como pois tenho apenas uma bib
+    export PATH=$PATH:/tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/
+    export T_DIR=/tools/cadence/design_kits/NandGate045/
+    export OA_HOME=$SOC/oa_v22.04.044/
+    export DD_USE_LIBDEFS="NO"
+    echo
+    echo "         ng45 - 45nm NANDGATE FREE PDK"
+    echo " "
+
+# #Gera menu
+# menudktxt() {
+#      clear
+#      j=1
+#      echo
+#      echo " Selecione qual o Design Kit(DK) deseja utilizar:"
+#      echo
+#      echo "        1. ng45 - 45nm NANDGATE FREE DK"
+#      echo "        2. g45  - 45nm generic FREE DK "
+#      echo "        3. g90  - 90nm generic FREE DK "
+#      echo "        4. g18  - 180nm generic FREE DK"
+#      echo
+#      echo "        ENTRE SUA OPCAO:"
+# }
+# #Aguarda Seleção do Usuário
+# menudkloop() {
+#     while [ "$j" == "1" ]
+#     do
+#         echo "j= $j"
+#         menudktxt
+#         read answer
+#         case $answer in
+#         1)
+#             ng45
+#             j=2
+#             ;;
+#         2)
+#             g45
+#             j=2
+#             ;;
+#         3)
+#             g90
+#             j=2
+#             ;;
+#         4)
+#             g180
+#             j=2
+#             ;;
+#         *)
+#             menudkloop
+#             ;;
+#         esac
+#     done
+# }
+# #Caso selecione ng45
+# ng45() {
+#     clear
+#     echo "Selecionado o design kit ng45."
+#     echo
+#     export PATH=$PATH:/tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/
+#     export T_DIR=/tools/cadence/design_kits/NandGate045/
+#     export OA_HOME=$SOC/oa_v22.04.044/
+#     export DD_USE_LIBDEFS="NO"
+# #     echo "Para executar o virtuoso digite:"
+# #     echo "tkit -tech ng45"
+# #     echo " "
+# }
+# g45() {
+#     clear
+#     echo "Selecionado o design kit g45."
+#     echo
+#     export PATH=$PATH:/tools/cadence/design_kits/xfab/cadence/env/bin/
+#     export T_DIR=/tools/cadence/design_kits/xfab/
+#     echo "Caso seja a primeira utilização, execute:"
+#     echo "    tkit -m fb -te xh018 &"
+#     echo "Para configurar seu ambiente."
+#     echo "Caso não seja, basta executar tkit & ou icfb &"
+#     echo
+# }
+# g90() {
+#     clear
+#     echo "Selecionado o design kit g90."
+#     echo
+#     export T_DIR=/tools/cadence/design_kits/g90/
+# }
+# g180() {
+#     clear
+#     echo "Selecionado o design kit g180."
+#     echo
+#     export T_DIR=/tools/cadence/design_kits/g180/
+# }
+# 
+# menudktxt
+# menudkloop
+
+##estes não temos:
+#   SPB=$CDS_DIR/SPB163
+#   export SPB
+#   # FINALE=$CDS_DIR/FINALE72
+#   ICC=$CDS_DIR/ICC11241
+#   export ICC
+#   CONFRML=$CDS_DIR/CONFRML91
+#   export CONFRML
+#   ASSURA=$CDS_DIR/ASSURA41-614V6
+#   export ASSURA
+#   IC=$CDS_DIR/IC614
+#   export IC
+#   ETS=$CDS_DIR/ETS91_Base
+#   export ETS
+#   ET=$CDS_DIR/ET91_Base
+#   export ET
+#   CCD=$CDS_DIR/CCD81V400
+#   export CCD
+
+
+  ##Licenças
+  export LM_LICENSE_FILE=5280@$HOSTNAME
+  export CDS_LIC_FILE=5280@$HOSTNAME
+  export SPECMAN_LICENSE_FILE=5280@$HOSTNAME
+
+  touch /var/lock/subsys/local
+   /tools/cadence/license/lmgrd -l /var/log/cadence.log -c /tools/cadence/license/lic.lic /tools/cadence/license/amslmd.lic

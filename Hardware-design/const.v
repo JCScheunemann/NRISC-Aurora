@@ -4,5 +4,5 @@
 //I-Data Defs
 `define N_IData  8
 //PC Defs
-`define STACK_TAM 16
-`define ADDR_TAM  10
+`define STACK_TAM 4
+//`define ADDR_TAM  8

@@ -35,7 +35,6 @@ module NRISC_InstructionDecoder(
 								CORE_DATA_REGMux,					//DATA to REGs MUX
 								CORE_STACK_ctrl,					//CORE to STACK ctrl
 								CORE_PC_ctrl,							//CORE to PC ctrl MUX
-								CORE_PC_clk,							//PC clk
 								CORE_INT_CHA,							//CORE to interrupt vector channel
 								CORE_INT_ctrl,						//CORE to interrupt vector control
 								clk,											//Main clk source
@@ -70,19 +69,41 @@ module NRISC_InstructionDecoder(
 		output reg [1:0] CORE_STACK_ctrl;
 		//PC
 		output reg [1:0] CORE_PC_ctrl;
-		output reg CORE_PC_clk;
 		//Interrupt Vector
 		output reg [7:0] CORE_INT_CHA ;
 		output reg [1:0] CORE_INT_ctrl ;
 
-		reg [3:0] old_rd;
+		reg [3:0] old_rd,old_rd1;
 		reg rd_old_write;
 
 
 //==========================COMECA A DESCRICAO==================================
 
 		always @ ( posedge clk ) begin
-			case(CORE_InstructionIN[15])
+			if(rst) begin
+					CORE_Status_ctrl=0;
+					CORE_InstructionToULAMux=0;
+					CORE_ULA_ctrl=0;
+					CORE_ULA_REGA_Stall=0;
+					CORE_ULA_REGB_Stall=0;
+					CORE_REG_RD=0;
+					CORE_REG_RF1=0;
+					CORE_REG_RF2=0;
+					CORE_REG_write=0;
+					CORE_DATA_write=0;
+					CORE_DATA_load=0;
+					CORE_DATA_ADDR_mux=0;
+					CORE_DATA_ctrl=0;
+					CORE_DATA_REGMux=0;
+					CORE_STACK_ctrl=0;
+					CORE_PC_ctrl=0;
+					CORE_INT_CHA =0;
+					CORE_INT_ctrl =0;
+					old_rd1=0;
+					rd_old_write=0;
+			end
+			else begin
+				case(CORE_InstructionIN[15])
 						1'b0:begin//No ULA Operation
 									case(CORE_InstructionIN[14:12])
 										3'h0:begin //CPU ctrl and CALL's
@@ -417,8 +438,15 @@ module NRISC_InstructionDecoder(
 									CORE_PC_ctrl=2'b0;	//normal operation (PC=PC+1)
 									end
 				endcase
-				CORE_ULA_REGB_Stall= (CORE_REG_RF2 == old_rd) & old_rd;
-				CORE_ULA_REGA_Stall= (CORE_REG_RF1 == old_rd) & old_rd;
-				old_rd=CORE_InstructionIN[15] | ((CORE_InstructionIN[15:12]==0'h2) & (CORE_InstructionIN[3:0]==0'h0));
+				CORE_ULA_REGB_Stall= (CORE_REG_RF2 == old_rd) & (old_rd !=0);
+				CORE_ULA_REGA_Stall= (CORE_REG_RF1 == old_rd) & (old_rd !=0);
+				old_rd1=CORE_REG_RD &{4 {CORE_InstructionIN[15] |
+															((CORE_InstructionIN[15:12]==4'h2) &
+															 (CORE_InstructionIN[3:0]==4'h0))}};
+				end
+		end
+		always @ ( negedge clk  or rst) begin
+			if(rst) old_rd=0;
+			else old_rd=old_rd1& {4{~rst}};
 		end
 endmodule

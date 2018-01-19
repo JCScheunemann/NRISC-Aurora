@@ -1,0 +1,55 @@
+Use openwrapper to create a new GUI-based layout window
+Use closewrapper to remove a new GUI-based layout window
+
+Magic 8.1 revision 191 - Compiled on dom dez 31 18:54:52 -02 2017.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using TrueColor, VisualID 0x24 depth 24
+Processing system .magicrc file
+Input style lambda=0.20(p): scaleFactor=20, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+4 Magic internal units = 1 Lambda
+New windows will not have a title caption.
+New windows will not have scroll bars.
+New windows will not have a border.
+handling file entry load_NRISC_UP.tcl extension .tcl
+Reading LEF data from file /usr/local/share/qflow/tech/gscl45nm/gscl45nm.lef.
+This action cannot be undone.
+LEF file:  Defines site CoreSite (ignored)
+Moving label "Q" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "vdd" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "vdd" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "CLK" from metal2 to m2contact in cell DFFPOSX1.
+Moving label "CLK" from metal2 to m2contact in cell DFFPOSX1.
+Moving label "Q" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "vdd" from metal1 to m2contact in cell DFFPOSX1.
+Moving label "D" from metal1 to m2contact in cell DFFSR.
+Moving label "S" from metal1 to m2contact in cell DFFSR.
+Moving label "S" from metal1 to m2contact in cell DFFSR.
+Moving label "vdd" from metal1 to m2contact in cell DFFSR.
+Moving label "C" from metal1 to m2contact in cell FAX1.
+Moving label "YC" from metal1 to m2contact in cell FAX1.
+Moving label "YC" from metal1 to m2contact in cell FAX1.
+Moving label "YC" from metal2 to m2contact in cell FAX1.
+Moving label "gnd" from metal1 to m2contact in cell FAX1.
+LEF read: Processed 2927 lines.
+LEF Read: encountered 227 errors total.
+Processing timestamp mismatches: MUX2X1, NAND2X1, AND2X2, OR2X2, DFFPOSX1, BUFX2, FILL, INVX1, NOR2X1, NAND3X1, NOR3X1, DFFNEGX1, AOI21X1, XOR2X1, OAI21X1, AOI22X1, INVX2, INVX8, XNOR2X1.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  197.60 x 137.35  ( -1.90, -1.90 ), ( 195.70,  135.45)  27140.36  
+lambda:   988.00 x 686.75  ( -9.50, -9.50 ), ( 978.50,  677.25)  678509.00 
+internal:   3952 x 2747    (   -38, -38   ), (  3914,  2709 )  10856144  

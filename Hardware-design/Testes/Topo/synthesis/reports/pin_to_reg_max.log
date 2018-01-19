@@ -1,0 +1,489 @@
+Vesta static timing analysis, pin-to-register and register-to-pin maximum timing
+
+Top 20 maximum delay paths:
+Path input pin INTERRUPT_flag to DFFPOSX1_50/D delay 4460.04 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y -> OAI21X1_744/A
+   2726.1 ps                  _3051_: OAI21X1_744/Y -> AOI21X1_395/B
+   2873.6 ps                  _3056_: AOI21X1_395/Y -> OAI21X1_745/A
+   3027.8 ps                  _3063_: OAI21X1_745/Y -> AOI21X1_396/B
+   3175.4 ps                  _3068_: AOI21X1_396/Y -> OAI21X1_746/A
+   3329.5 ps                  _3075_: OAI21X1_746/Y -> AOI21X1_397/B
+   3477.1 ps                  _3080_: AOI21X1_397/Y -> OAI21X1_747/A
+   3601.2 ps            ULA_carrysom: OAI21X1_747/Y ->  XNOR2X1_36/A
+   3708.3 ps          ULA_OUT_0__15_:  XNOR2X1_36/Y ->  NOR2X1_296/A
+   3808.9 ps                  _2973_:  NOR2X1_296/Y -> OAI21X1_738/B
+   3898.4 ps                  _3002_: OAI21X1_738/Y ->  NOR2X1_299/A
+   3969.6 ps                  _3003_:  NOR2X1_299/Y -> NAND3X1_646/B
+   4054.5 ps                  _3004_: NAND3X1_646/Y ->  NOR2X1_300/B
+   4121.2 ps                ULA_zero:  NOR2X1_300/Y ->   NAND3X1_4/B
+   4208.8 ps                   _146_:   NAND3X1_4/Y ->   NAND3X1_5/A
+   4311.0 ps                   _149_:   NAND3X1_5/Y ->   NAND3X1_6/C
+   4395.5 ps                   _151_:   NAND3X1_6/Y ->  AOI21X1_19/B
+   4460.0 ps                 _85__0_:  AOI21X1_19/Y -> DFFPOSX1_50/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_30/D delay 3875.03 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y -> OAI21X1_744/A
+   2726.1 ps                  _3051_: OAI21X1_744/Y -> AOI21X1_395/B
+   2873.6 ps                  _3056_: AOI21X1_395/Y -> OAI21X1_745/A
+   3027.8 ps                  _3063_: OAI21X1_745/Y -> AOI21X1_396/B
+   3175.4 ps                  _3068_: AOI21X1_396/Y -> OAI21X1_746/A
+   3329.5 ps                  _3075_: OAI21X1_746/Y -> AOI21X1_397/B
+   3477.1 ps                  _3080_: AOI21X1_397/Y -> OAI21X1_747/A
+   3601.2 ps            ULA_carrysom: OAI21X1_747/Y ->  XNOR2X1_36/A
+   3708.3 ps          ULA_OUT_0__15_:  XNOR2X1_36/Y ->  NOR2X1_296/A
+   3808.9 ps                  _2973_:  NOR2X1_296/Y ->  NOR2X1_297/A
+   3875.0 ps         ULA_ULA_OUT_15_:  NOR2X1_297/Y -> DFFPOSX1_30/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_29/D delay 3848.78 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y -> OAI21X1_744/A
+   2726.1 ps                  _3051_: OAI21X1_744/Y -> AOI21X1_395/B
+   2873.6 ps                  _3056_: AOI21X1_395/Y -> OAI21X1_745/A
+   3027.8 ps                  _3063_: OAI21X1_745/Y -> AOI21X1_396/B
+   3175.4 ps                  _3068_: AOI21X1_396/Y -> OAI21X1_746/A
+   3329.5 ps                  _3075_: OAI21X1_746/Y -> AOI21X1_397/B
+   3477.1 ps                  _3080_: AOI21X1_397/Y ->  XNOR2X1_34/A
+   3585.5 ps          ULA_OUT_0__14_:  XNOR2X1_34/Y ->   AND2X2_53/B
+   3703.1 ps                  _2971_:   AND2X2_53/Y ->   NOR3X1_69/B
+   3798.6 ps                  _2972_:   NOR3X1_69/Y ->   INVX1_239/A
+   3848.8 ps         ULA_ULA_OUT_14_:   INVX1_239/Y -> DFFPOSX1_29/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_28/D delay 3608.43 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y -> OAI21X1_744/A
+   2726.1 ps                  _3051_: OAI21X1_744/Y -> AOI21X1_395/B
+   2873.6 ps                  _3056_: AOI21X1_395/Y -> OAI21X1_745/A
+   3027.8 ps                  _3063_: OAI21X1_745/Y -> AOI21X1_396/B
+   3175.4 ps                  _3068_: AOI21X1_396/Y -> OAI21X1_746/A
+   3329.5 ps                  _3075_: OAI21X1_746/Y ->   XOR2X1_14/A
+   3441.9 ps          ULA_OUT_0__13_:   XOR2X1_14/Y ->  NOR2X1_288/A
+   3542.4 ps                  _2926_:  NOR2X1_288/Y ->  NOR2X1_289/A
+   3608.4 ps         ULA_ULA_OUT_13_:  NOR2X1_289/Y -> DFFPOSX1_28/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_27/D delay 3521.37 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y -> OAI21X1_744/A
+   2726.1 ps                  _3051_: OAI21X1_744/Y -> AOI21X1_395/B
+   2873.6 ps                  _3056_: AOI21X1_395/Y -> OAI21X1_745/A
+   3027.8 ps                  _3063_: OAI21X1_745/Y -> AOI21X1_396/B
+   3175.4 ps                  _3068_: AOI21X1_396/Y ->  XNOR2X1_30/A
+   3286.2 ps          ULA_OUT_0__12_:  XNOR2X1_30/Y ->    OR2X2_30/B
+   3393.3 ps                  _2900_:    OR2X2_30/Y -> NAND2X1_354/A
+   3472.4 ps                  _2925_: NAND2X1_354/Y ->   INVX1_236/A
+   3521.4 ps         ULA_ULA_OUT_12_:   INVX1_236/Y -> DFFPOSX1_27/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_26/D delay 3370.09 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y -> OAI21X1_744/A
+   2726.1 ps                  _3051_: OAI21X1_744/Y -> AOI21X1_395/B
+   2873.6 ps                  _3056_: AOI21X1_395/Y -> OAI21X1_745/A
+   3027.8 ps                  _3063_: OAI21X1_745/Y ->   XOR2X1_13/A
+   3140.3 ps          ULA_OUT_0__11_:   XOR2X1_13/Y ->    OR2X2_28/B
+   3247.8 ps                  _2882_:    OR2X2_28/Y -> OAI21X1_724/C
+   3320.5 ps                  _2899_: OAI21X1_724/Y ->   INVX1_235/A
+   3370.1 ps         ULA_ULA_OUT_11_:   INVX1_235/Y -> DFFPOSX1_26/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_25/D delay 3215.31 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y -> OAI21X1_744/A
+   2726.1 ps                  _3051_: OAI21X1_744/Y -> AOI21X1_395/B
+   2873.6 ps                  _3056_: AOI21X1_395/Y ->  XNOR2X1_26/A
+   2984.5 ps          ULA_OUT_0__10_:  XNOR2X1_26/Y ->    OR2X2_27/B
+   3092.1 ps                  _2880_:    OR2X2_27/Y -> OAI21X1_720/C
+   3165.5 ps                  _2881_: OAI21X1_720/Y ->   INVX1_234/A
+   3215.3 ps         ULA_ULA_OUT_10_:   INVX1_234/Y -> DFFPOSX1_25/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_24/D delay 3009.53 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y -> OAI21X1_744/A
+   2726.1 ps                  _3051_: OAI21X1_744/Y ->   XOR2X1_12/A
+   2843.6 ps           ULA_OUT_0__9_:   XOR2X1_12/Y ->  OAI22X1_68/A
+   2954.1 ps                  _2863_:  OAI22X1_68/Y ->   INVX1_233/A
+   3009.5 ps          ULA_ULA_OUT_9_:   INVX1_233/Y -> DFFPOSX1_24/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_23/D delay 2854.75 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y -> AOI21X1_394/B
+   2571.9 ps                  _3044_: AOI21X1_394/Y ->  XNOR2X1_22/A
+   2687.9 ps           ULA_OUT_0__8_:  XNOR2X1_22/Y ->  OAI22X1_67/A
+   2799.2 ps                  _2843_:  OAI22X1_67/Y ->   INVX1_231/A
+   2854.7 ps          ULA_ULA_OUT_8_:   INVX1_231/Y -> DFFPOSX1_23/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_22/D delay 2690.81 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y -> OAI21X1_743/A
+   2424.3 ps                  _3039_: OAI21X1_743/Y ->   XOR2X1_11/A
+   2536.7 ps           ULA_OUT_0__7_:   XOR2X1_11/Y ->  NOR2X1_277/A
+   2605.8 ps                  _2789_:  NOR2X1_277/Y -> AOI21X1_370/C
+   2690.8 ps          ULA_ULA_OUT_7_: AOI21X1_370/Y -> DFFPOSX1_22/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_117/D delay 2595.49 ps
+      0.0 ps          INTERRUPT_flag:               ->    BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->    NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->   NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->   NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->   OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->   AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->   NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y ->  OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->    NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->     INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->   NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y ->  OAI21X1_131/A
+   2260.2 ps                   _548_: OAI21X1_131/Y ->   NAND3X1_24/C
+   2367.3 ps                   _618_:  NAND3X1_24/Y ->  NAND2X1_100/B
+   2442.0 ps                   _619_: NAND2X1_100/Y ->   AOI21X1_96/B
+   2521.6 ps                   _623_:  AOI21X1_96/Y ->  OAI21X1_151/A
+   2595.5 ps                _327__7_: OAI21X1_151/Y -> DFFPOSX1_117/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_101/D delay 2595.49 ps
+      0.0 ps          INTERRUPT_flag:               ->    BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->    NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->   NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->   NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->   OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->   AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->   NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y ->  OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->    NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->     INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->   NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y ->  OAI21X1_131/A
+   2260.2 ps                   _548_: OAI21X1_131/Y ->   NAND3X1_26/C
+   2367.3 ps                   _730_:  NAND3X1_26/Y ->  NAND2X1_114/B
+   2442.0 ps                   _731_: NAND2X1_114/Y ->  AOI21X1_115/B
+   2521.6 ps                   _736_: AOI21X1_115/Y ->  OAI21X1_195/A
+   2595.5 ps                _325__7_: OAI21X1_195/Y -> DFFPOSX1_101/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_109/D delay 2595.49 ps
+      0.0 ps          INTERRUPT_flag:               ->    BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->    NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->   NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->   NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->   OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->   AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->   NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y ->  OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->    NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->     INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->   NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y ->  OAI21X1_131/A
+   2260.2 ps                   _548_: OAI21X1_131/Y ->   NAND3X1_25/C
+   2367.3 ps                   _669_:  NAND3X1_25/Y ->  NAND2X1_106/B
+   2442.0 ps                   _670_: NAND2X1_106/Y ->  AOI21X1_106/B
+   2521.6 ps                   _675_: AOI21X1_106/Y ->  OAI21X1_175/A
+   2595.5 ps                _326__7_: OAI21X1_175/Y -> DFFPOSX1_109/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_93/D delay 2587.43 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->   NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->  NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->  NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->  OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->  AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->  NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y -> OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->   NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->    INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->  NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y -> OAI21X1_131/A
+   2260.2 ps                   _548_: OAI21X1_131/Y ->  NAND2X1_94/B
+   2367.3 ps                   _549_:  NAND2X1_94/Y -> OAI21X1_132/A
+   2452.2 ps                   _550_: OAI21X1_132/Y ->  NAND2X1_95/B
+   2523.8 ps                   _551_:  NAND2X1_95/Y ->  AOI21X1_80/B
+   2587.4 ps                _324__7_:  AOI21X1_80/Y -> DFFPOSX1_93/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_21/D delay 2559.49 ps
+      0.0 ps          INTERRUPT_flag:               ->   BUFX4_279/A
+    180.5 ps  INTERRUPT_flag_bF_buf8:   BUFX4_279/Y -> NAND2X1_127/A
+    282.7 ps                  _2306_: NAND2X1_127/Y -> OAI21X1_200/C
+    385.1 ps                  _2307_: OAI21X1_200/Y -> NAND3X1_434/B
+    482.8 ps                  _1971_: NAND3X1_434/Y -> OAI21X1_568/C
+    552.1 ps                  _1972_: OAI21X1_568/Y ->  NOR2X1_204/B
+    619.2 ps                  _1976_:  NOR2X1_204/Y -> NAND3X1_437/B
+    709.0 ps                REG_B_0_: NAND3X1_437/Y ->    MUX2X1_1/B
+    816.8 ps                    _32_:    MUX2X1_1/Y ->  OAI21X1_18/A
+   1074.6 ps                ULA_B_0_:  OAI21X1_18/Y ->   BUFX4_251/A
+   1311.3 ps         ULA_B_0_bF_buf4:   BUFX4_251/Y ->  NOR2X1_301/B
+   1389.4 ps                  _3090_:  NOR2X1_301/Y -> AOI21X1_390/C
+   1512.2 ps                  _3091_: AOI21X1_390/Y -> AOI21X1_391/A
+   1665.2 ps                  _3099_: AOI21X1_391/Y -> OAI21X1_741/A
+   1820.8 ps                  _3108_: OAI21X1_741/Y -> AOI21X1_392/B
+   1968.4 ps                  _3113_: AOI21X1_392/Y -> OAI21X1_742/A
+   2122.6 ps                  _3119_: OAI21X1_742/Y -> AOI21X1_393/B
+   2270.2 ps                  _3124_: AOI21X1_393/Y ->  XNOR2X1_18/A
+   2386.1 ps           ULA_OUT_0__6_:  XNOR2X1_18/Y ->  OAI22X1_66/A
+   2502.6 ps                  _2788_:  OAI22X1_66/Y ->   INVX1_228/A
+   2559.5 ps          ULA_ULA_OUT_6_:   INVX1_228/Y -> DFFPOSX1_21/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_100/D delay 2535.51 ps
+      0.0 ps          INTERRUPT_flag:               ->    BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->    NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->   NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->   NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->   OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->   AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->   NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y ->  OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->    NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->     INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->   NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y ->    XNOR2X1_5/A
+   2271.0 ps                   _527_:   XNOR2X1_5/Y ->  OAI21X1_189/A
+   2382.1 ps                   _720_: OAI21X1_189/Y ->  AOI21X1_113/B
+   2467.1 ps                   _726_: AOI21X1_113/Y ->   OAI22X1_44/C
+   2535.5 ps                _325__6_:  OAI22X1_44/Y -> DFFPOSX1_100/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_108/D delay 2535.51 ps
+      0.0 ps          INTERRUPT_flag:               ->    BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->    NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->   NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->   NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->   OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->   AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->   NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y ->  OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->    NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->     INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->   NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y ->    XNOR2X1_5/A
+   2271.0 ps                   _527_:   XNOR2X1_5/Y ->  OAI21X1_170/A
+   2382.1 ps                   _661_: OAI21X1_170/Y ->  AOI21X1_103/B
+   2467.1 ps                   _666_: AOI21X1_103/Y ->   OAI22X1_36/C
+   2535.5 ps                _326__6_:  OAI22X1_36/Y -> DFFPOSX1_108/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_116/D delay 2535.51 ps
+      0.0 ps          INTERRUPT_flag:               ->    BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->    NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->   NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->   NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->   OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->   AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->   NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y ->  OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->    NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->     INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->   NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y ->    XNOR2X1_5/A
+   2271.0 ps                   _527_:   XNOR2X1_5/Y ->  OAI21X1_147/A
+   2382.1 ps                   _609_: OAI21X1_147/Y ->   AOI21X1_93/B
+   2467.1 ps                   _614_:  AOI21X1_93/Y ->   OAI22X1_28/C
+   2535.5 ps                _327__6_:  OAI22X1_28/Y -> DFFPOSX1_116/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_115/D delay 2533.85 ps
+      0.0 ps          INTERRUPT_flag:               ->    BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->    NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->   NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->   NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->   OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->   AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->   NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y ->  OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->    NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->     INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->   NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y ->   NAND2X1_88/B
+   2271.4 ps                   _509_:  NAND2X1_88/Y ->  OAI21X1_146/A
+   2380.8 ps                   _601_: OAI21X1_146/Y ->   AOI21X1_91/B
+   2465.5 ps                   _606_:  AOI21X1_91/Y ->   OAI22X1_27/C
+   2533.8 ps                _327__5_:  OAI22X1_27/Y -> DFFPOSX1_115/D
+
+Path input pin INTERRUPT_flag to DFFPOSX1_107/D delay 2533.85 ps
+      0.0 ps          INTERRUPT_flag:               ->    BUFX4_286/A
+    187.4 ps  INTERRUPT_flag_bF_buf1:   BUFX4_286/Y ->    NOR2X1_61/B
+    367.0 ps                   _360_:   NOR2X1_61/Y ->   NAND2X1_68/B
+    495.4 ps                   _365_:  NAND2X1_68/Y ->   NAND3X1_20/B
+    656.5 ps                   _380_:  NAND3X1_20/Y ->   OAI21X1_93/C
+   1012.6 ps                   _384_:  OAI21X1_93/Y ->   AOI21X1_68/C
+   1401.2 ps                   _398_:  AOI21X1_68/Y ->   NAND2X1_84/B
+   1531.7 ps                   _483_:  NAND2X1_84/Y ->  OAI21X1_111/C
+   1611.2 ps                   _484_: OAI21X1_111/Y ->    NOR2X1_77/B
+   1792.1 ps                   _485_:   NOR2X1_77/Y ->     INVX1_66/A
+   1888.1 ps                   _498_:    INVX1_66/Y ->   NAND3X1_22/A
+   2070.9 ps                   _507_:  NAND3X1_22/Y ->   NAND2X1_88/B
+   2271.4 ps                   _509_:  NAND2X1_88/Y ->  OAI21X1_166/A
+   2380.8 ps                   _654_: OAI21X1_166/Y ->  AOI21X1_102/B
+   2465.5 ps                   _659_: AOI21X1_102/Y ->   OAI22X1_35/C
+   2533.8 ps                _326__5_:  OAI22X1_35/Y -> DFFPOSX1_107/D
+
+-----------------------------------------
+

@@ -45,7 +45,7 @@ module NRISC_PC_ctrl(
 
 
 
-  assign CORE_InstructionIN=IDATA_CORE_out & ~{15{ delay[0]  | CORE_PC_ctrl[1] |CORE_PC_ctrl[0]}};
+  assign CORE_InstructionIN=IDATA_CORE_out & ~{16{ delay[0]  | delay[1] | CORE_PC_ctrl[1] | CORE_PC_ctrl[0]}};
 
   assign REG_R1= {{(TAM-ADDR_TAM){1'b0}},ADDR_stack[1]};
 
@@ -54,7 +54,7 @@ module NRISC_PC_ctrl(
   assign IDATA_CORE_addr=PC_STACK[PC_pointer];
 
 
-  always @ ( posedge clk or rst) begin
+  always @ ( posedge clk) begin
     if(rst)begin
       delay=0;
       PC_pointer=0;
@@ -69,7 +69,9 @@ module NRISC_PC_ctrl(
       endgenerate*/
     end
     else begin
+      delay[1]=delay[0];
       delay[0]=(CORE_PC_ctrl[1] |CORE_PC_ctrl[0])&~rst;
+
       ADDR_stack[1]=ADDR_stack[0];
       ADDR_stack[0]=IDATA_CORE_addr;
       case ({INTERRUPT_flag,CORE_STACK_ctrl})

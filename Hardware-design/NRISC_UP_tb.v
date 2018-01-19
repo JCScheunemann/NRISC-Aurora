@@ -47,8 +47,8 @@ rst
 initial begin
   Instruct=0;
   rst=1;
-  clk = 1'b0;
-  #10 rst=~rst;
+  clk = 1'b1;
+  #9 rst=~rst;
   #10 Instruct=16'h880f;
   #10 Instruct=16'h8088;
   #10 Instruct=16'h0000;

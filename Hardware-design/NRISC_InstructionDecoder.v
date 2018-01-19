@@ -445,7 +445,7 @@ module NRISC_InstructionDecoder(
 															 (CORE_InstructionIN[3:0]==4'h0))}};
 				end
 		end
-		always @ ( negedge clk  or rst) begin
+		always @ ( negedge clk) begin
 			if(rst) old_rd=0;
 			else old_rd=old_rd1& {4{~rst}};
 		end

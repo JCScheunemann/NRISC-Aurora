@@ -58,7 +58,7 @@ module NRISC_REGs(
       assign REG_A= REGS[REG_RF1];
       assign REG_B= REGS[REG_RF2];
 
-      always @ ( posedge clk  or rst) begin
+      always @ ( posedge clk ) begin
         if(rst) begin
           global_REGS[2]=0;
           global_REGS[3]=0;

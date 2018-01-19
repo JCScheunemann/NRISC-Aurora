@@ -4,11 +4,11 @@
 #-------------------------------------------
 
 set projectpath=/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Topo
-set techdir=/usr/local/share/qflow/tech/osu035
-set sourcedir=/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design
+set techdir=/usr/local/share/qflow/tech/gscl45nm
+set sourcedir=/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Topo/source
 set synthdir=/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Topo/synthesis
 set layoutdir=/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Topo/layout
-set techname=osu035
+set techname=gscl45nm
 set scriptdir=/usr/local/share/qflow/scripts
 set bindir=/usr/local/share/qflow/bin
 set logdir=/home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Topo/log

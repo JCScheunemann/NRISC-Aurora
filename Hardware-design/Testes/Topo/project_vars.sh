@@ -15,7 +15,7 @@
 
 # Placement command options:
 # -------------------------------------------
-# set initial_density =
+set initial_density = 0.95
 # set graywolf_options =
 # set addspacers_options = "-stripe 5 150 PG"
 

@@ -1,0 +1,26 @@
+Qflow static timing analysis logfile created on qui jan 18 23:05:21 -02 2018
+Converting qrouter output to vesta delay format
+Running rc2dly -r NRISC_UP.rc -l /usr/local/share/qflow/tech/gscl45nm/gscl45nm.lib -d NRISC_UP.dly
+Running vesta static timing analysis with back-annotated extracted wire delays
+vesta -c -d NRISC_UP.dly  NRISC_UP.rtlnopwr.v /usr/local/share/qflow/tech/gscl45nm/gscl45nm.lib
+----------------------------------------------
+Vesta static timing analysis tool
+(c) 2013-2017 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "gscl45nm"
+End of library at line 6016
+Parsing module "NRISC_UP"
+Lib Read:  Processed 6017 lines.
+ERROR: Net _4632_ only had 16 receivers in delay file,  but expected a fanout of 1
+ERROR: Net _798_ only had 16 receivers in delay file,  but expected a fanout of 1
+ERROR: Net _613_ only had 14 receivers in delay file,  but expected a fanout of 1
+ERROR: Net CORE_InstructionIN_11_ only had 13 receivers in delay file,  but expected a fanout of 11
+ERROR: Net _438_ only had 13 receivers in delay file,  but expected a fanout of 3
+ERROR: Net _463_ only had 13 receivers in delay file,  but expected a fanout of 8
+ERROR: Net CORE_InstructionIN_15_ only had 12 receivers in delay file,  but expected a fanout of 16
+ERROR: Net CORE_InstructionIN_10_ only had 12 receivers in delay file,  but expected a fanout of 8
+ERROR: Net _389_ only had 12 receivers in delay file,  but expected a fanout of 1
+ERROR: Net _447_ only had 12 receivers in delay file,  but expected a fanout of 2
+ERROR: Net _2867__bF_buf8 not found in hash table
+Verilog netlist read:  Processed 8835 lines.

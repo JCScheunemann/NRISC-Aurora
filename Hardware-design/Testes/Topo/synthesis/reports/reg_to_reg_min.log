@@ -1,0 +1,99 @@
+Vesta static timing analysis, register-to-register minimum timing
+
+Top 20 minimum delay paths:
+Path DFFPOSX1_13/CLK to DFFNEGX1_1/D delay 86.6123 ps
+      0.0 ps         clk_bF_buf18:   BUFX4_175/Y -> DFFPOSX1_13/CLK
+     86.6 ps  REG_Write_exec_pipe: DFFPOSX1_13/Q ->  DFFNEGX1_1/D
+
+Path DFFPOSX1_33/CLK to DFFPOSX1_13/D delay 126.095 ps
+      0.0 ps    clk_bF_buf54:   BUFX4_139/Y -> DFFPOSX1_33/CLK
+    126.1 ps  CORE_REG_write: DFFPOSX1_33/Q -> DFFPOSX1_13/D
+
+Path DFFPOSX1_53/CLK to DFFPOSX1_9/D delay 142.354 ps
+      0.0 ps     clk_bF_buf54:   BUFX4_139/Y -> DFFPOSX1_53/CLK
+    142.4 ps  CORE_REG_RFD_0_: DFFPOSX1_53/Q ->  DFFPOSX1_9/D
+
+Path DFFPOSX1_54/CLK to DFFPOSX1_10/D delay 142.354 ps
+      0.0 ps     clk_bF_buf54:   BUFX4_139/Y -> DFFPOSX1_54/CLK
+    142.4 ps  CORE_REG_RFD_1_: DFFPOSX1_54/Q -> DFFPOSX1_10/D
+
+Path DFFPOSX1_55/CLK to DFFPOSX1_11/D delay 142.354 ps
+      0.0 ps     clk_bF_buf54:   BUFX4_139/Y -> DFFPOSX1_55/CLK
+    142.4 ps  CORE_REG_RFD_2_: DFFPOSX1_55/Q -> DFFPOSX1_11/D
+
+Path DFFPOSX1_56/CLK to DFFPOSX1_12/D delay 142.516 ps
+      0.0 ps     clk_bF_buf54:   BUFX4_139/Y -> DFFPOSX1_56/CLK
+    142.5 ps  CORE_REG_RFD_3_: DFFPOSX1_56/Q -> DFFPOSX1_12/D
+
+Path DFFPOSX1_52/CLK to DFFPOSX1_14/D delay 144.867 ps
+      0.0 ps       clk_bF_buf6:   BUFX4_187/Y -> DFFPOSX1_52/CLK
+    144.9 ps  CORE_DATA_REGMux: DFFPOSX1_52/Q -> DFFPOSX1_14/D
+
+Path DFFPOSX1_65/CLK to DFFNEGX1_5/D delay 167.771 ps
+      0.0 ps   clk_bF_buf19:   BUFX4_174/Y -> DFFPOSX1_65/CLK
+     88.8 ps  ID_old_rd1_3_: DFFPOSX1_65/Q ->    AND2X2_4/B
+    167.8 ps        _95__3_:    AND2X2_4/Y ->  DFFNEGX1_5/D
+
+Path DFFPOSX1_62/CLK to DFFNEGX1_2/D delay 167.771 ps
+      0.0 ps   clk_bF_buf10:   BUFX4_183/Y -> DFFPOSX1_62/CLK
+     88.8 ps  ID_old_rd1_0_: DFFPOSX1_62/Q ->    AND2X2_1/B
+    167.8 ps        _95__0_:    AND2X2_1/Y ->  DFFNEGX1_2/D
+
+Path DFFPOSX1_64/CLK to DFFNEGX1_4/D delay 167.771 ps
+      0.0 ps   clk_bF_buf10:   BUFX4_183/Y -> DFFPOSX1_64/CLK
+     88.8 ps  ID_old_rd1_2_: DFFPOSX1_64/Q ->    AND2X2_3/B
+    167.8 ps        _95__2_:    AND2X2_3/Y ->  DFFNEGX1_4/D
+
+Path DFFPOSX1_63/CLK to DFFNEGX1_3/D delay 167.771 ps
+      0.0 ps    clk_bF_buf6:   BUFX4_187/Y -> DFFPOSX1_63/CLK
+     88.8 ps  ID_old_rd1_1_: DFFPOSX1_63/Q ->    AND2X2_2/B
+    167.8 ps        _95__1_:    AND2X2_2/Y ->  DFFNEGX1_3/D
+
+Path DFFPOSX1_76/CLK to DFFPOSX1_84/D delay 167.785 ps
+      0.0 ps         clk_bF_buf33:   BUFX4_160/Y -> DFFPOSX1_76/CLK
+     88.8 ps  PC_ADDR_stack_0__6_: DFFPOSX1_76/Q ->   AND2X2_22/B
+    167.8 ps             _323__6_:   AND2X2_22/Y -> DFFPOSX1_84/D
+
+Path DFFPOSX1_70/CLK to DFFPOSX1_78/D delay 167.785 ps
+      0.0 ps         clk_bF_buf31:   BUFX4_162/Y -> DFFPOSX1_70/CLK
+     88.8 ps  PC_ADDR_stack_0__0_: DFFPOSX1_70/Q ->   AND2X2_16/B
+    167.8 ps             _323__0_:   AND2X2_16/Y -> DFFPOSX1_78/D
+
+Path DFFPOSX1_75/CLK to DFFPOSX1_83/D delay 167.785 ps
+      0.0 ps         clk_bF_buf28:   BUFX4_165/Y -> DFFPOSX1_75/CLK
+     88.8 ps  PC_ADDR_stack_0__5_: DFFPOSX1_75/Q ->   AND2X2_21/B
+    167.8 ps             _323__5_:   AND2X2_21/Y -> DFFPOSX1_83/D
+
+Path DFFPOSX1_71/CLK to DFFPOSX1_79/D delay 167.785 ps
+      0.0 ps         clk_bF_buf25:   BUFX4_168/Y -> DFFPOSX1_71/CLK
+     88.8 ps  PC_ADDR_stack_0__1_: DFFPOSX1_71/Q ->   AND2X2_17/B
+    167.8 ps             _323__1_:   AND2X2_17/Y -> DFFPOSX1_79/D
+
+Path DFFPOSX1_74/CLK to DFFPOSX1_82/D delay 167.785 ps
+      0.0 ps         clk_bF_buf25:   BUFX4_168/Y -> DFFPOSX1_74/CLK
+     88.8 ps  PC_ADDR_stack_0__4_: DFFPOSX1_74/Q ->   AND2X2_20/B
+    167.8 ps             _323__4_:   AND2X2_20/Y -> DFFPOSX1_82/D
+
+Path DFFPOSX1_73/CLK to DFFPOSX1_81/D delay 167.785 ps
+      0.0 ps         clk_bF_buf24:   BUFX4_169/Y -> DFFPOSX1_73/CLK
+     88.8 ps  PC_ADDR_stack_0__3_: DFFPOSX1_73/Q ->   AND2X2_19/B
+    167.8 ps             _323__3_:   AND2X2_19/Y -> DFFPOSX1_81/D
+
+Path DFFPOSX1_77/CLK to DFFPOSX1_85/D delay 167.785 ps
+      0.0 ps         clk_bF_buf22:   BUFX4_171/Y -> DFFPOSX1_77/CLK
+     88.8 ps  PC_ADDR_stack_0__7_: DFFPOSX1_77/Q ->   AND2X2_23/B
+    167.8 ps             _323__7_:   AND2X2_23/Y -> DFFPOSX1_85/D
+
+Path DFFPOSX1_72/CLK to DFFPOSX1_80/D delay 167.785 ps
+      0.0 ps         clk_bF_buf18:   BUFX4_175/Y -> DFFPOSX1_72/CLK
+     88.8 ps  PC_ADDR_stack_0__2_: DFFPOSX1_72/Q ->   AND2X2_18/B
+    167.8 ps             _323__2_:   AND2X2_18/Y -> DFFPOSX1_80/D
+
+Path DFFPOSX1_57/CLK to output pin DDATA_CORE_write delay 196.876 ps
+      0.0 ps      clk_bF_buf57:   BUFX4_136/Y -> DFFPOSX1_57/CLK
+    128.1 ps              _77_: DFFPOSX1_57/Q ->    BUFX2_29/A
+    196.9 ps  DDATA_CORE_write:    BUFX2_29/Y -> 
+
+Design meets minimum hold timing.
+-----------------------------------------
+

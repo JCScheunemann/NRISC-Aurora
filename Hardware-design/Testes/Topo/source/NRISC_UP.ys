@@ -1,0 +1,26 @@
+read_liberty -lib -ignore_miss_dir -setattr blackbox /usr/local/share/qflow/tech/gscl45nm/gscl45nm.lib
+read_verilog  /home/jcscheunemann/Work/NRISC-Aurora/Hardware-design/Testes/Topo/source/NRISC_UP.v
+read_verilog  NRISC_ULA.v
+read_verilog  NRISC_REGs.v
+read_verilog  NRISC_InstructionDecoder.v
+read_verilog  NRISC_PC_ctrl.v
+
+# High-level synthesis
+synth -top NRISC_UP
+# Map register flops
+dfflibmap -liberty /usr/local/share/qflow/tech/gscl45nm/gscl45nm.lib
+opt
+
+# Map combinatorial cells, standard script
+abc -exe /usr/local/share/qflow/bin/yosys-abc -liberty /usr/local/share/qflow/tech/gscl45nm/gscl45nm.lib -script +strash;scorr;ifraig;retime,{D};strash;dch,-f;map,-M,1,{D}
+flatten
+
+clean -purge
+# Output buffering
+iopadmap -outpad BUFX2 A:Y -bits
+# Cleanup
+opt
+clean
+rename -enumerate
+write_blif  -buf BUFX2 A Y NRISC_UP_mapped.blif
+stat

@@ -152,7 +152,7 @@ NRISC_PC_ctrl PC(
                 .CORE_InstructionIN(CORE_InstructionIN),
                 .CORE_PC_ctrl(CORE_PC_ctrl),
                 .CORE_STACK_ctrl(CORE_STACK_ctrl),
-                .ULA_OUT(ULA_OUT[N_IData-1:0]),
+                .ULA_OUT(ULA_out_exec_pipe[N_IData-1:0]),
                 .REG_R1(REG_R1),
                 .INTERRUPT_ch(INTERRUPT_ch),
                 .INTERRUPT_flag(INTERRUPT_flag),

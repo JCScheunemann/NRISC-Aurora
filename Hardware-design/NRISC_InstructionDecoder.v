@@ -1,4 +1,4 @@
-//CORE, descricao da controle operativo
+//CORE, descricao do controle operativo
 /*************************************************************************
  *  descricao do bloco CORE                              versao 0.01      *
  *                                                                       *
@@ -17,28 +17,28 @@
 `timescale 1 ns / 1 ns
 module NRISC_InstructionDecoder(
 								CORE_InstructionIN,				//instruction input
-								CORE_InstructionToULAMux,	//MUX ctrl of instruction in to REGs
-								CORE_ctrl,								//CORE external input ctrl BUS
-								CORE_Status_ctrl,					//CORE status output
-								CORE_ULA_ctrl,						//ULA output ctrl BUS
-								CORE_ULA_flags,						//ULA flags input {M,Z,C}
+								CORE_InstructionToULAMux,		//MUX ctrl of instruction in to REGs
+								CORE_ctrl,						//CORE external input ctrl BUS
+								CORE_Status_ctrl,				//CORE status output
+								CORE_ULA_ctrl,					//ULA output ctrl BUS
+								CORE_ULA_flags,					//ULA flags input {M,Z,C}
 								CORE_ULA_REGA_Stall,
 								CORE_ULA_REGB_Stall,
-								CORE_REG_RF1,							//REGs to ULA ctrl 1
-								CORE_REG_RF2,							//REGs to ULA ctrl 2
-								CORE_REG_RD,							//REGs inputs ctrl
-								CORE_REG_write,						//REGs write ctrl
-								CORE_DATA_write,					//DATA write ctrl
-								CORE_DATA_load,						//DATA load ctrl
-								CORE_DATA_ctrl,						//DATA size load/store ctrl
+								CORE_REG_RF1,					//REGs to ULA ctrl 1
+								CORE_REG_RF2,					//REGs to ULA ctrl 2
+								CORE_REG_RD,					//REGs inputs ctrl
+								CORE_REG_write,					//REGs write ctrl
+								CORE_DATA_write,				//DATA write ctrl
+								CORE_DATA_load,					//DATA load ctrl
+								CORE_DATA_ctrl,					//DATA size load/store ctrl
 								CORE_DATA_ADDR_mux,				//DATA clk
-								CORE_DATA_REGMux,					//DATA to REGs MUX
-								CORE_STACK_ctrl,					//CORE to STACK ctrl
-								CORE_PC_ctrl,							//CORE to PC ctrl MUX
-								CORE_INT_CHA,							//CORE to interrupt vector channel
-								CORE_INT_ctrl,						//CORE to interrupt vector control
-								clk,											//Main clk source
-								rst												//general rst
+								CORE_DATA_REGMux,				//DATA to REGs MUX
+								CORE_STACK_ctrl,				//CORE to STACK ctrl
+								CORE_PC_ctrl,					//CORE to PC ctrl MUX
+								CORE_INT_CHA,					//CORE to interrupt vector channel
+								CORE_INT_ctrl,					//CORE to interrupt vector control
+								clk,							//Main clk source
+								rst								//general rst
 								);
 
 		//CORE

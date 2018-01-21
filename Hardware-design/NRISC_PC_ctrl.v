@@ -1,3 +1,11 @@
+/*
+
+	DESCRIÇÃO DO MÓDULO CONTROLE DE PC
+
+								nrisc-aurora
+	ver 0.01
+*/
+
 `include "const.v"
 
 module NRISC_PC_ctrl(

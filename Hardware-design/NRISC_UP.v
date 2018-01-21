@@ -1,3 +1,11 @@
+/*
+
+	DESCRIÇÃO DO MÓDULO TOPO
+
+								nrisc-aurora
+	ver 0.05
+*/
+
 `include "const.v"
 
 module NRISC_UP(

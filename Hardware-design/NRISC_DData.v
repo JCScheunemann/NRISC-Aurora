@@ -1,3 +1,13 @@
+/*
+
+    DESCRIÇÃO DO MÓDULO DE MEMÓRIA DE DADOS
+
+                                nrisc-aurora
+    ver 0.01
+
+    TODO: wishbone bus support
+*/
+
 `include "const.v"
 `timescale 1 ns / 1 ns
 

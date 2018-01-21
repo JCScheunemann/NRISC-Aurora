@@ -1,3 +1,11 @@
+/*
+
+	DESCRIÇÃO DO MÓDULO DE REGFILE
+
+								nrisc-aurora
+	ver 0.02
+*/
+
 `include "const.v"
 
 `timescale 1 ns / 1 ns

@@ -4,10 +4,14 @@
 
 	ver 0.01
 
+	TODO: MÓDULOS SYSCON E INTERCON
+
 */
 
 `include "const.v"
-`timescale 1ns/1ns
+`timescale 1 ns/1 ns
+
+
 
 module NRISC_Wishbone_master (
 			WSHMSTR_ACK,		// assert: ok, else err+rty

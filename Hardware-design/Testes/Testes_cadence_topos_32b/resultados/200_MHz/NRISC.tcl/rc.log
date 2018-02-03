@@ -1,0 +1,1864 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+
+                                                          Cadence Encounter(R) RTL Compiler
+                                                  Version v08.10-s222_1 (64-bit), built Mar 25 2009
+
+
+
+======================================================================================================================================================
+                                                     Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  checkpoint_dofile_naming_style
+       design  checkpoint_netlist_naming_style
+       design  multipass_mux_optimization
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+     instance  write_positional_connections
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  bit_blast_constants
+         root  bit_blast_mapped_ports
+         root  checkpoint_flow
+         root  checkpoint_gzipped_netlist
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  exact_match_seqs_async_controls
+         root  gen_no_negative_index
+         root  gen_unconnected_port_style
+         root  gen_write_empty_module_for_logic_abstract
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_new_hier_comp
+         root  wlec_no_exit
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_verbose
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+======================================================================================================================================================
+
+Sourcing './NRISC.tcl' (Sat Feb 03 00:13:34 -02 2018)...
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+cpu MHz		: 2999.953
+cpu MHz		: 2999.953
+cpu MHz		: 3166.718
+cpu MHz		: 3157.679
+Hostname : localhost
+Sourcing '/tools/cadence/soc81/tools/lib/etc/load_etc.tcl' (Sat Feb 03 00:13:34 -02 2018)...
+Sourcing '/tools/cadence/soc81/tools/lib/etc/toolbox/insert_io_buffers.tcl' (Sat Feb 03 00:13:34 -02 2018)...
+
+
+
+
+
+  Setting attribute of root '/': 'lib_search_path' = . /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/ /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/verilog/ /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/
+  Setting attribute of root '/': 'script_search_path' = . ../scripts
+  Setting attribute of root '/': 'hdl_search_path' = . ./
+  Setting attribute of root '/': 'wireload_mode' = top
+  Setting attribute of root '/': 'information_level' = 5
+  Setting attribute of root '/': 'lp_power_unit' = uW
+  Setting attribute of root '/': 'hdl_latch_keep_feedback' = true
+    Loading library NangateOpenCellLibrary_typical_conditional_ecsm.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:48:18: Construct 'library_features' is not supported.
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:63:8: Construct 'define' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:74:31: Construct 'slew_lower_threshold_pct_fall' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:75:31: Construct 'slew_lower_threshold_pct_rise' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:76:31: Construct 'slew_upper_threshold_pct_fall' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:77:31: Construct 'slew_upper_threshold_pct_rise' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:92:14: Construct 'define_group' is not supported.
+Warning : Found CCS construct in the cell. [LBR-408]
+        : Found 'CCS' construct in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 281, column 27.
+        : Currently, CCS constructs are only parsed & ignored.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X1', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 123004, column 22.
+        : Currently, state tables are only supported for scan cells for the clocked LSSD scan style and for clock-gating cells whose Liberty attribute 'clock_gating_integrated_cell' is set to 'generic'.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X2', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 123767, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X4', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 124530, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X8', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 125293, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X1', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 126056, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X2', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 126705, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X4', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 127354, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X8', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 128003, column 19.
+        Cell 'ANTENNA_X1' has no outputs.
+        Cell 'ANTENNA_X1' has no outputs.
+        Cell 'FILLCELL_X1' has no outputs.
+        Cell 'FILLCELL_X1' has no outputs.
+        Cell 'FILLCELL_X16' has no outputs.
+        Cell 'FILLCELL_X16' has no outputs.
+        Cell 'FILLCELL_X2' has no outputs.
+        Cell 'FILLCELL_X2' has no outputs.
+        Cell 'FILLCELL_X32' has no outputs.
+        Cell 'FILLCELL_X32' has no outputs.
+        Cell 'FILLCELL_X4' has no outputs.
+        Cell 'FILLCELL_X4' has no outputs.
+        Cell 'FILLCELL_X8' has no outputs.
+        Cell 'FILLCELL_X8' has no outputs.
+  Setting attribute of root '/': 'library' =  NangateOpenCellLibrary_typical_conditional_ecsm.lib 
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+
+  There are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.07, 0.8) of 'WIDTH' for layers 'metal3' and 'metal9' is too large.
+        : Make sure to check the consistency of the parameters.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'PITCH' for layers 'metal3' and 'metal9' is too large.
+  Setting attribute of root '/': 'lef_library' = /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef//NangateOpenCellLibrary.lef
+  Setting attribute of root '/': 'interconnect_mode' = ple
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+Reading HDLs...
+	initial begin
+	      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../Test_Arch/picorv32/picorv32.v' on line 189, column 8.
+        : The following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+Elaborate Design...
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+  Elaborating top-level block 'NRISC_UP' from file '../../NRISC_UP.v'.
+    Elaborating block 'NRISC_PC_ctrl' from file '../../NRISC_PC_ctrl.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'ADDR_stack' in module 'NRISC_PC_ctrl' in file '../../NRISC_PC_ctrl.v' on line 49.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'PC_STACK' in module 'NRISC_PC_ctrl' in file '../../NRISC_PC_ctrl.v' on line 52.
+Warning : Connection width mismatch. [CDFG-420]
+        : Actual width 32 does not match port width 16 for port number 1 ('IDATA_CORE_out') of module 'NRISC_PC_ctrl' in file '../../NRISC_UP.v' on line 157.
+    Elaborating block 'NRISC_InstructionDecoder' from file '../../NRISC_InstructionDecoder.v'.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'rd_old_write' in module 'NRISC_InstructionDecoder' in file '../../NRISC_InstructionDecoder.v' on line 82.
+        : A flip-flop or latch that was inferred for an unused signal or variable was removed. Use 'set_attribute hdl_preserve_unused_registers true /' to preserve the flip-flop or latch.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'CORE_ctrl' is not used in module 'NRISC_InstructionDecoder' in file '../../NRISC_InstructionDecoder.v' on line 47.
+        : The value of the input port is not used within the design.
+    Elaborating block 'NRISC_REGs' from file '../../NRISC_REGs.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'REGS' in module 'NRISC_REGs' in file '../../NRISC_REGs.v' on line 43.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'global_REGS' in module 'NRISC_REGs' in file '../../NRISC_REGs.v' on line 44.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'USR_REGS' in module 'NRISC_REGs' in file '../../NRISC_REGs.v' on line 45.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'FIRQ_REGS' in module 'NRISC_REGs' in file '../../NRISC_REGs.v' on line 46.
+    Elaborating block 'NRISC_ULA' from file '../../NRISC_ULA.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'OUT' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 61.
+    Elaborating block 'somaUla_TAM32' from file '../../NRISC_ULA.v'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'cmd' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 102, column 29.
+        : Use the 'hdl_undriven_signal_value' attribute to control treatment of undriven net during elaboration.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 101, column 40.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 101, column 51.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 105, column 123.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 102, column 36.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 107, column 45.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 102, column 61.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 103, column 48.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 107, column 33.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 106, column 122.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'CORE_DATA_write_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'CORE_DATA_load_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'CORE_DATA_ctrl_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'CORE_DATA_ADDR_mux_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'REG_RFD_wb_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'DDATA_CORE_addr' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 95, column 44.
+        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
+  Done elaborating 'NRISC_UP'.
+Runtime & Memory after 'read_hdl'
+===========================================
+The RUNTIME after Elaboration is 4 secs
+and the MEMORY_USAGE after Elaboration is 71.12 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'NRISC_UP'
+
+No empty modules in design 'NRISC_UP'
+
+  Done Checking the design.
+Error   : A required object parameter could not be found. [TUI-61] [external_delay]
+        : An object of type 'clock' named '' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  external_delay: specifies delay that is outside the design 
+
+Usage: external_delay  ( -input <delay {r f R F} in picoseconds> | -output <delay {r f R F} in picoseconds> ) [-mode <mode>] [-clock <clock>]
+           [ -edge_rise |
+             -edge_fall ] [-level_sensitive] [-accumulate] [-name <string>] <pin|port>+
+
+    -input <delay {r f R F} in picoseconds>:
+        clock to input valid time 
+    -output <delay {r f R F} in picoseconds>:
+        output valid to clock time 
+    [-mode <mode>]:
+        the mode for the external delay 
+    [-clock <clock>]:
+        clock object 
+    [-edge_rise]:
+        rise clock edge 
+    [-edge_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        external event is level-sensitive 
+    [-accumulate]:
+        allows more than one external delay per clock per phase (default=false) 
+    [-name <string>]:
+        external delay name 
+    <pin|port>+:
+        object(s) 
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '11' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -output 10 {{/designs/NRISC_UP/ports_out/IDATA_CORE_addr[7]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[6]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[5]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[4]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[3]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[2]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[1]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[0]} /designs/NRISC_UP/ports_out/IDATA_CORE_clk {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[7]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[6]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[5]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[4]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[3]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[0]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[31]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[30]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[29]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[28]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[27]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[26]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[25]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[24]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[23]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[22]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[21]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[20]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[19]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[18]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[17]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[16]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[15]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[14]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[13]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[12]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[11]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[10]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[9]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[8]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[7]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[6]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[5]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[4]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[3]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[0]} /designs/NRISC_UP/ports_out/DDATA_CORE_load /designs/NRISC_UP/ports_out/DDATA_CORE_write {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[0]}}.
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Error   : A required object parameter could not be found. [TUI-61] [external_delay]
+        : An object of type 'clock' named '' could not be found.
+  external_delay: specifies delay that is outside the design 
+
+Usage: external_delay  ( -input <delay {r f R F} in picoseconds> | -output <delay {r f R F} in picoseconds> ) [-mode <mode>] [-clock <clock>]
+           [ -edge_rise |
+             -edge_fall ] [-level_sensitive] [-accumulate] [-name <string>] <pin|port>+
+
+    -input <delay {r f R F} in picoseconds>:
+        clock to input valid time 
+    -output <delay {r f R F} in picoseconds>:
+        output valid to clock time 
+    [-mode <mode>]:
+        the mode for the external delay 
+    [-clock <clock>]:
+        clock object 
+    [-edge_rise]:
+        rise clock edge 
+    [-edge_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        external event is level-sensitive 
+    [-accumulate]:
+        allows more than one external delay per clock per phase (default=false) 
+    [-name <string>]:
+        external delay name 
+    <pin|port>+:
+        object(s) 
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '12' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -input 10 {{/designs/NRISC_UP/ports_in/IDATA_CORE_out[31]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[30]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[29]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[28]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[27]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[26]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[25]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[24]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[23]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[22]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[21]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[20]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[19]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[18]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[17]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[16]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[15]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[14]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[13]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[12]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[11]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[10]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[9]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[8]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[7]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[6]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[5]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[4]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[3]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[2]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[1]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[0]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[31]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[30]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[29]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[28]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[27]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[26]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[25]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[24]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[23]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[22]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[21]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[20]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[19]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[18]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[17]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[16]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[15]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[14]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[13]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[12]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[11]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[10]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[9]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[8]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[7]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[6]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[5]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[4]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[3]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[2]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[1]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[0]} {/designs/NRISC_UP/ports_in/CORE_ctrl[2]} {/designs/NRISC_UP/ports_in/CORE_ctrl[1]} {/designs/NRISC_UP/ports_in/CORE_ctrl[0]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[7]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[6]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[5]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[4]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[3]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[2]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[1]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[0]} /designs/NRISC_UP/ports_in/INTERRUPT_flag /designs/NRISC_UP/ports_in/clk /designs/NRISC_UP/ports_in/rst}.
+Statistics for commands executed by read_sdc:
+ "all_inputs"              - successful      1 , failed      0 (runtime  0.00)
+ "all_outputs"             - successful      1 , failed      0 (runtime  0.00)
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+Total runtime 0
+The number of exceptions is 0
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 03 2018  12:13:36 AM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+-------------------------------------------------------------------------------
+The following primary inputs have no clocked external delays.  As a result the  
+timing paths leading from the ports have no timing constraints derived from     
+clock waveforms.  The'external_delay' command is used to create new external    
+delays.                                                                         
+
+/designs/NRISC_UP/ports_in/CORE_ctrl[0]
+/designs/NRISC_UP/ports_in/CORE_ctrl[1]
+/designs/NRISC_UP/ports_in/CORE_ctrl[2]
+  ... 74 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+The following primary outputs have no clocked external delays.  As a result the 
+timing paths leading to the ports have no timing constraints derived from clock 
+waveforms.  The'external_delay' command is used to create new external delays.  
+
+/designs/NRISC_UP/ports_out/DDATA_CORE_addr[0]
+/designs/NRISC_UP/ports_out/DDATA_CORE_addr[1]
+/designs/NRISC_UP/ports_out/DDATA_CORE_addr[2]
+  ... 51 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+
+  Setting attribute of root '/': 'dp_perform_csa_operations' = false
+  Setting attribute of root '/': 'dp_perform_shannon_operations' = false
+  Setting attribute of root '/': 'dp_perform_sharing_operations' = false
+  Setting attribute of root '/': 'dp_perform_speculation_operations' = false
+ Reading VCD file  
+Cannot open "./multiplication.vcd"
+---------------------------------------------------------------
+Asserted primary inputs in design         : 0 (0.00%)
+Total connected primary inputs in design  : 62 (100.00%)
+---------------------------------------------------------------
+Asserted sequential outputs               : 0 (0.00%)
+Total connected sequential outputs        : 860 (100.00%)
+------------------------------------------------------------------------------------
+Total nets in design                      : 18639 (100.00%)
+Nets asserted                             : 0 (0.00%)
+Constant nets                             : 10 (0.05)
+Nets with no assertions                   : 18639 (100.00%)
+------------------------------------------------------------------------------------
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+        : The RTL power analysis results are more accurate when detailed power models are used. Use command 'build_rtl_power_models' to build detailed power models.
+  Setting attribute of design 'NRISC_UP': 'lp_optimize_dynamic_power_first' = true
+  Setting attribute of design 'NRISC_UP': 'max_dynamic_power' = 0.0
+Info    : Resetting power analysis results. [PA-7]
+        : Power analysis effort level changed from 'medium' to 'high'.
+        : All computed switching activities are removed.
+  Setting attribute of root '/': 'lp_power_analysis_effort' = high
+  Setting attribute of design 'NRISC_UP': 'lp_power_optimization_weight' = 1.0
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+  The '-incremental' option can only be used with a
+  mapped design.  Disabling '-incremental' option.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Site size           : 1.59 um (from lef [tech+cell])
+
+                   Capacitance  
+Layer               / Length         Data source:
+Name    Direction  (pF/micron)       lef_library
+--------------------------------
+metal1      H         0.000083  
+metal2      V         0.000044  
+metal3      H         0.000030  
+metal4      V         0.000024  
+metal5      H         0.000015  
+metal6      V         0.000011  
+metal7      H         0.000011  
+metal8      V         0.000007  
+metal9      H         0.000007  
+metal10     V         0.000004  
+
+                    Resistance   
+Layer                / Length         Data source:
+Name    Direction  (ohm/micron)       lef_library
+---------------------------------
+metal1      H          5.428571  
+metal2      V          3.571429  
+metal3      H          3.571429  
+metal4      V          1.500000  
+metal5      H          1.500000  
+metal6      V          1.500000  
+metal7      H          0.187500  
+metal8      V          0.187500  
+metal9      H          0.037500  
+metal10     V          0.037500  
+
+                        Area     
+Layer                 / Length        Data source:
+Name    Direction     (micron)        lef_library
+---------------------------------
+metal1      H          0.070000  
+metal2      V          0.070000  
+metal3      H          0.070000  
+metal4      V          0.140000  
+metal5      H          0.140000  
+metal6      V          0.140000  
+metal7      H          0.400000  
+metal8      V          0.400000  
+metal9      H          0.800000  
+metal10     V          0.800000  
+
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 23 hierarchical instances. 
+Following instances are deleted as they do not drive any primary output:
+'ID/mux_CORE_DATA_ADDR_mux_83_7', 'ID/mux_CORE_DATA_REGMux_83_7', 
+'ID/mux_CORE_DATA_ctrl_83_7', 'ID/mux_CORE_INT_CHA_83_7', 
+'ID/mux_CORE_INT_ctrl_83_7', 'ID/mux_CORE_InstructionToULAMux_83_7', 
+'ID/mux_CORE_PC_ctrl_83_7', 'ID/mux_CORE_REG_RD_83_7', 
+'ID/mux_CORE_REG_RF1_83_7', 'ID/mux_CORE_REG_RF2_83_7', 
+'ID/mux_CORE_REG_write_83_7', 'ID/mux_CORE_STACK_ctrl_83_7', 
+'ID/mux_CORE_Status_ctrl_83_7', 'ID/mux_CORE_ULA_REGA_Stall_83_7', 
+'ID/mux_CORE_ULA_REGB_Stall_83_7', 'ID/mux_CORE_ULA_ctrl_83_7', 
+'ID/mux_old_rd1_83_7', 'ID/mux_old_rd_449_7', 'PC/mux_ADDR_stack[0]_66_8', 
+'PC/mux_ADDR_stack[1]_66_8', 'PC/mux_PC_STACK[0]_66_8', 
+'PC/mux_PC_pointer_66_8', 'PC/mux_delay_66_8'.
+        : To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
+      Timing add_unsigned...
+      Timing add_unsigned_3172...
+      Timing sub_unsigned...
+      Timing sub_unsigned_3173...
+      Removing temporary intermediate hierarchies under NRISC_UP
+Info    : Found floating hierarchical output. [GLO-33]
+        : Found 4 floating hierarchical outputs:
+'ID/CORE_DATA_ADDR_mux', 'ID/CORE_INT_CHA[0:7]', 'ID/CORE_INT_ctrl[0:1]', 
+'ID/CORE_Status_ctrl[0:4]'.
+        : To see the list of floating hierarchical instances, set the 'information_level' attribute to 2 or above.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 16 sequential instances. 
+Following instances are deleted as they do not drive any primary output:
+'ID/CORE_DATA_ADDR_mux_reg', 'ID/CORE_INT_CHA_reg[0]', 
+'ID/CORE_INT_CHA_reg[1]', 'ID/CORE_INT_CHA_reg[2]', 
+'ID/CORE_INT_CHA_reg[3]', 'ID/CORE_INT_CHA_reg[4]', 
+'ID/CORE_INT_CHA_reg[5]', 'ID/CORE_INT_CHA_reg[6]', 
+'ID/CORE_INT_CHA_reg[7]', 'ID/CORE_INT_ctrl_reg[0]', 
+'ID/CORE_INT_ctrl_reg[1]', 'ID/CORE_Status_ctrl_reg[0]', 
+'ID/CORE_Status_ctrl_reg[1]', 'ID/CORE_Status_ctrl_reg[2]', 
+'ID/CORE_Status_ctrl_reg[3] (floating-loop root)', 
+'ID/CORE_Status_ctrl_reg[4]'.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 6 hierarchical instances. 
+Following instances are deleted as they do not drive any primary output:
+'ID/mux_CORE_INT_ctrl_106_10', 'ID/mux_CORE_INT_ctrl_108_15', 
+'ID/mux_CORE_INT_ctrl_110_18', 'ID/mux_CORE_INT_ctrl_114_22', 
+'ID/mux_CORE_Status_ctrl_118_26', 'ID/mux_CORE_Status_ctrl_135_26'.
+Mapping NRISC_UP to gates.
+      Mapping 'NRISC_UP'...
+        Preparing the circuit
+          Pruning unused logic
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) NRISC_UP...
+          Done structuring (delay-based) NRISC_UP
+          Structuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done structuring (delay-based) logic partition in NRISC_PC_ctrl
+        Mapping logic partition in NRISC_PC_ctrl...
+          Structuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done structuring (delay-based) logic partition in NRISC_PC_ctrl
+        Mapping logic partition in NRISC_PC_ctrl...
+          Structuring (delay-based) cb_seq_2292...
+          Done structuring (delay-based) cb_seq_2292
+        Mapping component cb_seq_2292...
+          Structuring (delay-based) cb_oseq_2295...
+          Done structuring (delay-based) cb_oseq_2295
+        Mapping component cb_oseq_2295...
+          Structuring (delay-based) cb_oseq...
+          Done structuring (delay-based) cb_oseq
+        Mapping component cb_oseq...
+          Structuring (delay-based) cb_oseq_2297...
+          Done structuring (delay-based) cb_oseq_2297
+        Mapping component cb_oseq_2297...
+          Structuring (delay-based) logic partition in NRISC_ULA...
+          Done structuring (delay-based) logic partition in NRISC_ULA
+        Mapping logic partition in NRISC_ULA...
+        Rebalancing component 'rsh_81_25'...
+        Rebalancing component 'lsh_84_25'...
+        Rebalancing component 'rsh_78_25'...
+          Structuring (delay-based) cb_seq_2294...
+          Done structuring (delay-based) cb_seq_2294
+        Mapping component cb_seq_2294...
+          Structuring (delay-based) shift_right_vlog_unsigned...
+          Done structuring (delay-based) shift_right_vlog_unsigned
+        Mapping component shift_right_vlog_unsigned...
+          Structuring (delay-based) shift_right_vlog_unsigned_481...
+          Done structuring (delay-based) shift_right_vlog_unsigned_481
+        Mapping component shift_right_vlog_unsigned_481...
+          Structuring (delay-based) shift_left_vlog_unsigned...
+          Done structuring (delay-based) shift_left_vlog_unsigned
+        Mapping component shift_left_vlog_unsigned...
+          Structuring (delay-based) somaUla_TAM32...
+          Done structuring (delay-based) somaUla_TAM32
+        Mapping component somaUla_TAM32...
+          Structuring (delay-based) cb_part_2300...
+          Done structuring (delay-based) cb_part_2300
+        Mapping component cb_part_2300...
+          Structuring (delay-based) logic partition in NRISC_UP...
+          Done structuring (delay-based) logic partition in NRISC_UP
+        Mapping logic partition in NRISC_UP...
+          Structuring (delay-based) cb_seq...
+          Done structuring (delay-based) cb_seq
+        Mapping component cb_seq...
+ 
+Global mapping target info
+==========================
+Cost Group 'default' target slack:   149 ps
+Target path end-point (Pin: ID/CORE_PC_ctrl_reg[0]/d)
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+        : Use 'report timing -lint' for more information.
+           Pin                        Type          Fanout  Load  Arrival   
+                                                            (fF)    (ps)    
+----------------------------------------------------------------------------
+(clock clk)                 <<<  launch                                 0 R 
+ID
+  cb_seqi
+    CORE_REG_RF2_reg[2]/clk                                                 
+    CORE_REG_RF2_reg[2]/q   (u)  unmapped_d_flop         5   25.0           
+  cb_seqi/CORE_REG_RF2[2] 
+ID/CORE_REG_RF2[2] 
+REGs/REG_RF2[2] 
+  cb_oseqi/REG_RF2[2] 
+    g45/in_1                                                                
+    g45/z                   (u)  unmapped_nand2          4   20.0           
+    g21297/in_1                                                             
+    g21297/z                (u)  unmapped_or2           32  160.0           
+    g21257/in_0                                                             
+    g21257/z                (u)  unmapped_complex2       1    5.0           
+    g20243/in_1                                                             
+    g20243/z                (u)  unmapped_nand2          1    5.0           
+    g19833/in_1                                                             
+    g19833/z                (u)  unmapped_or2            1    5.0           
+    g19698/in_1                                                             
+    g19698/z                (u)  unmapped_or2            1    5.0           
+    g19631/in_1                                                             
+    g19631/z                (u)  unmapped_or2            1    5.0           
+  cb_oseqi/REG_B[0] 
+REGs/REG_B[0] 
+cb_oseqi/REGs_REG_B[0] 
+  g1148/in_1                                                                
+  g1148/z                   (u)  unmapped_complex2       1    5.0           
+  g913/in_0                                                                 
+  g913/z                    (u)  unmapped_nand2          2    5.2           
+  g890/in_1                                                                 
+  g890/z                    (u)  unmapped_complex2       1    5.0           
+  g828/in_0                                                                 
+  g828/z                    (u)  unmapped_nand2        202 1010.0           
+cb_oseqi/ULA_ULA_B[0] 
+ULA/ULA_B[0] 
+  sumsub/B[0] 
+    g677/in_0                                                               
+    g677/z                  (u)  unmapped_complex2       1    5.0           
+    g678/in_1                                                               
+    g678/z                  (u)  unmapped_nand2          3   15.0           
+    g571/in_1                                                               
+    g571/z                  (u)  unmapped_complex2       1    5.0           
+    g572/in_1                                                               
+    g572/z                  (u)  unmapped_nand2          3   15.0           
+    g539/in_0                                                               
+    g539/z                  (u)  unmapped_nand2          1    5.0           
+    g535/in_1                                                               
+    g535/z                  (u)  unmapped_nand2          3   15.0           
+    g531/in_1                                                               
+    g531/z                  (u)  unmapped_nand2          1    5.0           
+    g530/in_1                                                               
+    g530/z                  (u)  unmapped_nand2          3   15.0           
+    g526/in_1                                                               
+    g526/z                  (u)  unmapped_nand2          1    5.0           
+    g525/in_1                                                               
+    g525/z                  (u)  unmapped_nand2          3   15.0           
+    g521/in_1                                                               
+    g521/z                  (u)  unmapped_nand2          1    5.0           
+    g520/in_1                                                               
+    g520/z                  (u)  unmapped_nand2          3   15.0           
+    g516/in_1                                                               
+    g516/z                  (u)  unmapped_nand2          1    5.0           
+    g515/in_1                                                               
+    g515/z                  (u)  unmapped_nand2          3   15.0           
+    g514/in_1                                                               
+    g514/z                  (u)  unmapped_nand2          1    5.0           
+    g510/in_1                                                               
+    g510/z                  (u)  unmapped_nand2          3   15.0           
+    g506/in_1                                                               
+    g506/z                  (u)  unmapped_nand2          1    5.0           
+    g505/in_1                                                               
+    g505/z                  (u)  unmapped_nand2          3   15.0           
+    g504/in_1                                                               
+    g504/z                  (u)  unmapped_nand2          1    5.0           
+    g500/in_1                                                               
+    g500/z                  (u)  unmapped_nand2          3   15.0           
+    g499/in_1                                                               
+    g499/z                  (u)  unmapped_nand2          1    5.0           
+    g495/in_1                                                               
+    g495/z                  (u)  unmapped_nand2          3   15.0           
+    g491/in_1                                                               
+    g491/z                  (u)  unmapped_nand2          1    5.0           
+    g490/in_1                                                               
+    g490/z                  (u)  unmapped_nand2          3   15.0           
+    g486/in_1                                                               
+    g486/z                  (u)  unmapped_nand2          1    5.0           
+    g485/in_1                                                               
+    g485/z                  (u)  unmapped_nand2          3   15.0           
+    g481/in_1                                                               
+    g481/z                  (u)  unmapped_nand2          1    5.0           
+    g480/in_1                                                               
+    g480/z                  (u)  unmapped_nand2          3   15.0           
+    g476/in_1                                                               
+    g476/z                  (u)  unmapped_nand2          1    5.0           
+    g475/in_1                                                               
+    g475/z                  (u)  unmapped_nand2          3   15.0           
+    g471/in_1                                                               
+    g471/z                  (u)  unmapped_nand2          1    5.0           
+    g470/in_1                                                               
+    g470/z                  (u)  unmapped_nand2          3   15.0           
+    g469/in_1                                                               
+    g469/z                  (u)  unmapped_nand2          1    5.0           
+    g465/in_1                                                               
+    g465/z                  (u)  unmapped_nand2          3   15.0           
+    g464/in_1                                                               
+    g464/z                  (u)  unmapped_nand2          1    5.0           
+    g460/in_1                                                               
+    g460/z                  (u)  unmapped_nand2          3   15.0           
+    g456/in_1                                                               
+    g456/z                  (u)  unmapped_nand2          1    5.0           
+    g455/in_1                                                               
+    g455/z                  (u)  unmapped_nand2          3   15.0           
+    g454/in_1                                                               
+    g454/z                  (u)  unmapped_nand2          1    5.0           
+    g450/in_1                                                               
+    g450/z                  (u)  unmapped_nand2          3   15.0           
+    g449/in_1                                                               
+    g449/z                  (u)  unmapped_nand2          1    5.0           
+    g445/in_1                                                               
+    g445/z                  (u)  unmapped_nand2          3   15.0           
+    g444/in_1                                                               
+    g444/z                  (u)  unmapped_nand2          1    5.0           
+    g440/in_1                                                               
+    g440/z                  (u)  unmapped_nand2          3   15.0           
+    g436/in_1                                                               
+    g436/z                  (u)  unmapped_nand2          1    5.0           
+    g435/in_1                                                               
+    g435/z                  (u)  unmapped_nand2          3   15.0           
+    g431/in_1                                                               
+    g431/z                  (u)  unmapped_nand2          1    5.0           
+    g430/in_1                                                               
+    g430/z                  (u)  unmapped_nand2          3   15.0           
+    g426/in_1                                                               
+    g426/z                  (u)  unmapped_nand2          1    5.0           
+    g425/in_1                                                               
+    g425/z                  (u)  unmapped_nand2          3   15.0           
+    g424/in_1                                                               
+    g424/z                  (u)  unmapped_nand2          1    5.0           
+    g420/in_1                                                               
+    g420/z                  (u)  unmapped_nand2          3   15.0           
+    g416/in_1                                                               
+    g416/z                  (u)  unmapped_nand2          1    5.0           
+    g415/in_1                                                               
+    g415/z                  (u)  unmapped_nand2          3   15.0           
+    g411/in_1                                                               
+    g411/z                  (u)  unmapped_nand2          1    5.0           
+    g410/in_1                                                               
+    g410/z                  (u)  unmapped_nand2          3   15.0           
+    g409/in_1                                                               
+    g409/z                  (u)  unmapped_nand2          1    5.0           
+    g405/in_1                                                               
+    g405/z                  (u)  unmapped_nand2          3   15.0           
+    g404/in_1                                                               
+    g404/z                  (u)  unmapped_nand2          1    5.0           
+    g400/in_1                                                               
+    g400/z                  (u)  unmapped_nand2          3   15.0           
+    g396/in_1                                                               
+    g396/z                  (u)  unmapped_nand2          1    5.0           
+    g395/in_1                                                               
+    g395/z                  (u)  unmapped_nand2          3   15.0           
+    g394/in_1                                                               
+    g394/z                  (u)  unmapped_nand2          1    5.0           
+    g390/in_1                                                               
+    g390/z                  (u)  unmapped_nand2          3   15.0           
+    g389/in_1                                                               
+    g389/z                  (u)  unmapped_nand2          1    5.0           
+    g385/in_1                                                               
+    g385/z                  (u)  unmapped_nand2          3   15.0           
+    g383/in_1                                                               
+    g383/z                  (u)  unmapped_complex2       1    5.0           
+    g384/in_1                                                               
+    g384/z                  (u)  unmapped_nand2          2   10.0           
+    g380/in_1                                                               
+    g380/z                  (u)  unmapped_complex2       1    5.0           
+    g381/in_1                                                               
+    g381/z                  (u)  unmapped_nand2          2   10.0           
+  sumsub/Outsum[31] 
+  cb_parti1419/sumsub_Outsum[31] 
+    g5362/in_1                                                              
+    g5362/z                 (u)  unmapped_complex2       1    5.0           
+    g5157/in_1                                                              
+    g5157/z                 (u)  unmapped_nand2          1    5.0           
+    g5095/in_1                                                              
+    g5095/z                 (u)  unmapped_or2            1    5.0           
+    g5036/in_1                                                              
+    g5036/z                 (u)  unmapped_or2            2   10.0           
+    g4983/in_1                                                              
+    g4983/z                 (u)  unmapped_or2            1    5.0           
+    g5671/in_0                                                              
+    g5671/z                 (u)  unmapped_nor2           1    5.0           
+  cb_parti1419/ULA_flags[1] 
+ULA/ULA_flags[1] 
+ID/CORE_ULA_flags[1] 
+  cb_seqi/CORE_ULA_flags[1] 
+    g4899/in_1                                                              
+    g4899/z                 (u)  unmapped_complex2       1    5.0           
+    g4821/in_0                                                              
+    g4821/z                 (u)  unmapped_complex2       1    5.0           
+    g4794/in_1                                                              
+    g4794/z                 (u)  unmapped_complex2       1    5.0           
+    g4749/in_1                                                              
+    g4749/z                 (u)  unmapped_complex2       1    5.0           
+    CORE_PC_ctrl_reg[0]/d   <<<  unmapped_d_flop                            
+    CORE_PC_ctrl_reg[0]/clk      setup                                      
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                      capture                             5000 R 
+----------------------------------------------------------------------------
+Start-point  : ID/cb_seqi/CORE_REG_RF2_reg[2]/clk
+End-point    : ID/cb_seqi/CORE_PC_ctrl_reg[0]/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 1986ps.
+ 
+          Restructuring (delay-based) cb_seq...
+          Done restructuring (delay-based) cb_seq
+        Optimizing component cb_seq...
+          Restructuring (delay-based) logic partition in NRISC_UP...
+          Done restructuring (delay-based) logic partition in NRISC_UP
+        Optimizing logic partition in NRISC_UP...
+          Restructuring (delay-based) cb_part_2300...
+          Done restructuring (delay-based) cb_part_2300
+        Optimizing component cb_part_2300...
+          Restructuring (delay-based) cb_seq_2294...
+          Done restructuring (delay-based) cb_seq_2294
+        Optimizing component cb_seq_2294...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Early Area Reclamation for shift_right_vlog_unsigned 'very_fast' (slack=1530, area=240)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Pre-mapped Exploration for shift_right_vlog_unsigned 'slow' (slack=1576, area=223)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+        Early Area Reclamation for shift_left_vlog_unsigned 'very_fast' (slack=1923, area=240)...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+        Pre-mapped Exploration for shift_left_vlog_unsigned 'slow' (slack=1938, area=227)...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+          Restructuring (delay-based) shift_right_vlog_unsigned_481...
+          Done restructuring (delay-based) shift_right_vlog_unsigned_481
+        Optimizing component shift_right_vlog_unsigned_481...
+        Early Area Reclamation for shift_right_vlog_unsigned_481 'very_fast' (slack=1562, area=240)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Pre-mapped Exploration for shift_right_vlog_unsigned_481 'slow' (slack=1583, area=219)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+          Restructuring (delay-based) somaUla_TAM32...
+          Done restructuring (delay-based) somaUla_TAM32
+        Optimizing component somaUla_TAM32...
+          Restructuring (delay-based) logic partition in NRISC_ULA...
+          Done restructuring (delay-based) logic partition in NRISC_ULA
+        Optimizing logic partition in NRISC_ULA...
+          Restructuring (delay-based) cb_oseq_2297...
+          Done restructuring (delay-based) cb_oseq_2297
+        Optimizing component cb_oseq_2297...
+          Restructuring (delay-based) cb_seq_2292...
+          Done restructuring (delay-based) cb_seq_2292
+        Optimizing component cb_seq_2292...
+          Restructuring (delay-based) cb_oseq_2295...
+          Done restructuring (delay-based) cb_oseq_2295
+        Optimizing component cb_oseq_2295...
+          Restructuring (delay-based) cb_oseq...
+          Done restructuring (delay-based) cb_oseq
+        Optimizing component cb_oseq...
+          Restructuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done restructuring (delay-based) logic partition in NRISC_PC_ctrl
+        Optimizing logic partition in NRISC_PC_ctrl...
+          Restructuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done restructuring (delay-based) logic partition in NRISC_PC_ctrl
+        Optimizing logic partition in NRISC_PC_ctrl...
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+ 
+Global mapping timing result
+============================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+           Pin                   Type      Fanout Load Slew Delay Arrival   
+                                                  (fF) (ps)  (ps)   (ps)    
+----------------------------------------------------------------------------
+(clock clk)                     launch                                  0 R 
+ID
+  cb_seqi
+    CORE_REG_RF2_reg[0]/CK                                0             0 R 
+    CORE_REG_RF2_reg[0]/Q       DFF_X2          4  6.2   26  +183     183 F 
+  cb_seqi/CORE_REG_RF2[0] 
+ID/CORE_REG_RF2[0] 
+REGs/REG_RF2[0] 
+  cb_oseqi/REG_RF2[0] 
+    g31609/A2                                                  +0     183   
+    g31609/ZN                   AND2_X2         4  4.0   17   +70     253 F 
+    g31301/A2                                                  +0     253   
+    g31301/ZN                   NAND2_X2        1  3.8   32   +46     299 R 
+    g31300/A                                                   +0     299   
+    g31300/ZN                   INV_X8         32 31.1   23   +39     338 F 
+    g31209/B1                                                  +0     338   
+    g31209/ZN                   AOI22_X2        1  0.9   34   +61     399 R 
+    g30864/A2                                                  +0     399   
+    g30864/ZN                   AND4_X1         1  1.0   22   +68     466 R 
+    g30809/A3                                                  +0     466   
+    g30809/ZN                   NAND4_X1        1  1.4   23   +41     507 F 
+  cb_oseqi/REG_B[1] 
+REGs/REG_B[1] 
+cb_oseqi/REGs_REG_B[1] 
+  g2424/A1                                                     +0     507   
+  g2424/ZN                      NAND2_X2        1  1.3   24   +30     537 R 
+  g2354/A2                                                     +0     537   
+  g2354/ZN                      NAND2_X2        2  1.3   17   +20     557 F 
+  g2279/A                                                      +0     557   
+  g2279/Z                       MUX2_X2         2  2.6   23  +103     660 F 
+cb_oseqi/ULA_ULA_B[1] 
+ULA/ULA_B[1] 
+  sumsub/B[1] 
+    g1784/B                                                    +0     660   
+    g1784/ZN                    XNOR2_X2        1  2.0   34   +55     715 R 
+    g1748/A                                                    +0     715   
+    g1748/S                     HA_X1           2  3.5   83  +132     847 R 
+    g1746/A                                                    +0     847   
+    g1746/ZN                    INV_X4          1  1.3   17   +10     857 F 
+    g1724/A2                                                   +0     857   
+    g1724/ZN                    NOR2_X2         1  2.1   28   +47     904 R 
+    g1722/A                                                    +0     904   
+    g1722/ZN                    INV_X4          1  1.4    8   +11     915 F 
+    g1721/A1                                                   +0     915   
+    g1721/ZN                    NAND2_X2        2  2.5   25   +29     944 R 
+    g1719/A1                                                   +0     944   
+    g1719/ZN                    NAND2_X2        1  1.4   16   +19     963 F 
+    g1717/A1                                                   +0     963   
+    g1717/ZN                    NAND2_X2        2  2.5   25   +33     996 R 
+    g1715/A1                                                   +0     996   
+    g1715/ZN                    NAND2_X2        1  1.4   16   +19    1015 F 
+    g1713/A1                                                   +0    1015   
+    g1713/ZN                    NAND2_X2        2  2.5   25   +33    1048 R 
+    g1711/A1                                                   +0    1048   
+    g1711/ZN                    NAND2_X2        1  1.4   16   +19    1068 F 
+    g1709/A1                                                   +0    1068   
+    g1709/ZN                    NAND2_X2        2  2.5   25   +33    1101 R 
+    g1707/A1                                                   +0    1101   
+    g1707/ZN                    NAND2_X2        1  1.4   16   +19    1120 F 
+    g1705/A1                                                   +0    1120   
+    g1705/ZN                    NAND2_X2        2  2.5   25   +33    1153 R 
+    g1703/A1                                                   +0    1153   
+    g1703/ZN                    NAND2_X2        1  1.4   16   +19    1172 F 
+    g1701/A1                                                   +0    1172   
+    g1701/ZN                    NAND2_X2        2  2.5   25   +33    1206 R 
+    g1699/A1                                                   +0    1206   
+    g1699/ZN                    NAND2_X2        1  1.4   16   +19    1225 F 
+    g1697/A1                                                   +0    1225   
+    g1697/ZN                    NAND2_X2        2  1.9   21   +30    1255 R 
+    g1695/A1                                                   +0    1255   
+    g1695/ZN                    NAND2_X1        1  0.8   17   +22    1276 F 
+    g1693/A1                                                   +0    1276   
+    g1693/ZN                    NAND2_X1        2  1.9   36   +45    1321 R 
+    g1691/A1                                                   +0    1321   
+    g1691/ZN                    NAND2_X1        1  0.8   17   +26    1347 F 
+    g1689/A1                                                   +0    1347   
+    g1689/ZN                    NAND2_X1        1  2.0   38   +46    1393 R 
+    g1688/A                                                    +0    1393   
+    g1688/CO                    HA_X1           1  1.0   19   +50    1443 R 
+    g1687/A1                                                   +0    1443   
+    g1687/ZN                    OR2_X1          1  2.0   30   +56    1499 R 
+    g1686/A                                                    +0    1499   
+    g1686/CO                    HA_X1           1  1.0   19   +48    1547 R 
+    g1685/A1                                                   +0    1547   
+    g1685/ZN                    OR2_X1          1  2.0   30   +56    1602 R 
+    g1684/A                                                    +0    1602   
+    g1684/CO                    HA_X1           1  0.9   18   +47    1649 R 
+    g1683/A1                                                   +0    1649   
+    g1683/ZN                    OR2_X2          1  2.0   17   +44    1693 R 
+    g1682/A                                                    +0    1693   
+    g1682/CO                    HA_X1           1  0.9   18   +43    1736 R 
+    g1681/A1                                                   +0    1736   
+    g1681/ZN                    OR2_X2          1  2.0   17   +44    1780 R 
+    g1680/A                                                    +0    1780   
+    g1680/CO                    HA_X1           1  0.9   18   +43    1823 R 
+    g1679/A1                                                   +0    1823   
+    g1679/ZN                    OR2_X2          1  2.0   17   +44    1866 R 
+    g1678/A                                                    +0    1866   
+    g1678/CO                    HA_X1           1  0.9   18   +43    1909 R 
+    g1677/A1                                                   +0    1909   
+    g1677/ZN                    OR2_X2          1  2.0   17   +44    1953 R 
+    g1676/A                                                    +0    1953   
+    g1676/CO                    HA_X1           1  0.9   18   +43    1996 R 
+    g1675/A1                                                   +0    1996   
+    g1675/ZN                    OR2_X2          1  2.0   17   +44    2040 R 
+    g1674/A                                                    +0    2040   
+    g1674/CO                    HA_X1           1  1.0   19   +44    2084 R 
+    g1673/A1                                                   +0    2084   
+    g1673/ZN                    OR2_X1          1  2.0   30   +56    2140 R 
+    g1672/A                                                    +0    2140   
+    g1672/CO                    HA_X1           1  1.0   19   +48    2188 R 
+    g1671/A1                                                   +0    2188   
+    g1671/ZN                    OR2_X1          1  2.0   30   +56    2243 R 
+    g1670/A                                                    +0    2243   
+    g1670/CO                    HA_X1           1  1.0   19   +48    2291 R 
+    g1669/A1                                                   +0    2291   
+    g1669/ZN                    OR2_X1          1  2.0   30   +56    2347 R 
+    g1668/A                                                    +0    2347   
+    g1668/CO                    HA_X1           1  1.0   19   +48    2395 R 
+    g1667/A1                                                   +0    2395   
+    g1667/ZN                    OR2_X1          1  2.0   30   +56    2451 R 
+    g1666/A                                                    +0    2451   
+    g1666/CO                    HA_X1           1  1.0   19   +48    2499 R 
+    g1665/A1                                                   +0    2499   
+    g1665/ZN                    OR2_X1          1  2.0   30   +56    2554 R 
+    g1664/A                                                    +0    2554   
+    g1664/CO                    HA_X1           1  1.0   19   +48    2602 R 
+    g1663/A1                                                   +0    2602   
+    g1663/ZN                    OR2_X1          1  2.0   30   +56    2658 R 
+    g1662/A                                                    +0    2658   
+    g1662/CO                    HA_X1           1  1.0   19   +48    2706 R 
+    g1661/A1                                                   +0    2706   
+    g1661/ZN                    OR2_X1          1  2.0   30   +56    2762 R 
+    g1660/A                                                    +0    2762   
+    g1660/CO                    HA_X1           1  1.0   19   +48    2810 R 
+    g1659/A1                                                   +0    2810   
+    g1659/ZN                    OR2_X1          1  2.0   30   +56    2866 R 
+    g1658/A                                                    +0    2866   
+    g1658/CO                    HA_X1           1  1.0   19   +48    2914 R 
+    g1657/A1                                                   +0    2914   
+    g1657/ZN                    OR2_X1          1  2.0   30   +56    2969 R 
+    g1656/A                                                    +0    2969   
+    g1656/CO                    HA_X1           1  1.0   19   +48    3017 R 
+    g1655/A1                                                   +0    3017   
+    g1655/ZN                    OR2_X1          1  2.0   30   +56    3073 R 
+    g1654/A                                                    +0    3073   
+    g1654/CO                    HA_X1           1  1.0   19   +48    3121 R 
+    g1653/A1                                                   +0    3121   
+    g1653/ZN                    OR2_X1          1  2.0   30   +56    3177 R 
+    g1652/A                                                    +0    3177   
+    g1652/CO                    HA_X1           1  1.0   19   +48    3225 R 
+    g1651/A1                                                   +0    3225   
+    g1651/ZN                    OR2_X1          1  2.0   30   +56    3280 R 
+    g1650/A                                                    +0    3280   
+    g1650/CO                    HA_X1           1  1.0   19   +48    3328 R 
+    g1649/A1                                                   +0    3328   
+    g1649/ZN                    OR2_X1          1  2.0   30   +56    3384 R 
+    g1648/A                                                    +0    3384   
+    g1648/CO                    HA_X1           1  1.0   19   +48    3432 R 
+    g1647/A1                                                   +0    3432   
+    g1647/ZN                    OR2_X1          2  2.5   36   +62    3494 R 
+    g1646/A                                                    +0    3494   
+    g1646/Z                     XOR2_X1         1  1.4   52   +99    3593 R 
+    g1645/A                                                    +0    3593   
+    g1645/ZN                    XNOR2_X1        2  1.7   27   +42    3634 F 
+  sumsub/Outsum[31] 
+  cb_parti1419/sumsub_Outsum[31] 
+    g10507/A1                                                  +0    3634   
+    g10507/ZN                   AOI22_X1        1  0.8   50   +61    3695 R 
+    g10342/A1                                                  +0    3695   
+    g10342/ZN                   NAND2_X1        2  1.9   24   +38    3733 F 
+    g10314/A1                                                  +0    3733   
+    g10314/ZN                   OR4_X1          1  0.9   17   +69    3802 F 
+    g10312/A1                                                  +0    3802   
+    g10312/ZN                   OR4_X1          1  0.9   17   +66    3868 F 
+    g10311/A1                                                  +0    3868   
+    g10311/ZN                   OR4_X1          1  0.9   17   +66    3933 F 
+    g10310/A1                                                  +0    3933   
+    g10310/ZN                   OR4_X1          1  0.8   17   +65    3998 F 
+    g10309/A1                                                  +0    3998   
+    g10309/ZN                   NOR2_X1         1  1.2   35   +46    4044 R 
+  cb_parti1419/ULA_flags[1] 
+ULA/ULA_flags[1] 
+ID/CORE_ULA_flags[1] 
+  cb_seqi/CORE_ULA_flags[1] 
+    g5823/A                                                    +0    4044   
+    g5823/ZN                    INV_X2          1  0.8   11   +13    4057 F 
+    g5740/B1                                                   +0    4057   
+    g5740/ZN                    OAI221_X1       1  1.1   80   +97    4154 R 
+    g5677/C1                                                   +0    4154   
+    g5677/ZN                    AOI221_X1       1  2.0   58   +56    4210 F 
+    g5676/A                                                    +0    4210   
+    g5676/ZN                    INV_X4          1  1.1   17   +28    4238 R 
+    CORE_PC_ctrl_reg[0]/D  <<<  DFF_X1                         +0    4238   
+    CORE_PC_ctrl_reg[0]/CK      setup                     0   +43    4281 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                     capture                              5000 R 
+----------------------------------------------------------------------------
+Timing slack :     719ps 
+Start-point  : ID/cb_seqi/CORE_REG_RF2_reg[0]/CK
+End-point    : ID/cb_seqi/CORE_PC_ctrl_reg[0]/D
+
+ 
+ 
+Global mapping status
+=====================
+                         Worst  
+                 Total    Neg       Switching  
+Operation         Area   Slack        Power  
+-------------------------------------------------------------------------------
+ global_map      28182       0 -9223372036855 
+ 
+Global incremental target info
+==============================
+Cost Group 'default' target slack:    99 ps
+Target path end-point (Pin: ID/CORE_PC_ctrl_reg[0]/D (DFF_X1/D))
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+           Pin                   Type      Fanout Load Arrival   
+                                                  (fF)   (ps)    
+-----------------------------------------------------------------
+(clock clk)                <<<  launch                       0 R 
+ID
+  cb_seqi
+    CORE_REG_RF2_reg[0]/CK                                       
+    CORE_REG_RF2_reg[0]/Q       DFF_X2          4  6.2           
+  cb_seqi/CORE_REG_RF2[0] 
+ID/CORE_REG_RF2[0] 
+REGs/REG_RF2[0] 
+  cb_oseqi/REG_RF2[0] 
+    g31609/A2                                                    
+    g31609/ZN                   AND2_X2         4  4.0           
+    g31301/A2                                                    
+    g31301/ZN                   NAND2_X2        1  3.8           
+    g31300/A                                                     
+    g31300/ZN                   INV_X8         32 31.1           
+    g31209/B1                                                    
+    g31209/ZN                   AOI22_X2        1  0.9           
+    g30864/A2                                                    
+    g30864/ZN                   AND4_X1         1  1.0           
+    g30809/A3                                                    
+    g30809/ZN                   NAND4_X1        1  1.4           
+  cb_oseqi/REG_B[1] 
+REGs/REG_B[1] 
+cb_oseqi/REGs_REG_B[1] 
+  g2424/A1                                                       
+  g2424/ZN                      NAND2_X2        1  1.3           
+  g2354/A2                                                       
+  g2354/ZN                      NAND2_X2        2  1.3           
+  g2279/A                                                        
+  g2279/Z                       MUX2_X2         2  2.6           
+cb_oseqi/ULA_ULA_B[1] 
+ULA/ULA_B[1] 
+  sumsub/B[1] 
+    g1784/B                                                      
+    g1784/ZN                    XNOR2_X2        1  2.0           
+    g1748/A                                                      
+    g1748/S                     HA_X1           2  3.5           
+    g1746/A                                                      
+    g1746/ZN                    INV_X4          1  1.3           
+    g1724/A2                                                     
+    g1724/ZN                    NOR2_X2         1  2.1           
+    g1722/A                                                      
+    g1722/ZN                    INV_X4          1  1.4           
+    g1721/A1                                                     
+    g1721/ZN                    NAND2_X2        2  2.5           
+    g1719/A1                                                     
+    g1719/ZN                    NAND2_X2        1  1.4           
+    g1717/A1                                                     
+    g1717/ZN                    NAND2_X2        2  2.5           
+    g1715/A1                                                     
+    g1715/ZN                    NAND2_X2        1  1.4           
+    g1713/A1                                                     
+    g1713/ZN                    NAND2_X2        2  2.5           
+    g1711/A1                                                     
+    g1711/ZN                    NAND2_X2        1  1.4           
+    g1709/A1                                                     
+    g1709/ZN                    NAND2_X2        2  2.5           
+    g1707/A1                                                     
+    g1707/ZN                    NAND2_X2        1  1.4           
+    g1705/A1                                                     
+    g1705/ZN                    NAND2_X2        2  2.5           
+    g1703/A1                                                     
+    g1703/ZN                    NAND2_X2        1  1.4           
+    g1701/A1                                                     
+    g1701/ZN                    NAND2_X2        2  2.5           
+    g1699/A1                                                     
+    g1699/ZN                    NAND2_X2        1  1.4           
+    g1697/A1                                                     
+    g1697/ZN                    NAND2_X2        2  1.9           
+    g1695/A1                                                     
+    g1695/ZN                    NAND2_X1        1  0.8           
+    g1693/A1                                                     
+    g1693/ZN                    NAND2_X1        2  1.9           
+    g1691/A1                                                     
+    g1691/ZN                    NAND2_X1        1  0.8           
+    g1689/A1                                                     
+    g1689/ZN                    NAND2_X1        1  2.0           
+    g1688/A                                                      
+    g1688/CO                    HA_X1           1  1.0           
+    g1687/A1                                                     
+    g1687/ZN                    OR2_X1          1  2.0           
+    g1686/A                                                      
+    g1686/CO                    HA_X1           1  1.0           
+    g1685/A1                                                     
+    g1685/ZN                    OR2_X1          1  2.0           
+    g1684/A                                                      
+    g1684/CO                    HA_X1           1  0.9           
+    g1683/A1                                                     
+    g1683/ZN                    OR2_X2          1  2.0           
+    g1682/A                                                      
+    g1682/CO                    HA_X1           1  0.9           
+    g1681/A1                                                     
+    g1681/ZN                    OR2_X2          1  2.0           
+    g1680/A                                                      
+    g1680/CO                    HA_X1           1  0.9           
+    g1679/A1                                                     
+    g1679/ZN                    OR2_X2          1  2.0           
+    g1678/A                                                      
+    g1678/CO                    HA_X1           1  0.9           
+    g1677/A1                                                     
+    g1677/ZN                    OR2_X2          1  2.0           
+    g1676/A                                                      
+    g1676/CO                    HA_X1           1  0.9           
+    g1675/A1                                                     
+    g1675/ZN                    OR2_X2          1  2.0           
+    g1674/A                                                      
+    g1674/CO                    HA_X1           1  1.0           
+    g1673/A1                                                     
+    g1673/ZN                    OR2_X1          1  2.0           
+    g1672/A                                                      
+    g1672/CO                    HA_X1           1  1.0           
+    g1671/A1                                                     
+    g1671/ZN                    OR2_X1          1  2.0           
+    g1670/A                                                      
+    g1670/CO                    HA_X1           1  1.0           
+    g1669/A1                                                     
+    g1669/ZN                    OR2_X1          1  2.0           
+    g1668/A                                                      
+    g1668/CO                    HA_X1           1  1.0           
+    g1667/A1                                                     
+    g1667/ZN                    OR2_X1          1  2.0           
+    g1666/A                                                      
+    g1666/CO                    HA_X1           1  1.0           
+    g1665/A1                                                     
+    g1665/ZN                    OR2_X1          1  2.0           
+    g1664/A                                                      
+    g1664/CO                    HA_X1           1  1.0           
+    g1663/A1                                                     
+    g1663/ZN                    OR2_X1          1  2.0           
+    g1662/A                                                      
+    g1662/CO                    HA_X1           1  1.0           
+    g1661/A1                                                     
+    g1661/ZN                    OR2_X1          1  2.0           
+    g1660/A                                                      
+    g1660/CO                    HA_X1           1  1.0           
+    g1659/A1                                                     
+    g1659/ZN                    OR2_X1          1  2.0           
+    g1658/A                                                      
+    g1658/CO                    HA_X1           1  1.0           
+    g1657/A1                                                     
+    g1657/ZN                    OR2_X1          1  2.0           
+    g1656/A                                                      
+    g1656/CO                    HA_X1           1  1.0           
+    g1655/A1                                                     
+    g1655/ZN                    OR2_X1          1  2.0           
+    g1654/A                                                      
+    g1654/CO                    HA_X1           1  1.0           
+    g1653/A1                                                     
+    g1653/ZN                    OR2_X1          1  2.0           
+    g1652/A                                                      
+    g1652/CO                    HA_X1           1  1.0           
+    g1651/A1                                                     
+    g1651/ZN                    OR2_X1          1  2.0           
+    g1650/A                                                      
+    g1650/CO                    HA_X1           1  1.0           
+    g1649/A1                                                     
+    g1649/ZN                    OR2_X1          1  2.0           
+    g1648/A                                                      
+    g1648/CO                    HA_X1           1  1.0           
+    g1647/A1                                                     
+    g1647/ZN                    OR2_X1          2  2.5           
+    g1646/A                                                      
+    g1646/Z                     XOR2_X1         1  1.4           
+    g1645/A                                                      
+    g1645/ZN                    XNOR2_X1        2  1.7           
+  sumsub/Outsum[31] 
+  cb_parti1419/sumsub_Outsum[31] 
+    g10507/A1                                                    
+    g10507/ZN                   AOI22_X1        1  0.8           
+    g10342/A1                                                    
+    g10342/ZN                   NAND2_X1        2  1.9           
+    g10314/A1                                                    
+    g10314/ZN                   OR4_X1          1  0.9           
+    g10312/A1                                                    
+    g10312/ZN                   OR4_X1          1  0.9           
+    g10311/A1                                                    
+    g10311/ZN                   OR4_X1          1  0.9           
+    g10310/A1                                                    
+    g10310/ZN                   OR4_X1          1  0.8           
+    g10309/A1                                                    
+    g10309/ZN                   NOR2_X1         1  1.2           
+  cb_parti1419/ULA_flags[1] 
+ULA/ULA_flags[1] 
+ID/CORE_ULA_flags[1] 
+  cb_seqi/CORE_ULA_flags[1] 
+    g5823/A                                                      
+    g5823/ZN                    INV_X2          1  0.8           
+    g5740/B1                                                     
+    g5740/ZN                    OAI221_X1       1  1.1           
+    g5677/C1                                                     
+    g5677/ZN                    AOI221_X1       1  2.0           
+    g5676/A                                                      
+    g5676/ZN                    INV_X4          1  1.1           
+    CORE_PC_ctrl_reg[0]/D  <<<  DFF_X1                           
+    CORE_PC_ctrl_reg[0]/CK      setup                            
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)                     capture                   5000 R 
+-----------------------------------------------------------------
+Start-point  : ID/cb_seqi/CORE_REG_RF2_reg[0]/CK
+End-point    : ID/cb_seqi/CORE_PC_ctrl_reg[0]/D
+
+The global mapper estimates a slack for this path of 458ps.
+ 
+ 
+Global incremental timing result
+================================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+           Pin                   Type      Fanout Load Slew Delay Arrival   
+                                                  (fF) (ps)  (ps)   (ps)    
+----------------------------------------------------------------------------
+(clock clk)                     launch                                  0 R 
+ID
+  cb_seqi
+    CORE_REG_RF1_reg[3]/CK                                0             0 R 
+    CORE_REG_RF1_reg[3]/Q       DFF_X2          4  3.7   20  +173     173 F 
+  cb_seqi/CORE_REG_RF1[3] 
+ID/CORE_REG_RF1[3] 
+REGs/REG_RF1[3] 
+  cb_oseqi/REG_RF1[3] 
+    g31625/A                                                   +0     173   
+    g31625/ZN                   INV_X2          2  2.7   20   +33     205 R 
+    g31587/A1                                                  +0     205   
+    g31587/ZN                   NAND2_X2        3  3.5   17   +26     232 F 
+    g31635/A1                                                  +0     232   
+    g31635/ZN                   NOR2_X2        32 30.0  238  +268     499 R 
+    g30994/B1                                                  +0     499   
+    g30994/ZN                   AOI22_X2        1  0.9   60   +47     546 F 
+    g30860/A1                                                  +0     546   
+    g30860/ZN                   AND4_X2         1  0.9   13   +79     625 F 
+    g30805/A3                                                  +0     625   
+    g30805/ZN                   NAND4_X1        1  1.2   50   +63     687 R 
+  cb_oseqi/REG_A[0] 
+REGs/REG_A[0] 
+cb_oseqi/REGs_REG_A[0] 
+  g2408/A                                                      +0     687   
+  g2408/Z                       MUX2_X2         9  9.8   59  +110     798 R 
+cb_oseqi/ULA_ULA_A[0] 
+ULA/ULA_A[0] 
+  sumsub/A[0] 
+    g1804/A                                                    +0     798   
+    g1804/ZN                    INV_X4          2  2.4   15   +15     813 F 
+    g1769/A2                                                   +0     813   
+    g1769/ZN                    NAND2_X2        1  1.3   18   +31     844 R 
+    g1767/A2                                                   +0     844   
+    g1767/ZN                    NAND2_X2        1  1.9   15   +21     865 F 
+    g1726/B                                                    +0     865   
+    g1726/CO                    HA_X1           1  1.3   14   +54     919 F 
+    g1725/A1                                                   +0     919   
+    g1725/ZN                    NOR2_X2         2  2.2   28   +38     957 R 
+    g2/A1                                                      +0     957   
+    g2/ZN                       OR2_X4          1  1.4   10   +44    1001 R 
+    g1721/A1                                                   +0    1001   
+    g1721/ZN                    NAND2_X2        2  2.6   12   +19    1020 F 
+    g1719/A1                                                   +0    1020   
+    g1719/ZN                    NAND2_X2        1  1.4   20   +25    1045 R 
+    g1717/A1                                                   +0    1045   
+    g1717/ZN                    NAND2_X2        2  2.6   13   +23    1068 F 
+    g1715/A1                                                   +0    1068   
+    g1715/ZN                    NAND2_X2        1  1.4   20   +25    1093 R 
+    g1713/A1                                                   +0    1093   
+    g1713/ZN                    NAND2_X2        2  2.6   13   +23    1116 F 
+    g1711/A1                                                   +0    1116   
+    g1711/ZN                    NAND2_X2        1  1.4   20   +25    1141 R 
+    g1709/A1                                                   +0    1141   
+    g1709/ZN                    NAND2_X2        2  2.6   13   +23    1164 F 
+    g1707/A1                                                   +0    1164   
+    g1707/ZN                    NAND2_X2        1  1.4   20   +25    1190 R 
+    g1705/A1                                                   +0    1190   
+    g1705/ZN                    NAND2_X2        2  2.6   13   +23    1212 F 
+    g1703/A1                                                   +0    1212   
+    g1703/ZN                    NAND2_X2        1  1.4   20   +25    1238 R 
+    g1701/A1                                                   +0    1238   
+    g1701/ZN                    NAND2_X2        2  2.6   13   +23    1261 F 
+    g1699/A1                                                   +0    1261   
+    g1699/ZN                    NAND2_X2        1  1.4   21   +25    1286 R 
+    g1697/A1                                                   +0    1286   
+    g1697/ZN                    NAND2_X2        2  2.0   12   +21    1307 F 
+    g1695/A1                                                   +0    1307   
+    g1695/ZN                    NAND2_X1        1  0.8   25   +29    1336 R 
+    g1693/A1                                                   +0    1336   
+    g1693/ZN                    NAND2_X1        2  2.0   19   +32    1368 F 
+    g1691/A1                                                   +0    1368   
+    g1691/ZN                    NAND2_X1        1  0.8   25   +33    1401 R 
+    g1689/A1                                                   +0    1401   
+    g1689/ZN                    NAND2_X1        1  1.9   19   +31    1432 F 
+    g1688/A                                                    +0    1432   
+    g1688/CO                    HA_X1           1  0.9   11   +46    1478 F 
+    g1687/A1                                                   +0    1478   
+    g1687/ZN                    OR2_X1          1  1.9   18   +59    1537 F 
+    g1686/A                                                    +0    1537   
+    g1686/CO                    HA_X1           1  0.9   11   +46    1583 F 
+    g1685/A1                                                   +0    1583   
+    g1685/ZN                    OR2_X1          1  1.9   18   +59    1642 F 
+    g1684/A                                                    +0    1642   
+    g1684/CO                    HA_X1           1  0.8   11   +45    1686 F 
+    g1683/A1                                                   +0    1686   
+    g1683/ZN                    OR2_X2          1  1.9   13   +56    1742 F 
+    g1682/A                                                    +0    1742   
+    g1682/CO                    HA_X1           1  0.8   11   +42    1784 F 
+    g1681/A1                                                   +0    1784   
+    g1681/ZN                    OR2_X2          1  1.9   13   +56    1840 F 
+    g1680/A                                                    +0    1840   
+    g1680/CO                    HA_X1           1  0.8   11   +42    1883 F 
+    g1679/A1                                                   +0    1883   
+    g1679/ZN                    OR2_X2          1  1.9   13   +56    1938 F 
+    g1678/A                                                    +0    1938   
+    g1678/CO                    HA_X1           1  0.8   11   +42    1981 F 
+    g1677/A1                                                   +0    1981   
+    g1677/ZN                    OR2_X2          1  1.9   13   +56    2036 F 
+    g1676/A                                                    +0    2036   
+    g1676/CO                    HA_X1           1  0.8   11   +42    2079 F 
+    g1675/A1                                                   +0    2079   
+    g1675/ZN                    OR2_X2          1  1.9   13   +56    2134 F 
+    g1674/A                                                    +0    2134   
+    g1674/CO                    HA_X1           1  0.9   11   +43    2178 F 
+    g1673/A1                                                   +0    2178   
+    g1673/ZN                    OR2_X1          1  1.9   18   +59    2237 F 
+    g1672/A                                                    +0    2237   
+    g1672/CO                    HA_X1           1  0.9   11   +46    2282 F 
+    g1671/A1                                                   +0    2282   
+    g1671/ZN                    OR2_X1          1  1.9   18   +59    2341 F 
+    g1670/A                                                    +0    2341   
+    g1670/CO                    HA_X1           1  0.9   11   +46    2387 F 
+    g1669/A1                                                   +0    2387   
+    g1669/ZN                    OR2_X1          1  1.9   18   +59    2446 F 
+    g1668/A                                                    +0    2446   
+    g1668/CO                    HA_X1           1  0.9   11   +46    2492 F 
+    g1667/A1                                                   +0    2492   
+    g1667/ZN                    OR2_X1          1  1.9   18   +59    2551 F 
+    g1666/A                                                    +0    2551   
+    g1666/CO                    HA_X1           1  0.9   11   +46    2596 F 
+    g1665/A1                                                   +0    2596   
+    g1665/ZN                    OR2_X1          1  1.9   18   +59    2655 F 
+    g1664/A                                                    +0    2655   
+    g1664/CO                    HA_X1           1  0.9   11   +46    2701 F 
+    g1663/A1                                                   +0    2701   
+    g1663/ZN                    OR2_X1          1  1.9   18   +59    2760 F 
+    g1662/A                                                    +0    2760   
+    g1662/CO                    HA_X1           1  0.9   11   +46    2805 F 
+    g1661/A1                                                   +0    2805   
+    g1661/ZN                    OR2_X1          1  1.9   18   +59    2864 F 
+    g1660/A                                                    +0    2864   
+    g1660/CO                    HA_X1           1  0.9   11   +46    2910 F 
+    g1659/A1                                                   +0    2910   
+    g1659/ZN                    OR2_X1          1  1.9   18   +59    2969 F 
+    g1658/A                                                    +0    2969   
+    g1658/CO                    HA_X1           1  0.9   11   +46    3014 F 
+    g1657/A1                                                   +0    3014   
+    g1657/ZN                    OR2_X1          1  1.9   18   +59    3074 F 
+    g1656/A                                                    +0    3074   
+    g1656/CO                    HA_X1           1  0.9   11   +46    3119 F 
+    g1655/A1                                                   +0    3119   
+    g1655/ZN                    OR2_X1          1  1.9   18   +59    3178 F 
+    g1654/A                                                    +0    3178   
+    g1654/CO                    HA_X1           1  0.9   11   +46    3224 F 
+    g1653/A1                                                   +0    3224   
+    g1653/ZN                    OR2_X1          1  1.9   18   +59    3283 F 
+    g1652/A                                                    +0    3283   
+    g1652/CO                    HA_X1           1  0.9   11   +46    3328 F 
+    g1651/A1                                                   +0    3328   
+    g1651/ZN                    OR2_X1          1  1.9   18   +59    3387 F 
+    g1650/A                                                    +0    3387   
+    g1650/CO                    HA_X1           1  0.9   11   +46    3433 F 
+    g1649/A1                                                   +0    3433   
+    g1649/ZN                    OR2_X1          1  1.9   18   +59    3492 F 
+    g1648/A                                                    +0    3492   
+    g1648/CO                    HA_X1           1  0.9   11   +46    3538 F 
+    g1647/A1                                                   +0    3538   
+    g1647/ZN                    OR2_X1          2  2.3   20   +62    3600 F 
+    g1646/A                                                    +0    3600   
+    g1646/Z                     XOR2_X1         1  1.3   27   +73    3672 F 
+    g1645/A                                                    +0    3672   
+    g1645/ZN                    XNOR2_X1        2  1.7   27   +71    3744 F 
+  sumsub/Outsum[31] 
+  cb_parti1419/sumsub_Outsum[31] 
+    g10507/A1                                                  +0    3744   
+    g10507/ZN                   AOI22_X1        1  0.8   50   +61    3804 R 
+    g10342/A1                                                  +0    3804   
+    g10342/ZN                   NAND2_X1        2  1.9   24   +38    3842 F 
+    g10314/A1                                                  +0    3842   
+    g10314/ZN                   OR4_X1          1  0.9   17   +69    3911 F 
+    g10312/A1                                                  +0    3911   
+    g10312/ZN                   OR4_X1          1  0.9   17   +66    3977 F 
+    g10311/A1                                                  +0    3977   
+    g10311/ZN                   OR4_X1          1  0.9   17   +66    4043 F 
+    g10310/A1                                                  +0    4043   
+    g10310/ZN                   OR4_X1          1  0.8   17   +65    4107 F 
+    g10309/A1                                                  +0    4107   
+    g10309/ZN                   NOR2_X1         1  1.2   35   +46    4153 R 
+  cb_parti1419/ULA_flags[1] 
+ULA/ULA_flags[1] 
+ID/CORE_ULA_flags[1] 
+  cb_seqi/CORE_ULA_flags[1] 
+    g5823/A                                                    +0    4153   
+    g5823/ZN                    INV_X2          1  0.8   11   +13    4167 F 
+    g5740/B1                                                   +0    4167   
+    g5740/ZN                    OAI221_X1       1  1.1   80   +97    4263 R 
+    g5677/C1                                                   +0    4263   
+    g5677/ZN                    AOI221_X1       1  2.0   58   +56    4319 F 
+    g5676/A                                                    +0    4319   
+    g5676/ZN                    INV_X4          1  1.1   17   +28    4348 R 
+    CORE_PC_ctrl_reg[0]/D  <<<  DFF_X1                         +0    4348   
+    CORE_PC_ctrl_reg[0]/CK      setup                     0   +43    4390 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                     capture                              5000 R 
+----------------------------------------------------------------------------
+Timing slack :     610ps 
+Start-point  : ID/cb_seqi/CORE_REG_RF1_reg[3]/CK
+End-point    : ID/cb_seqi/CORE_PC_ctrl_reg[0]/D
+
+ 
+ 
+Global incremental optimization status
+======================================
+                         Worst  
+                 Total    Neg       Switching  
+Operation         Area   Slack        Power  
+-------------------------------------------------------------------------------
+ global_inc      28079       0 -9223372036855 
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ simp_cc_in      28077       0         0        0    1292948 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      28077       0         0        0    1292948 
+ init_drc        28077       0         0        0    1292948 
+ init_power      28077       0         0        0    1292948 
+ p_rem_buf       28059       0         0        0    1292861 
+ p_rem_inv       28050       0         0        0    1292886 
+ p_merge_bi      28028       0         0        0    1292392 
+ glob_power      28028       0         0        0    1284120 
+ power_down      28026       0         0        0    1277408 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      28026       0         0        0    1277408 
+ init_drc        28026       0         0        0    1277408 
+ init_power      28026       0         0        0    1277408 
+ glob_power      28026       0         0        0    1277398 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      28026       0         0        0    1277398 
+ init_drc        28026       0         0        0    1277398 
+ init_power      28026       0         0        0    1277398 
+
+  Done mapping NRISC_UP
+  Synthesis succeeded.
+Runtime & Memory after incremental synthesis
+===========================================
+The RUNTIME after INCREMENTAL is 58 secs
+and the MEMORY_USAGE after INCREMENTAL is 111.98 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'NRISC_UP'
+
+No empty modules in design 'NRISC_UP'
+
+ Unloaded Pin(s), Port(s)
+ -------------------------
+No unloaded sequential element in 'NRISC_UP'
+
+design 'NRISC_UP' has the following unloaded port(s)
+/designs/NRISC_UP/ports_in/CORE_ctrl[0]
+/designs/NRISC_UP/ports_in/CORE_ctrl[1]
+/designs/NRISC_UP/ports_in/CORE_ctrl[2]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[16]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[17]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[18]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[19]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[20]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[21]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[22]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[23]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[24]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[25]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[26]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[27]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[28]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[29]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[30]
+/designs/NRISC_UP/ports_in/IDATA_CORE_out[31]
+Total number of unloaded ports in design 'NRISC_UP' : 19
+
+ Assigns
+ ------- 
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[4]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[3]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[2]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_DATA_ADDR_mux' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[7]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[6]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[5]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[4]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[3]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[2]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_ctrl[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_ctrl[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[31]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[30]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[29]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[28]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[27]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[26]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[25]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[24]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[23]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[22]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[21]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[20]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[19]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[18]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[17]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[16]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[15]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[14]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[13]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[12]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[11]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[10]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[9]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[8]' in subdesign NRISC_PC_ctrl
+Total number of assign statements in design 'NRISC_UP' : 40
+
+ Undriven Port(s)/Pin(s)
+ ------------------------
+The following combinational pin(s) in design 'NRISC_UP' are undriven
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10313/pins_in/B3
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10544/pins_in/S
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10547/pins_in/B
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10591/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10600/pins_in/A
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10603/pins_in/A
+Total number of combinational undriven pins in design 'NRISC_UP' : 6
+
+No undriven sequential pin in 'NRISC_UP'
+
+No undriven hierarchical pin in 'NRISC_UP'
+
+The following port(s) in design 'NRISC_UP' are undriven
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[0]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[1]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[2]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[3]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[4]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[5]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[6]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[7]}
+Total number of undriven port(s) in design 'NRISC_UP' : 8
+
+ Multidriven Port(s)/Pin(s)
+--------------------------
+
+No multidriven combinational pin in 'NRISC_UP'
+
+No multidriven sequential pin in 'NRISC_UP'
+
+No multidriven hierarchical pin in 'NRISC_UP'
+
+No multidriven ports in 'NRISC_UP'
+
+  Constant Pin(s)
+  ----------------
+No constant combinational pin(s) in design 'NRISC_UP'
+
+No constant sequential pin(s) in design 'NRISC_UP'
+
+design 'NRISC_UP' has the following constant input hierarchical pin(s)
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[0]
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[1]
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[2]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[10]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[11]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[12]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[13]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[14]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[15]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[16]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[17]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[18]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[19]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[20]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[21]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[22]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[23]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[24]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[25]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[26]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[27]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[28]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[29]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[30]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[31]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[8]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[9]
+Total number of constant hierarchical pins in design 'NRISC_UP' : 27
+
+No constant connected ports in design 'NRISC_UP'
+
+  Preserved instances(s)
+  ----------------
+No preserved combinational instance(s) in design 'NRISC_UP'
+No preserved sequential instance(s) in design 'NRISC_UP'
+No preserved hierarchical instance(s) in design 'NRISC_UP'
+
+Libcells with no corresponding LEF
+----------------------------------
+No libcell(s) found.
+
+LEF cells with no corresponding libcell
+---------------------------------------
+
+No physical (LEF) cells found.
+
+ Summary
+ ------- 
+
+                Name                 Total 
+-------------------------------------------
+Unresolved References                    0 
+Empty Modules                            0 
+Unloaded Port(s)                        19 
+Unloaded Sequential Pin(s)               0 
+Assigns                                 40 
+Undriven Port(s)                         8 
+Undriven Leaf Pin(s)                     6 
+Undriven hierarchical pin(s)             0 
+Multidriven Port(s)                      0 
+Multidriven Leaf Pin(s)                  0 
+Multidriven hierarchical Pin(s)          0 
+Constant Port(s)                         0 
+Constant Leaf Pin(s)                     0 
+Constant hierarchical Pin(s)            27 
+Preserved leaf instance(s)               0 
+Preserved hierarchical instance(s)       0 
+Libcells with no LEF cell                0 
+Physical (LEF) cells with no libcell     0 
+
+  Done Checking the design.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 03 2018  12:14:31 AM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+Timing
+------
+
+  Cost    Critical       Violating 
+ Group   Path Slack TNS    Paths   
+-----------------------------------
+default        45.8   0          0 
+-----------------------------------
+Total                 0          0 
+
+Instance Count
+--------------
+
+Leaf Instance Count            4753 
+Sequential Instance Count       844 
+Combinational Instance Count   3909 
+Hierarchical Instance Count       8 
+
+Area & Power
+------------
+Total Area                         28026.440
+Cell Area                          8509.340
+Leakage Power                      70.350 uW
+Dynamic Power                      1172.947 uW
+Total Power                        1243.297 uW
+
+
+Max Fanout                         842 (clk)
+Min Fanout                         0 (n_135)
+Average Fanout                     3.0
+Terms to net ratio                 3.3
+Terms to instance ratio            3.9
+Runtime                            60 seconds
+Hostname                           localhost
+Final Runtime & Memory.
+===========================================
+The RUNTIME after FINAL is 60 secs
+and the MEMORY_USAGE after FINAL is 111.98 MB
+===========================================
+============================
+Synthesis Finished .........
+============================
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 03 2018  12:14:32 AM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  4753    70.350  1172.947  1243.297 
+  REGs    3074    48.421   636.645   685.066 
+  ULA      961    10.035   116.058   126.094 
+  PC       220     4.116    59.239    63.355 
+  ID       278     3.206    48.000    51.206 
+

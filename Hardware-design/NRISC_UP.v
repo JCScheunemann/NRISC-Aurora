@@ -22,6 +22,11 @@ DDATA_CORE_ctrl,
 CORE_ctrl,
 INTERRUPT_ch,
 INTERRUPT_flag,
+CORE_WB,
+CORE_CO_op,
+CORE_CO_A,
+CORE_CO_B,
+CORE_CO_In,
 clk,											//Main clk source
 rst
 );
@@ -39,6 +44,8 @@ parameter ADDR_TAM  =`N_IData;
 
 input wire clk;
 input wire rst;
+
+
 //-------------portas de entrada------------------------------------------------------------------
  wire [TAM-1:0] ULA_A;
  wire [TAM-1:0] ULA_B;
@@ -109,6 +116,22 @@ input wire rst;
   input wire [7:0] INTERRUPT_ch;
   input  wire INTERRUPT_flag;
 
+  //WB
+  output  wire CORE_WB;
+  //CO-Processador
+  wire CORE_CO_ld;
+  output wire CORE_CO_op;
+  output wire [TAM-1:0] CORE_CO_A;
+  output wire [TAM-1:0] CORE_CO_B;
+  input wire [TAM-1:0] CORE_CO_In;
+  assign  CORE_CO_A=ULA_A;
+  assign  CORE_CO_B=ULA_B;
+
+
+//clk gating
+wire CLK;
+assign CLK= clk&(~CORE_ctrl[0]);
+
 
 // Pipeline ID
   reg [7:0] InstructionIN;
@@ -126,12 +149,12 @@ input wire rst;
   //WB Pipeline regs
   reg [3:0] REG_RFD_wb_pipe;
   reg REG_Write_wb_pipe;
-  wire [TAM-1:0] REG_RD_wb_pipe = CORE_DATA_REGMux_exec_pipe ? DDATA_CORE_out : ULA_out_exec_pipe;
+  wire [TAM-1:0] REG_RD_wb_pipe = CORE_DATA_REGMux_exec_pipe ? DDATA_CORE_out : CORE_CO_ld ? CORE_CO_In :  ULA_out_exec_pipe;
 
-  always @ ( negedge clk ) begin
+  always @ ( negedge CLK ) begin
     REG_Write_wb_pipe=REG_Write_exec_pipe;
   end
-  always @ ( posedge clk ) begin
+  always @ ( posedge CLK ) begin
     //WB Pipeline
     REG_RFD_wb_pipe= REG_RFD_exec_pipe;
     //EXEC pipeline
@@ -165,7 +188,7 @@ NRISC_PC_ctrl PC(
                 .REG_R1(REG_R1),
                 .INTERRUPT_ch(INTERRUPT_ch),
                 .INTERRUPT_flag(INTERRUPT_flag),
-                .clk(clk),
+                .clk(CLK),
                 .rst(rst)
                 );
 
@@ -191,7 +214,10 @@ NRISC_InstructionDecoder ID(
 								.CORE_PC_ctrl(CORE_PC_ctrl),							//CORE to PC ctrl MUX
 								.CORE_INT_CHA(CORE_INT_CHA),							//CORE to interrupt vector channel
 								.CORE_INT_ctrl(CORE_INT_ctrl),						//CORE to interrupt vector control
-								.clk(clk),											//Main clk source
+                .CORE_WB(CORE_WB),
+                .CORE_CO_ld(CORE_CO_ld),
+                .CORE_CO_op(CORE_CO_op),
+								.clk(CLK),											//Main clk source
 								.rst(rst)												//general rst
 								);
 
@@ -205,7 +231,7 @@ NRISC_REGs REGs(
                     .REG_R1(REG_R1),
                     .REG_Write(REG_Write_wb_pipe),
                     .REG_Interrupt_flag(INTERRUPT_flag),
-                    .clk(clk),
+                    .clk(CLK),
                     .rst(rst)
                     );
 
@@ -224,7 +250,7 @@ module NRISC_UP_Full(
 IDATA_PROG_data,
 IDATA_PROG_addr,
 IDATA_PROG_write,
-DDATA_BUS_in, 
+DDATA_BUS_in,
 DDATA_BUS_out,
 DDATA_BUS_addr,
 DDATA_BUS_write,

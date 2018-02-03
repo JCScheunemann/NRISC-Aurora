@@ -37,6 +37,9 @@ module NRISC_InstructionDecoder(
 								CORE_PC_ctrl,					//CORE to PC ctrl MUX
 								CORE_INT_CHA,					//CORE to interrupt vector channel
 								CORE_INT_ctrl,					//CORE to interrupt vector control
+								CORE_WB,
+								CORE_CO_ld,
+								CORE_CO_op,
 								clk,							//Main clk source
 								rst								//general rst
 								);
@@ -72,6 +75,11 @@ module NRISC_InstructionDecoder(
 		//Interrupt Vector
 		output reg [7:0] CORE_INT_CHA ;
 		output reg [1:0] CORE_INT_ctrl ;
+		//WB
+		output reg CORE_WB;
+		//Co processor
+		output reg CORE_CO_ld;
+		output reg CORE_CO_op;
 
 		reg [3:0] old_rd,old_rd1;
 		reg rd_old_write;
@@ -204,6 +212,9 @@ module NRISC_InstructionDecoder(
 
 														end
 												endcase
+												//Co-proc Operations
+												CORE_CO_ld=0;
+												CORE_CO_op=0;
 										end
 										//=====================Desvio de fluxo======================
 										3'h1:begin
@@ -276,37 +287,41 @@ module NRISC_InstructionDecoder(
 											CORE_DATA_ADDR_mux=1'b0;//DATA addr receive ULA_OUT
 											//Interrupt Operations
 											CORE_INT_ctrl=2'b00; //no interrupt operations
+											//Co-proc Operations
+											CORE_CO_ld=0;
+											CORE_CO_op=0;
 										end
 
 										//========================DATA MOV==========================
 										3'h2:begin // LOAD's(MOV,LW,LSB,LUB,LSHW & LUHW)
-												case(CORE_InstructionIN[3:0])
-														4'h0:begin//MOV
+												CORE_WB=CORE_InstructionIN[3];
+												case(CORE_InstructionIN[2:0])
+														3'h0:begin//MOV
 																CORE_DATA_load=1'b0;	//No Data load
 																CORE_DATA_REGMux=1'b0;//REGs receive ULA_OUT
 																//CORE_DATA_ctrl=3'b0;
 															end
-														4'h1:begin//LW
+														3'h1:begin//LW
 																CORE_DATA_load=1'b1;	//yes Data load
 																CORE_DATA_REGMux=1'b1;//REGs receive DATA_out
 																CORE_DATA_ctrl=3'b0; //Load Word
 															end
-														4'h2:begin//LSB
+														3'h2:begin//LSB
 																CORE_DATA_load=1'b1;	//yes Data load
 																CORE_DATA_REGMux=1'b1;//REGs receive DATA_out
 																CORE_DATA_ctrl=3'b101; //Load signed byte
 															end
-														4'h3:begin//LUB
+														3'h3:begin//LUB
 																CORE_DATA_load=1'b1;	//yes Data load
 																CORE_DATA_REGMux=1'b1;//REGs receive DATA_out
 																CORE_DATA_ctrl=3'b001; //Load unsigned byte
 															end
-														4'h4:begin//LSHW
+														3'h4:begin//LSHW
 																CORE_DATA_load=1'b1;	//yes Data load
 																CORE_DATA_REGMux=1'b1;//REGs receive DATA_out
 																CORE_DATA_ctrl=3'b110; //Load signed half Word
 															end
-														4'h5:begin//LUHW
+														3'h5:begin//LUHW
 																CORE_DATA_load=1'b1;	//yes Data load
 																CORE_DATA_REGMux=1'b1;//REGs receive DATA_out
 																CORE_DATA_ctrl=3'b010; //Load unsigned half Word
@@ -333,18 +348,20 @@ module NRISC_InstructionDecoder(
 												CORE_STACK_ctrl=2'b00;// No STACK operation
 												//PC Operations
 												CORE_PC_ctrl=2'b0;	//normal operation (PC=PC+1)
+												//Co-proc Operations
+												CORE_CO_ld=0;
+												CORE_CO_op=0;
 												end
 										3'h3:begin // STORE's
+											CORE_WB=CORE_InstructionIN[11];
+											if(CORE_InstructionIN[10:8]==3'h7) CORE_DATA_ctrl=3'b111;
+											else
 												case(CORE_InstructionIN[11:10])
-														4'h0://SB
+														1'h0://SB
 																CORE_DATA_ctrl={1'b0,CORE_InstructionIN[9:8]};//Store Byte N
 
-														4'h1:
+														1'h1:
 																CORE_DATA_ctrl={2'b10,CORE_InstructionIN[8]};
-
-														4'h2:
-																CORE_DATA_ctrl=3'b111; //Load signed byte
-
 												endcase
 												//CORE Operations
 												//CORE_Status=2'b00;	//Normal operation
@@ -370,6 +387,9 @@ module NRISC_InstructionDecoder(
 												CORE_STACK_ctrl=2'b00;// No STACK operation
 												//PC Operations
 												CORE_PC_ctrl=2'b0;	//normal operation (PC=PC+1)
+												//Co-proc Operations
+												CORE_CO_ld=0;
+												CORE_CO_op=0;
 										end
 										3'h4:begin //LOAD's Imediate
 
@@ -397,8 +417,16 @@ module NRISC_InstructionDecoder(
 												CORE_STACK_ctrl=2'b00;// No STACK operation
 												//PC Operations
 												CORE_PC_ctrl=2'b0;	//normal operation (PC=PC+1)
+												//Co-proc Operations
+												CORE_CO_ld=0;
+												CORE_CO_op=0;
 										end
 										//========================EXTENSION=========================
+										4'h5,4'h6,4'h7: begin
+												CORE_CO_ld=1;
+												CORE_CO_op=1;
+										end
+
 									endcase
 								end
 
@@ -406,6 +434,9 @@ module NRISC_InstructionDecoder(
 						1'b1:begin//ULA Operation
 									//CORE Operations
 									//CORE_Status=2'b00;	//Normal operation
+									//Co-proc Operations
+									CORE_CO_ld=0;
+									CORE_CO_op=0;
 									//REGs Operations
 									CORE_REG_RD={1'b1,CORE_InstructionIN[10:8]};
 									CORE_REG_RF1=CORE_InstructionIN[7:4];

@@ -1,1 +1,1 @@
-`define TAM 16 
+`define TAM 32 

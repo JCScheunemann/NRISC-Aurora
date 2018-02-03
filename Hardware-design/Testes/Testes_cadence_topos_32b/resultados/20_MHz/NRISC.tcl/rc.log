@@ -82,18 +82,18 @@ called '~/.cadence/.synth_init'.
 Send us feedback at rc_feedback@cadence.com.
 ======================================================================================================================================================
 
-Sourcing './NRISC.tcl' (Fri Feb 02 23:00:21 -02 2018)...
+Sourcing './NRISC.tcl' (Sat Feb 03 15:53:34 -02 2018)...
 model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
 model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
 model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
 model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
-cpu MHz		: 3103.750
-cpu MHz		: 2479.851
-cpu MHz		: 2920.429
-cpu MHz		: 2999.953
+cpu MHz		: 2959.531
+cpu MHz		: 2959.632
+cpu MHz		: 2990.406
+cpu MHz		: 2959.632
 Hostname : localhost
-Sourcing '/tools/cadence/soc81/tools/lib/etc/load_etc.tcl' (Fri Feb 02 23:00:21 -02 2018)...
-Sourcing '/tools/cadence/soc81/tools/lib/etc/toolbox/insert_io_buffers.tcl' (Fri Feb 02 23:00:21 -02 2018)...
+Sourcing '/tools/cadence/soc81/tools/lib/etc/load_etc.tcl' (Sat Feb 03 15:53:34 -02 2018)...
+Sourcing '/tools/cadence/soc81/tools/lib/etc/toolbox/insert_io_buffers.tcl' (Sat Feb 03 15:53:34 -02 2018)...
 
 
 
@@ -205,13 +205,13 @@ Info    : Processing multi-dimensional arrays. [CDFG-250]
 Info    : Processing multi-dimensional arrays. [CDFG-250]
         : Variable 'PC_STACK' in module 'NRISC_PC_ctrl' in file '../../NRISC_PC_ctrl.v' on line 52.
 Warning : Connection width mismatch. [CDFG-420]
-        : Actual width 32 does not match port width 16 for port number 1 ('IDATA_CORE_out') of module 'NRISC_PC_ctrl' in file '../../NRISC_UP.v' on line 157.
+        : Actual width 32 does not match port width 16 for port number 1 ('IDATA_CORE_out') of module 'NRISC_PC_ctrl' in file '../../NRISC_UP.v' on line 180.
     Elaborating block 'NRISC_InstructionDecoder' from file '../../NRISC_InstructionDecoder.v'.
 Warning : Removing unused register. [CDFG-508]
-        : Removing unused register 'rd_old_write' in module 'NRISC_InstructionDecoder' in file '../../NRISC_InstructionDecoder.v' on line 82.
+        : Removing unused register 'rd_old_write' in module 'NRISC_InstructionDecoder' in file '../../NRISC_InstructionDecoder.v' on line 90.
         : A flip-flop or latch that was inferred for an unused signal or variable was removed. Use 'set_attribute hdl_preserve_unused_registers true /' to preserve the flip-flop or latch.
 Info    : Unused module input port. [CDFG-500]
-        : Input port 'CORE_ctrl' is not used in module 'NRISC_InstructionDecoder' in file '../../NRISC_InstructionDecoder.v' on line 47.
+        : Input port 'CORE_ctrl' is not used in module 'NRISC_InstructionDecoder' in file '../../NRISC_InstructionDecoder.v' on line 50.
         : The value of the input port is not used within the design.
     Elaborating block 'NRISC_REGs' from file '../../NRISC_REGs.v'.
 Info    : Processing multi-dimensional arrays. [CDFG-250]
@@ -248,23 +248,23 @@ Warning : Undriven signal detected. [ELABUTL-125]
 Warning : Undriven signal detected. [ELABUTL-125]
         : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 106, column 122.
 Warning : Removing unused register. [CDFG-508]
-        : Removing unused register 'CORE_DATA_write_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+        : Removing unused register 'CORE_DATA_write_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 157.
 Warning : Removing unused register. [CDFG-508]
-        : Removing unused register 'CORE_DATA_load_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+        : Removing unused register 'CORE_DATA_load_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 157.
 Warning : Removing unused register. [CDFG-508]
-        : Removing unused register 'CORE_DATA_ctrl_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+        : Removing unused register 'CORE_DATA_ctrl_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 157.
 Warning : Removing unused register. [CDFG-508]
-        : Removing unused register 'CORE_DATA_ADDR_mux_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+        : Removing unused register 'CORE_DATA_ADDR_mux_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 157.
 Warning : Removing unused register. [CDFG-508]
-        : Removing unused register 'REG_RFD_wb_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 134.
+        : Removing unused register 'REG_RFD_wb_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 157.
 Warning : Undriven module output port. [ELABUTL-123]
-        : Undriven bits of output port 'DDATA_CORE_addr' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 95, column 44.
+        : Undriven bits of output port 'DDATA_CORE_addr' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 102, column 44.
         : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
   Done elaborating 'NRISC_UP'.
 Runtime & Memory after 'read_hdl'
 ===========================================
-The RUNTIME after Elaboration is 4 secs
-and the MEMORY_USAGE after Elaboration is 71.13 MB
+The RUNTIME after Elaboration is 7 secs
+and the MEMORY_USAGE after Elaboration is 71.20 MB
 ===========================================
   Checking the design.
 
@@ -307,8 +307,11 @@ Usage: external_delay  ( -input <delay {r f R F} in picoseconds> | -output <del
         external delay name 
     <pin|port>+:
         object(s) 
+Warning : Message truncated because it exceeds the maximum length of 4K. [MESG-6]
+        : Message truncated to length 4K from 5624
+        : Messages should be maximum 4K in size.
 Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
-        : The TCL interpreter encountered the following error while processing line '11' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -output 10 {{/designs/NRISC_UP/ports_out/IDATA_CORE_addr[7]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[6]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[5]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[4]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[3]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[2]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[1]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[0]} /designs/NRISC_UP/ports_out/IDATA_CORE_clk {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[7]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[6]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[5]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[4]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[3]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[0]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[31]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[30]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[29]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[28]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[27]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[26]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[25]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[24]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[23]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[22]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[21]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[20]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[19]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[18]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[17]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[16]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[15]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[14]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[13]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[12]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[11]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[10]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[9]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[8]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[7]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[6]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[5]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[4]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[3]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[0]} /designs/NRISC_UP/ports_out/DDATA_CORE_load /designs/NRISC_UP/ports_out/DDATA_CORE_write {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[0]}}.
+        : The TCL interpreter encountered the following error while processing line '11' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -output 10 {{/designs/NRISC_UP/ports_out/IDATA_CORE_addr[7]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[6]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[5]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[4]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[3]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[2]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[1]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[0]} /designs/NRISC_UP/ports_out/IDATA_CORE_clk {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[7]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[6]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[5]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[4]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[3]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[0]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[31]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[30]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[29]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[28]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[27]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[26]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[25]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[24]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[23]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[22]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[21]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[20]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[19]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[18]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[17]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[16]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[15]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[14]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[13]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[12]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[11]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[10]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[9]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[8]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[7]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[6]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[5]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[4]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[3]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[0]} /designs/NRISC_UP/ports_out/DDATA_CORE_load /designs/NRISC_UP/ports_out/DDATA_CORE_write {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[0]} /designs/NRISC_UP/ports_out/CORE_WB /designs/NRISC_UP/ports_out/CORE_CO_op {/designs/NRISC_UP/ports_out/CORE_CO_A[31]} {/designs/NRISC_UP/ports_out/CORE_CO_A[30]} {/designs/NRISC_UP/ports_out/CORE_CO_A[29]} {/designs/NRISC_UP/ports_out/CORE_CO_A[28]} {/designs/NRISC_UP/ports_out/CORE_CO_A[27]} {/designs/NRISC_UP/ports_out/CORE_CO_A[26]} {/designs/NRISC_UP/ports_out/CORE_CO_A[25]} {/designs/NRISC_UP/ports_out/CORE_CO_A[24]} {/designs/NRISC_UP/ports_out/CORE_CO_A[23]} {/designs/NRISC_UP/ports_out/CORE_CO_A[22]} {/designs/NRISC_UP/ports_out/CORE_CO_A[21]} {/designs/NRISC_UP/ports_out/CORE_CO_A[20]} {/designs/NRISC_UP/ports_out/CORE_CO_A[19]} {/designs/NRISC_UP/ports_out/CORE_CO_A[18]} {/designs/NRISC_UP/ports_out/CORE_CO_A[17]} {/designs/NRISC_UP/ports_out/CORE_CO_A[16]} {/designs/NRISC_UP/ports_out/CORE_CO_A[15]} {/designs/NRISC_UP/ports_out/CORE_CO_A[14]} {/designs/NRISC_UP/ports_out/CORE_CO_A[13]} {/designs/NRISC_UP/ports_out/CORE_CO_A[12]} {/designs/NRISC_UP/ports_out/CORE_CO_A[11]} {/designs/NRISC_UP/ports_out/CORE_CO_A[10]} {/designs/NRISC_UP/ports_out/CORE_CO_A[9]} {/designs/NRISC_UP/ports_out/CORE_CO_A[8]} {/designs/NRISC_UP/ports_out/CORE_CO_A[7]} {/designs/NRISC_UP/ports_out/CORE_CO_A[6]} {/designs/NRISC_UP/ports_out/CORE_CO_A[5]} {/designs/NRISC_UP/ports_out/CORE_CO_A[4]} {/designs/NRISC_UP/ports_out/CORE_CO_A[3]}
         : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
 Error   : A required object parameter could not be found. [TUI-61] [external_delay]
         : An object of type 'clock' named '' could not be found.
@@ -338,8 +341,10 @@ Usage: external_delay  ( -input <delay {r f R F} in picoseconds> | -output <del
         external delay name 
     <pin|port>+:
         object(s) 
+Warning : Message truncated because it exceeds the maximum length of 4K. [MESG-6]
+        : Message truncated to length 4K from 5203
 Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
-        : The TCL interpreter encountered the following error while processing line '12' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -input 10 {{/designs/NRISC_UP/ports_in/IDATA_CORE_out[31]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[30]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[29]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[28]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[27]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[26]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[25]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[24]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[23]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[22]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[21]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[20]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[19]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[18]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[17]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[16]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[15]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[14]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[13]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[12]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[11]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[10]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[9]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[8]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[7]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[6]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[5]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[4]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[3]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[2]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[1]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[0]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[31]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[30]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[29]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[28]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[27]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[26]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[25]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[24]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[23]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[22]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[21]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[20]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[19]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[18]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[17]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[16]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[15]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[14]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[13]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[12]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[11]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[10]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[9]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[8]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[7]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[6]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[5]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[4]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[3]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[2]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[1]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[0]} {/designs/NRISC_UP/ports_in/CORE_ctrl[2]} {/designs/NRISC_UP/ports_in/CORE_ctrl[1]} {/designs/NRISC_UP/ports_in/CORE_ctrl[0]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[7]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[6]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[5]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[4]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[3]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[2]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[1]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[0]} /designs/NRISC_UP/ports_in/INTERRUPT_flag /designs/NRISC_UP/ports_in/clk /designs/NRISC_UP/ports_in/rst}.
+        : The TCL interpreter encountered the following error while processing line '12' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -input 10 {{/designs/NRISC_UP/ports_in/IDATA_CORE_out[31]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[30]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[29]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[28]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[27]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[26]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[25]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[24]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[23]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[22]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[21]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[20]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[19]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[18]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[17]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[16]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[15]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[14]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[13]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[12]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[11]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[10]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[9]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[8]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[7]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[6]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[5]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[4]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[3]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[2]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[1]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[0]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[31]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[30]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[29]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[28]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[27]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[26]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[25]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[24]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[23]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[22]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[21]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[20]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[19]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[18]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[17]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[16]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[15]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[14]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[13]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[12]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[11]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[10]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[9]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[8]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[7]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[6]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[5]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[4]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[3]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[2]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[1]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[0]} {/designs/NRISC_UP/ports_in/CORE_ctrl[2]} {/designs/NRISC_UP/ports_in/CORE_ctrl[1]} {/designs/NRISC_UP/ports_in/CORE_ctrl[0]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[7]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[6]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[5]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[4]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[3]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[2]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[1]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[0]} /designs/NRISC_UP/ports_in/INTERRUPT_flag {/designs/NRISC_UP/ports_in/CORE_CO_In[31]} {/designs/NRISC_UP/ports_in/CORE_CO_In[30]} {/designs/NRISC_UP/ports_in/CORE_CO_In[29]} {/designs/NRISC_UP/ports_in/CORE_CO_In[28]} {/designs/NRISC_UP/ports_in/CORE_CO_In[27]} {/designs/NRISC_UP/ports_in/CORE_CO_In[26]} {/designs/NRISC_UP/ports_in/CORE_CO_In[25]} {/designs/NRISC_UP/ports_in/CORE_CO_In[24]} {
 Statistics for commands executed by read_sdc:
  "all_inputs"              - successful      1 , failed      0 (runtime  0.00)
  "all_outputs"             - successful      1 , failed      0 (runtime  0.00)
@@ -355,7 +360,7 @@ The number of exceptions is 0
         Computing arrivals and requireds.
 ============================================================
   Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
-  Generated on:           Feb 02 2018  11:00:24 PM
+  Generated on:           Feb 03 2018  03:53:40 PM
   Module:                 NRISC_UP
   Technology library:     NangateOpenCellLibrary revision 1.0
   Operating conditions:   typical 
@@ -369,10 +374,10 @@ timing paths leading from the ports have no timing constraints derived from
 clock waveforms.  The'external_delay' command is used to create new external    
 delays.                                                                         
 
-/designs/NRISC_UP/ports_in/CORE_ctrl[0]
-/designs/NRISC_UP/ports_in/CORE_ctrl[1]
-/designs/NRISC_UP/ports_in/CORE_ctrl[2]
-  ... 74 other warnings in this category.
+/designs/NRISC_UP/ports_in/CORE_CO_In[0]
+/designs/NRISC_UP/ports_in/CORE_CO_In[10]
+/designs/NRISC_UP/ports_in/CORE_CO_In[11]
+  ... 106 other warnings in this category.
  Use the -verbose option for more details.
 -------------------------------------------------------------------------------
 
@@ -381,10 +386,10 @@ The following primary outputs have no clocked external delays.  As a result the
 timing paths leading to the ports have no timing constraints derived from clock 
 waveforms.  The'external_delay' command is used to create new external delays.  
 
-/designs/NRISC_UP/ports_out/DDATA_CORE_addr[0]
-/designs/NRISC_UP/ports_out/DDATA_CORE_addr[1]
-/designs/NRISC_UP/ports_out/DDATA_CORE_addr[2]
-  ... 51 other warnings in this category.
+/designs/NRISC_UP/ports_out/CORE_CO_A[0]
+/designs/NRISC_UP/ports_out/CORE_CO_A[10]
+/designs/NRISC_UP/ports_out/CORE_CO_A[11]
+  ... 117 other warnings in this category.
  Use the -verbose option for more details.
 -------------------------------------------------------------------------------
 
@@ -397,15 +402,15 @@ waveforms.  The'external_delay' command is used to create new external delays.
 Cannot open "./multiplication.vcd"
 ---------------------------------------------------------------
 Asserted primary inputs in design         : 0 (0.00%)
-Total connected primary inputs in design  : 62 (100.00%)
+Total connected primary inputs in design  : 94 (100.00%)
 ---------------------------------------------------------------
 Asserted sequential outputs               : 0 (0.00%)
-Total connected sequential outputs        : 860 (100.00%)
+Total connected sequential outputs        : 863 (100.00%)
 ------------------------------------------------------------------------------------
-Total nets in design                      : 18639 (100.00%)
+Total nets in design                      : 18851 (100.00%)
 Nets asserted                             : 0 (0.00%)
 Constant nets                             : 10 (0.05)
-Nets with no assertions                   : 18639 (100.00%)
+Nets with no assertions                   : 18851 (100.00%)
 ------------------------------------------------------------------------------------
 Warning : Did not find power models for RTL power analysis. [PA-17]
         : Design /designs/NRISC_UP has no power models available.
@@ -480,15 +485,15 @@ metal10     V          0.800000
 Info    : Deleting instances not driving any primary outputs. [GLO-32]
         : Deleting 23 hierarchical instances. 
 Following instances are deleted as they do not drive any primary output:
-'ID/mux_CORE_DATA_ADDR_mux_83_7', 'ID/mux_CORE_DATA_REGMux_83_7', 
-'ID/mux_CORE_DATA_ctrl_83_7', 'ID/mux_CORE_INT_CHA_83_7', 
-'ID/mux_CORE_INT_ctrl_83_7', 'ID/mux_CORE_InstructionToULAMux_83_7', 
-'ID/mux_CORE_PC_ctrl_83_7', 'ID/mux_CORE_REG_RD_83_7', 
-'ID/mux_CORE_REG_RF1_83_7', 'ID/mux_CORE_REG_RF2_83_7', 
-'ID/mux_CORE_REG_write_83_7', 'ID/mux_CORE_STACK_ctrl_83_7', 
-'ID/mux_CORE_Status_ctrl_83_7', 'ID/mux_CORE_ULA_REGA_Stall_83_7', 
-'ID/mux_CORE_ULA_REGB_Stall_83_7', 'ID/mux_CORE_ULA_ctrl_83_7', 
-'ID/mux_old_rd1_83_7', 'ID/mux_old_rd_449_7', 'PC/mux_ADDR_stack[0]_66_8', 
+'ID/mux_CORE_DATA_ADDR_mux_91_7', 'ID/mux_CORE_DATA_REGMux_91_7', 
+'ID/mux_CORE_DATA_ctrl_91_7', 'ID/mux_CORE_INT_CHA_91_7', 
+'ID/mux_CORE_INT_ctrl_91_7', 'ID/mux_CORE_InstructionToULAMux_91_7', 
+'ID/mux_CORE_PC_ctrl_91_7', 'ID/mux_CORE_REG_RD_91_7', 
+'ID/mux_CORE_REG_RF1_91_7', 'ID/mux_CORE_REG_RF2_91_7', 
+'ID/mux_CORE_REG_write_91_7', 'ID/mux_CORE_STACK_ctrl_91_7', 
+'ID/mux_CORE_Status_ctrl_91_7', 'ID/mux_CORE_ULA_REGA_Stall_91_7', 
+'ID/mux_CORE_ULA_REGB_Stall_91_7', 'ID/mux_CORE_ULA_ctrl_91_7', 
+'ID/mux_old_rd1_91_7', 'ID/mux_old_rd_480_7', 'PC/mux_ADDR_stack[0]_66_8', 
 'PC/mux_ADDR_stack[1]_66_8', 'PC/mux_PC_STACK[0]_66_8', 
 'PC/mux_PC_pointer_66_8', 'PC/mux_delay_66_8'.
         : To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
@@ -517,9 +522,9 @@ Following instances are deleted as they do not drive any primary output:
 Info    : Deleting instances not driving any primary outputs. [GLO-32]
         : Deleting 6 hierarchical instances. 
 Following instances are deleted as they do not drive any primary output:
-'ID/mux_CORE_INT_ctrl_106_10', 'ID/mux_CORE_INT_ctrl_108_15', 
-'ID/mux_CORE_INT_ctrl_110_18', 'ID/mux_CORE_INT_ctrl_114_22', 
-'ID/mux_CORE_Status_ctrl_118_26', 'ID/mux_CORE_Status_ctrl_135_26'.
+'ID/mux_CORE_INT_ctrl_114_10', 'ID/mux_CORE_INT_ctrl_116_15', 
+'ID/mux_CORE_INT_ctrl_118_18', 'ID/mux_CORE_INT_ctrl_122_22', 
+'ID/mux_CORE_Status_ctrl_126_26', 'ID/mux_CORE_Status_ctrl_143_26'.
 Mapping NRISC_UP to gates.
       Mapping 'NRISC_UP'...
         Preparing the circuit
@@ -529,48 +534,60 @@ Mapping NRISC_UP to gates.
         Done preparing the circuit
           Structuring (delay-based) NRISC_UP...
           Done structuring (delay-based) NRISC_UP
+          Structuring (delay-based) logic partition in NRISC_UP...
+          Done structuring (delay-based) logic partition in NRISC_UP
+        Mapping logic partition in NRISC_UP...
+          Structuring (delay-based) logic partition in NRISC_UP...
+          Done structuring (delay-based) logic partition in NRISC_UP
+        Mapping logic partition in NRISC_UP...
           Structuring (delay-based) logic partition in NRISC_PC_ctrl...
           Done structuring (delay-based) logic partition in NRISC_PC_ctrl
         Mapping logic partition in NRISC_PC_ctrl...
           Structuring (delay-based) logic partition in NRISC_PC_ctrl...
           Done structuring (delay-based) logic partition in NRISC_PC_ctrl
         Mapping logic partition in NRISC_PC_ctrl...
-          Structuring (delay-based) cb_seq_2292...
-          Done structuring (delay-based) cb_seq_2292
-        Mapping component cb_seq_2292...
-          Structuring (delay-based) cb_oseq_2295...
-          Done structuring (delay-based) cb_oseq_2295
-        Mapping component cb_oseq_2295...
-          Structuring (delay-based) cb_oseq...
-          Done structuring (delay-based) cb_oseq
-        Mapping component cb_oseq...
-          Structuring (delay-based) cb_oseq_2297...
-          Done structuring (delay-based) cb_oseq_2297
-        Mapping component cb_oseq_2297...
+          Structuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done structuring (delay-based) logic partition in NRISC_PC_ctrl
+        Mapping logic partition in NRISC_PC_ctrl...
+          Structuring (delay-based) logic partition in NRISC_InstructionDecoder...
+          Done structuring (delay-based) logic partition in NRISC_InstructionDecoder
+        Mapping logic partition in NRISC_InstructionDecoder...
+          Structuring (delay-based) logic partition in NRISC_InstructionDecoder...
+          Done structuring (delay-based) logic partition in NRISC_InstructionDecoder
+        Mapping logic partition in NRISC_InstructionDecoder...
+          Structuring (delay-based) cb_seq_2319...
+          Done structuring (delay-based) cb_seq_2319
+        Mapping component cb_seq_2319...
+          Structuring (delay-based) cb_oseq_2322...
+          Done structuring (delay-based) cb_oseq_2322
+        Mapping component cb_oseq_2322...
+          Structuring (delay-based) cb_part_2333...
+          Done structuring (delay-based) cb_part_2333
+        Mapping component cb_part_2333...
           Structuring (delay-based) logic partition in NRISC_ULA...
           Done structuring (delay-based) logic partition in NRISC_ULA
         Mapping logic partition in NRISC_ULA...
         Rebalancing component 'rsh_81_25'...
         Rebalancing component 'lsh_84_25'...
         Rebalancing component 'rsh_78_25'...
-          Structuring (delay-based) cb_seq_2294...
-          Done structuring (delay-based) cb_seq_2294
-        Mapping component cb_seq_2294...
+          Structuring (delay-based) cb_seq_2321...
+          Done structuring (delay-based) cb_seq_2321
+        Mapping component cb_seq_2321...
           Structuring (delay-based) shift_right_vlog_unsigned...
           Done structuring (delay-based) shift_right_vlog_unsigned
         Mapping component shift_right_vlog_unsigned...
-          Structuring (delay-based) shift_right_vlog_unsigned_481...
-          Done structuring (delay-based) shift_right_vlog_unsigned_481
-        Mapping component shift_right_vlog_unsigned_481...
+          Structuring (delay-based) shift_right_vlog_unsigned_498...
+          Done structuring (delay-based) shift_right_vlog_unsigned_498
+        Mapping component shift_right_vlog_unsigned_498...
           Structuring (delay-based) shift_left_vlog_unsigned...
           Done structuring (delay-based) shift_left_vlog_unsigned
         Mapping component shift_left_vlog_unsigned...
           Structuring (delay-based) somaUla_TAM32...
           Done structuring (delay-based) somaUla_TAM32
         Mapping component somaUla_TAM32...
-          Structuring (delay-based) cb_part_2300...
-          Done structuring (delay-based) cb_part_2300
-        Mapping component cb_part_2300...
+          Structuring (delay-based) cb_part_2335...
+          Done structuring (delay-based) cb_part_2335
+        Mapping component cb_part_2335...
           Structuring (delay-based) logic partition in NRISC_UP...
           Done structuring (delay-based) logic partition in NRISC_UP
         Mapping logic partition in NRISC_UP...
@@ -590,10 +607,10 @@ Warning : Possible timing problems have been detected in this design. [TIM-11]
                                                             (fF)   (ps)    
 ---------------------------------------------------------------------------
 (clock clk)                 <<<  launch                            25000 F 
-cb_oseqi
+cb_parti483
   REG_Write_wb_pipe_reg/clk                                                
   REG_Write_wb_pipe_reg/q   (u)  unmapped_d_flop         2  10.0           
-cb_oseqi/REGs_REG_Write 
+cb_parti483/REGs_REG_Write 
 REGs/REG_Write 
   cb_seqi/REG_Write 
     g18337/in_0                                                            
@@ -615,7 +632,7 @@ REGs/REG_Write
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 (clock clk)                      capture                           50000 R 
 ---------------------------------------------------------------------------
-Start-point  : cb_oseqi/REG_Write_wb_pipe_reg/clk
+Start-point  : cb_parti483/REG_Write_wb_pipe_reg/clk
 End-point    : REGs/cb_seqi/USR_REGS_reg[0][8]/d
 
 (u) : Net has unmapped pin(s).
@@ -628,42 +645,42 @@ The global mapper estimates a slack for this path of 24556ps.
           Restructuring (delay-based) logic partition in NRISC_UP...
           Done restructuring (delay-based) logic partition in NRISC_UP
         Optimizing logic partition in NRISC_UP...
-          Restructuring (delay-based) cb_part_2300...
-          Done restructuring (delay-based) cb_part_2300
-        Optimizing component cb_part_2300...
-          Restructuring (delay-based) cb_seq_2294...
-          Done restructuring (delay-based) cb_seq_2294
-        Optimizing component cb_seq_2294...
+          Restructuring (delay-based) cb_part_2335...
+          Done restructuring (delay-based) cb_part_2335
+        Optimizing component cb_part_2335...
+          Restructuring (delay-based) cb_seq_2321...
+          Done restructuring (delay-based) cb_seq_2321
+        Optimizing component cb_seq_2321...
           Restructuring (delay-based) shift_right_vlog_unsigned...
           Done restructuring (delay-based) shift_right_vlog_unsigned
         Optimizing component shift_right_vlog_unsigned...
-        Early Area Reclamation for shift_right_vlog_unsigned 'very_fast' (slack=32459, area=240)...
+        Early Area Reclamation for shift_right_vlog_unsigned 'very_fast' (slack=32410, area=240)...
           Restructuring (delay-based) shift_right_vlog_unsigned...
           Done restructuring (delay-based) shift_right_vlog_unsigned
         Optimizing component shift_right_vlog_unsigned...
-        Pre-mapped Exploration for shift_right_vlog_unsigned 'slow' (slack=32514, area=235)...
+        Pre-mapped Exploration for shift_right_vlog_unsigned 'slow' (slack=32467, area=235)...
           Restructuring (delay-based) shift_right_vlog_unsigned...
           Done restructuring (delay-based) shift_right_vlog_unsigned
         Optimizing component shift_right_vlog_unsigned...
           Restructuring (delay-based) shift_left_vlog_unsigned...
           Done restructuring (delay-based) shift_left_vlog_unsigned
         Optimizing component shift_left_vlog_unsigned...
-        Early Area Reclamation for shift_left_vlog_unsigned 'very_fast' (slack=32876, area=240)...
+        Early Area Reclamation for shift_left_vlog_unsigned 'very_fast' (slack=32826, area=240)...
           Restructuring (delay-based) shift_left_vlog_unsigned...
           Done restructuring (delay-based) shift_left_vlog_unsigned
         Optimizing component shift_left_vlog_unsigned...
-        Pre-mapped Exploration for shift_left_vlog_unsigned 'slow' (slack=32931, area=235)...
+        Pre-mapped Exploration for shift_left_vlog_unsigned 'slow' (slack=32883, area=235)...
           Restructuring (delay-based) shift_left_vlog_unsigned...
           Done restructuring (delay-based) shift_left_vlog_unsigned
         Optimizing component shift_left_vlog_unsigned...
-          Restructuring (delay-based) shift_right_vlog_unsigned_481...
-          Done restructuring (delay-based) shift_right_vlog_unsigned_481
-        Optimizing component shift_right_vlog_unsigned_481...
-        Early Area Reclamation for shift_right_vlog_unsigned_481 'very_fast' (slack=32522, area=240)...
+          Restructuring (delay-based) shift_right_vlog_unsigned_498...
+          Done restructuring (delay-based) shift_right_vlog_unsigned_498
+        Optimizing component shift_right_vlog_unsigned_498...
+        Early Area Reclamation for shift_right_vlog_unsigned_498 'very_fast' (slack=32482, area=240)...
           Restructuring (delay-based) shift_right_vlog_unsigned...
           Done restructuring (delay-based) shift_right_vlog_unsigned
         Optimizing component shift_right_vlog_unsigned...
-        Pre-mapped Exploration for shift_right_vlog_unsigned_481 'slow' (slack=32519, area=227)...
+        Pre-mapped Exploration for shift_right_vlog_unsigned_498 'slow' (slack=32472, area=227)...
           Restructuring (delay-based) shift_right_vlog_unsigned...
           Done restructuring (delay-based) shift_right_vlog_unsigned
         Optimizing component shift_right_vlog_unsigned...
@@ -673,24 +690,36 @@ The global mapper estimates a slack for this path of 24556ps.
           Restructuring (delay-based) logic partition in NRISC_ULA...
           Done restructuring (delay-based) logic partition in NRISC_ULA
         Optimizing logic partition in NRISC_ULA...
-          Restructuring (delay-based) cb_oseq_2297...
-          Done restructuring (delay-based) cb_oseq_2297
-        Optimizing component cb_oseq_2297...
-          Restructuring (delay-based) cb_seq_2292...
-          Done restructuring (delay-based) cb_seq_2292
-        Optimizing component cb_seq_2292...
-          Restructuring (delay-based) cb_oseq_2295...
-          Done restructuring (delay-based) cb_oseq_2295
-        Optimizing component cb_oseq_2295...
-          Restructuring (delay-based) cb_oseq...
-          Done restructuring (delay-based) cb_oseq
-        Optimizing component cb_oseq...
+          Restructuring (delay-based) cb_part_2333...
+          Done restructuring (delay-based) cb_part_2333
+        Optimizing component cb_part_2333...
+          Restructuring (delay-based) cb_seq_2319...
+          Done restructuring (delay-based) cb_seq_2319
+        Optimizing component cb_seq_2319...
+          Restructuring (delay-based) cb_oseq_2322...
+          Done restructuring (delay-based) cb_oseq_2322
+        Optimizing component cb_oseq_2322...
+          Restructuring (delay-based) logic partition in NRISC_InstructionDecoder...
+          Done restructuring (delay-based) logic partition in NRISC_InstructionDecoder
+        Optimizing logic partition in NRISC_InstructionDecoder...
+          Restructuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done restructuring (delay-based) logic partition in NRISC_PC_ctrl
+        Optimizing logic partition in NRISC_PC_ctrl...
+          Restructuring (delay-based) logic partition in NRISC_InstructionDecoder...
+          Done restructuring (delay-based) logic partition in NRISC_InstructionDecoder
+        Optimizing logic partition in NRISC_InstructionDecoder...
           Restructuring (delay-based) logic partition in NRISC_PC_ctrl...
           Done restructuring (delay-based) logic partition in NRISC_PC_ctrl
         Optimizing logic partition in NRISC_PC_ctrl...
           Restructuring (delay-based) logic partition in NRISC_PC_ctrl...
           Done restructuring (delay-based) logic partition in NRISC_PC_ctrl
         Optimizing logic partition in NRISC_PC_ctrl...
+          Restructuring (delay-based) logic partition in NRISC_UP...
+          Done restructuring (delay-based) logic partition in NRISC_UP
+        Optimizing logic partition in NRISC_UP...
+          Restructuring (delay-based) logic partition in NRISC_UP...
+          Done restructuring (delay-based) logic partition in NRISC_UP
+        Optimizing logic partition in NRISC_UP...
 
 Scan mapping status report
 ==========================
@@ -712,10 +741,10 @@ Warning : Possible timing problems have been detected in this design. [TIM-11]
                                                  (fF) (ps)  (ps)   (ps)    
 ---------------------------------------------------------------------------
 (clock clk)                     launch                             25000 F 
-cb_oseqi
+cb_parti483
   REG_Write_wb_pipe_reg/CK                               0         25000 R 
   REG_Write_wb_pipe_reg/Q       DFF_X1         2  1.4   18  +158   25158 F 
-cb_oseqi/REGs_REG_Write 
+cb_parti483/REGs_REG_Write 
 REGs/REG_Write 
   cb_seqi/REG_Write 
     g31294/A2                                                 +0   25158   
@@ -738,7 +767,7 @@ REGs/REG_Write
 (clock clk)                     capture                            50000 R 
 ---------------------------------------------------------------------------
 Timing slack :   23908ps 
-Start-point  : cb_oseqi/REG_Write_wb_pipe_reg/CK
+Start-point  : cb_parti483/REG_Write_wb_pipe_reg/CK
 End-point    : REGs/cb_seqi/FIRQ_REGS_reg[0][0]/D
 
  
@@ -749,7 +778,7 @@ Global mapping status
                  Total    Neg       Switching  
 Operation         Area   Slack        Power  
 -------------------------------------------------------------------------------
- global_map      27859       0 -9223372036855 
+ global_map      28240       0 -9223372036855 
  
 Global incremental target info
 ==============================
@@ -762,10 +791,10 @@ Warning : Possible timing problems have been detected in this design. [TIM-11]
                                                  (fF)   (ps)    
 ----------------------------------------------------------------
 (clock clk)                <<<  launch                  25000 F 
-cb_oseqi
+cb_parti483
   REG_Write_wb_pipe_reg/CK                                      
   REG_Write_wb_pipe_reg/Q       DFF_X1         2  1.4           
-cb_oseqi/REGs_REG_Write 
+cb_parti483/REGs_REG_Write 
 REGs/REG_Write 
   cb_seqi/REG_Write 
     g31294/A2                                                   
@@ -787,7 +816,7 @@ REGs/REG_Write
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 (clock clk)                     capture                 50000 R 
 ----------------------------------------------------------------
-Start-point  : cb_oseqi/REG_Write_wb_pipe_reg/CK
+Start-point  : cb_parti483/REG_Write_wb_pipe_reg/CK
 End-point    : REGs/cb_seqi/FIRQ_REGS_reg[0][2]/D
 
 The global mapper estimates a slack for this path of 23909ps.
@@ -806,10 +835,10 @@ Warning : Possible timing problems have been detected in this design. [TIM-11]
                                                  (fF) (ps)  (ps)   (ps)    
 ---------------------------------------------------------------------------
 (clock clk)                     launch                             25000 F 
-cb_oseqi
+cb_parti483
   REG_Write_wb_pipe_reg/CK                               0         25000 R 
   REG_Write_wb_pipe_reg/Q       DFF_X1         2  1.4   18  +158   25158 F 
-cb_oseqi/REGs_REG_Write 
+cb_parti483/REGs_REG_Write 
 REGs/REG_Write 
   cb_seqi/REG_Write 
     g31294/A2                                                 +0   25158   
@@ -832,7 +861,7 @@ REGs/REG_Write
 (clock clk)                     capture                            50000 R 
 ---------------------------------------------------------------------------
 Timing slack :   23908ps 
-Start-point  : cb_oseqi/REG_Write_wb_pipe_reg/CK
+Start-point  : cb_parti483/REG_Write_wb_pipe_reg/CK
 End-point    : REGs/cb_seqi/FIRQ_REGS_reg[0][0]/D
 
  
@@ -843,12 +872,12 @@ Global incremental optimization status
                  Total    Neg       Switching  
 Operation         Area   Slack        Power  
 -------------------------------------------------------------------------------
- global_inc      27852       0 -9223372036855 
+ global_inc      28239       0 -9223372036855 
                          Worst  - - DRC Totals - - 
                  Total    Neg       Max       Max     Switching  
 Operation         Area   Slack     Trans      Cap       Power  
 -------------------------------------------------------------------------------
- simp_cc_in      27851       0         0        0     238537 
+ simp_cc_in      28231       0         0        0     185249 
  
 Incremental optimization status
 ===============================
@@ -856,12 +885,14 @@ Incremental optimization status
                  Total    Neg       Max       Max     Switching  
 Operation         Area   Slack     Trans      Cap       Power  
 -------------------------------------------------------------------------------
- init_delay      27851       0         0        0     238537 
- init_drc        27851       0         0        0     238537 
- init_power      27851       0         0        0     238537 
- p_merge_bi      27834       0         0        0     238269 
- glob_power      27834       0         0        0     234695 
- power_down      27834       0         0        0     233129 
+ init_delay      28231       0         0        0     185249 
+ init_drc        28231       0         0        0     185249 
+ init_power      28231       0         0        0     185249 
+ p_rem_buf       28225       0         0        0     185239 
+ p_rem_inv       28222       0         0        0     185201 
+ p_merge_bi      28205       0         0        0     184848 
+ glob_power      28205       0         0        0     181923 
+ power_down      28205       0         0        0     179628 
  
 Incremental optimization status
 ===============================
@@ -869,14 +900,12 @@ Incremental optimization status
                  Total    Neg       Max       Max     Switching  
 Operation         Area   Slack     Trans      Cap       Power  
 -------------------------------------------------------------------------------
- init_delay      27834       0         0        0     233129 
- init_drc        27834       0         0        0     233129 
- init_power      27834       0         0        0     233129 
- init_area       27834       0         0        0     233129 
- rem_inv_qb      27826       0         0        0     233041 
- io_phase        27823       0         0        0     233042 
- gate_comp       27817       0         0        0     232989 
- glob_area       27817       0         0        0     232966 
+ init_delay      28205       0         0        0     179628 
+ init_drc        28205       0         0        0     179628 
+ init_power      28205       0         0        0     179628 
+ init_area       28205       0         0        0     179628 
+ rem_inv_qb      28200       0         0        0     179607 
+ gate_comp       28194       0         0        0     179551 
  
 Incremental optimization status
 ===============================
@@ -884,16 +913,16 @@ Incremental optimization status
                  Total    Neg       Max       Max     Switching  
 Operation         Area   Slack     Trans      Cap       Power  
 -------------------------------------------------------------------------------
- init_delay      27817       0         0        0     232966 
- init_drc        27817       0         0        0     232966 
- init_power      27817       0         0        0     232966 
+ init_delay      28194       0         0        0     179551 
+ init_drc        28194       0         0        0     179551 
+ init_power      28194       0         0        0     179551 
 
   Done mapping NRISC_UP
   Synthesis succeeded.
 Runtime & Memory after incremental synthesis
 ===========================================
-The RUNTIME after INCREMENTAL is 57 secs
-and the MEMORY_USAGE after INCREMENTAL is 111.90 MB
+The RUNTIME after INCREMENTAL is 91 secs
+and the MEMORY_USAGE after INCREMENTAL is 111.69 MB
 ===========================================
   Checking the design.
 
@@ -911,7 +940,6 @@ No empty modules in design 'NRISC_UP'
 No unloaded sequential element in 'NRISC_UP'
 
 design 'NRISC_UP' has the following unloaded port(s)
-/designs/NRISC_UP/ports_in/CORE_ctrl[0]
 /designs/NRISC_UP/ports_in/CORE_ctrl[1]
 /designs/NRISC_UP/ports_in/CORE_ctrl[2]
 /designs/NRISC_UP/ports_in/IDATA_CORE_out[16]
@@ -930,7 +958,7 @@ design 'NRISC_UP' has the following unloaded port(s)
 /designs/NRISC_UP/ports_in/IDATA_CORE_out[29]
 /designs/NRISC_UP/ports_in/IDATA_CORE_out[30]
 /designs/NRISC_UP/ports_in/IDATA_CORE_out[31]
-Total number of unloaded ports in design 'NRISC_UP' : 19
+Total number of unloaded ports in design 'NRISC_UP' : 18
 
  Assigns
  ------- 
@@ -979,12 +1007,12 @@ Total number of assign statements in design 'NRISC_UP' : 40
  Undriven Port(s)/Pin(s)
  ------------------------
 The following combinational pin(s) in design 'NRISC_UP' are undriven
-/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10032/pins_in/S
-/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10035/pins_in/B
-/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10078/pins_in/A2
-/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10080/pins_in/A
-/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10082/pins_in/A
-/designs/NRISC_UP/instances_hier/ULA/instances_comb/g9816/pins_in/B3
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10063/pins_in/S
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10066/pins_in/B
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10109/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10111/pins_in/A
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g10113/pins_in/A
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g9847/pins_in/B3
 Total number of combinational undriven pins in design 'NRISC_UP' : 6
 
 No undriven sequential pin in 'NRISC_UP'
@@ -1073,7 +1101,7 @@ No physical (LEF) cells found.
 -------------------------------------------
 Unresolved References                    0 
 Empty Modules                            0 
-Unloaded Port(s)                        19 
+Unloaded Port(s)                        18 
 Unloaded Sequential Pin(s)               0 
 Assigns                                 40 
 Undriven Port(s)                         8 
@@ -1099,7 +1127,7 @@ Warning : Possible timing problems have been detected in this design. [TIM-11]
         : The design is 'NRISC_UP'.
 ============================================================
   Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
-  Generated on:           Feb 02 2018  11:01:18 PM
+  Generated on:           Feb 03 2018  03:55:16 PM
   Module:                 NRISC_UP
   Technology library:     NangateOpenCellLibrary revision 1.0
   Operating conditions:   typical 
@@ -1120,38 +1148,38 @@ Total                 0          0
 Instance Count
 --------------
 
-Leaf Instance Count            4691 
-Sequential Instance Count       844 
-Combinational Instance Count   3847 
+Leaf Instance Count            4733 
+Sequential Instance Count       847 
+Combinational Instance Count   3886 
 Hierarchical Instance Count       8 
 
 Area & Power
 ------------
-Total Area                         27816.906
-Cell Area                          8507.744
-Leakage Power                      71.077 uW
-Dynamic Power                      554.851 uW
-Total Power                        625.928 uW
+Total Area                         28193.833
+Cell Area                          8548.974
+Leakage Power                      70.671 uW
+Dynamic Power                      430.369 uW
+Total Power                        501.040 uW
 
 
-Max Fanout                         842 (clk)
-Min Fanout                         0 (n_126)
+Max Fanout                         845 (CLK)
+Min Fanout                         0 (n_153)
 Average Fanout                     3.0
 Terms to net ratio                 3.3
 Terms to instance ratio            3.9
-Runtime                            59 seconds
+Runtime                            95 seconds
 Hostname                           localhost
 Final Runtime & Memory.
 ===========================================
-The RUNTIME after FINAL is 59 secs
-and the MEMORY_USAGE after FINAL is 111.90 MB
+The RUNTIME after FINAL is 95 secs
+and the MEMORY_USAGE after FINAL is 111.69 MB
 ===========================================
 ============================
 Synthesis Finished .........
 ============================
 ============================================================
   Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
-  Generated on:           Feb 02 2018  11:01:19 PM
+  Generated on:           Feb 03 2018  03:55:17 PM
   Module:                 NRISC_UP
   Technology library:     NangateOpenCellLibrary revision 1.0
   Operating conditions:   typical 
@@ -1162,9 +1190,9 @@ Synthesis Finished .........
                 Leakage   Dynamic    Total   
 Instance Cells Power(uW) Power(uW) Power(uW) 
 ---------------------------------------------
-NRISC_UP  4691    71.077   554.851   625.928 
-  REGs    3073    48.685   292.838   341.523 
-  ULA      912    10.356   124.347   134.702 
-  PC       218     4.103    34.901    39.004 
-  ID       277     3.210    17.724    20.934 
+NRISC_UP  4733    70.671   430.369   501.040 
+  REGs    3073    48.697   266.416   315.113 
+  ULA      912    10.139    52.321    62.460 
+  PC       218     4.081    24.697    28.777 
+  ID       280     3.403    21.717    25.120 
 

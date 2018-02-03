@@ -36,4 +36,4 @@ external_delay -clock [find / -clock clk] -input 10 [all_inputs]
 #set_load 50 [all_outputs]
 
 
-define_clock -period 5000 -name clk [find [find / -design $DESIGN] -port clk]
+define_clock -period 50000 -name clk [find [find / -design $DESIGN] -port clk]

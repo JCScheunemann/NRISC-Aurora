@@ -5,8 +5,8 @@ import string
 import sys
 from time import gmtime, strftime
 
-Frequencia=[20,50,100,200]
-ConfFile=["ARM_M0.tcl","NRISC.tcl","RISCV.tcl"]
+Frequencia=[20]#,50,100,200]
+ConfFile=["NRISC.tcl"]#["ARM_M0.tcl","NRISC.tcl","RISCV.tcl"]
 
 Tamanhos=[32]
 print "Iniciando..."
@@ -58,5 +58,3 @@ for i in Frequencia:
 		result=open("./resultados/"+str(i)+"_MHz/"+f+"/RC_power_short.txt").read()
 		print result.split("============================================================")[2]
 	print "____________________________________________________________________"
-
-

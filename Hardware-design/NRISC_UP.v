@@ -129,9 +129,10 @@ input wire rst;
 
 
 //clk gating
-wire CLK;
-assign CLK= clk&(~CORE_ctrl[0]);
 
+wire CLK;
+assign CLK= clk;//&(~CORE_ctrl[0]);
+//*/
 
 // Pipeline ID
   reg [7:0] InstructionIN;

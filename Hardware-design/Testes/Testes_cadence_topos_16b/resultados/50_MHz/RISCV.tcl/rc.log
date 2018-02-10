@@ -1,0 +1,2634 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+
+                                                          Cadence Encounter(R) RTL Compiler
+                                                  Version v08.10-s222_1 (64-bit), built Mar 25 2009
+
+
+
+======================================================================================================================================================
+                                                     Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  checkpoint_dofile_naming_style
+       design  checkpoint_netlist_naming_style
+       design  multipass_mux_optimization
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+     instance  write_positional_connections
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  bit_blast_constants
+         root  bit_blast_mapped_ports
+         root  checkpoint_flow
+         root  checkpoint_gzipped_netlist
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  exact_match_seqs_async_controls
+         root  gen_no_negative_index
+         root  gen_unconnected_port_style
+         root  gen_write_empty_module_for_logic_abstract
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_new_hier_comp
+         root  wlec_no_exit
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_verbose
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+======================================================================================================================================================
+
+Sourcing './RISCV.tcl' (Fri Feb 02 23:26:32 -02 2018)...
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+cpu MHz		: 2917.992
+cpu MHz		: 2969.179
+cpu MHz		: 3072.976
+cpu MHz		: 3087.703
+Hostname : localhost
+Sourcing '/tools/cadence/soc81/tools/lib/etc/load_etc.tcl' (Fri Feb 02 23:26:32 -02 2018)...
+Sourcing '/tools/cadence/soc81/tools/lib/etc/toolbox/insert_io_buffers.tcl' (Fri Feb 02 23:26:32 -02 2018)...
+
+
+
+
+
+  Setting attribute of root '/': 'lib_search_path' = . /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/ /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/verilog/ /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/
+  Setting attribute of root '/': 'script_search_path' = . ../scripts
+  Setting attribute of root '/': 'hdl_search_path' = . ./
+  Setting attribute of root '/': 'wireload_mode' = top
+  Setting attribute of root '/': 'information_level' = 5
+  Setting attribute of root '/': 'lp_power_unit' = uW
+  Setting attribute of root '/': 'hdl_latch_keep_feedback' = true
+    Loading library NangateOpenCellLibrary_typical_conditional_ecsm.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:48:18: Construct 'library_features' is not supported.
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:63:8: Construct 'define' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:74:31: Construct 'slew_lower_threshold_pct_fall' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:75:31: Construct 'slew_lower_threshold_pct_rise' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:76:31: Construct 'slew_upper_threshold_pct_fall' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:77:31: Construct 'slew_upper_threshold_pct_rise' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:92:14: Construct 'define_group' is not supported.
+Warning : Found CCS construct in the cell. [LBR-408]
+        : Found 'CCS' construct in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 281, column 27.
+        : Currently, CCS constructs are only parsed & ignored.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X1', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 123004, column 22.
+        : Currently, state tables are only supported for scan cells for the clocked LSSD scan style and for clock-gating cells whose Liberty attribute 'clock_gating_integrated_cell' is set to 'generic'.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X2', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 123767, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X4', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 124530, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X8', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 125293, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X1', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 126056, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X2', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 126705, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X4', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 127354, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X8', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 128003, column 19.
+        Cell 'ANTENNA_X1' has no outputs.
+        Cell 'ANTENNA_X1' has no outputs.
+        Cell 'FILLCELL_X1' has no outputs.
+        Cell 'FILLCELL_X1' has no outputs.
+        Cell 'FILLCELL_X16' has no outputs.
+        Cell 'FILLCELL_X16' has no outputs.
+        Cell 'FILLCELL_X2' has no outputs.
+        Cell 'FILLCELL_X2' has no outputs.
+        Cell 'FILLCELL_X32' has no outputs.
+        Cell 'FILLCELL_X32' has no outputs.
+        Cell 'FILLCELL_X4' has no outputs.
+        Cell 'FILLCELL_X4' has no outputs.
+        Cell 'FILLCELL_X8' has no outputs.
+        Cell 'FILLCELL_X8' has no outputs.
+  Setting attribute of root '/': 'library' =  NangateOpenCellLibrary_typical_conditional_ecsm.lib 
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+
+  There are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.07, 0.8) of 'WIDTH' for layers 'metal3' and 'metal9' is too large.
+        : Make sure to check the consistency of the parameters.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'PITCH' for layers 'metal3' and 'metal9' is too large.
+  Setting attribute of root '/': 'lef_library' = /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef//NangateOpenCellLibrary.lef
+  Setting attribute of root '/': 'interconnect_mode' = ple
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+Reading HDLs...
+	initial begin
+	      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../Test_Arch/picorv32/picorv32.v' on line 189, column 8.
+        : The following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+Elaborate Design...
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+  Elaborating top-level block 'picorv32' from file '../Test_Arch/picorv32/picorv32.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'cpuregs' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 186.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_wait' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+        : Asynchronous logic, such as a latch or combinational logic, is inferred for this process or block. Signals that are not referenced can be removed from the sensitivity list. If the intent is to infer a flip-flop, ensure that the process or block is sensitive to the signal edge by adding 'posedge' or 'negedge' for Verilog designs or 'event' for VHDL designs.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_mul_wait' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_div_wait' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_ready' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_mul_ready' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_div_ready' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_wr' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_rd' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_mul_wr' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_mul_rd' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_div_wr' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Info    : Signal is not referenced within the process or block, but is in the sensitivity list. [CDFG-361]
+        : Signal 'pcpi_div_rd' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 334.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'mem_la_firstword_reg' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 373.
+        : A flip-flop or latch that was inferred for an unused signal or variable was removed. Use 'set_attribute hdl_preserve_unused_registers true /' to preserve the flip-flop or latch.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'last_mem_valid' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 373.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'mem_la_secondword' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 548.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'dbg_insn_addr' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 759.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'dbg_valid_insn' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 759.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'instr_ecall_ebreak' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 839.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'irq_delay' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'irq_active' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'irq_mask' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'irq_pending' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'timer' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'dbg_rs1val' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'dbg_rs2val' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'dbg_rs1val_valid' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'dbg_rs2val_valid' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'latched_trace' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'current_pc' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'pcpi_timeout' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'next_irq_pending' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'alu_out_0_q' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'alu_wait' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'alu_wait_2' in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 1374.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'pcpi_wr' is not used in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 109.
+        : The value of the input port is not used within the design.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'pcpi_rd' is not used in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 110.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'pcpi_wait' is not used in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 111.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'pcpi_ready' is not used in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 112.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'irq' is not used in module 'picorv32' in file '../Test_Arch/picorv32/picorv32.v' on line 115.
+  Done elaborating 'picorv32'.
+Runtime & Memory after 'read_hdl'
+===========================================
+The RUNTIME after Elaboration is 4 secs
+and the MEMORY_USAGE after Elaboration is 87.25 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'picorv32'
+
+No empty modules in design 'picorv32'
+
+  Done Checking the design.
+Error   : A required object parameter could not be found. [TUI-61] [external_delay]
+        : An object of type 'clock' named '' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  external_delay: specifies delay that is outside the design 
+
+Usage: external_delay  ( -input <delay {r f R F} in picoseconds> | -output <delay {r f R F} in picoseconds> ) [-mode <mode>] [-clock <clock>]
+           [ -edge_rise |
+             -edge_fall ] [-level_sensitive] [-accumulate] [-name <string>] <pin|port>+
+
+    -input <delay {r f R F} in picoseconds>:
+        clock to input valid time 
+    -output <delay {r f R F} in picoseconds>:
+        output valid to clock time 
+    [-mode <mode>]:
+        the mode for the external delay 
+    [-clock <clock>]:
+        clock object 
+    [-edge_rise]:
+        rise clock edge 
+    [-edge_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        external event is level-sensitive 
+    [-accumulate]:
+        allows more than one external delay per clock per phase (default=false) 
+    [-name <string>]:
+        external delay name 
+    <pin|port>+:
+        object(s) 
+Warning : Message truncated because it exceeds the maximum length of 4K. [MESG-6]
+        : Message truncated to length 4K from 13455
+        : Messages should be maximum 4K in size.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '11' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -output 10 {/designs/picorv32/ports_out/trap /designs/picorv32/ports_out/mem_valid /designs/picorv32/ports_out/mem_instr {/designs/picorv32/ports_out/mem_addr[31]} {/designs/picorv32/ports_out/mem_addr[30]} {/designs/picorv32/ports_out/mem_addr[29]} {/designs/picorv32/ports_out/mem_addr[28]} {/designs/picorv32/ports_out/mem_addr[27]} {/designs/picorv32/ports_out/mem_addr[26]} {/designs/picorv32/ports_out/mem_addr[25]} {/designs/picorv32/ports_out/mem_addr[24]} {/designs/picorv32/ports_out/mem_addr[23]} {/designs/picorv32/ports_out/mem_addr[22]} {/designs/picorv32/ports_out/mem_addr[21]} {/designs/picorv32/ports_out/mem_addr[20]} {/designs/picorv32/ports_out/mem_addr[19]} {/designs/picorv32/ports_out/mem_addr[18]} {/designs/picorv32/ports_out/mem_addr[17]} {/designs/picorv32/ports_out/mem_addr[16]} {/designs/picorv32/ports_out/mem_addr[15]} {/designs/picorv32/ports_out/mem_addr[14]} {/designs/picorv32/ports_out/mem_addr[13]} {/designs/picorv32/ports_out/mem_addr[12]} {/designs/picorv32/ports_out/mem_addr[11]} {/designs/picorv32/ports_out/mem_addr[10]} {/designs/picorv32/ports_out/mem_addr[9]} {/designs/picorv32/ports_out/mem_addr[8]} {/designs/picorv32/ports_out/mem_addr[7]} {/designs/picorv32/ports_out/mem_addr[6]} {/designs/picorv32/ports_out/mem_addr[5]} {/designs/picorv32/ports_out/mem_addr[4]} {/designs/picorv32/ports_out/mem_addr[3]} {/designs/picorv32/ports_out/mem_addr[2]} {/designs/picorv32/ports_out/mem_addr[1]} {/designs/picorv32/ports_out/mem_addr[0]} {/designs/picorv32/ports_out/mem_wdata[31]} {/designs/picorv32/ports_out/mem_wdata[30]} {/designs/picorv32/ports_out/mem_wdata[29]} {/designs/picorv32/ports_out/mem_wdata[28]} {/designs/picorv32/ports_out/mem_wdata[27]} {/designs/picorv32/ports_out/mem_wdata[26]} {/designs/picorv32/ports_out/mem_wdata[25]} {/designs/picorv32/ports_out/mem_wdata[24]} {/designs/picorv32/ports_out/mem_wdata[23]} {/designs/picorv32/ports_out/mem_wdata[22]} {/designs/picorv32/ports_out/mem_wdata[21]} {/designs/picorv32/ports_out/mem_wdata[20]} {/designs/picorv32/ports_out/mem_wdata[19]} {/designs/picorv32/ports_out/mem_wdata[18]} {/designs/picorv32/ports_out/mem_wdata[17]} {/designs/picorv32/ports_out/mem_wdata[16]} {/designs/picorv32/ports_out/mem_wdata[15]} {/designs/picorv32/ports_out/mem_wdata[14]} {/designs/picorv32/ports_out/mem_wdata[13]} {/designs/picorv32/ports_out/mem_wdata[12]} {/designs/picorv32/ports_out/mem_wdata[11]} {/designs/picorv32/ports_out/mem_wdata[10]} {/designs/picorv32/ports_out/mem_wdata[9]} {/designs/picorv32/ports_out/mem_wdata[8]} {/designs/picorv32/ports_out/mem_wdata[7]} {/designs/picorv32/ports_out/mem_wdata[6]} {/designs/picorv32/ports_out/mem_wdata[5]} {/designs/picorv32/ports_out/mem_wdata[4]} {/designs/picorv32/ports_out/mem_wdata[3]} {/designs/picorv32/ports_out/mem_wdata[2]} {/designs/picorv32/ports_out/mem_wdata[1]} {/designs/picorv32/ports_out/mem_wdata[0]} {/designs/picorv32/ports_out/mem_wstrb[3]} {/designs/picorv32/ports_out/mem_wstrb[2]} {/designs/picorv32/ports_out/mem_wstrb[1]} {/designs/picorv32/ports_out/mem_wstrb[0]} /designs/picorv32/ports_out/mem_la_read /designs/picorv32/ports_out/mem_la_write {/designs/picorv32/ports_out/mem_la_addr[31]} {/designs/picorv32/ports_out/mem_la_addr[30]} {/designs/picorv32/ports_out/mem_la_addr[29]} {/designs/picorv32/ports_out/mem_la_addr[28]} {/designs/picorv32/ports_out/mem_la_addr[27]} {/designs/picorv32/ports_out/mem_la_addr[26]} {/designs/picorv32/ports_out/mem_la_addr[25]} {/designs/picorv32/ports_out/mem_la_addr[24]} {/designs/picorv32/ports_out/mem_la_addr[23]} {/designs/picorv32/ports_out/mem_la_addr[22]} {/designs/picorv32/ports_out/mem_la_addr[21]} {/designs/picorv32/ports_out/mem_la_addr[20]} {/designs/picorv32/ports_out/mem_la_addr[19]} {/designs/picorv32/ports_out/mem_la_addr[18]} {/designs/picorv32/ports_out/mem_la_addr[17]} {/designs/picorv32/ports_out/mem_la_addr[16]} {/designs/picorv32/ports_out/mem_la_addr[15]} {/designs/picorv32/ports
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Error   : A required object parameter could not be found. [TUI-61] [external_delay]
+        : An object of type 'clock' named '' could not be found.
+  external_delay: specifies delay that is outside the design 
+
+Usage: external_delay  ( -input <delay {r f R F} in picoseconds> | -output <delay {r f R F} in picoseconds> ) [-mode <mode>] [-clock <clock>]
+           [ -edge_rise |
+             -edge_fall ] [-level_sensitive] [-accumulate] [-name <string>] <pin|port>+
+
+    -input <delay {r f R F} in picoseconds>:
+        clock to input valid time 
+    -output <delay {r f R F} in picoseconds>:
+        output valid to clock time 
+    [-mode <mode>]:
+        the mode for the external delay 
+    [-clock <clock>]:
+        clock object 
+    [-edge_rise]:
+        rise clock edge 
+    [-edge_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        external event is level-sensitive 
+    [-accumulate]:
+        allows more than one external delay per clock per phase (default=false) 
+    [-name <string>]:
+        external delay name 
+    <pin|port>+:
+        object(s) 
+Warning : Message truncated because it exceeds the maximum length of 4K. [MESG-6]
+        : Message truncated to length 4K from 4217
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '12' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -input 10 {/designs/picorv32/ports_in/clk /designs/picorv32/ports_in/resetn /designs/picorv32/ports_in/mem_ready {/designs/picorv32/ports_in/mem_rdata[31]} {/designs/picorv32/ports_in/mem_rdata[30]} {/designs/picorv32/ports_in/mem_rdata[29]} {/designs/picorv32/ports_in/mem_rdata[28]} {/designs/picorv32/ports_in/mem_rdata[27]} {/designs/picorv32/ports_in/mem_rdata[26]} {/designs/picorv32/ports_in/mem_rdata[25]} {/designs/picorv32/ports_in/mem_rdata[24]} {/designs/picorv32/ports_in/mem_rdata[23]} {/designs/picorv32/ports_in/mem_rdata[22]} {/designs/picorv32/ports_in/mem_rdata[21]} {/designs/picorv32/ports_in/mem_rdata[20]} {/designs/picorv32/ports_in/mem_rdata[19]} {/designs/picorv32/ports_in/mem_rdata[18]} {/designs/picorv32/ports_in/mem_rdata[17]} {/designs/picorv32/ports_in/mem_rdata[16]} {/designs/picorv32/ports_in/mem_rdata[15]} {/designs/picorv32/ports_in/mem_rdata[14]} {/designs/picorv32/ports_in/mem_rdata[13]} {/designs/picorv32/ports_in/mem_rdata[12]} {/designs/picorv32/ports_in/mem_rdata[11]} {/designs/picorv32/ports_in/mem_rdata[10]} {/designs/picorv32/ports_in/mem_rdata[9]} {/designs/picorv32/ports_in/mem_rdata[8]} {/designs/picorv32/ports_in/mem_rdata[7]} {/designs/picorv32/ports_in/mem_rdata[6]} {/designs/picorv32/ports_in/mem_rdata[5]} {/designs/picorv32/ports_in/mem_rdata[4]} {/designs/picorv32/ports_in/mem_rdata[3]} {/designs/picorv32/ports_in/mem_rdata[2]} {/designs/picorv32/ports_in/mem_rdata[1]} {/designs/picorv32/ports_in/mem_rdata[0]} /designs/picorv32/ports_in/pcpi_wr {/designs/picorv32/ports_in/pcpi_rd[31]} {/designs/picorv32/ports_in/pcpi_rd[30]} {/designs/picorv32/ports_in/pcpi_rd[29]} {/designs/picorv32/ports_in/pcpi_rd[28]} {/designs/picorv32/ports_in/pcpi_rd[27]} {/designs/picorv32/ports_in/pcpi_rd[26]} {/designs/picorv32/ports_in/pcpi_rd[25]} {/designs/picorv32/ports_in/pcpi_rd[24]} {/designs/picorv32/ports_in/pcpi_rd[23]} {/designs/picorv32/ports_in/pcpi_rd[22]} {/designs/picorv32/ports_in/pcpi_rd[21]} {/designs/picorv32/ports_in/pcpi_rd[20]} {/designs/picorv32/ports_in/pcpi_rd[19]} {/designs/picorv32/ports_in/pcpi_rd[18]} {/designs/picorv32/ports_in/pcpi_rd[17]} {/designs/picorv32/ports_in/pcpi_rd[16]} {/designs/picorv32/ports_in/pcpi_rd[15]} {/designs/picorv32/ports_in/pcpi_rd[14]} {/designs/picorv32/ports_in/pcpi_rd[13]} {/designs/picorv32/ports_in/pcpi_rd[12]} {/designs/picorv32/ports_in/pcpi_rd[11]} {/designs/picorv32/ports_in/pcpi_rd[10]} {/designs/picorv32/ports_in/pcpi_rd[9]} {/designs/picorv32/ports_in/pcpi_rd[8]} {/designs/picorv32/ports_in/pcpi_rd[7]} {/designs/picorv32/ports_in/pcpi_rd[6]} {/designs/picorv32/ports_in/pcpi_rd[5]} {/designs/picorv32/ports_in/pcpi_rd[4]} {/designs/picorv32/ports_in/pcpi_rd[3]} {/designs/picorv32/ports_in/pcpi_rd[2]} {/designs/picorv32/ports_in/pcpi_rd[1]} {/designs/picorv32/ports_in/pcpi_rd[0]} /designs/picorv32/ports_in/pcpi_wait /designs/picorv32/ports_in/pcpi_ready {/designs/picorv32/ports_in/irq[31]} {/designs/picorv32/ports_in/irq[30]} {/designs/picorv32/ports_in/irq[29]} {/designs/picorv32/ports_in/irq[28]} {/designs/picorv32/ports_in/irq[27]} {/designs/picorv32/ports_in/irq[26]} {/designs/picorv32/ports_in/irq[25]} {/designs/picorv32/ports_in/irq[24]} {/designs/picorv32/ports_in/irq[23]} {/designs/picorv32/ports_in/irq[22]} {/designs/picorv32/ports_in/irq[21]} {/designs/picorv32/ports_in/irq[20]} {/designs/picorv32/ports_in/irq[19]} {/designs/picorv32/ports_in/irq[18]} {/designs/picorv32/ports_in/irq[17]} {/designs/picorv32/ports_in/irq[16]} {/designs/picorv32/ports_in/irq[15]} {/designs/picorv32/ports_in/irq[14]} {/designs/picorv32/ports_in/irq[13]} {/designs/picorv32/ports_in/irq[12]} {/designs/picorv32/ports_in/irq[11]} {/designs/picorv32/ports_in/irq[10]} {/designs/picorv32/ports_in/irq[9]} {/designs/picorv32/ports_in/irq[8]} {/designs/picorv32/ports_in/irq[7]} {/designs/picorv32/ports_in/irq[6]} {/designs/picorv32/ports_in/irq[5]} {/designs/picorv32/ports_in/irq[4]} {/designs/picorv32/port
+Statistics for commands executed by read_sdc:
+ "all_inputs"              - successful      1 , failed      0 (runtime  0.00)
+ "all_outputs"             - successful      1 , failed      0 (runtime  0.00)
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+Total runtime 0
+The number of exceptions is 0
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 02 2018  11:26:35 PM
+  Module:                 picorv32
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+-------------------------------------------------------------------------------
+The following primary inputs have no clocked external delays.  As a result the  
+timing paths leading from the ports have no timing constraints derived from     
+clock waveforms.  The'external_delay' command is used to create new external    
+delays.                                                                         
+
+/designs/picorv32/ports_in/irq[0]
+/designs/picorv32/ports_in/irq[10]
+/designs/picorv32/ports_in/irq[11]
+  ... 98 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+The following primary outputs have no clocked external delays.  As a result the 
+timing paths leading to the ports have no timing constraints derived from clock 
+waveforms.  The'external_delay' command is used to create new external delays.  
+
+/designs/picorv32/ports_out/eoi[0]
+/designs/picorv32/ports_out/eoi[10]
+/designs/picorv32/ports_out/eoi[11]
+  ... 304 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+
+  Setting attribute of root '/': 'dp_perform_csa_operations' = false
+  Setting attribute of root '/': 'dp_perform_shannon_operations' = false
+  Setting attribute of root '/': 'dp_perform_sharing_operations' = false
+  Setting attribute of root '/': 'dp_perform_speculation_operations' = false
+ Reading VCD file  
+Cannot open "./multiplication.vcd"
+---------------------------------------------------------------
+Asserted primary inputs in design         : 0 (0.00%)
+Total connected primary inputs in design  : 35 (100.00%)
+---------------------------------------------------------------
+Asserted sequential outputs               : 0 (0.00%)
+Total connected sequential outputs        : 2051 (100.00%)
+------------------------------------------------------------------------------------
+Total nets in design                      : 25432 (100.00%)
+Nets asserted                             : 0 (0.00%)
+Constant nets                             : 2 (0.01)
+Nets with no assertions                   : 25432 (100.00%)
+------------------------------------------------------------------------------------
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/picorv32 has no power models available.
+        : The RTL power analysis results are more accurate when detailed power models are used. Use command 'build_rtl_power_models' to build detailed power models.
+  Setting attribute of design 'picorv32': 'lp_optimize_dynamic_power_first' = true
+  Setting attribute of design 'picorv32': 'max_dynamic_power' = 0.0
+Info    : Resetting power analysis results. [PA-7]
+        : Power analysis effort level changed from 'medium' to 'high'.
+        : All computed switching activities are removed.
+  Setting attribute of root '/': 'lp_power_analysis_effort' = high
+  Setting attribute of design 'picorv32': 'lp_power_optimization_weight' = 1.0
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/picorv32 has no power models available.
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/picorv32 has no power models available.
+  The '-incremental' option can only be used with a
+  mapped design.  Disabling '-incremental' option.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Site size           : 1.59 um (from lef [tech+cell])
+
+                   Capacitance  
+Layer               / Length         Data source:
+Name    Direction  (pF/micron)       lef_library
+--------------------------------
+metal1      H         0.000083  
+metal2      V         0.000044  
+metal3      H         0.000030  
+metal4      V         0.000024  
+metal5      H         0.000015  
+metal6      V         0.000011  
+metal7      H         0.000011  
+metal8      V         0.000007  
+metal9      H         0.000007  
+metal10     V         0.000004  
+
+                    Resistance   
+Layer                / Length         Data source:
+Name    Direction  (ohm/micron)       lef_library
+---------------------------------
+metal1      H          5.428571  
+metal2      V          3.571429  
+metal3      H          3.571429  
+metal4      V          1.500000  
+metal5      H          1.500000  
+metal6      V          1.500000  
+metal7      H          0.187500  
+metal8      V          0.187500  
+metal9      H          0.037500  
+metal10     V          0.037500  
+
+                        Area     
+Layer                 / Length        Data source:
+Name    Direction     (micron)        lef_library
+---------------------------------
+metal1      H          0.070000  
+metal2      V          0.070000  
+metal3      H          0.070000  
+metal4      V          0.140000  
+metal5      H          0.140000  
+metal6      V          0.140000  
+metal7      H          0.400000  
+metal8      V          0.400000  
+metal9      H          0.800000  
+metal10     V          0.800000  
+
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 325 sequential instances. 
+Following instances are deleted as they do not drive any primary output:
+'cached_ascii_instr_reg[0]', 'cached_ascii_instr_reg[1]', 
+'cached_ascii_instr_reg[2]', 'cached_ascii_instr_reg[3]', 
+'cached_ascii_instr_reg[4]', 'cached_ascii_instr_reg[5]', 
+'cached_ascii_instr_reg[6]', 'cached_ascii_instr_reg[7]', 
+'cached_ascii_instr_reg[8]', 'cached_ascii_instr_reg[9]', 
+'cached_ascii_instr_reg[10]', 'cached_ascii_instr_reg[11]', 
+'cached_ascii_instr_reg[12]', 'cached_ascii_instr_reg[13]', 
+'cached_ascii_instr_reg[14]', 'cached_ascii_instr_reg[15]', 
+'cached_ascii_instr_reg[16]', 'cached_ascii_instr_reg[17]', 
+'cached_ascii_instr_reg[18]', 'cached_ascii_instr_reg[19]', 
+'cached_ascii_instr_reg[20]', 'cached_ascii_instr_reg[21]', 
+'cached_ascii_instr_reg[22]', 'cached_ascii_instr_reg[23]', 
+'cached_ascii_instr_reg[24]', 'cached_ascii_instr_reg[25]', 
+'cached_ascii_instr_reg[26]', 'cached_ascii_instr_reg[27]', 
+'cached_ascii_instr_reg[28]', 'cached_ascii_instr_reg[29]', 
+'cached_ascii_instr_reg[30]', 'cached_ascii_instr_reg[31]', 
+'cached_ascii_instr_reg[32]', 'cached_ascii_instr_reg[33]', 
+'cached_ascii_instr_reg[34]', 'cached_ascii_instr_reg[35]', 
+'cached_ascii_instr_reg[36]', 'cached_ascii_instr_reg[37]', 
+'cached_ascii_instr_reg[38]', 'cached_ascii_instr_reg[39]', 
+'cached_ascii_instr_reg[40]', 'cached_ascii_instr_reg[41]', 
+'cached_ascii_instr_reg[42]', 'cached_ascii_instr_reg[43]', 
+'cached_ascii_instr_reg[44]', 'cached_ascii_instr_reg[45]', 
+'cached_ascii_instr_reg[46]', 'cached_ascii_instr_reg[47]', 
+'cached_ascii_instr_reg[48]', 'cached_ascii_instr_reg[49]', 
+'cached_ascii_instr_reg[50]', 'cached_ascii_instr_reg[51]', 
+'cached_ascii_instr_reg[52]', 'cached_ascii_instr_reg[53]', 
+'cached_ascii_instr_reg[54]', 'cached_ascii_instr_reg[55]', 
+'cached_ascii_instr_reg[56]', 'cached_ascii_instr_reg[57]', 
+'cached_ascii_instr_reg[58]', 'cached_ascii_instr_reg[59]', 
+'cached_ascii_instr_reg[60]', 'cached_ascii_instr_reg[61]', 
+'cached_ascii_instr_reg[62]', 'cached_ascii_instr_reg[63]', 
+'cached_insn_imm_reg[0]', 'cached_insn_imm_reg[1]', 
+'cached_insn_imm_reg[2]', 'cached_insn_imm_reg[3]', 
+'cached_insn_imm_reg[4]', 'cached_insn_imm_reg[5]', 
+'cached_insn_imm_reg[6]', 'cached_insn_imm_reg[7]', 
+'cached_insn_imm_reg[8]', 'cached_insn_imm_reg[9]', 
+'cached_insn_imm_reg[10]', 'cached_insn_imm_reg[11]', 
+'cached_insn_imm_reg[12]', 'cached_insn_imm_reg[13]', 
+'cached_insn_imm_reg[14]', 'cached_insn_imm_reg[15]', 
+'cached_insn_imm_reg[16]', 'cached_insn_imm_reg[17]', 
+'cached_insn_imm_reg[18]', 'cached_insn_imm_reg[19]', 
+'cached_insn_imm_reg[20]', 'cached_insn_imm_reg[21]', 
+'cached_insn_imm_reg[22]', 'cached_insn_imm_reg[23]', 
+'cached_insn_imm_reg[24]', 'cached_insn_imm_reg[25]', 
+'cached_insn_imm_reg[26]', 'cached_insn_imm_reg[27]', 
+'cached_insn_imm_reg[28]', 'cached_insn_imm_reg[29]', 
+'cached_insn_imm_reg[30]', 'cached_insn_imm_reg[31]', 
+'cached_insn_opcode_reg[0]', 'cached_insn_opcode_reg[1]', 
+'cached_insn_opcode_reg[2]', 'cached_insn_opcode_reg[3]', 
+'cached_insn_opcode_reg[4]', 'cached_insn_opcode_reg[5]', 
+'cached_insn_opcode_reg[6]', 'cached_insn_opcode_reg[7]', 
+'cached_insn_opcode_reg[8]', 'cached_insn_opcode_reg[9]', 
+'cached_insn_opcode_reg[10]', 'cached_insn_opcode_reg[11]', 
+'cached_insn_opcode_reg[12]', 'cached_insn_opcode_reg[13]', 
+'cached_insn_opcode_reg[14]', 'cached_insn_opcode_reg[15]', 
+'cached_insn_opcode_reg[16]', 'cached_insn_opcode_reg[17]', 
+'cached_insn_opcode_reg[18]', 'cached_insn_opcode_reg[19]', 
+'cached_insn_opcode_reg[20]', 'cached_insn_opcode_reg[21]', 
+'cached_insn_opcode_reg[22]', 'cached_insn_opcode_reg[23]', 
+'cached_insn_opcode_reg[24]', 'cached_insn_opcode_reg[25]', 
+'cached_insn_opcode_reg[26]', 'cached_insn_opcode_reg[27]', 
+'cached_insn_opcode_reg[28]', 'cached_insn_opcode_reg[29]', 
+'cached_insn_opcode_reg[30]', 'cached_insn_opcode_reg[31]', 
+'cached_insn_rd_reg[0]', 'cached_insn_rd_reg[1]', 'cached_insn_rd_reg[2]', 
+'cached_insn_rd_reg[3]', 'cached_insn_rd_reg[4]', 'cached_insn_rs1_reg[0]', 
+'cached_insn_rs1_reg[1]', 'cached_insn_rs1_reg[2]', 
+'cached_insn_rs1_reg[3]', 'cached_insn_rs1_reg[4]', 
+'cached_insn_rs2_reg[0]', 'cached_insn_rs2_reg[1]', 
+'cached_insn_rs2_reg[2]', 'cached_insn_rs2_reg[3]', 
+'cached_insn_rs2_reg[4]', 'clear_prefetched_high_word_q_reg', 
+'dbg_next_reg', 'decoder_pseudo_trigger_q_reg', 'decoder_trigger_q_reg', 
+'irq_state_reg[0]', 'irq_state_reg[1]', 'next_insn_opcode_reg[0]', 
+'next_insn_opcode_reg[1]', 'next_insn_opcode_reg[2]', 
+'next_insn_opcode_reg[3]', 'next_insn_opcode_reg[4]', 
+'next_insn_opcode_reg[5]', 'next_insn_opcode_reg[6]', 
+'next_insn_opcode_reg[7]', 'next_insn_opcode_reg[8]', 
+'next_insn_opcode_reg[9]', 'next_insn_opcode_reg[10]', 
+'next_insn_opcode_reg[11]', 'next_insn_opcode_reg[12]', 
+'next_insn_opcode_reg[13]', 'next_insn_opcode_reg[14]', 
+'next_insn_opcode_reg[15]', 'next_insn_opcode_reg[16]', 
+'next_insn_opcode_reg[17]', 'next_insn_opcode_reg[18]', 
+'next_insn_opcode_reg[19]', 'next_insn_opcode_reg[20]', 
+'next_insn_opcode_reg[21]', 'next_insn_opcode_reg[22]', 
+'next_insn_opcode_reg[23]', 'next_insn_opcode_reg[24]', 
+'next_insn_opcode_reg[25]', 'next_insn_opcode_reg[26]', 
+'next_insn_opcode_reg[27]', 'next_insn_opcode_reg[28]', 
+'next_insn_opcode_reg[29]', 'next_insn_opcode_reg[30]', 
+'next_insn_opcode_reg[31]', 
+'prefetched_high_word_reg (floating-loop root)', 
+'q_ascii_instr_reg[0] (floating-loop root)', 
+'q_ascii_instr_reg[1] (floating-loop root)', 
+'q_ascii_instr_reg[2] (floating-loop root)', 
+'q_ascii_instr_reg[3] (floating-loop root)', 
+'q_ascii_instr_reg[4] (floating-loop root)', 
+'q_ascii_instr_reg[5] (floating-loop root)', 
+'q_ascii_instr_reg[6] (floating-loop root)', 
+'q_ascii_instr_reg[7] (floating-loop root)', 
+'q_ascii_instr_reg[8] (floating-loop root)', 
+'q_ascii_instr_reg[9] (floating-loop root)', 
+'q_ascii_instr_reg[10] (floating-loop root)', 
+'q_ascii_instr_reg[11] (floating-loop root)', 
+'q_ascii_instr_reg[12] (floating-loop root)', 
+'q_ascii_instr_reg[13] (floating-loop root)', 
+'q_ascii_instr_reg[14] (floating-loop root)', 
+'q_ascii_instr_reg[15] (floating-loop root)', 
+'q_ascii_instr_reg[16] (floating-loop root)', 
+'q_ascii_instr_reg[17] (floating-loop root)', 
+'q_ascii_instr_reg[18] (floating-loop root)', 
+'q_ascii_instr_reg[19] (floating-loop root)', 
+'q_ascii_instr_reg[20] (floating-loop root)', 
+'q_ascii_instr_reg[21] (floating-loop root)', 
+'q_ascii_instr_reg[22] (floating-loop root)', 
+'q_ascii_instr_reg[23] (floating-loop root)', 
+'q_ascii_instr_reg[24] (floating-loop root)', 
+'q_ascii_instr_reg[25] (floating-loop root)', 
+'q_ascii_instr_reg[26] (floating-loop root)', 
+'q_ascii_instr_reg[27] (floating-loop root)', 
+'q_ascii_instr_reg[28] (floating-loop root)', 
+'q_ascii_instr_reg[29] (floating-loop root)', 
+'q_ascii_instr_reg[30] (floating-loop root)', 
+'q_ascii_instr_reg[31] (floating-loop root)', 
+'q_ascii_instr_reg[32] (floating-loop root)', 
+'q_ascii_instr_reg[33] (floating-loop root)', 
+'q_ascii_instr_reg[34] (floating-loop root)', 
+'q_ascii_instr_reg[35] (floating-loop root)', 
+'q_ascii_instr_reg[36] (floating-loop root)', 
+'q_ascii_instr_reg[37] (floating-loop root)', 
+'q_ascii_instr_reg[38] (floating-loop root)', 
+'q_ascii_instr_reg[39] (floating-loop root)', 
+'q_ascii_instr_reg[40] (floating-loop root)', 
+'q_ascii_instr_reg[41] (floating-loop root)', 
+'q_ascii_instr_reg[42] (floating-loop root)', 
+'q_ascii_instr_reg[43] (floating-loop root)', 
+'q_ascii_instr_reg[44] (floating-loop root)', 
+'q_ascii_instr_reg[45] (floating-loop root)', 
+'q_ascii_instr_reg[46] (floating-loop root)', 
+'q_ascii_instr_reg[47] (floating-loop root)', 
+'q_ascii_instr_reg[48] (floating-loop root)', 
+'q_ascii_instr_reg[49] (floating-loop root)', 
+'q_ascii_instr_reg[50] (floating-loop root)', 
+'q_ascii_instr_reg[51] (floating-loop root)', 
+'q_ascii_instr_reg[52] (floating-loop root)', 
+'q_ascii_instr_reg[53] (floating-loop root)', 
+'q_ascii_instr_reg[54] (floating-loop root)', 
+'q_ascii_instr_reg[55] (floating-loop root)', 
+'q_ascii_instr_reg[56] (floating-loop root)', 
+'q_ascii_instr_reg[57] (floating-loop root)', 
+'q_ascii_instr_reg[58] (floating-loop root)', 
+'q_ascii_instr_reg[59] (floating-loop root)', 
+'q_ascii_instr_reg[60] (floating-loop root)', 
+'q_ascii_instr_reg[61] (floating-loop root)', 
+'q_ascii_instr_reg[62] (floating-loop root)', 
+'q_ascii_instr_reg[63] (floating-loop root)', 
+'q_insn_imm_reg[0] (floating-loop root)', 
+'q_insn_imm_reg[1] (floating-loop root)', 
+'q_insn_imm_reg[2] (floating-loop root)', 
+'q_insn_imm_reg[3] (floating-loop root)', 
+'q_insn_imm_reg[4] (floating-loop root)', 
+'q_insn_imm_reg[5] (floating-loop root)', 
+'q_insn_imm_reg[6] (floating-loop root)', 
+'q_insn_imm_reg[7] (floating-loop root)', 
+'q_insn_imm_reg[8] (floating-loop root)', 
+'q_insn_imm_reg[9] (floating-loop root)', 
+'q_insn_imm_reg[10] (floating-loop root)', 
+'q_insn_imm_reg[11] (floating-loop root)', 
+'q_insn_imm_reg[12] (floating-loop root)', 
+'q_insn_imm_reg[13] (floating-loop root)', 
+'q_insn_imm_reg[14] (floating-loop root)', 
+'q_insn_imm_reg[15] (floating-loop root)', 
+'q_insn_imm_reg[16] (floating-loop root)', 
+'q_insn_imm_reg[17] (floating-loop root)', 
+'q_insn_imm_reg[18] (floating-loop root)', 
+'q_insn_imm_reg[19] (floating-loop root)', 
+'q_insn_imm_reg[20] (floating-loop root)', 
+'q_insn_imm_reg[21] (floating-loop root)', 
+'q_insn_imm_reg[22] (floating-loop root)', 
+'q_insn_imm_reg[23] (floating-loop root)', 
+'q_insn_imm_reg[24] (floating-loop root)', 
+'q_insn_imm_reg[25] (floating-loop root)', 
+'q_insn_imm_reg[26] (floating-loop root)', 
+'q_insn_imm_reg[27] (floating-loop root)', 
+'q_insn_imm_reg[28] (floating-loop root)', 
+'q_insn_imm_reg[29] (floating-loop root)', 
+'q_insn_imm_reg[30] (floating-loop root)', 
+'q_insn_imm_reg[31] (floating-loop root)', 
+'q_insn_opcode_reg[0] (floating-loop root)', 
+'q_insn_opcode_reg[1] (floating-loop root)', 
+'q_insn_opcode_reg[2] (floating-loop root)', 
+'q_insn_opcode_reg[3] (floating-loop root)', 
+'q_insn_opcode_reg[4] (floating-loop root)', 
+'q_insn_opcode_reg[5] (floating-loop root)', 
+'q_insn_opcode_reg[6] (floating-loop root)', 
+'q_insn_opcode_reg[7] (floating-loop root)', 
+'q_insn_opcode_reg[8] (floating-loop root)', 
+'q_insn_opcode_reg[9] (floating-loop root)', 
+'q_insn_opcode_reg[10] (floating-loop root)', 
+'q_insn_opcode_reg[11] (floating-loop root)', 
+'q_insn_opcode_reg[12] (floating-loop root)', 
+'q_insn_opcode_reg[13] (floating-loop root)', 
+'q_insn_opcode_reg[14] (floating-loop root)', 
+'q_insn_opcode_reg[15] (floating-loop root)', 
+'q_insn_opcode_reg[16] (floating-loop root)', 
+'q_insn_opcode_reg[17] (floating-loop root)', 
+'q_insn_opcode_reg[18] (floating-loop root)', 
+'q_insn_opcode_reg[19] (floating-loop root)', 
+'q_insn_opcode_reg[20] (floating-loop root)', 
+'q_insn_opcode_reg[21] (floating-loop root)', 
+'q_insn_opcode_reg[22] (floating-loop root)', 
+'q_insn_opcode_reg[23] (floating-loop root)', 
+'q_insn_opcode_reg[24] (floating-loop root)', 
+'q_insn_opcode_reg[25] (floating-loop root)', 
+'q_insn_opcode_reg[26] (floating-loop root)', 
+'q_insn_opcode_reg[27] (floating-loop root)', 
+'q_insn_opcode_reg[28] (floating-loop root)', 
+'q_insn_opcode_reg[29] (floating-loop root)', 
+'q_insn_opcode_reg[30] (floating-loop root)', 
+'q_insn_opcode_reg[31] (floating-loop root)', 
+'q_insn_rd_reg[0] (floating-loop root)', 
+'q_insn_rd_reg[1] (floating-loop root)', 
+'q_insn_rd_reg[2] (floating-loop root)', 
+'q_insn_rd_reg[3] (floating-loop root)', 
+'q_insn_rd_reg[4] (floating-loop root)', 
+'q_insn_rs1_reg[0] (floating-loop root)', 
+'q_insn_rs1_reg[1] (floating-loop root)', 
+'q_insn_rs1_reg[2] (floating-loop root)', 
+'q_insn_rs1_reg[3] (floating-loop root)', 
+'q_insn_rs1_reg[4] (floating-loop root)', 
+'q_insn_rs2_reg[0] (floating-loop root)', 
+'q_insn_rs2_reg[1] (floating-loop root)', 
+'q_insn_rs2_reg[2] (floating-loop root)', 
+'q_insn_rs2_reg[3] (floating-loop root)', 
+'q_insn_rs2_reg[4] (floating-loop root)'.
+        : To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 104 hierarchical instances. 
+Following instances are deleted as they do not drive any primary output:
+'mux_cached_insn_opcode_776_8', 'mux_clear_prefetched_high_word_1275_7', 
+'mux_clear_prefetched_high_word_1277_35', 'mux_count_instr_1435_7', 
+'mux_cpu_state_1909_48', 'mux_dbg_ascii_instr_798_7', 
+'mux_dbg_ascii_instr_799_8', 'mux_dbg_insn_imm_798_7', 
+'mux_dbg_insn_imm_799_8', 'mux_dbg_insn_opcode_798_7', 
+'mux_dbg_insn_opcode_799_8', 'mux_dbg_insn_rd_798_7', 
+'mux_dbg_insn_rd_799_8', 'mux_dbg_insn_rs1_798_7', 
+'mux_dbg_insn_rs1_799_8', 'mux_dbg_insn_rs2_798_7', 
+'mux_dbg_insn_rs2_799_8', 'mux_decoder_pseudo_trigger_1435_7', 
+'mux_instr_add_1116_7', 'mux_instr_addi_1116_7', 'mux_instr_and_1116_7', 
+'mux_instr_andi_1116_7', 'mux_instr_beq_1116_7', 'mux_instr_bge_1116_7', 
+'mux_instr_bgeu_1116_7', 'mux_instr_blt_1116_7', 'mux_instr_bltu_1116_7', 
+'mux_instr_bne_1116_7', 'mux_instr_or_1116_7', 'mux_instr_ori_1116_7', 
+'mux_instr_sll_1116_7', 'mux_instr_slt_1116_7', 'mux_instr_slti_1116_7', 
+'mux_instr_sltiu_1116_7', 'mux_instr_sltu_1116_7', 'mux_instr_sra_1116_7', 
+'mux_instr_srl_1116_7', 'mux_instr_sub_1116_7', 'mux_instr_xor_1116_7', 
+'mux_instr_xori_1116_7', 'mux_is_beq_bne_blt_bge_bltu_bgeu_1116_7', 
+'mux_is_compare_1116_7', 'mux_is_lui_auipc_jal_jalr_addi_add_sub_1018_23', 
+'mux_latched_branch_1435_7', 'mux_latched_is_lb_1435_7', 
+'mux_latched_is_lh_1435_7', 'mux_latched_is_lu_1435_7', 
+'mux_latched_stalu_1435_7', 'mux_latched_store_1435_7', 
+'mux_mem_do_prefetch_1920_15', 'mux_mem_do_rdata_1929_7', 
+'mux_mem_do_rinst_1920_15', 'mux_mem_do_rinst_1927_7', 
+'mux_mem_do_wdata_1931_7', 'mux_new_ascii_instr_686_7', 
+'mux_new_ascii_instr_687_7', 'mux_new_ascii_instr_688_7', 
+'mux_new_ascii_instr_689_7', 'mux_new_ascii_instr_691_7', 
+'mux_new_ascii_instr_692_7', 'mux_new_ascii_instr_693_7', 
+'mux_new_ascii_instr_694_7', 'mux_new_ascii_instr_695_7', 
+'mux_new_ascii_instr_696_7', 'mux_new_ascii_instr_698_7', 
+'mux_new_ascii_instr_699_7', 'mux_new_ascii_instr_700_7', 
+'mux_new_ascii_instr_701_7', 'mux_new_ascii_instr_702_7', 
+'mux_new_ascii_instr_703_7', 'mux_new_ascii_instr_704_7', 
+'mux_new_ascii_instr_705_7', 'mux_new_ascii_instr_707_7', 
+'mux_new_ascii_instr_708_7', 'mux_new_ascii_instr_709_7', 
+'mux_new_ascii_instr_710_7', 'mux_new_ascii_instr_711_7', 
+'mux_new_ascii_instr_712_7', 'mux_new_ascii_instr_713_7', 
+'mux_new_ascii_instr_714_7', 'mux_new_ascii_instr_715_7', 
+'mux_new_ascii_instr_717_7', 'mux_new_ascii_instr_718_7', 
+'mux_new_ascii_instr_719_7', 'mux_new_ascii_instr_720_7', 
+'mux_new_ascii_instr_721_7', 'mux_new_ascii_instr_722_7', 
+'mux_new_ascii_instr_723_7', 'mux_new_ascii_instr_724_7', 
+'mux_new_ascii_instr_725_7', 'mux_new_ascii_instr_726_7', 
+'mux_new_ascii_instr_728_7', 'mux_new_ascii_instr_729_7', 
+'mux_new_ascii_instr_730_7', 'mux_new_ascii_instr_731_7', 
+'mux_new_ascii_instr_733_7', 'mux_new_ascii_instr_734_7', 
+'mux_new_ascii_instr_735_7', 'mux_new_ascii_instr_736_7', 
+'mux_new_ascii_instr_737_7', 'mux_new_ascii_instr_738_7', 
+'mux_reg_next_pc_1435_7', 'mux_reg_pc_1435_7', 'mux_trap_1435_7'.
+Info    : Library has missing unit. [LBR-54]
+        : Library 'TIMING MODELS' has missing time unit, using 1ns as default.
+        : Current library has missing unit.
+      Timing geq_unsigned...
+      Timing sub_unsigned...
+      Timing sub_unsigned_1535...
+      Removing temporary intermediate hierarchies under picorv32
+Mapping picorv32 to gates.
+      Mapping 'picorv32'...
+        Preparing the circuit
+          Pruning unused logic
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_valid_reg'.
+        : This optimization was enabled by the root attribute 'optimize_constant_0_flops'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[9]'.
+        : The value used to replace the flop can be set by the root attribute 'optimize_seq_x_to'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[8]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[7]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[6]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[5]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[4]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[3]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[35]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[34]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[33]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[32]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[31]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[30]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[2]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[29]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[28]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[27]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[26]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[25]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[24]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[23]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[22]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[21]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[20]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[1]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[19]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[18]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[17]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[16]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[15]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[14]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[13]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[12]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[11]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[10]'.
+Info    : Replacing a dont care flip-flop with a logic constant 0. [GLO-24]
+        : The instance is 'trace_data_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[9]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[8]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[7]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[6]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[5]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[3]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[31]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[30]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[2]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[29]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[28]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[27]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[26]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[25]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[24]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[23]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[22]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[21]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[20]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[19]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[18]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[17]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[16]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[15]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[14]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[13]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[12]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[11]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[10]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_timer_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_setq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_maskirq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_getq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'do_waitirq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][9]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][8]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][7]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][6]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][5]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][3]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][31]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][30]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][2]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][29]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][28]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][27]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][26]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][25]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][24]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][23]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][22]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][21]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][20]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][19]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][18]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][17]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][16]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][15]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][14]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][13]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][12]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][11]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][10]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpuregs_reg[0][0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpu_state_reg[4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_valid_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_waitirq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_retirq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[9]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[8]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[7]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[6]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[5]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[3]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[31]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[30]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[2]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[29]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[28]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[27]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[26]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[25]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[24]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[23]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[22]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[21]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[20]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[19]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[18]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[17]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[16]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[15]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[14]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[13]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[12]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[11]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[10]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'decoded_imm_uj_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'compressed_instr_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'latched_compr_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'mem_addr_reg[1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'mem_addr_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_next_pc_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_pc_reg[0]'.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 149 sequential instances. 
+Following instances are deleted as they do not drive any primary output:
+'compressed_instr_reg (floating root)', 'cpu_state_reg[4] (floating root)', 
+'cpuregs_reg[0][0] (floating root)', 'cpuregs_reg[0][1] (floating root)', 
+'cpuregs_reg[0][2] (floating root)', 'cpuregs_reg[0][3] (floating root)', 
+'cpuregs_reg[0][4] (floating root)', 'cpuregs_reg[0][5] (floating root)', 
+'cpuregs_reg[0][6] (floating root)', 'cpuregs_reg[0][7] (floating root)', 
+'cpuregs_reg[0][8] (floating root)', 'cpuregs_reg[0][9] (floating root)', 
+'cpuregs_reg[0][10] (floating root)', 'cpuregs_reg[0][11] (floating root)', 
+'cpuregs_reg[0][12] (floating root)', 'cpuregs_reg[0][13] (floating root)', 
+'cpuregs_reg[0][14] (floating root)', 'cpuregs_reg[0][15] (floating root)', 
+'cpuregs_reg[0][16] (floating root)', 'cpuregs_reg[0][17] (floating root)', 
+'cpuregs_reg[0][18] (floating root)', 'cpuregs_reg[0][19] (floating root)', 
+'cpuregs_reg[0][20] (floating root)', 'cpuregs_reg[0][21] (floating root)', 
+'cpuregs_reg[0][22] (floating root)', 'cpuregs_reg[0][23] (floating root)', 
+'cpuregs_reg[0][24] (floating root)', 'cpuregs_reg[0][25] (floating root)', 
+'cpuregs_reg[0][26] (floating root)', 'cpuregs_reg[0][27] (floating root)', 
+'cpuregs_reg[0][28] (floating root)', 'cpuregs_reg[0][29] (floating root)', 
+'cpuregs_reg[0][30] (floating root)', 'cpuregs_reg[0][31] (floating root)', 
+'decoded_imm_uj_reg[0] (floating root)', 'do_waitirq_reg (floating root)', 
+'eoi_reg[0] (floating root)', 'eoi_reg[1] (floating root)', 
+'eoi_reg[2] (floating root)', 'eoi_reg[3] (floating root)', 
+'eoi_reg[4] (floating root)', 'eoi_reg[5] (floating root)', 
+'eoi_reg[6] (floating root)', 'eoi_reg[7] (floating root)', 
+'eoi_reg[8] (floating root)', 'eoi_reg[9] (floating root)', 
+'eoi_reg[10] (floating root)', 'eoi_reg[11] (floating root)', 
+'eoi_reg[12] (floating root)', 'eoi_reg[13] (floating root)', 
+'eoi_reg[14] (floating root)', 'eoi_reg[15] (floating root)', 
+'eoi_reg[16] (floating root)', 'eoi_reg[17] (floating root)', 
+'eoi_reg[18] (floating root)', 'eoi_reg[19] (floating root)', 
+'eoi_reg[20] (floating root)', 'eoi_reg[21] (floating root)', 
+'eoi_reg[22] (floating root)', 'eoi_reg[23] (floating root)', 
+'eoi_reg[24] (floating root)', 'eoi_reg[25] (floating root)', 
+'eoi_reg[26] (floating root)', 'eoi_reg[27] (floating root)', 
+'eoi_reg[28] (floating root)', 'eoi_reg[29] (floating root)', 
+'eoi_reg[30] (floating root)', 'eoi_reg[31] (floating root)', 
+'instr_getq_reg (floating root)', 'instr_maskirq_reg (floating root)', 
+'instr_retirq_reg (floating root)', 'instr_setq_reg (floating root)', 
+'instr_timer_reg (floating root)', 'instr_waitirq_reg (floating root)', 
+'latched_compr_reg (floating root)', 'mem_addr_reg[0] (floating root)', 
+'mem_addr_reg[1] (floating root)', 'pcpi_insn_reg[0] (floating root)', 
+'pcpi_insn_reg[1] (floating root)', 'pcpi_insn_reg[2] (floating root)', 
+'pcpi_insn_reg[3] (floating root)', 'pcpi_insn_reg[4] (floating root)', 
+'pcpi_insn_reg[5] (floating root)', 'pcpi_insn_reg[6] (floating root)', 
+'pcpi_insn_reg[7] (floating root)', 'pcpi_insn_reg[8] (floating root)', 
+'pcpi_insn_reg[9] (floating root)', 'pcpi_insn_reg[10] (floating root)', 
+'pcpi_insn_reg[11] (floating root)', 'pcpi_insn_reg[12] (floating root)', 
+'pcpi_insn_reg[13] (floating root)', 'pcpi_insn_reg[14] (floating root)', 
+'pcpi_insn_reg[15] (floating root)', 'pcpi_insn_reg[16] (floating root)', 
+'pcpi_insn_reg[17] (floating root)', 'pcpi_insn_reg[18] (floating root)', 
+'pcpi_insn_reg[19] (floating root)', 'pcpi_insn_reg[20] (floating root)', 
+'pcpi_insn_reg[21] (floating root)', 'pcpi_insn_reg[22] (floating root)', 
+'pcpi_insn_reg[23] (floating root)', 'pcpi_insn_reg[24] (floating root)', 
+'pcpi_insn_reg[25] (floating root)', 'pcpi_insn_reg[26] (floating root)', 
+'pcpi_insn_reg[27] (floating root)', 'pcpi_insn_reg[28] (floating root)', 
+'pcpi_insn_reg[29] (floating root)', 'pcpi_insn_reg[30] (floating root)', 
+'pcpi_insn_reg[31] (floating root)', 'pcpi_valid_reg (floating root)', 
+'reg_next_pc_reg[0] (floating root)', 'reg_pc_reg[0] (floating root)', 
+'trace_data_reg[0] (floating root)', 'trace_data_reg[1] (floating root)', 
+'trace_data_reg[2] (floating root)', 'trace_data_reg[3] (floating root)', 
+'trace_data_reg[4] (floating root)', 'trace_data_reg[5] (floating root)', 
+'trace_data_reg[6] (floating root)', 'trace_data_reg[7] (floating root)', 
+'trace_data_reg[8] (floating root)', 'trace_data_reg[9] (floating root)', 
+'trace_data_reg[10] (floating root)', 'trace_data_reg[11] (floating root)', 
+'trace_data_reg[12] (floating root)', 'trace_data_reg[13] (floating root)', 
+'trace_data_reg[14] (floating root)', 'trace_data_reg[15] (floating root)', 
+'trace_data_reg[16] (floating root)', 'trace_data_reg[17] (floating root)', 
+'trace_data_reg[18] (floating root)', 'trace_data_reg[19] (floating root)', 
+'trace_data_reg[20] (floating root)', 'trace_data_reg[21] (floating root)', 
+'trace_data_reg[22] (floating root)', 'trace_data_reg[23] (floating root)', 
+'trace_data_reg[24] (floating root)', 'trace_data_reg[25] (floating root)', 
+'trace_data_reg[26] (floating root)', 'trace_data_reg[27] (floating root)', 
+'trace_data_reg[28] (floating root)', 'trace_data_reg[29] (floating root)', 
+'trace_data_reg[30] (floating root)', 'trace_data_reg[31] (floating root)', 
+'trace_data_reg[32] (floating root)', 'trace_data_reg[33] (floating root)', 
+'trace_data_reg[34] (floating root)', 'trace_data_reg[35] (floating root)', 
+'trace_valid_reg (floating root)'.
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) picorv32...
+          Done structuring (delay-based) picorv32
+          Structuring (delay-based) logic partition in picorv32...
+          Done structuring (delay-based) logic partition in picorv32
+        Mapping logic partition in picorv32...
+          Structuring (delay-based) logic partition in picorv32...
+          Done structuring (delay-based) logic partition in picorv32
+        Mapping logic partition in picorv32...
+          Structuring (delay-based) add_unsigned_760...
+          Done structuring (delay-based) add_unsigned_760
+        Mapping component add_unsigned_760...
+          Structuring (delay-based) add_unsigned_12...
+          Done structuring (delay-based) add_unsigned_12
+        Mapping component add_unsigned_12...
+          Structuring (delay-based) add_unsigned_12_763...
+          Done structuring (delay-based) add_unsigned_12_763
+        Mapping component add_unsigned_12_763...
+          Structuring (delay-based) lt_signed...
+          Done structuring (delay-based) lt_signed
+        Mapping component lt_signed...
+          Structuring (delay-based) lt_unsigned...
+          Done structuring (delay-based) lt_unsigned
+        Mapping component lt_unsigned...
+          Structuring (delay-based) add_unsigned...
+          Done structuring (delay-based) add_unsigned
+        Mapping component add_unsigned...
+          Structuring (delay-based) add_unsigned_758...
+          Done structuring (delay-based) add_unsigned_758
+        Mapping component add_unsigned_758...
+          Structuring (delay-based) add_unsigned_761...
+          Done structuring (delay-based) add_unsigned_761
+        Mapping component add_unsigned_761...
+          Structuring (delay-based) cb_part_3863...
+          Done structuring (delay-based) cb_part_3863
+        Mapping component cb_part_3863...
+          Structuring (delay-based) add_unsigned_762...
+          Done structuring (delay-based) add_unsigned_762
+        Mapping component add_unsigned_762...
+          Structuring (delay-based) add_unsigned_759...
+          Done structuring (delay-based) add_unsigned_759
+        Mapping component add_unsigned_759...
+          Structuring (delay-based) add_unsigned_757...
+          Done structuring (delay-based) add_unsigned_757
+        Mapping component add_unsigned_757...
+          Structuring (delay-based) cb_seq...
+          Done structuring (delay-based) cb_seq
+        Mapping component cb_seq...
+ 
+Global mapping target info
+==========================
+Cost Group 'default' target slack:   599 ps
+Target path end-point (Pin: count_cycle_reg[63]/d)
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32'.
+        : Use 'report timing -lint' for more information.
+          Pin                       Type          Fanout Load Arrival   
+                                                         (fF)   (ps)    
+------------------------------------------------------------------------
+(clock clk)               <<<  launch                               0 R 
+cb_seqi
+  count_cycle_reg[1]/clk                                                
+  count_cycle_reg[1]/q    (u)  unmapped_d_flop         4 20.0           
+cb_seqi/add_1405_40_A[1] 
+add_1405_40/A[1] 
+  g133/in_1                                                             
+  g133/z                  (u)  unmapped_nand2          3 15.0           
+  g1197/in_0                                                            
+  g1197/z                 (u)  unmapped_complex2       3 15.0           
+  g1521/in_0                                                            
+  g1521/z                 (u)  unmapped_complex2       3 15.0           
+  g1216/in_0                                                            
+  g1216/z                 (u)  unmapped_complex2       3 15.0           
+  g1550/in_0                                                            
+  g1550/z                 (u)  unmapped_complex2       3 15.0           
+  g1518/in_0                                                            
+  g1518/z                 (u)  unmapped_complex2       3 15.0           
+  g1520/in_0                                                            
+  g1520/z                 (u)  unmapped_complex2       3 15.0           
+  g1232/in_0                                                            
+  g1232/z                 (u)  unmapped_complex2       3 15.0           
+  g1548/in_0                                                            
+  g1548/z                 (u)  unmapped_complex2       3 15.0           
+  g1514/in_0                                                            
+  g1514/z                 (u)  unmapped_complex2       3 15.0           
+  g1584/in_0                                                            
+  g1584/z                 (u)  unmapped_complex2       3 15.0           
+  g1513/in_0                                                            
+  g1513/z                 (u)  unmapped_complex2       3 15.0           
+  g1549/in_0                                                            
+  g1549/z                 (u)  unmapped_complex2       3 15.0           
+  g1511/in_0                                                            
+  g1511/z                 (u)  unmapped_complex2       3 15.0           
+  g1517/in_0                                                            
+  g1517/z                 (u)  unmapped_complex2       3 15.0           
+  g1244/in_0                                                            
+  g1244/z                 (u)  unmapped_complex2       3 15.0           
+  g1546/in_0                                                            
+  g1546/z                 (u)  unmapped_complex2       3 15.0           
+  g1506/in_0                                                            
+  g1506/z                 (u)  unmapped_complex2       3 15.0           
+  g1610/in_0                                                            
+  g1610/z                 (u)  unmapped_complex2       3 15.0           
+  g1505/in_0                                                            
+  g1505/z                 (u)  unmapped_complex2       3 15.0           
+  g1607/in_0                                                            
+  g1607/z                 (u)  unmapped_complex2       3 15.0           
+  g1503/in_0                                                            
+  g1503/z                 (u)  unmapped_complex2       3 15.0           
+  g1581/in_0                                                            
+  g1581/z                 (u)  unmapped_complex2       3 15.0           
+  g1502/in_0                                                            
+  g1502/z                 (u)  unmapped_complex2       3 15.0           
+  g1545/in_0                                                            
+  g1545/z                 (u)  unmapped_complex2       3 15.0           
+  g1499/in_0                                                            
+  g1499/z                 (u)  unmapped_complex2       3 15.0           
+  g1578/in_0                                                            
+  g1578/z                 (u)  unmapped_complex2       3 15.0           
+  g1496/in_0                                                            
+  g1496/z                 (u)  unmapped_complex2       3 15.0           
+  g1547/in_0                                                            
+  g1547/z                 (u)  unmapped_complex2       3 15.0           
+  g1491/in_0                                                            
+  g1491/z                 (u)  unmapped_complex2       3 15.0           
+  g1510/in_0                                                            
+  g1510/z                 (u)  unmapped_complex2       3 15.0           
+  g1280/in_0                                                            
+  g1280/z                 (u)  unmapped_complex2       3 15.0           
+  g1541/in_0                                                            
+  g1541/z                 (u)  unmapped_complex2       3 15.0           
+  g1460/in_0                                                            
+  g1460/z                 (u)  unmapped_complex2       3 15.0           
+  g1614/in_0                                                            
+  g1614/z                 (u)  unmapped_complex2       3 15.0           
+  g1459/in_0                                                            
+  g1459/z                 (u)  unmapped_complex2       3 15.0           
+  g1594/in_0                                                            
+  g1594/z                 (u)  unmapped_complex2       3 15.0           
+  g1457/in_0                                                            
+  g1457/z                 (u)  unmapped_complex2       3 15.0           
+  g1606/in_0                                                            
+  g1606/z                 (u)  unmapped_complex2       3 15.0           
+  g1456/in_0                                                            
+  g1456/z                 (u)  unmapped_complex2       3 15.0           
+  g1540/in_0                                                            
+  g1540/z                 (u)  unmapped_complex2       3 15.0           
+  g1453/in_0                                                            
+  g1453/z                 (u)  unmapped_complex2       3 15.0           
+  g1602/in_0                                                            
+  g1602/z                 (u)  unmapped_complex2       3 15.0           
+  g1450/in_0                                                            
+  g1450/z                 (u)  unmapped_complex2       3 15.0           
+  g1599/in_0                                                            
+  g1599/z                 (u)  unmapped_complex2       3 15.0           
+  g1445/in_0                                                            
+  g1445/z                 (u)  unmapped_complex2       3 15.0           
+  g1575/in_0                                                            
+  g1575/z                 (u)  unmapped_complex2       3 15.0           
+  g1444/in_0                                                            
+  g1444/z                 (u)  unmapped_complex2       3 15.0           
+  g1544/in_0                                                            
+  g1544/z                 (u)  unmapped_complex2       3 15.0           
+  g1490/in_0                                                            
+  g1490/z                 (u)  unmapped_complex2       3 15.0           
+  g1598/in_0                                                            
+  g1598/z                 (u)  unmapped_complex2       3 15.0           
+  g1486/in_0                                                            
+  g1486/z                 (u)  unmapped_complex2       3 15.0           
+  g1595/in_0                                                            
+  g1595/z                 (u)  unmapped_complex2       3 15.0           
+  g1481/in_0                                                            
+  g1481/z                 (u)  unmapped_complex2       3 15.0           
+  g1571/in_0                                                            
+  g1571/z                 (u)  unmapped_complex2       3 15.0           
+  g1478/in_0                                                            
+  g1478/z                 (u)  unmapped_complex2       3 15.0           
+  g1543/in_0                                                            
+  g1543/z                 (u)  unmapped_complex2       3 15.0           
+  g1473/in_0                                                            
+  g1473/z                 (u)  unmapped_complex2       3 15.0           
+  g1568/in_0                                                            
+  g1568/z                 (u)  unmapped_complex2       3 15.0           
+  g1468/in_0                                                            
+  g1468/z                 (u)  unmapped_complex2       3 15.0           
+  g1542/in_0                                                            
+  g1542/z                 (u)  unmapped_complex2       3 15.0           
+  g1461/in_0                                                            
+  g1461/z                 (u)  unmapped_complex2       2 10.0           
+  g1616/in_0                                                            
+  g1616/z                 (u)  unmapped_or2            1  5.0           
+  g1617/in_1                                                            
+  g1617/z                 (u)  unmapped_nand2          1  5.0           
+add_1405_40/Z[63] 
+cb_seqi/add_1405_40_Z[62] 
+  g57304/in_1                                                           
+  g57304/z                (u)  unmapped_and2           1  5.0           
+  count_cycle_reg[63]/d   <<<  unmapped_d_flop                          
+  count_cycle_reg[63]/clk      setup                                    
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                    capture                          20000 R 
+------------------------------------------------------------------------
+Start-point  : cb_seqi/count_cycle_reg[1]/clk
+End-point    : cb_seqi/count_cycle_reg[63]/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 12011ps.
+ 
+          Restructuring (delay-based) cb_seq...
+          Done restructuring (delay-based) cb_seq
+        Optimizing component cb_seq...
+          Restructuring (delay-based) add_unsigned_762...
+          Done restructuring (delay-based) add_unsigned_762
+        Optimizing component add_unsigned_762...
+        Early Area Reclamation for add_unsigned_762 'very_fast' (slack=9906, area=176)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+        Pre-mapped Exploration for add_unsigned_762 'slow' (slack=9923, area=129)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) add_unsigned_759...
+          Done restructuring (delay-based) add_unsigned_759
+        Optimizing component add_unsigned_759...
+        Early Area Reclamation for add_unsigned_759 'very_fast' (slack=11373, area=76)...
+          Restructuring (delay-based) add_unsigned_3875...
+          Done restructuring (delay-based) add_unsigned_3875
+        Optimizing component add_unsigned_3875...
+          Restructuring (delay-based) add_unsigned_3879...
+          Done restructuring (delay-based) add_unsigned_3879
+        Optimizing component add_unsigned_3879...
+          Restructuring (delay-based) add_unsigned_757...
+          Done restructuring (delay-based) add_unsigned_757
+        Optimizing component add_unsigned_757...
+        Early Area Reclamation for add_unsigned_757 'very_fast' (slack=11466, area=76)...
+          Restructuring (delay-based) add_unsigned_3883...
+          Done restructuring (delay-based) add_unsigned_3883
+        Optimizing component add_unsigned_3883...
+          Restructuring (delay-based) add_unsigned_3887...
+          Done restructuring (delay-based) add_unsigned_3887
+        Optimizing component add_unsigned_3887...
+          Restructuring (delay-based) cb_part_3863...
+          Done restructuring (delay-based) cb_part_3863
+        Optimizing component cb_part_3863...
+          Restructuring (delay-based) add_unsigned_758...
+          Done restructuring (delay-based) add_unsigned_758
+        Optimizing component add_unsigned_758...
+        Early Area Reclamation for add_unsigned_758 'very_fast' (slack=9876, area=182)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+        Pre-mapped Exploration for add_unsigned_758 'slow' (slack=9910, area=134)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) add_unsigned_761...
+          Done restructuring (delay-based) add_unsigned_761
+        Optimizing component add_unsigned_761...
+        Early Area Reclamation for add_unsigned_761 'very_fast' (slack=9730, area=182)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+        Pre-mapped Exploration for add_unsigned_761 'slow' (slack=9726, area=134)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) add_unsigned_12...
+          Done restructuring (delay-based) add_unsigned_12
+        Optimizing component add_unsigned_12...
+        Early Area Reclamation for add_unsigned_12 'very_fast' (slack=12402, area=167)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) add_unsigned_12_763...
+          Done restructuring (delay-based) add_unsigned_12_763
+        Optimizing component add_unsigned_12_763...
+        Early Area Reclamation for add_unsigned_12_763 'very_fast' (slack=9634, area=167)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) add_unsigned_760...
+          Done restructuring (delay-based) add_unsigned_760
+        Optimizing component add_unsigned_760...
+        Early Area Reclamation for add_unsigned_760 'very_fast' (slack=10003, area=176)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+        Pre-mapped Exploration for add_unsigned_760 'slow' (slack=9939, area=129)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) lt_unsigned...
+          Done restructuring (delay-based) lt_unsigned
+        Optimizing component lt_unsigned...
+        Early Area Reclamation for lt_unsigned 'very_fast' (slack=12092, area=105)...
+          Restructuring (delay-based) lt_unsigned...
+          Done restructuring (delay-based) lt_unsigned
+        Optimizing component lt_unsigned...
+          Restructuring (delay-based) lt_signed...
+          Done restructuring (delay-based) lt_signed
+        Optimizing component lt_signed...
+        Early Area Reclamation for lt_signed 'very_fast' (slack=12252, area=105)...
+          Restructuring (delay-based) lt_signed...
+          Done restructuring (delay-based) lt_signed
+        Optimizing component lt_signed...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+        Early Area Reclamation for add_unsigned 'very_fast' (slack=9874, area=84)...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) add_unsigned...
+          Done restructuring (delay-based) add_unsigned
+        Optimizing component add_unsigned...
+          Restructuring (delay-based) logic partition in picorv32...
+          Done restructuring (delay-based) logic partition in picorv32
+        Optimizing logic partition in picorv32...
+          Restructuring (delay-based) logic partition in picorv32...
+          Done restructuring (delay-based) logic partition in picorv32
+        Optimizing logic partition in picorv32...
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+ 
+Global mapping timing result
+============================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32'.
+          Pin                 Type     Fanout Load Slew Delay Arrival   
+                                              (fF) (ps)  (ps)   (ps)    
+------------------------------------------------------------------------
+(clock clk)                   launch                                0 R 
+cb_seqi
+  count_instr_reg[0]/CK                               0             0 R 
+  count_instr_reg[0]/Q        DFF_X1        3  4.3   56  +123     123 R 
+cb_seqi/add_1542_34_A[0] 
+add_1542_34/A[0] 
+  g2181/B                                                  +0     123   
+  g2181/CO                    HA_X1         1  2.0   30   +67     190 R 
+  g2180/A                                                  +0     190   
+  g2180/CO                    HA_X1         1  2.0   30   +60     250 R 
+  g2179/A                                                  +0     250   
+  g2179/CO                    HA_X1         1  2.0   30   +60     310 R 
+  g2178/A                                                  +0     310   
+  g2178/CO                    HA_X1         1  2.0   30   +60     370 R 
+  g2177/A                                                  +0     370   
+  g2177/CO                    HA_X1         1  2.0   30   +60     430 R 
+  g2176/A                                                  +0     430   
+  g2176/CO                    HA_X1         1  2.0   30   +60     490 R 
+  g2175/A                                                  +0     490   
+  g2175/CO                    HA_X1         1  2.0   30   +60     550 R 
+  g2174/A                                                  +0     550   
+  g2174/CO                    HA_X1         1  2.0   30   +60     609 R 
+  g2173/A                                                  +0     609   
+  g2173/CO                    HA_X1         1  2.0   30   +60     669 R 
+  g2172/A                                                  +0     669   
+  g2172/CO                    HA_X1         1  2.0   30   +60     729 R 
+  g2171/A                                                  +0     729   
+  g2171/CO                    HA_X1         1  2.0   30   +60     789 R 
+  g2170/A                                                  +0     789   
+  g2170/CO                    HA_X1         1  2.0   30   +60     849 R 
+  g2169/A                                                  +0     849   
+  g2169/CO                    HA_X1         1  2.0   30   +60     909 R 
+  g2168/A                                                  +0     909   
+  g2168/CO                    HA_X1         1  2.0   30   +60     969 R 
+  g2167/A                                                  +0     969   
+  g2167/CO                    HA_X1         1  2.0   30   +60    1029 R 
+  g2166/A                                                  +0    1029   
+  g2166/CO                    HA_X1         1  2.0   30   +60    1089 R 
+  g2165/A                                                  +0    1089   
+  g2165/CO                    HA_X1         1  2.0   30   +60    1148 R 
+  g2164/A                                                  +0    1148   
+  g2164/CO                    HA_X1         1  2.0   30   +60    1208 R 
+  g2163/A                                                  +0    1208   
+  g2163/CO                    HA_X1         1  2.0   30   +60    1268 R 
+  g2162/A                                                  +0    1268   
+  g2162/CO                    HA_X1         1  2.0   30   +60    1328 R 
+  g2161/A                                                  +0    1328   
+  g2161/CO                    HA_X1         1  2.0   30   +60    1388 R 
+  g2160/A                                                  +0    1388   
+  g2160/CO                    HA_X1         1  2.0   30   +60    1448 R 
+  g2159/A                                                  +0    1448   
+  g2159/CO                    HA_X1         1  2.0   30   +60    1508 R 
+  g2158/A                                                  +0    1508   
+  g2158/CO                    HA_X1         1  2.0   30   +60    1568 R 
+  g2157/A                                                  +0    1568   
+  g2157/CO                    HA_X1         1  2.0   30   +60    1628 R 
+  g2156/A                                                  +0    1628   
+  g2156/CO                    HA_X1         1  2.0   30   +60    1688 R 
+  g2155/A                                                  +0    1688   
+  g2155/CO                    HA_X1         1  2.0   30   +60    1748 R 
+  g2154/A                                                  +0    1748   
+  g2154/CO                    HA_X1         1  2.0   30   +60    1807 R 
+  g2153/A                                                  +0    1807   
+  g2153/CO                    HA_X1         1  2.0   30   +60    1867 R 
+  g2152/A                                                  +0    1867   
+  g2152/CO                    HA_X1         1  2.0   30   +60    1927 R 
+  g2151/A                                                  +0    1927   
+  g2151/CO                    HA_X1         1  2.0   30   +60    1987 R 
+  g2150/A                                                  +0    1987   
+  g2150/CO                    HA_X1         1  2.0   30   +60    2047 R 
+  g2149/A                                                  +0    2047   
+  g2149/CO                    HA_X1         1  2.0   30   +60    2107 R 
+  g2148/A                                                  +0    2107   
+  g2148/CO                    HA_X1         1  2.0   30   +60    2167 R 
+  g2147/A                                                  +0    2167   
+  g2147/CO                    HA_X1         1  2.0   30   +60    2227 R 
+  g2146/A                                                  +0    2227   
+  g2146/CO                    HA_X1         1  2.0   30   +60    2287 R 
+  g2145/A                                                  +0    2287   
+  g2145/CO                    HA_X1         1  2.0   30   +60    2346 R 
+  g2144/A                                                  +0    2346   
+  g2144/CO                    HA_X1         1  2.0   30   +60    2406 R 
+  g2143/A                                                  +0    2406   
+  g2143/CO                    HA_X1         1  2.0   30   +60    2466 R 
+  g2142/A                                                  +0    2466   
+  g2142/CO                    HA_X1         1  2.0   30   +60    2526 R 
+  g2141/A                                                  +0    2526   
+  g2141/CO                    HA_X1         1  2.0   30   +60    2586 R 
+  g2140/A                                                  +0    2586   
+  g2140/CO                    HA_X1         1  2.0   30   +60    2646 R 
+  g2139/A                                                  +0    2646   
+  g2139/CO                    HA_X1         1  2.0   30   +60    2706 R 
+  g2138/A                                                  +0    2706   
+  g2138/CO                    HA_X1         1  2.0   30   +60    2766 R 
+  g2137/A                                                  +0    2766   
+  g2137/CO                    HA_X1         1  2.0   30   +60    2826 R 
+  g2136/A                                                  +0    2826   
+  g2136/CO                    HA_X1         1  2.0   30   +60    2886 R 
+  g2135/A                                                  +0    2886   
+  g2135/CO                    HA_X1         1  2.0   30   +60    2946 R 
+  g2134/A                                                  +0    2946   
+  g2134/CO                    HA_X1         1  2.0   30   +60    3005 R 
+  g2133/A                                                  +0    3005   
+  g2133/CO                    HA_X1         1  2.0   30   +60    3065 R 
+  g2132/A                                                  +0    3065   
+  g2132/CO                    HA_X1         1  2.0   30   +60    3125 R 
+  g2131/A                                                  +0    3125   
+  g2131/CO                    HA_X1         1  2.0   30   +60    3185 R 
+  g2130/A                                                  +0    3185   
+  g2130/CO                    HA_X1         1  2.0   30   +60    3245 R 
+  g2129/A                                                  +0    3245   
+  g2129/CO                    HA_X1         1  2.0   30   +60    3305 R 
+  g2128/A                                                  +0    3305   
+  g2128/CO                    HA_X1         1  2.0   30   +60    3365 R 
+  g2127/A                                                  +0    3365   
+  g2127/CO                    HA_X1         1  2.0   30   +60    3425 R 
+  g2126/A                                                  +0    3425   
+  g2126/CO                    HA_X1         1  2.0   30   +60    3485 R 
+  g2125/A                                                  +0    3485   
+  g2125/CO                    HA_X1         1  2.0   30   +60    3544 R 
+  g2124/A                                                  +0    3544   
+  g2124/CO                    HA_X1         1  2.0   30   +60    3604 R 
+  g2123/A                                                  +0    3604   
+  g2123/CO                    HA_X1         1  2.0   30   +60    3664 R 
+  g2122/A                                                  +0    3664   
+  g2122/CO                    HA_X1         1  2.0   30   +60    3724 R 
+  g2121/A                                                  +0    3724   
+  g2121/CO                    HA_X1         1  2.0   30   +60    3784 R 
+  g2120/A                                                  +0    3784   
+  g2120/CO                    HA_X1         1  1.4   23   +53    3837 R 
+  g2119/A                                                  +0    3837   
+  g2119/Z                     XOR2_X1       1  1.0   46   +89    3926 R 
+add_1542_34/Z[63] 
+cb_seqi/add_1542_34_Z[62] 
+  g101709/B                                                +0    3926   
+  g101709/Z                   MUX2_X1       1  0.8   18   +55    3981 R 
+  g101323/A1                                               +0    3981   
+  g101323/ZN                  AND2_X1       1  1.1   20   +47    4028 R 
+  count_instr_reg[63]/D  <<<  DFF_X1                       +0    4028   
+  count_instr_reg[63]/CK      setup                   0   +44    4072 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                   capture                           20000 R 
+------------------------------------------------------------------------
+Timing slack :   15928ps 
+Start-point  : cb_seqi/count_instr_reg[0]/CK
+End-point    : cb_seqi/count_instr_reg[63]/D
+
+ 
+ 
+Global mapping status
+=====================
+                         Worst  
+                 Total    Neg       Switching  
+Operation         Area   Slack        Power  
+-------------------------------------------------------------------------------
+ global_map      40875       0      743498 
+ 
+Global incremental target info
+==============================
+Cost Group 'default' target slack:   399 ps
+Target path end-point (Pin: count_instr_reg[63]/D (DFF_X1/D))
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32'.
+          Pin                 Type     Fanout Load Arrival   
+                                              (fF)   (ps)    
+-------------------------------------------------------------
+(clock clk)              <<<  launch                     0 R 
+cb_seqi
+  count_instr_reg[0]/CK                                      
+  count_instr_reg[0]/Q        DFF_X1        3  4.3           
+cb_seqi/add_1542_34_A[0] 
+add_1542_34/A[0] 
+  g2181/B                                                    
+  g2181/CO                    HA_X1         1  2.0           
+  g2180/A                                                    
+  g2180/CO                    HA_X1         1  2.0           
+  g2179/A                                                    
+  g2179/CO                    HA_X1         1  2.0           
+  g2178/A                                                    
+  g2178/CO                    HA_X1         1  2.0           
+  g2177/A                                                    
+  g2177/CO                    HA_X1         1  2.0           
+  g2176/A                                                    
+  g2176/CO                    HA_X1         1  2.0           
+  g2175/A                                                    
+  g2175/CO                    HA_X1         1  2.0           
+  g2174/A                                                    
+  g2174/CO                    HA_X1         1  2.0           
+  g2173/A                                                    
+  g2173/CO                    HA_X1         1  2.0           
+  g2172/A                                                    
+  g2172/CO                    HA_X1         1  2.0           
+  g2171/A                                                    
+  g2171/CO                    HA_X1         1  2.0           
+  g2170/A                                                    
+  g2170/CO                    HA_X1         1  2.0           
+  g2169/A                                                    
+  g2169/CO                    HA_X1         1  2.0           
+  g2168/A                                                    
+  g2168/CO                    HA_X1         1  2.0           
+  g2167/A                                                    
+  g2167/CO                    HA_X1         1  2.0           
+  g2166/A                                                    
+  g2166/CO                    HA_X1         1  2.0           
+  g2165/A                                                    
+  g2165/CO                    HA_X1         1  2.0           
+  g2164/A                                                    
+  g2164/CO                    HA_X1         1  2.0           
+  g2163/A                                                    
+  g2163/CO                    HA_X1         1  2.0           
+  g2162/A                                                    
+  g2162/CO                    HA_X1         1  2.0           
+  g2161/A                                                    
+  g2161/CO                    HA_X1         1  2.0           
+  g2160/A                                                    
+  g2160/CO                    HA_X1         1  2.0           
+  g2159/A                                                    
+  g2159/CO                    HA_X1         1  2.0           
+  g2158/A                                                    
+  g2158/CO                    HA_X1         1  2.0           
+  g2157/A                                                    
+  g2157/CO                    HA_X1         1  2.0           
+  g2156/A                                                    
+  g2156/CO                    HA_X1         1  2.0           
+  g2155/A                                                    
+  g2155/CO                    HA_X1         1  2.0           
+  g2154/A                                                    
+  g2154/CO                    HA_X1         1  2.0           
+  g2153/A                                                    
+  g2153/CO                    HA_X1         1  2.0           
+  g2152/A                                                    
+  g2152/CO                    HA_X1         1  2.0           
+  g2151/A                                                    
+  g2151/CO                    HA_X1         1  2.0           
+  g2150/A                                                    
+  g2150/CO                    HA_X1         1  2.0           
+  g2149/A                                                    
+  g2149/CO                    HA_X1         1  2.0           
+  g2148/A                                                    
+  g2148/CO                    HA_X1         1  2.0           
+  g2147/A                                                    
+  g2147/CO                    HA_X1         1  2.0           
+  g2146/A                                                    
+  g2146/CO                    HA_X1         1  2.0           
+  g2145/A                                                    
+  g2145/CO                    HA_X1         1  2.0           
+  g2144/A                                                    
+  g2144/CO                    HA_X1         1  2.0           
+  g2143/A                                                    
+  g2143/CO                    HA_X1         1  2.0           
+  g2142/A                                                    
+  g2142/CO                    HA_X1         1  2.0           
+  g2141/A                                                    
+  g2141/CO                    HA_X1         1  2.0           
+  g2140/A                                                    
+  g2140/CO                    HA_X1         1  2.0           
+  g2139/A                                                    
+  g2139/CO                    HA_X1         1  2.0           
+  g2138/A                                                    
+  g2138/CO                    HA_X1         1  2.0           
+  g2137/A                                                    
+  g2137/CO                    HA_X1         1  2.0           
+  g2136/A                                                    
+  g2136/CO                    HA_X1         1  2.0           
+  g2135/A                                                    
+  g2135/CO                    HA_X1         1  2.0           
+  g2134/A                                                    
+  g2134/CO                    HA_X1         1  2.0           
+  g2133/A                                                    
+  g2133/CO                    HA_X1         1  2.0           
+  g2132/A                                                    
+  g2132/CO                    HA_X1         1  2.0           
+  g2131/A                                                    
+  g2131/CO                    HA_X1         1  2.0           
+  g2130/A                                                    
+  g2130/CO                    HA_X1         1  2.0           
+  g2129/A                                                    
+  g2129/CO                    HA_X1         1  2.0           
+  g2128/A                                                    
+  g2128/CO                    HA_X1         1  2.0           
+  g2127/A                                                    
+  g2127/CO                    HA_X1         1  2.0           
+  g2126/A                                                    
+  g2126/CO                    HA_X1         1  2.0           
+  g2125/A                                                    
+  g2125/CO                    HA_X1         1  2.0           
+  g2124/A                                                    
+  g2124/CO                    HA_X1         1  2.0           
+  g2123/A                                                    
+  g2123/CO                    HA_X1         1  2.0           
+  g2122/A                                                    
+  g2122/CO                    HA_X1         1  2.0           
+  g2121/A                                                    
+  g2121/CO                    HA_X1         1  2.0           
+  g2120/A                                                    
+  g2120/CO                    HA_X1         1  1.4           
+  g2119/A                                                    
+  g2119/Z                     XOR2_X1       1  1.0           
+add_1542_34/Z[63] 
+cb_seqi/add_1542_34_Z[62] 
+  g101709/B                                                  
+  g101709/Z                   MUX2_X1       1  0.8           
+  g101323/A1                                                 
+  g101323/ZN                  AND2_X1       1  1.1           
+  count_instr_reg[63]/D  <<<  DFF_X1                         
+  count_instr_reg[63]/CK      setup                          
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)                   capture                20000 R 
+-------------------------------------------------------------
+Start-point  : cb_seqi/count_instr_reg[0]/CK
+End-point    : cb_seqi/count_instr_reg[63]/D
+
+The global mapper estimates a slack for this path of 11172ps.
+ 
+ 
+Global incremental timing result
+================================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32'.
+          Pin                  Type      Fanout Load Slew Delay Arrival   
+                                                (fF) (ps)  (ps)   (ps)    
+--------------------------------------------------------------------------
+(clock clk)                   launch                                  0 R 
+cb_seqi
+  reg_op1_reg[1]/CK                                     0             0 R 
+  reg_op1_reg[1]/Q            DFF_X1         20 21.3  246  +324     324 R 
+cb_seqi/pcpi_rs1[0] 
+lt_1221_22/A[1] 
+  g922/A2                                                    +0     324   
+  g922/ZN                     NOR2_X1         1  0.8   52   +41     365 F 
+  g920/B1                                                    +0     365   
+  g920/ZN                     OAI21_X1        1  0.8   39   +64     428 R 
+  g919/A                                                     +0     428   
+  g919/ZN                     OAI21_X1        1  0.7   49   +38     467 F 
+  g918/A                                                     +0     467   
+  g918/ZN                     OAI21_X1        1  0.8   40   +67     534 R 
+  g917/A                                                     +0     534   
+  g917/ZN                     OAI21_X1        1  0.7   50   +38     572 F 
+  g916/A                                                     +0     572   
+  g916/ZN                     OAI21_X1        1  0.8   40   +68     640 R 
+  g915/A                                                     +0     640   
+  g915/ZN                     OAI21_X1        1  0.7   53   +38     678 F 
+  g914/A                                                     +0     678   
+  g914/ZN                     OAI21_X1        2  1.6   50   +78     756 R 
+  g913/A1                                                    +0     756   
+  g913/ZN                     NOR2_X1         1  0.8   45   +26     783 F 
+  g911/B1                                                    +0     783   
+  g911/ZN                     OAI21_X1        1  0.8   38   +61     844 R 
+  g910/A                                                     +0     844   
+  g910/ZN                     OAI21_X1        1  0.7   52   +38     882 F 
+  g909/A                                                     +0     882   
+  g909/ZN                     OAI21_X1        1  0.8   40   +69     950 R 
+  g908/A                                                     +0     950   
+  g908/ZN                     OAI21_X1        1  0.7   51   +38     989 F 
+  g907/A                                                     +0     989   
+  g907/ZN                     OAI21_X1        1  0.8   40   +68    1056 R 
+  g906/A                                                     +0    1056   
+  g906/ZN                     OAI21_X1        1  0.7   52   +38    1095 F 
+  g905/A                                                     +0    1095   
+  g905/ZN                     OAI21_X1        1  0.8   40   +68    1163 R 
+  g904/A                                                     +0    1163   
+  g904/ZN                     OAI21_X1        1  0.7   52   +38    1202 F 
+  g903/A                                                     +0    1202   
+  g903/ZN                     OAI21_X1        1  0.8   40   +68    1270 R 
+  g902/A                                                     +0    1270   
+  g902/ZN                     OAI21_X1        1  0.7   52   +38    1309 F 
+  g901/A                                                     +0    1309   
+  g901/ZN                     OAI21_X1        1  0.8   40   +68    1377 R 
+  g900/A                                                     +0    1377   
+  g900/ZN                     OAI21_X1        1  0.7   52   +38    1416 F 
+  g899/A                                                     +0    1416   
+  g899/ZN                     OAI21_X1        1  0.8   40   +68    1484 R 
+  g898/A                                                     +0    1484   
+  g898/ZN                     OAI21_X1        1  0.7   52   +38    1523 F 
+  g897/A                                                     +0    1523   
+  g897/ZN                     OAI21_X1        1  0.8   40   +68    1591 R 
+  g896/A                                                     +0    1591   
+  g896/ZN                     OAI21_X1        1  0.7   52   +38    1630 F 
+  g895/A                                                     +0    1630   
+  g895/ZN                     OAI21_X1        1  0.8   40   +68    1698 R 
+  g894/A                                                     +0    1698   
+  g894/ZN                     OAI21_X1        1  0.7   52   +38    1737 F 
+  g893/A                                                     +0    1737   
+  g893/ZN                     OAI21_X1        1  0.8   40   +68    1805 R 
+  g892/A                                                     +0    1805   
+  g892/ZN                     OAI21_X1        1  0.7   52   +38    1844 F 
+  g891/A                                                     +0    1844   
+  g891/ZN                     OAI21_X1        1  0.8   40   +69    1912 R 
+  g890/A                                                     +0    1912   
+  g890/ZN                     OAI21_X1        1  0.7   52   +38    1951 F 
+  g889/A                                                     +0    1951   
+  g889/ZN                     OAI21_X1        1  0.8   40   +69    2020 R 
+  g888/A                                                     +0    2020   
+  g888/ZN                     OAI21_X1        1  0.7   52   +38    2058 F 
+  g887/A                                                     +0    2058   
+  g887/ZN                     OAI21_X1        1  0.8   40   +69    2127 R 
+  g886/A                                                     +0    2127   
+  g886/ZN                     OAI21_X1        1  0.7   52   +38    2165 F 
+  g885/A                                                     +0    2165   
+  g885/ZN                     OAI21_X1        2  1.8   52   +81    2246 R 
+  g884/A1                                                    +0    2246   
+  g884/ZN                     NOR2_X1         1  0.8   47   +27    2272 F 
+  g883/A1                                                    +0    2272   
+  g883/ZN                     NOR2_X1         1  0.8   32   +53    2325 R 
+  g882/A                                                     +0    2325   
+  g882/ZN                     AOI21_X1        1  0.7   39   +35    2360 F 
+  g881/A                                                     +0    2360   
+  g881/ZN                     AOI21_X1        1  0.8   44   +82    2442 R 
+  g880/A                                                     +0    2442   
+  g880/ZN                     AOI21_X1        1  0.7   40   +38    2481 F 
+  g879/A                                                     +0    2481   
+  g879/ZN                     AOI21_X1        1  0.8   44   +83    2563 R 
+  g878/A                                                     +0    2563   
+  g878/ZN                     AOI21_X1        1  0.7   40   +38    2602 F 
+  g877/A                                                     +0    2602   
+  g877/ZN                     AOI21_X1        1  0.8   44   +83    2684 R 
+  g876/A                                                     +0    2684   
+  g876/ZN                     AOI21_X1        1  0.7   40   +38    2723 F 
+  g875/A                                                     +0    2723   
+  g875/ZN                     AOI21_X1        1  0.8   44   +83    2806 R 
+  g874/A                                                     +0    2806   
+  g874/ZN                     AOI21_X1        1  0.7   40   +38    2844 F 
+  g873/A                                                     +0    2844   
+  g873/ZN                     AOI21_X1        1  0.8   44   +83    2927 R 
+  g872/A                                                     +0    2927   
+  g872/ZN                     AOI21_X1        1  0.7   40   +38    2965 F 
+  g871/A                                                     +0    2965   
+  g871/ZN                     AOI21_X1        1  0.8   44   +83    3048 R 
+  g870/A                                                     +0    3048   
+  g870/ZN                     AOI21_X1        1  0.7   40   +38    3086 F 
+  g869/A                                                     +0    3086   
+  g869/ZN                     AOI21_X1        1  0.8   44   +83    3169 R 
+  g868/A                                                     +0    3169   
+  g868/ZN                     AOI21_X1        1  0.7   40   +38    3207 F 
+  g867/A                                                     +0    3207   
+  g867/ZN                     AOI21_X1        1  0.8   44   +83    3290 R 
+  g866/A                                                     +0    3290   
+  g866/ZN                     AOI21_X1        1  0.7   40   +38    3328 F 
+  g865/A                                                     +0    3328   
+  g865/ZN                     AOI21_X1        1  0.8   44   +83    3411 R 
+  g864/A                                                     +0    3411   
+  g864/ZN                     AOI21_X1        1  0.7   39   +38    3449 F 
+  g863/A                                                     +0    3449   
+  g863/ZN                     AOI21_X1        1  0.8   44   +82    3531 R 
+  g862/A                                                     +0    3531   
+  g862/ZN                     AOI21_X1        1  0.7   39   +38    3570 F 
+  g861/A                                                     +0    3570   
+  g861/ZN                     OAI21_X1        1  0.8   38   +61    3631 R 
+  g860/A                                                     +0    3631   
+  g860/ZN                     OAI21_X1        1  0.7   52   +38    3669 F 
+  g859/A                                                     +0    3669   
+  g859/ZN                     OAI21_X1        1  0.8   40   +68    3738 R 
+  g858/A                                                     +0    3738   
+  g858/ZN                     OAI21_X1        1  1.7   50   +46    3784 F 
+lt_1221_22/Z 
+cb_seqi/lt_1221_22_Z 
+  g101192/S                                                  +0    3784   
+  g101192/Z                   MUX2_X1         1  0.8   19   +81    3865 F 
+  g97719/A                                                   +0    3865   
+  g97719/ZN                   AOI221_X1       1  0.8   65  +110    3974 R 
+  g97692/A1                                                  +0    3974   
+  g97692/ZN                   NAND2_X1        3  2.5   31   +47    4021 F 
+  g97650/A1                                                  +0    4021   
+  g97650/ZN                   NAND4_X1        1  1.1   47   +52    4073 R 
+  g97583/A1                                                  +0    4073   
+  g97583/ZN                   NOR3_X1         1  0.8   34   +30    4103 F 
+  g97540/B1                                                  +0    4103   
+  g97540/ZN                   OAI21_X1        1  1.1   53   +60    4163 R 
+  decoder_trigger_reg/D  <<<  DFF_X1                         +0    4163   
+  decoder_trigger_reg/CK      setup                     0   +54    4217 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                   capture                             20000 R 
+--------------------------------------------------------------------------
+Timing slack :   15783ps 
+Start-point  : cb_seqi/reg_op1_reg[1]/CK
+End-point    : cb_seqi/decoder_trigger_reg/D
+
+ 
+ 
+Global incremental optimization status
+======================================
+                         Worst  
+                 Total    Neg       Switching  
+Operation         Area   Slack        Power  
+-------------------------------------------------------------------------------
+ global_inc      40077       0      735993 
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ simp_cc_in      40076       0         0        0     735952 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      40076       0         0        0     735952 
+ init_drc        40076       0         0        0     735952 
+ init_power      40076       0         0        0     735952 
+ p_rem_buf       40073       0         0        0     735959 
+ p_merge_bi      40070       0         0        0     735959 
+ glob_power      40070       0         0        0     731425 
+ power_down      40070       0         0        0     729036 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      40070       0         0        0     729036 
+ init_drc        40070       0         0        0     729036 
+ init_power      40070       0         0        0     729036 
+ glob_power      40070       0         0        0     729036 
+ power_down      40070       0         0        0     729029 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      40070       0         0        0     729029 
+ init_drc        40070       0         0        0     729029 
+ init_power      40070       0         0        0     729029 
+
+  Done mapping picorv32
+  Synthesis succeeded.
+Runtime & Memory after incremental synthesis
+===========================================
+The RUNTIME after INCREMENTAL is 138 secs
+and the MEMORY_USAGE after INCREMENTAL is 221.44 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'picorv32'
+
+No empty modules in design 'picorv32'
+
+ Unloaded Pin(s), Port(s)
+ -------------------------
+No unloaded sequential element in 'picorv32'
+
+design 'picorv32' has the following unloaded port(s)
+/designs/picorv32/ports_in/irq[0]
+/designs/picorv32/ports_in/irq[10]
+/designs/picorv32/ports_in/irq[11]
+/designs/picorv32/ports_in/irq[12]
+/designs/picorv32/ports_in/irq[13]
+/designs/picorv32/ports_in/irq[14]
+/designs/picorv32/ports_in/irq[15]
+/designs/picorv32/ports_in/irq[16]
+/designs/picorv32/ports_in/irq[17]
+/designs/picorv32/ports_in/irq[18]
+/designs/picorv32/ports_in/irq[19]
+/designs/picorv32/ports_in/irq[1]
+/designs/picorv32/ports_in/irq[20]
+/designs/picorv32/ports_in/irq[21]
+/designs/picorv32/ports_in/irq[22]
+/designs/picorv32/ports_in/irq[23]
+/designs/picorv32/ports_in/irq[24]
+/designs/picorv32/ports_in/irq[25]
+/designs/picorv32/ports_in/irq[26]
+/designs/picorv32/ports_in/irq[27]
+/designs/picorv32/ports_in/irq[28]
+/designs/picorv32/ports_in/irq[29]
+/designs/picorv32/ports_in/irq[2]
+/designs/picorv32/ports_in/irq[30]
+/designs/picorv32/ports_in/irq[31]
+/designs/picorv32/ports_in/irq[3]
+/designs/picorv32/ports_in/irq[4]
+/designs/picorv32/ports_in/irq[5]
+/designs/picorv32/ports_in/irq[6]
+/designs/picorv32/ports_in/irq[7]
+/designs/picorv32/ports_in/irq[8]
+/designs/picorv32/ports_in/irq[9]
+/designs/picorv32/ports_in/pcpi_rd[0]
+/designs/picorv32/ports_in/pcpi_rd[10]
+/designs/picorv32/ports_in/pcpi_rd[11]
+/designs/picorv32/ports_in/pcpi_rd[12]
+/designs/picorv32/ports_in/pcpi_rd[13]
+/designs/picorv32/ports_in/pcpi_rd[14]
+/designs/picorv32/ports_in/pcpi_rd[15]
+/designs/picorv32/ports_in/pcpi_rd[16]
+/designs/picorv32/ports_in/pcpi_rd[17]
+/designs/picorv32/ports_in/pcpi_rd[18]
+/designs/picorv32/ports_in/pcpi_rd[19]
+/designs/picorv32/ports_in/pcpi_rd[1]
+/designs/picorv32/ports_in/pcpi_rd[20]
+/designs/picorv32/ports_in/pcpi_rd[21]
+/designs/picorv32/ports_in/pcpi_rd[22]
+/designs/picorv32/ports_in/pcpi_rd[23]
+/designs/picorv32/ports_in/pcpi_rd[24]
+/designs/picorv32/ports_in/pcpi_rd[25]
+/designs/picorv32/ports_in/pcpi_rd[26]
+/designs/picorv32/ports_in/pcpi_rd[27]
+/designs/picorv32/ports_in/pcpi_rd[28]
+/designs/picorv32/ports_in/pcpi_rd[29]
+/designs/picorv32/ports_in/pcpi_rd[2]
+/designs/picorv32/ports_in/pcpi_rd[30]
+/designs/picorv32/ports_in/pcpi_rd[31]
+/designs/picorv32/ports_in/pcpi_rd[3]
+/designs/picorv32/ports_in/pcpi_rd[4]
+/designs/picorv32/ports_in/pcpi_rd[5]
+/designs/picorv32/ports_in/pcpi_rd[6]
+/designs/picorv32/ports_in/pcpi_rd[7]
+/designs/picorv32/ports_in/pcpi_rd[8]
+/designs/picorv32/ports_in/pcpi_rd[9]
+/designs/picorv32/ports_in/pcpi_ready
+/designs/picorv32/ports_in/pcpi_wait
+/designs/picorv32/ports_in/pcpi_wr
+Total number of unloaded ports in design 'picorv32' : 67
+
+ Assigns
+ ------- 
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_addr[1]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_addr[0]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_addr[1]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_addr[0]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_wdata[7]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_wdata[6]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_wdata[5]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_wdata[4]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_wdata[3]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_wdata[2]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_wdata[1]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/mem_la_wdata[0]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_valid' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[31]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[30]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[29]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[28]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[27]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[26]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[25]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[24]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[23]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[22]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[21]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[20]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[19]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[18]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[17]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[16]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[15]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[14]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[13]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[12]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[11]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[10]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[9]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[8]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[7]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[6]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[5]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[4]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[3]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[2]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[1]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_insn[0]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_rs2[7]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_rs2[6]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_rs2[5]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_rs2[4]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_rs2[3]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_rs2[2]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_rs2[1]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/pcpi_rs2[0]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[31]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[30]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[29]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[28]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[27]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[26]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[25]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[24]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[23]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[22]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[21]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[20]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[19]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[18]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[17]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[16]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[15]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[14]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[13]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[12]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[11]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[10]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[9]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[8]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[7]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[6]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[5]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[4]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[3]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[2]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[1]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/eoi[0]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_valid' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[35]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[34]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[33]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[32]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[31]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[30]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[29]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[28]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[27]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[26]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[25]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[24]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[23]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[22]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[21]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[20]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[19]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[18]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[17]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[16]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[15]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[14]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[13]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[12]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[11]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[10]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[9]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[8]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[7]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[6]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[5]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[4]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[3]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[2]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[1]' in design picorv32
+Encountered an assign statement at port '/designs/picorv32/ports_out/trace_data[0]' in design picorv32
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1542_34/subports_out/Z[0]' in subdesign add_unsigned_12
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1405_40/subports_out/Z[0]' in subdesign add_unsigned_12_763
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1538_32/subports_out/Z[2]' in subdesign add_unsigned_757
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1538_32/subports_out/Z[1]' in subdesign add_unsigned_757
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1538_32/subports_out/Z[0]' in subdesign add_unsigned_757
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1295_30/subports_out/Z[2]' in subdesign add_unsigned_759
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1295_30/subports_out/Z[1]' in subdesign add_unsigned_759
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1295_30/subports_out/Z[0]' in subdesign add_unsigned_759
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1784_23/subports_out/Z[0]' in subdesign add_unsigned_760
+Encountered an assign statement at subport '/designs/picorv32/instances_hier/add_1547_33/subports_out/Z[0]' in subdesign add_unsigned_762
+Total number of assign statements in design 'picorv32' : 132
+
+ Undriven Port(s)/Pin(s)
+ ------------------------
+No undriven combinational pin in 'picorv32'
+
+No undriven sequential pin in 'picorv32'
+
+No undriven hierarchical pin in 'picorv32'
+
+No undriven port in 'picorv32'
+
+ Multidriven Port(s)/Pin(s)
+--------------------------
+
+No multidriven combinational pin in 'picorv32'
+
+No multidriven sequential pin in 'picorv32'
+
+No multidriven hierarchical pin in 'picorv32'
+
+No multidriven ports in 'picorv32'
+
+  Constant Pin(s)
+  ----------------
+No constant combinational pin(s) in design 'picorv32'
+
+No constant sequential pin(s) in design 'picorv32'
+
+design 'picorv32' has the following constant input hierarchical pin(s)
+/designs/picorv32/instances_hier/add_1295_30/pins_in/A[0]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/A[1]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[0]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[10]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[11]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[12]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[13]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[14]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[15]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[16]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[17]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[18]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[19]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[1]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[20]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[21]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[22]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[23]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[24]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[25]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[26]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[27]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[28]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[29]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[2]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[30]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[31]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[3]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[4]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[5]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[6]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[7]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[8]
+/designs/picorv32/instances_hier/add_1295_30/pins_in/B[9]
+/designs/picorv32/instances_hier/add_1405_40/pins_in/B
+/designs/picorv32/instances_hier/add_1538_32/pins_in/A[0]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/A[1]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[0]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[10]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[11]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[12]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[13]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[14]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[15]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[16]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[17]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[18]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[19]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[1]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[20]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[21]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[22]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[23]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[24]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[25]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[26]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[27]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[28]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[29]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[2]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[30]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[31]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[3]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[4]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[5]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[6]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[7]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[8]
+/designs/picorv32/instances_hier/add_1538_32/pins_in/B[9]
+/designs/picorv32/instances_hier/add_1542_34/pins_in/B
+/designs/picorv32/instances_hier/add_1547_33/pins_in/A[0]
+/designs/picorv32/instances_hier/add_1547_33/pins_in/B[0]
+/designs/picorv32/instances_hier/add_1784_23/pins_in/A[0]
+/designs/picorv32/instances_hier/add_1784_23/pins_in/B[0]
+Total number of constant hierarchical pins in design 'picorv32' : 74
+
+design 'picorv32' has the following constant port(s)
+/designs/picorv32/ports_out/eoi[0]
+/designs/picorv32/ports_out/eoi[10]
+/designs/picorv32/ports_out/eoi[11]
+/designs/picorv32/ports_out/eoi[12]
+/designs/picorv32/ports_out/eoi[13]
+/designs/picorv32/ports_out/eoi[14]
+/designs/picorv32/ports_out/eoi[15]
+/designs/picorv32/ports_out/eoi[16]
+/designs/picorv32/ports_out/eoi[17]
+/designs/picorv32/ports_out/eoi[18]
+/designs/picorv32/ports_out/eoi[19]
+/designs/picorv32/ports_out/eoi[1]
+/designs/picorv32/ports_out/eoi[20]
+/designs/picorv32/ports_out/eoi[21]
+/designs/picorv32/ports_out/eoi[22]
+/designs/picorv32/ports_out/eoi[23]
+/designs/picorv32/ports_out/eoi[24]
+/designs/picorv32/ports_out/eoi[25]
+/designs/picorv32/ports_out/eoi[26]
+/designs/picorv32/ports_out/eoi[27]
+/designs/picorv32/ports_out/eoi[28]
+/designs/picorv32/ports_out/eoi[29]
+/designs/picorv32/ports_out/eoi[2]
+/designs/picorv32/ports_out/eoi[30]
+/designs/picorv32/ports_out/eoi[31]
+/designs/picorv32/ports_out/eoi[3]
+/designs/picorv32/ports_out/eoi[4]
+/designs/picorv32/ports_out/eoi[5]
+/designs/picorv32/ports_out/eoi[6]
+/designs/picorv32/ports_out/eoi[7]
+/designs/picorv32/ports_out/eoi[8]
+/designs/picorv32/ports_out/eoi[9]
+/designs/picorv32/ports_out/mem_addr[0]
+/designs/picorv32/ports_out/mem_addr[1]
+/designs/picorv32/ports_out/mem_la_addr[0]
+/designs/picorv32/ports_out/mem_la_addr[1]
+/designs/picorv32/ports_out/pcpi_insn[0]
+/designs/picorv32/ports_out/pcpi_insn[10]
+/designs/picorv32/ports_out/pcpi_insn[11]
+/designs/picorv32/ports_out/pcpi_insn[12]
+/designs/picorv32/ports_out/pcpi_insn[13]
+/designs/picorv32/ports_out/pcpi_insn[14]
+/designs/picorv32/ports_out/pcpi_insn[15]
+/designs/picorv32/ports_out/pcpi_insn[16]
+/designs/picorv32/ports_out/pcpi_insn[17]
+/designs/picorv32/ports_out/pcpi_insn[18]
+/designs/picorv32/ports_out/pcpi_insn[19]
+/designs/picorv32/ports_out/pcpi_insn[1]
+/designs/picorv32/ports_out/pcpi_insn[20]
+/designs/picorv32/ports_out/pcpi_insn[21]
+/designs/picorv32/ports_out/pcpi_insn[22]
+/designs/picorv32/ports_out/pcpi_insn[23]
+/designs/picorv32/ports_out/pcpi_insn[24]
+/designs/picorv32/ports_out/pcpi_insn[25]
+/designs/picorv32/ports_out/pcpi_insn[26]
+/designs/picorv32/ports_out/pcpi_insn[27]
+/designs/picorv32/ports_out/pcpi_insn[28]
+/designs/picorv32/ports_out/pcpi_insn[29]
+/designs/picorv32/ports_out/pcpi_insn[2]
+/designs/picorv32/ports_out/pcpi_insn[30]
+/designs/picorv32/ports_out/pcpi_insn[31]
+/designs/picorv32/ports_out/pcpi_insn[3]
+/designs/picorv32/ports_out/pcpi_insn[4]
+/designs/picorv32/ports_out/pcpi_insn[5]
+/designs/picorv32/ports_out/pcpi_insn[6]
+/designs/picorv32/ports_out/pcpi_insn[7]
+/designs/picorv32/ports_out/pcpi_insn[8]
+/designs/picorv32/ports_out/pcpi_insn[9]
+/designs/picorv32/ports_out/pcpi_valid
+/designs/picorv32/ports_out/trace_data[0]
+/designs/picorv32/ports_out/trace_data[10]
+/designs/picorv32/ports_out/trace_data[11]
+/designs/picorv32/ports_out/trace_data[12]
+/designs/picorv32/ports_out/trace_data[13]
+/designs/picorv32/ports_out/trace_data[14]
+/designs/picorv32/ports_out/trace_data[15]
+/designs/picorv32/ports_out/trace_data[16]
+/designs/picorv32/ports_out/trace_data[17]
+/designs/picorv32/ports_out/trace_data[18]
+/designs/picorv32/ports_out/trace_data[19]
+/designs/picorv32/ports_out/trace_data[1]
+/designs/picorv32/ports_out/trace_data[20]
+/designs/picorv32/ports_out/trace_data[21]
+/designs/picorv32/ports_out/trace_data[22]
+/designs/picorv32/ports_out/trace_data[23]
+/designs/picorv32/ports_out/trace_data[24]
+/designs/picorv32/ports_out/trace_data[25]
+/designs/picorv32/ports_out/trace_data[26]
+/designs/picorv32/ports_out/trace_data[27]
+/designs/picorv32/ports_out/trace_data[28]
+/designs/picorv32/ports_out/trace_data[29]
+/designs/picorv32/ports_out/trace_data[2]
+/designs/picorv32/ports_out/trace_data[30]
+/designs/picorv32/ports_out/trace_data[31]
+/designs/picorv32/ports_out/trace_data[32]
+/designs/picorv32/ports_out/trace_data[33]
+/designs/picorv32/ports_out/trace_data[34]
+/designs/picorv32/ports_out/trace_data[35]
+/designs/picorv32/ports_out/trace_data[3]
+/designs/picorv32/ports_out/trace_data[4]
+/designs/picorv32/ports_out/trace_data[5]
+/designs/picorv32/ports_out/trace_data[6]
+/designs/picorv32/ports_out/trace_data[7]
+/designs/picorv32/ports_out/trace_data[8]
+/designs/picorv32/ports_out/trace_data[9]
+/designs/picorv32/ports_out/trace_valid
+Total number of constant port(s) in design 'picorv32' : 106
+
+  Preserved instances(s)
+  ----------------
+No preserved combinational instance(s) in design 'picorv32'
+No preserved sequential instance(s) in design 'picorv32'
+No preserved hierarchical instance(s) in design 'picorv32'
+
+Libcells with no corresponding LEF
+----------------------------------
+No libcell(s) found.
+
+LEF cells with no corresponding libcell
+---------------------------------------
+
+No physical (LEF) cells found.
+
+ Summary
+ ------- 
+
+                Name                 Total 
+-------------------------------------------
+Unresolved References                    0 
+Empty Modules                            0 
+Unloaded Port(s)                        67 
+Unloaded Sequential Pin(s)               0 
+Assigns                                132 
+Undriven Port(s)                         0 
+Undriven Leaf Pin(s)                     0 
+Undriven hierarchical pin(s)             0 
+Multidriven Port(s)                      0 
+Multidriven Leaf Pin(s)                  0 
+Multidriven hierarchical Pin(s)          0 
+Constant Port(s)                       106 
+Constant Leaf Pin(s)                     0 
+Constant hierarchical Pin(s)            74 
+Preserved leaf instance(s)               0 
+Preserved hierarchical instance(s)       0 
+Libcells with no LEF cell                0 
+Physical (LEF) cells with no libcell     0 
+
+  Done Checking the design.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'picorv32'.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 02 2018  11:28:51 PM
+  Module:                 picorv32
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+Timing
+------
+
+  Cost    Critical       Violating 
+ Group   Path Slack TNS    Paths   
+-----------------------------------
+default     15795.0   0          0 
+-----------------------------------
+Total                 0          0 
+
+Instance Count
+--------------
+
+Leaf Instance Count            5558 
+Sequential Instance Count      1576 
+Combinational Instance Count   3982 
+Hierarchical Instance Count      11 
+
+Area & Power
+------------
+Total Area                         40070.001
+Cell Area                          14384.216
+Leakage Power                      130.761 uW
+Dynamic Power                      1257.670 uW
+Total Power                        1388.431 uW
+
+
+Max Fanout                         1576 (clk)
+Min Fanout                         0 (n_4631)
+Average Fanout                     2.7
+Terms to net ratio                 3.6
+Terms to instance ratio            4.5
+Runtime                            141 seconds
+Hostname                           localhost
+Final Runtime & Memory.
+===========================================
+The RUNTIME after FINAL is 141 secs
+and the MEMORY_USAGE after FINAL is 221.44 MB
+===========================================
+============================
+Synthesis Finished .........
+============================
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 02 2018  11:28:51 PM
+  Module:                 picorv32
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+                      Leakage   Dynamic    Total   
+   Instance    Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------------
+picorv32        5558   130.761  1257.670  1388.431 
+  ADD_UNS_OP_2    33     1.109    22.951    24.061 
+  add_1847_26     33     1.182    22.441    23.623 
+  add_1547_33     32     0.902    15.366    16.268 
+  add_1784_23     32     0.945    15.049    15.994 
+  lt_1220_31     123     0.615    12.213    12.828 
+  lt_1221_22     123     0.615    12.211    12.826 
+  ADD_UNS_OP      32     0.566     7.705     8.270 
+  add_1538_32     29     0.438     5.634     6.072 
+  add_1542_34     63     0.942     4.640     5.582 
+  add_1405_40     63     0.940     4.418     5.358 
+  add_1295_30     29     0.434     4.217     4.650 
+

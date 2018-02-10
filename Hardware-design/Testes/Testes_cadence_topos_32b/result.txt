@@ -1,0 +1,367 @@
+Iniciando...
+sinteze e testes para as seguintes frequencias(MHz)
+['ARM_M0.tcl', 'NRISC.tcl', 'RISCV.tcl']
+[20, 50, 100, 200]
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report POWER 20 MHz***************20 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+                           Leakage   Dynamic    Total   
+      Instance      Cells Power(uW) Power(uW) Power(uW) 
+--------------------------------------------------------
+CORTEXM0INTEGRATION 10350   166.343  1002.426  1168.768 
+  u_logic           10350   166.343   969.516  1135.859 
+
+
+
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  4732    71.759   587.411   659.169 
+  REGs    3073    49.331   304.024   353.355 
+  ULA      912    10.375   134.926   145.302 
+  PC       218     4.122    33.480    37.602 
+  ID       285     3.434    21.519    24.953 
+
+
+
+
+                      Leakage   Dynamic    Total   
+   Instance    Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------------
+picorv32        5558   131.293   986.910  1118.202 
+  add_1847_26     33     1.156     9.639    10.796 
+  ADD_UNS_OP_2    33     1.101    11.394    12.495 
+  add_1784_23     32     0.997    15.970    16.967 
+  add_1547_33     32     0.942    16.307    17.249 
+  add_1542_34     63     0.942     4.640     5.582 
+  add_1405_40     63     0.940     4.418     5.358 
+  lt_1220_31     123     0.596     8.257     8.853 
+  lt_1221_22     123     0.594     8.303     8.896 
+  ADD_UNS_OP      32     0.566     7.705     8.270 
+  add_1295_30     29     0.459     4.284     4.742 
+  add_1538_32     29     0.458     4.698     5.156 
+
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report POWER 50 MHz***************50 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+                           Leakage   Dynamic    Total   
+      Instance      Cells Power(uW) Power(uW) Power(uW) 
+--------------------------------------------------------
+CORTEXM0INTEGRATION 10346   165.712  1564.422  1730.135 
+  u_logic           10346   165.712  1488.667  1654.379 
+
+
+
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  4726    70.272   710.416   780.688 
+  REGs    3073    48.638   370.899   419.537 
+  ULA      897     9.737   127.783   137.519 
+  PC       221     4.120    40.627    44.747 
+  ID       291     3.450    26.938    30.388 
+
+
+
+
+                      Leakage   Dynamic    Total   
+   Instance    Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------------
+picorv32        5558   130.761  1257.670  1388.431 
+  add_1847_26     33     1.182    22.441    23.623 
+  ADD_UNS_OP_2    33     1.109    22.951    24.061 
+  add_1784_23     32     0.945    15.049    15.994 
+  add_1542_34     63     0.942     4.640     5.582 
+  add_1405_40     63     0.940     4.418     5.358 
+  add_1547_33     32     0.902    15.366    16.268 
+  lt_1220_31     123     0.615    12.213    12.828 
+  lt_1221_22     123     0.615    12.211    12.826 
+  ADD_UNS_OP      32     0.566     7.705     8.270 
+  add_1538_32     29     0.438     5.634     6.072 
+  add_1295_30     29     0.434     4.217     4.650 
+
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report POWER 100 MHz***************100 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+                           Leakage   Dynamic    Total   
+      Instance      Cells Power(uW) Power(uW) Power(uW) 
+--------------------------------------------------------
+CORTEXM0INTEGRATION 10188   156.739  1815.456  1972.195 
+  u_logic           10188   156.739  1668.241  1824.980 
+
+
+
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  4688    70.917   877.527   948.444 
+  REGs    3075    48.685   464.552   513.237 
+  ULA      855    10.354   126.643   136.996 
+  PC       221     4.120    46.742    50.862 
+  ID       293     3.477    35.703    39.180 
+
+
+
+
+                      Leakage   Dynamic    Total   
+   Instance    Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------------
+picorv32        5558   130.758  1528.354  1659.112 
+  add_1847_26     33     1.182    22.441    23.623 
+  ADD_UNS_OP_2    33     1.109    22.951    24.061 
+  add_1784_23     32     0.945    15.048    15.993 
+  add_1542_34     63     0.942     4.640     5.582 
+  add_1405_40     63     0.940     4.418     5.358 
+  add_1547_33     32     0.902    15.366    16.268 
+  lt_1220_31     123     0.615    12.213    12.828 
+  lt_1221_22     123     0.615    12.211    12.826 
+  ADD_UNS_OP      32     0.566     7.705     8.270 
+  add_1538_32     29     0.438     5.634     6.072 
+  add_1295_30     29     0.434     4.217     4.650 
+
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report POWER 200 MHz***************200 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+                           Leakage   Dynamic    Total   
+      Instance      Cells Power(uW) Power(uW) Power(uW) 
+--------------------------------------------------------
+CORTEXM0INTEGRATION 10333   158.129  2300.380  2458.509 
+  u_logic           10333   158.129  2010.420  2168.549 
+
+
+
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  4800    71.276  1213.535  1284.811 
+  REGs    3101    48.765   650.243   699.007 
+  ULA      938    10.746   127.127   137.873 
+  PC       220     4.109    59.156    63.265 
+  ID       287     3.388    52.452    55.840 
+
+
+
+
+                      Leakage   Dynamic    Total   
+   Instance    Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------------
+picorv32        5634   131.379  2067.300  2198.679 
+  add_1847_26     50     1.227    23.483    24.711 
+  ADD_UNS_OP_2    50     1.144    23.666    24.810 
+  add_1784_23     47     1.006    15.712    16.718 
+  add_1542_34     76     0.977     4.916     5.893 
+  add_1547_33     49     0.966    16.064    17.030 
+  add_1405_40     74     0.961     4.498     5.459 
+  lt_1221_22     121     0.622    12.073    12.695 
+  lt_1220_31     119     0.616    12.008    12.624 
+  ADD_UNS_OP      44     0.573     7.795     8.368 
+  add_1538_32     29     0.438     5.634     6.073 
+  add_1295_30     29     0.434     4.429     4.862 
+
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report AREA 20 MHz***************20 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+      Instance       Cells  Cell Area  Net Area  
+-------------------------------------------------
+CORTEXM0INTEGRATION  10350      18903     45532  
+  u_logic            10350      18903     44575  
+    mul_3158_20       1029       2005      4048  
+    add_3168_41         32        135       346  
+    add_3152_27         30         79       358  
+    add_3163_33         33         87       231  
+    add_3153_53         29         76       136  
+
+
+   Instance    Cells  Cell Area  Net Area  
+-------------------------------------------
+NRISC_UP        4732       8550     19642  
+  REGs          3073       5848     12070  
+  ULA            912       1334      4305  
+    rsh_78_25    171        226       591  
+    rsh_81_25    164        235       531  
+    lsh_84_25    164        235       520  
+    sumsub       127        252       365  
+  ID             285        433      1306  
+  PC             218        467      1233  
+
+
+
+   Instance     Cells  Cell Area  Net Area  
+--------------------------------------------
+picorv32         5558      14384     25686  
+  ADD_UNS_OP_2     33        134       764  
+  lt_1220_31      123         99       722  
+  add_1542_34      63        167       587  
+  add_1405_40      63        167       516  
+  add_1784_23      32        129       330  
+  add_1547_33      32        129       293  
+  lt_1221_22      123         99       291  
+  add_1295_30      29         76       306  
+  add_1538_32      29         76       273  
+  ADD_UNS_OP       32         84       263  
+  add_1847_26      33        134       155  
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report AREA 50 MHz***************50 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+      Instance       Cells  Cell Area  Net Area  
+-------------------------------------------------
+CORTEXM0INTEGRATION  10346      18901     45522  
+  u_logic            10346      18901     44566  
+    mul_3158_20       1025       2003      4035  
+    add_3168_41         32        135       346  
+    add_3152_27         30         79       358  
+    add_3163_33         33         87       231  
+    add_3153_53         29         76       136  
+
+
+
+   Instance    Cells  Cell Area  Net Area  
+-------------------------------------------
+NRISC_UP        4726       8530     19649  
+  REGs          3073       5848     12070  
+  ULA            897       1309      4300  
+    rsh_81_25    164        220       582  
+    lsh_84_25    166        226       536  
+    rsh_78_25    154        224       538  
+    sumsub       127        252       365  
+  ID             291        436      1316  
+  PC             221        469      1237  
+
+
+
+   Instance     Cells  Cell Area  Net Area  
+--------------------------------------------
+picorv32         5558      14384     25686  
+  ADD_UNS_OP_2     33        134       764  
+  lt_1220_31      123         99       722  
+  add_1542_34      63        167       587  
+  add_1405_40      63        167       516  
+  add_1784_23      32        129       330  
+  add_1547_33      32        129       293  
+  lt_1221_22      123         99       291  
+  add_1295_30      29         76       306  
+  add_1538_32      29         76       273  
+  ADD_UNS_OP       32         84       263  
+  add_1847_26      33        134       155  
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report AREA 100 MHz***************100 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+      Instance       Cells  Cell Area  Net Area  
+-------------------------------------------------
+CORTEXM0INTEGRATION  10188      18825     45044  
+  u_logic            10188      18825     44098  
+    mul_3158_20        925       1975      3585  
+    add_3152_27         30         79       411  
+    add_3168_41         32        135       328  
+    add_3163_33         33         87       231  
+    add_3153_53         29         76       136  
+
+
+
+   Instance    Cells  Cell Area  Net Area  
+-------------------------------------------
+NRISC_UP        4688       8523     19567  
+  REGs          3075       5850     12074  
+  ULA            855       1298      4204  
+    rsh_78_25    154        224       538  
+    lsh_84_25    144        218       518  
+    rsh_81_25    144        218       505  
+    sumsub       127        252       365  
+  ID             293        438      1323  
+  PC             221        469      1239  
+
+
+
+   Instance     Cells  Cell Area  Net Area  
+--------------------------------------------
+picorv32         5558      14384     25687  
+  ADD_UNS_OP_2     33        134       764  
+  lt_1220_31      123         99       722  
+  add_1542_34      63        167       587  
+  add_1405_40      63        167       516  
+  add_1784_23      32        129       329  
+  add_1547_33      32        129       293  
+  lt_1221_22      123         99       291  
+  add_1295_30      29         76       306  
+  add_1538_32      29         76       273  
+  ADD_UNS_OP       32         84       263  
+  add_1847_26      33        134       155  
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report AREA 200 MHz***************200 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+      Instance       Cells  Cell Area  Net Area  
+-------------------------------------------------
+CORTEXM0INTEGRATION  10333      18899     45570  
+  u_logic            10333      18899     44639  
+    mul_3158_20       1084       2043      4076  
+    add_3168_41         98        176       543  
+    add_3152_27         30         79       405  
+    add_3163_33         33         87       231  
+    add_3153_53         29         76       136  
+
+
+
+   Instance    Cells  Cell Area  Net Area  
+-------------------------------------------
+NRISC_UP        4800       8574     19868  
+  REGs          3101       5873     12165  
+  ULA            938       1331      4433  
+    rsh_78_25    158        218       547  
+    rsh_81_25    161        235       517  
+    lsh_84_25    152        227       508  
+    sumsub       147        253       440  
+  ID             287        433      1281  
+  PC             220        467      1237  
+
+
+
+   Instance     Cells  Cell Area  Net Area  
+--------------------------------------------
+picorv32         5634      14415     25986  
+  ADD_UNS_OP_2     50        141       788  
+  lt_1220_31      119         98       729  
+  add_1542_34      76        175       638  
+  add_1405_40      74        172       554  
+  add_1784_23      47        137       375  
+  add_1547_33      49        138       340  
+  lt_1221_22      121         99       294  
+  add_1295_30      29         76       310  
+  ADD_UNS_OP       44         86       299  
+  add_1538_32      29         76       278  
+  add_1847_26      50        142       196  
+
+____________________________________________________________________

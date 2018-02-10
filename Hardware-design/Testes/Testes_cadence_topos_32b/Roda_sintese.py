@@ -5,7 +5,7 @@ import string
 import sys
 from time import gmtime, strftime
 
-Frequencia=[20]#,50,100,200]
+Frequencia=[20,50,100,200]
 ConfFile=["NRISC.tcl"]#["ARM_M0.tcl","NRISC.tcl","RISCV.tcl"]
 
 Tamanhos=[32]

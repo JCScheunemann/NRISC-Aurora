@@ -1,0 +1,106 @@
+Iniciando...
+sinteze e testes para as seguintes frequencias(MHz)
+['NRISC.tcl']
+[1, 8, 10]
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report POWER 1 MHz***************1 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  2651    41.047    50.390    91.437 
+  REGs    1600    25.770    28.496    54.266 
+  ULA      421     5.029     1.178     6.207 
+  PC       218     4.165     5.628     9.793 
+  ID       283     3.455     7.021    10.476 
+
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report POWER 8 MHz***************8 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  2658    40.492   163.306   203.798 
+  REGs    1600    25.542    95.530   121.071 
+  ULA      418     4.774    10.852    15.627 
+  PC       221     4.090    17.466    21.556 
+  ID       289     3.446    15.642    19.089 
+
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report POWER 10 MHz***************10 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  2662    39.577   195.432   235.009 
+  REGs    1600    24.932   113.942   138.875 
+  ULA      423     4.510    19.461    23.971 
+  PC       221     4.087    20.587    24.674 
+  ID       289     3.440    16.911    20.351 
+
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report AREA 1 MHz***************1 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+  Instance   Cells  Cell Area  Net Area  
+-----------------------------------------
+NRISC_UP      2651       4750     10914  
+  REGs        1600       2979      6240  
+  ULA          421        602      1994  
+    rsh_0_0     72         96       230  
+    sumsub      62        126       175  
+    lsh_0_0     60         83       203  
+    rsh65       60         83       197  
+  ID           283        431      1245  
+  PC           218        467      1088  
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report AREA 8 MHz***************8 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+  Instance   Cells  Cell Area  Net Area  
+-----------------------------------------
+NRISC_UP      2658       4746     10933  
+  REGs        1600       2979      6240  
+  ULA          418        593      1997  
+    sumsub      63        124       178  
+    rsh_0_0     67         88       205  
+    lsh_0_0     60         83       203  
+    rsh65       60         83       197  
+  ID           289        434      1254  
+  PC           221        469      1091  
+
+____________________________________________________________________
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+************************** report AREA 10 MHz***************10 MHz
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+  Instance   Cells  Cell Area  Net Area  
+-----------------------------------------
+NRISC_UP      2662       4754     10931  
+  REGs        1600       2979      6240  
+  ULA          423        601      1999  
+    rsh_0_0     72         96       230  
+    sumsub      63        124       178  
+    lsh_0_0     60         83       203  
+    rsh65       60         83       197  
+  ID           289        434      1254  
+  PC           221        469      1091  
+
+____________________________________________________________________

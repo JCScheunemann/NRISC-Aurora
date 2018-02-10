@@ -1,0 +1,1118 @@
+Checking out license 'RTL_Compiler_Physical'... (0 seconds elapsed)
+License RTL_Compiler_Physical checkout failed
+Checking out license 'RTL_Compiler_Ultra'... (0 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v08.10-s222_1 (64-bit), built Mar 25 2009
+
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+       object  attribute
+       ------  ---------
+       design  checkpoint_dofile_naming_style
+       design  checkpoint_netlist_naming_style
+       design  multipass_mux_optimization
+       design  timing_driven_muxopto
+     instance  black_box
+     instance  dft_inherited_dont_scan
+     instance  write_positional_connections
+      libcell  black_box
+          net  logic0_driven
+          net  logic1_driven
+         root  bit_blast_constants
+         root  bit_blast_mapped_ports
+         root  checkpoint_flow
+         root  checkpoint_gzipped_netlist
+         root  degenerate_complex_seqs
+         root  delayed_pragma_commands_interpreter
+         root  exact_match_seqs_async_controls
+         root  gen_no_negative_index
+         root  gen_unconnected_port_style
+         root  gen_write_empty_module_for_logic_abstract
+         root  hdl_array_generator
+         root  hdl_flatten_array
+         root  hdl_old_reg_naming
+         root  hdl_record_generator
+         root  hdl_reg_naming_style_scalar
+         root  hdl_reg_naming_style_vector
+         root  hdl_trim_target_index
+         root  hdl_vector_naming_style
+         root  lbr_async_clr_pre_seqs_interchangable
+         root  pqos_virtual_buffer
+         root  retime_preserve_state_points
+         root  wlec_env_var
+         root  wlec_flat_r2n
+         root  wlec_new_hier_comp
+         root  wlec_no_exit
+         root  wlec_save_ssion
+         root  wlec_sim_lib
+         root  wlec_sim_plus_lib
+         root  wlec_verbose
+    subdesign  multipass_mux_optimization
+    subdesign  timing_driven_muxopto
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+Sourcing './NRISC.tcl' (Sat Feb 10 13:57:37 -02 2018)...
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+model name	: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+cpu MHz		: 3000.156
+cpu MHz		: 2999.953
+cpu MHz		: 3052.054
+cpu MHz		: 3099.992
+Hostname : localhost
+Sourcing '/tools/cadence/soc81/tools/lib/etc/load_etc.tcl' (Sat Feb 10 13:57:37 -02 2018)...
+Sourcing '/tools/cadence/soc81/tools/lib/etc/toolbox/insert_io_buffers.tcl' (Sat Feb 10 13:57:37 -02 2018)...
+
+
+
+
+
+  Setting attribute of root '/': 'lib_search_path' = . /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/ /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/verilog/ /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/
+  Setting attribute of root '/': 'script_search_path' = . ../scripts
+  Setting attribute of root '/': 'hdl_search_path' = . ./
+  Setting attribute of root '/': 'wireload_mode' = top
+  Setting attribute of root '/': 'information_level' = 5
+  Setting attribute of root '/': 'lp_power_unit' = uW
+  Setting attribute of root '/': 'hdl_latch_keep_feedback' = true
+    Loading library NangateOpenCellLibrary_typical_conditional_ecsm.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:48:18: Construct 'library_features' is not supported.
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:63:8: Construct 'define' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:74:31: Construct 'slew_lower_threshold_pct_fall' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:75:31: Construct 'slew_lower_threshold_pct_rise' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:76:31: Construct 'slew_upper_threshold_pct_fall' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:77:31: Construct 'slew_upper_threshold_pct_rise' is not supported.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : NangateOpenCellLibrary_typical_conditional_ecsm.lib:92:14: Construct 'define_group' is not supported.
+Warning : Found CCS construct in the cell. [LBR-408]
+        : Found 'CCS' construct in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 281, column 27.
+        : Currently, CCS constructs are only parsed & ignored.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X1', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 123004, column 22.
+        : Currently, state tables are only supported for scan cells for the clocked LSSD scan style and for clock-gating cells whose Liberty attribute 'clock_gating_integrated_cell' is set to 'generic'.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X2', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 123767, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X4', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 124530, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATETST_X8', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 125293, column 22.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X1', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 126056, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X2', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 126705, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X4', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 127354, column 19.
+Info    : Found 'statetable' group in cell. [LBR-83]
+        : The 'statetable' group in cell 'CLKGATE_X8', in file 'NangateOpenCellLibrary_typical_conditional_ecsm.lib', at line 128003, column 19.
+        Cell 'ANTENNA_X1' has no outputs.
+        Cell 'ANTENNA_X1' has no outputs.
+        Cell 'FILLCELL_X1' has no outputs.
+        Cell 'FILLCELL_X1' has no outputs.
+        Cell 'FILLCELL_X16' has no outputs.
+        Cell 'FILLCELL_X16' has no outputs.
+        Cell 'FILLCELL_X2' has no outputs.
+        Cell 'FILLCELL_X2' has no outputs.
+        Cell 'FILLCELL_X32' has no outputs.
+        Cell 'FILLCELL_X32' has no outputs.
+        Cell 'FILLCELL_X4' has no outputs.
+        Cell 'FILLCELL_X4' has no outputs.
+        Cell 'FILLCELL_X8' has no outputs.
+        Cell 'FILLCELL_X8' has no outputs.
+  Setting attribute of root '/': 'library' =  NangateOpenCellLibrary_typical_conditional_ecsm.lib 
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+
+  There are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.07, 0.8) of 'WIDTH' for layers 'metal3' and 'metal9' is too large.
+        : Make sure to check the consistency of the parameters.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'PITCH' for layers 'metal3' and 'metal9' is too large.
+  Setting attribute of root '/': 'lef_library' = /tools/cadence/design_kits/NandGate045/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef//NangateOpenCellLibrary.lef
+  Setting attribute of root '/': 'interconnect_mode' = ple
+  Setting attribute of root '/': 'hdl_track_filename_row_col' = true
+Reading HDLs...
+	initial begin
+	      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../Test_Arch/picorv32/picorv32.v' on line 189, column 8.
+        : The following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+Elaborate Design...
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+  Elaborating top-level block 'NRISC_UP' from file '../../NRISC_UP.v'.
+    Elaborating block 'NRISC_PC_ctrl' from file '../../NRISC_PC_ctrl.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'ADDR_stack' in module 'NRISC_PC_ctrl' in file '../../NRISC_PC_ctrl.v' on line 49.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'PC_STACK' in module 'NRISC_PC_ctrl' in file '../../NRISC_PC_ctrl.v' on line 52.
+    Elaborating block 'NRISC_InstructionDecoder' from file '../../NRISC_InstructionDecoder.v'.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'rd_old_write' in module 'NRISC_InstructionDecoder' in file '../../NRISC_InstructionDecoder.v' on line 90.
+        : A flip-flop or latch that was inferred for an unused signal or variable was removed. Use 'set_attribute hdl_preserve_unused_registers true /' to preserve the flip-flop or latch.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'CORE_ctrl' is not used in module 'NRISC_InstructionDecoder' in file '../../NRISC_InstructionDecoder.v' on line 50.
+        : The value of the input port is not used within the design.
+    Elaborating block 'NRISC_REGs' from file '../../NRISC_REGs.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'REGS' in module 'NRISC_REGs' in file '../../NRISC_REGs.v' on line 43.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'global_REGS' in module 'NRISC_REGs' in file '../../NRISC_REGs.v' on line 44.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'USR_REGS' in module 'NRISC_REGs' in file '../../NRISC_REGs.v' on line 45.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'FIRQ_REGS' in module 'NRISC_REGs' in file '../../NRISC_REGs.v' on line 46.
+    Elaborating block 'NRISC_ULA' from file '../../NRISC_ULA.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'OUT' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 61.
+    Elaborating block 'somaUla_TAM16' from file '../../NRISC_ULA.v'.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'cmd' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 102, column 29.
+        : Use the 'hdl_undriven_signal_value' attribute to control treatment of undriven net during elaboration.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 101, column 40.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 101, column 51.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 105, column 123.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 102, column 36.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 107, column 45.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 102, column 61.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 103, column 48.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 107, column 33.
+Warning : Undriven signal detected. [ELABUTL-125]
+        : Undriven bits of signal 'ctrla' in module 'NRISC_ULA' in file '../../NRISC_ULA.v' on line 106, column 122.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'CORE_DATA_write_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 158.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'CORE_DATA_load_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 158.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'CORE_DATA_ctrl_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 158.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'CORE_DATA_ADDR_mux_exec_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 158.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused register 'REG_RFD_wb_pipe' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 158.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'DDATA_CORE_addr' in module 'NRISC_UP' in file '../../NRISC_UP.v' on line 102, column 44.
+        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
+  Done elaborating 'NRISC_UP'.
+Runtime & Memory after 'read_hdl'
+===========================================
+The RUNTIME after Elaboration is 4 secs
+and the MEMORY_USAGE after Elaboration is 70.55 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'NRISC_UP'
+
+No empty modules in design 'NRISC_UP'
+
+  Done Checking the design.
+Error   : A required object parameter could not be found. [TUI-61] [external_delay]
+        : An object of type 'clock' named '' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+  external_delay: specifies delay that is outside the design 
+
+Usage: external_delay 
+           ( -input <delay {r f R F} in picoseconds> |
+             -output <delay {r f R F} in picoseconds> )
+           [-mode <mode>] [-clock <clock>] [ -edge_rise | -edge_fall ]
+           [-level_sensitive] [-accumulate] [-name <string>] <pin|port>+
+
+    -input <delay {r f R F} in picoseconds>:
+        clock to input valid time 
+    -output <delay {r f R F} in picoseconds>:
+        output valid to clock time 
+    [-mode <mode>]:
+        the mode for the external delay 
+    [-clock <clock>]:
+        clock object 
+    [-edge_rise]:
+        rise clock edge 
+    [-edge_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        external event is level-sensitive 
+    [-accumulate]:
+        allows more than one external delay per clock per phase (default=false) 
+    [-name <string>]:
+        external delay name 
+    <pin|port>+:
+        object(s) 
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '11' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -output 10 {{/designs/NRISC_UP/ports_out/IDATA_CORE_addr[7]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[6]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[5]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[4]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[3]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[2]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[1]} {/designs/NRISC_UP/ports_out/IDATA_CORE_addr[0]} /designs/NRISC_UP/ports_out/IDATA_CORE_clk {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[7]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[6]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[5]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[4]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[3]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_addr[0]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[15]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[14]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[13]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[12]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[11]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[10]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[9]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[8]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[7]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[6]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[5]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[4]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[3]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_in[0]} /designs/NRISC_UP/ports_out/DDATA_CORE_load /designs/NRISC_UP/ports_out/DDATA_CORE_write {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[2]} {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[1]} {/designs/NRISC_UP/ports_out/DDATA_CORE_ctrl[0]} /designs/NRISC_UP/ports_out/CORE_WB /designs/NRISC_UP/ports_out/CORE_CO_op {/designs/NRISC_UP/ports_out/CORE_CO_A[15]} {/designs/NRISC_UP/ports_out/CORE_CO_A[14]} {/designs/NRISC_UP/ports_out/CORE_CO_A[13]} {/designs/NRISC_UP/ports_out/CORE_CO_A[12]} {/designs/NRISC_UP/ports_out/CORE_CO_A[11]} {/designs/NRISC_UP/ports_out/CORE_CO_A[10]} {/designs/NRISC_UP/ports_out/CORE_CO_A[9]} {/designs/NRISC_UP/ports_out/CORE_CO_A[8]} {/designs/NRISC_UP/ports_out/CORE_CO_A[7]} {/designs/NRISC_UP/ports_out/CORE_CO_A[6]} {/designs/NRISC_UP/ports_out/CORE_CO_A[5]} {/designs/NRISC_UP/ports_out/CORE_CO_A[4]} {/designs/NRISC_UP/ports_out/CORE_CO_A[3]} {/designs/NRISC_UP/ports_out/CORE_CO_A[2]} {/designs/NRISC_UP/ports_out/CORE_CO_A[1]} {/designs/NRISC_UP/ports_out/CORE_CO_A[0]} {/designs/NRISC_UP/ports_out/CORE_CO_B[15]} {/designs/NRISC_UP/ports_out/CORE_CO_B[14]} {/designs/NRISC_UP/ports_out/CORE_CO_B[13]} {/designs/NRISC_UP/ports_out/CORE_CO_B[12]} {/designs/NRISC_UP/ports_out/CORE_CO_B[11]} {/designs/NRISC_UP/ports_out/CORE_CO_B[10]} {/designs/NRISC_UP/ports_out/CORE_CO_B[9]} {/designs/NRISC_UP/ports_out/CORE_CO_B[8]} {/designs/NRISC_UP/ports_out/CORE_CO_B[7]} {/designs/NRISC_UP/ports_out/CORE_CO_B[6]} {/designs/NRISC_UP/ports_out/CORE_CO_B[5]} {/designs/NRISC_UP/ports_out/CORE_CO_B[4]} {/designs/NRISC_UP/ports_out/CORE_CO_B[3]} {/designs/NRISC_UP/ports_out/CORE_CO_B[2]} {/designs/NRISC_UP/ports_out/CORE_CO_B[1]} {/designs/NRISC_UP/ports_out/CORE_CO_B[0]}}.
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Error   : A required object parameter could not be found. [TUI-61] [external_delay]
+        : An object of type 'clock' named '' could not be found.
+  external_delay: specifies delay that is outside the design 
+
+Usage: external_delay 
+           ( -input <delay {r f R F} in picoseconds> |
+             -output <delay {r f R F} in picoseconds> )
+           [-mode <mode>] [-clock <clock>] [ -edge_rise | -edge_fall ]
+           [-level_sensitive] [-accumulate] [-name <string>] <pin|port>+
+
+    -input <delay {r f R F} in picoseconds>:
+        clock to input valid time 
+    -output <delay {r f R F} in picoseconds>:
+        output valid to clock time 
+    [-mode <mode>]:
+        the mode for the external delay 
+    [-clock <clock>]:
+        clock object 
+    [-edge_rise]:
+        rise clock edge 
+    [-edge_fall]:
+        fall clock edge 
+    [-level_sensitive]:
+        external event is level-sensitive 
+    [-accumulate]:
+        allows more than one external delay per clock per phase (default=false) 
+    [-name <string>]:
+        external delay name 
+    <pin|port>+:
+        object(s) 
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The TCL interpreter encountered the following error while processing line '12' of the SDC file './constraints.sdc': Failed on external_delay -clock {} -input 10 {{/designs/NRISC_UP/ports_in/IDATA_CORE_out[15]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[14]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[13]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[12]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[11]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[10]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[9]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[8]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[7]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[6]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[5]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[4]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[3]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[2]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[1]} {/designs/NRISC_UP/ports_in/IDATA_CORE_out[0]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[15]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[14]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[13]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[12]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[11]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[10]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[9]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[8]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[7]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[6]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[5]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[4]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[3]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[2]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[1]} {/designs/NRISC_UP/ports_in/DDATA_CORE_out[0]} {/designs/NRISC_UP/ports_in/CORE_ctrl[2]} {/designs/NRISC_UP/ports_in/CORE_ctrl[1]} {/designs/NRISC_UP/ports_in/CORE_ctrl[0]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[7]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[6]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[5]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[4]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[3]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[2]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[1]} {/designs/NRISC_UP/ports_in/INTERRUPT_ch[0]} /designs/NRISC_UP/ports_in/INTERRUPT_flag {/designs/NRISC_UP/ports_in/CORE_CO_In[15]} {/designs/NRISC_UP/ports_in/CORE_CO_In[14]} {/designs/NRISC_UP/ports_in/CORE_CO_In[13]} {/designs/NRISC_UP/ports_in/CORE_CO_In[12]} {/designs/NRISC_UP/ports_in/CORE_CO_In[11]} {/designs/NRISC_UP/ports_in/CORE_CO_In[10]} {/designs/NRISC_UP/ports_in/CORE_CO_In[9]} {/designs/NRISC_UP/ports_in/CORE_CO_In[8]} {/designs/NRISC_UP/ports_in/CORE_CO_In[7]} {/designs/NRISC_UP/ports_in/CORE_CO_In[6]} {/designs/NRISC_UP/ports_in/CORE_CO_In[5]} {/designs/NRISC_UP/ports_in/CORE_CO_In[4]} {/designs/NRISC_UP/ports_in/CORE_CO_In[3]} {/designs/NRISC_UP/ports_in/CORE_CO_In[2]} {/designs/NRISC_UP/ports_in/CORE_CO_In[1]} {/designs/NRISC_UP/ports_in/CORE_CO_In[0]} /designs/NRISC_UP/ports_in/clk /designs/NRISC_UP/ports_in/rst}.
+Statistics for commands executed by read_sdc:
+ "all_inputs"              - successful      1 , failed      0 (runtime  0.00)
+ "all_outputs"             - successful      1 , failed      0 (runtime  0.00)
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+Total runtime 0
+The number of exceptions is 0
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 10 2018  01:57:39 PM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+-------------------------------------------------------------------------------
+The following primary inputs have no clocked external delays.  As a result the  
+timing paths leading from the ports have no timing constraints derived from     
+clock waveforms.  The'external_delay' command is used to create new external    
+delays.                                                                         
+
+/designs/NRISC_UP/ports_in/CORE_CO_In[0]
+/designs/NRISC_UP/ports_in/CORE_CO_In[10]
+/designs/NRISC_UP/ports_in/CORE_CO_In[11]
+  ... 58 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+The following primary outputs have no clocked external delays.  As a result the 
+timing paths leading to the ports have no timing constraints derived from clock 
+waveforms.  The'external_delay' command is used to create new external delays.  
+
+/designs/NRISC_UP/ports_out/CORE_CO_A[0]
+/designs/NRISC_UP/ports_out/CORE_CO_A[10]
+/designs/NRISC_UP/ports_out/CORE_CO_A[11]
+  ... 69 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+
+  Setting attribute of root '/': 'dp_perform_csa_operations' = false
+  Setting attribute of root '/': 'dp_perform_shannon_operations' = false
+  Setting attribute of root '/': 'dp_perform_sharing_operations' = false
+  Setting attribute of root '/': 'dp_perform_speculation_operations' = false
+ Reading VCD file  
+Cannot open "./multiplication.vcd"
+---------------------------------------------------------------
+Asserted primary inputs in design         : 0 (0.00%)
+Total connected primary inputs in design  : 62 (100.00%)
+---------------------------------------------------------------
+Asserted sequential outputs               : 0 (0.00%)
+Total connected sequential outputs        : 495 (100.00%)
+------------------------------------------------------------------------------------
+Total nets in design                      : 10825 (100.00%)
+Nets asserted                             : 0 (0.00%)
+Constant nets                             : 10 (0.09)
+Nets with no assertions                   : 10825 (100.00%)
+------------------------------------------------------------------------------------
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+        : The RTL power analysis results are more accurate when detailed power models are used. Use command 'build_rtl_power_models' to build detailed power models.
+  Setting attribute of design 'NRISC_UP': 'lp_optimize_dynamic_power_first' = true
+  Setting attribute of design 'NRISC_UP': 'max_dynamic_power' = 0.0
+Info    : Resetting power analysis results. [PA-7]
+        : Power analysis effort level changed from 'medium' to 'high'.
+        : All computed switching activities are removed.
+  Setting attribute of root '/': 'lp_power_analysis_effort' = high
+  Setting attribute of design 'NRISC_UP': 'lp_power_optimization_weight' = 1.0
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design /designs/NRISC_UP has no power models available.
+  The '-incremental' option can only be used with a
+  mapped design.  Disabling '-incremental' option.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Site size           : 1.59 um (from lef [tech+cell])
+
+                   Capacitance  
+Layer               / Length         Data source:
+Name    Direction  (pF/micron)       lef_library
+--------------------------------
+metal1      H         0.000083  
+metal2      V         0.000044  
+metal3      H         0.000030  
+metal4      V         0.000024  
+metal5      H         0.000015  
+metal6      V         0.000011  
+metal7      H         0.000011  
+metal8      V         0.000007  
+metal9      H         0.000007  
+metal10     V         0.000004  
+
+                    Resistance   
+Layer                / Length         Data source:
+Name    Direction  (ohm/micron)       lef_library
+---------------------------------
+metal1      H          5.428571  
+metal2      V          3.571429  
+metal3      H          3.571429  
+metal4      V          1.500000  
+metal5      H          1.500000  
+metal6      V          1.500000  
+metal7      H          0.187500  
+metal8      V          0.187500  
+metal9      H          0.037500  
+metal10     V          0.037500  
+
+                        Area     
+Layer                 / Length        Data source:
+Name    Direction     (micron)        lef_library
+---------------------------------
+metal1      H          0.070000  
+metal2      V          0.070000  
+metal3      H          0.070000  
+metal4      V          0.140000  
+metal5      H          0.140000  
+metal6      V          0.140000  
+metal7      H          0.400000  
+metal8      V          0.400000  
+metal9      H          0.800000  
+metal10     V          0.800000  
+
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 23 hierarchical instances. 
+Following instances are deleted as they do not drive any primary output:
+'ID/mux_CORE_DATA_ADDR_mux_91_7', 'ID/mux_CORE_DATA_REGMux_91_7', 
+'ID/mux_CORE_DATA_ctrl_91_7', 'ID/mux_CORE_INT_CHA_91_7', 
+'ID/mux_CORE_INT_ctrl_91_7', 'ID/mux_CORE_InstructionToULAMux_91_7', 
+'ID/mux_CORE_PC_ctrl_91_7', 'ID/mux_CORE_REG_RD_91_7', 
+'ID/mux_CORE_REG_RF1_91_7', 'ID/mux_CORE_REG_RF2_91_7', 
+'ID/mux_CORE_REG_write_91_7', 'ID/mux_CORE_STACK_ctrl_91_7', 
+'ID/mux_CORE_Status_ctrl_91_7', 'ID/mux_CORE_ULA_REGA_Stall_91_7', 
+'ID/mux_CORE_ULA_REGB_Stall_91_7', 'ID/mux_CORE_ULA_ctrl_91_7', 
+'ID/mux_old_rd1_91_7', 'ID/mux_old_rd_480_7', 'PC/mux_ADDR_stack[0]_66_8', 
+'PC/mux_ADDR_stack[1]_66_8', 'PC/mux_PC_STACK[0]_66_8', 
+'PC/mux_PC_pointer_66_8', 'PC/mux_delay_66_8'.
+        : To see the list of deleted instances, set the 'information_level' attribute to 2 or above.
+      Timing add_unsigned...
+      Timing add_unsigned_1665...
+      Timing sub_unsigned...
+      Timing sub_unsigned_1666...
+      Removing temporary intermediate hierarchies under NRISC_UP
+Info    : Found floating hierarchical output. [GLO-33]
+        : Found 4 floating hierarchical outputs:
+'ID/CORE_DATA_ADDR_mux', 'ID/CORE_INT_CHA[0:7]', 'ID/CORE_INT_ctrl[0:1]', 
+'ID/CORE_Status_ctrl[0:4]'.
+        : To see the list of floating hierarchical instances, set the 'information_level' attribute to 2 or above.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 16 sequential instances. 
+Following instances are deleted as they do not drive any primary output:
+'ID/CORE_DATA_ADDR_mux_reg', 'ID/CORE_INT_CHA_reg[0]', 
+'ID/CORE_INT_CHA_reg[1]', 'ID/CORE_INT_CHA_reg[2]', 
+'ID/CORE_INT_CHA_reg[3]', 'ID/CORE_INT_CHA_reg[4]', 
+'ID/CORE_INT_CHA_reg[5]', 'ID/CORE_INT_CHA_reg[6]', 
+'ID/CORE_INT_CHA_reg[7]', 'ID/CORE_INT_ctrl_reg[0]', 
+'ID/CORE_INT_ctrl_reg[1]', 'ID/CORE_Status_ctrl_reg[0]', 
+'ID/CORE_Status_ctrl_reg[1]', 'ID/CORE_Status_ctrl_reg[2]', 
+'ID/CORE_Status_ctrl_reg[3] (floating-loop root)', 
+'ID/CORE_Status_ctrl_reg[4]'.
+Info    : Deleting instances not driving any primary outputs. [GLO-32]
+        : Deleting 6 hierarchical instances. 
+Following instances are deleted as they do not drive any primary output:
+'ID/mux_CORE_INT_ctrl_114_10', 'ID/mux_CORE_INT_ctrl_116_15', 
+'ID/mux_CORE_INT_ctrl_118_18', 'ID/mux_CORE_INT_ctrl_122_22', 
+'ID/mux_CORE_Status_ctrl_126_26', 'ID/mux_CORE_Status_ctrl_143_26'.
+Mapping NRISC_UP to gates.
+      Mapping 'NRISC_UP'...
+        Preparing the circuit
+          Pruning unused logic
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) NRISC_UP...
+          Done structuring (delay-based) NRISC_UP
+          Structuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done structuring (delay-based) logic partition in NRISC_PC_ctrl
+        Mapping logic partition in NRISC_PC_ctrl...
+          Structuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done structuring (delay-based) logic partition in NRISC_PC_ctrl
+        Mapping logic partition in NRISC_PC_ctrl...
+          Structuring (delay-based) cb_seq_1632...
+          Done structuring (delay-based) cb_seq_1632
+        Mapping component cb_seq_1632...
+          Structuring (delay-based) cb_oseq_1635...
+          Done structuring (delay-based) cb_oseq_1635
+        Mapping component cb_oseq_1635...
+          Structuring (delay-based) cb_oseq...
+          Done structuring (delay-based) cb_oseq
+        Mapping component cb_oseq...
+          Structuring (delay-based) cb_oseq_1637...
+          Done structuring (delay-based) cb_oseq_1637
+        Mapping component cb_oseq_1637...
+        Rebalancing component 'lsh_0_0'...
+          Structuring (delay-based) somaUla_TAM16...
+          Done structuring (delay-based) somaUla_TAM16
+        Mapping component somaUla_TAM16...
+          Structuring (delay-based) shift_left_vlog_unsigned...
+          Done structuring (delay-based) shift_left_vlog_unsigned
+        Mapping component shift_left_vlog_unsigned...
+          Structuring (delay-based) logic partition in NRISC_ULA...
+          Done structuring (delay-based) logic partition in NRISC_ULA
+        Mapping logic partition in NRISC_ULA...
+        Rebalancing component 'rsh65'...
+        Rebalancing component 'rsh_0_0'...
+          Structuring (delay-based) shift_right_vlog_unsigned...
+          Done structuring (delay-based) shift_right_vlog_unsigned
+        Mapping component shift_right_vlog_unsigned...
+          Structuring (delay-based) shift_right_vlog_unsigned_512...
+          Done structuring (delay-based) shift_right_vlog_unsigned_512
+        Mapping component shift_right_vlog_unsigned_512...
+          Structuring (delay-based) cb_seq_1634...
+          Done structuring (delay-based) cb_seq_1634
+        Mapping component cb_seq_1634...
+          Structuring (delay-based) cb_part_1640...
+          Done structuring (delay-based) cb_part_1640
+        Mapping component cb_part_1640...
+          Structuring (delay-based) logic partition in NRISC_UP...
+          Done structuring (delay-based) logic partition in NRISC_UP
+        Mapping logic partition in NRISC_UP...
+          Structuring (delay-based) cb_seq...
+          Done structuring (delay-based) cb_seq
+        Mapping component cb_seq...
+ 
+Global mapping target info
+==========================
+Cost Group 'default' target slack:  1499 ps
+Target path end-point (Pin: REGs/FIRQ_REGS_reg[6][1]/d)
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+        : Use 'report timing -lint' for more information.
+           Pin                        Type          Fanout Load Arrival   
+                                                           (fF)   (ps)    
+--------------------------------------------------------------------------
+(clock clk)                 <<<  launch                           50000 F 
+cb_oseqi
+  REG_Write_wb_pipe_reg/clk                                               
+  REG_Write_wb_pipe_reg/q   (u)  unmapped_d_flop         2 10.0           
+cb_oseqi/REGs_REG_Write 
+REGs/REG_Write 
+  cb_seqi/REG_Write 
+    g10220/in_0                                                           
+    g10220/z                (u)  unmapped_nand2          2 10.0           
+    g12424/in_0                                                           
+    g12424/z                (u)  unmapped_complex2       2 10.0           
+    g12413/in_0                                                           
+    g12413/z                (u)  unmapped_or2            5 25.0           
+    g12393/in_0                                                           
+    g12393/z                (u)  unmapped_complex2       3 15.0           
+    g12280/in_0                                                           
+    g12280/z                (u)  unmapped_nand2         16 80.0           
+    g11854/in_1                                                           
+    g11854/z                (u)  unmapped_nand2          1  5.0           
+    g11428/in_1                                                           
+    g11428/z                (u)  unmapped_nand2          1  5.0           
+    FIRQ_REGS_reg[6][1]/d   <<<  unmapped_d_flop                          
+    FIRQ_REGS_reg[6][1]/clk      setup                                    
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                      capture                         100000 R 
+--------------------------------------------------------------------------
+Start-point  : cb_oseqi/REG_Write_wb_pipe_reg/clk
+End-point    : REGs/cb_seqi/FIRQ_REGS_reg[6][1]/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 49591ps.
+ 
+          Restructuring (delay-based) cb_seq...
+          Done restructuring (delay-based) cb_seq
+        Optimizing component cb_seq...
+          Restructuring (delay-based) logic partition in NRISC_UP...
+          Done restructuring (delay-based) logic partition in NRISC_UP
+        Optimizing logic partition in NRISC_UP...
+          Restructuring (delay-based) cb_seq_1634...
+          Done restructuring (delay-based) cb_seq_1634
+        Optimizing component cb_seq_1634...
+          Restructuring (delay-based) cb_part_1640...
+          Done restructuring (delay-based) cb_part_1640
+        Optimizing component cb_part_1640...
+          Restructuring (delay-based) shift_right_vlog_unsigned_512...
+          Done restructuring (delay-based) shift_right_vlog_unsigned_512
+        Optimizing component shift_right_vlog_unsigned_512...
+        Early Area Reclamation for shift_right_vlog_unsigned_512 'very_fast' (slack=67235, area=97)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Pre-mapped Exploration for shift_right_vlog_unsigned_512 'slow' (slack=67234, area=96)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Early Area Reclamation for shift_right_vlog_unsigned 'very_fast' (slack=67102, area=97)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+        Pre-mapped Exploration for shift_right_vlog_unsigned 'slow' (slack=67225, area=83)...
+          Restructuring (delay-based) shift_right_vlog_unsigned...
+          Done restructuring (delay-based) shift_right_vlog_unsigned
+        Optimizing component shift_right_vlog_unsigned...
+          Restructuring (delay-based) somaUla_TAM16...
+          Done restructuring (delay-based) somaUla_TAM16
+        Optimizing component somaUla_TAM16...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+        Early Area Reclamation for shift_left_vlog_unsigned 'very_fast' (slack=67302, area=97)...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+        Pre-mapped Exploration for shift_left_vlog_unsigned 'slow' (slack=67429, area=83)...
+          Restructuring (delay-based) shift_left_vlog_unsigned...
+          Done restructuring (delay-based) shift_left_vlog_unsigned
+        Optimizing component shift_left_vlog_unsigned...
+          Restructuring (delay-based) logic partition in NRISC_ULA...
+          Done restructuring (delay-based) logic partition in NRISC_ULA
+        Optimizing logic partition in NRISC_ULA...
+          Restructuring (delay-based) cb_oseq_1637...
+          Done restructuring (delay-based) cb_oseq_1637
+        Optimizing component cb_oseq_1637...
+          Restructuring (delay-based) cb_seq_1632...
+          Done restructuring (delay-based) cb_seq_1632
+        Optimizing component cb_seq_1632...
+          Restructuring (delay-based) cb_oseq_1635...
+          Done restructuring (delay-based) cb_oseq_1635
+        Optimizing component cb_oseq_1635...
+          Restructuring (delay-based) cb_oseq...
+          Done restructuring (delay-based) cb_oseq
+        Optimizing component cb_oseq...
+          Restructuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done restructuring (delay-based) logic partition in NRISC_PC_ctrl
+        Optimizing logic partition in NRISC_PC_ctrl...
+          Restructuring (delay-based) logic partition in NRISC_PC_ctrl...
+          Done restructuring (delay-based) logic partition in NRISC_PC_ctrl
+        Optimizing logic partition in NRISC_PC_ctrl...
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+ 
+Global mapping timing result
+============================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+           Pin                   Type     Fanout Load Slew Delay Arrival   
+                                                 (fF) (ps)  (ps)   (ps)    
+---------------------------------------------------------------------------
+(clock clk)                     launch                             50000 F 
+cb_oseqi
+  REG_Write_wb_pipe_reg/CK                               0         50000 R 
+  REG_Write_wb_pipe_reg/Q       DFF_X1         2  1.5   24   +91   50091 R 
+cb_oseqi/REGs_REG_Write 
+REGs/REG_Write 
+  cb_seqi/REG_Write 
+    g16841/A2                                                 +0   50091   
+    g16841/ZN                   AND2_X1        2  1.5   25   +56   50147 R 
+    g16834/A1                                                 +0   50147   
+    g16834/ZN                   NAND2_X1       2  1.5   17   +28   50175 F 
+    g16819/A2                                                 +0   50175   
+    g16819/ZN                   OR2_X1         5  3.5   25   +83   50258 F 
+    g16796/A2                                                 +0   50258   
+    g16796/ZN                   NOR2_X1       17 15.1  249  +294   50551 R 
+    g16777/A1                                                 +0   50551   
+    g16777/ZN                   NOR2_X1       16 11.1  105  +156   50707 F 
+    g16508/A2                                                 +0   50707   
+    g16508/ZN                   AOI22_X1       1  1.2   62  +115   50822 R 
+    g16507/A                                                  +0   50822   
+    g16507/ZN                   INV_X2         1  1.1   16   +16   50838 F 
+    USR_REGS_reg[0][0]/D   <<<  DFF_X1                        +0   50838   
+    USR_REGS_reg[0][0]/CK       setup                    0   +44   50882 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)                     capture                           100000 R 
+---------------------------------------------------------------------------
+Timing slack :   49118ps 
+Start-point  : cb_oseqi/REG_Write_wb_pipe_reg/CK
+End-point    : REGs/cb_seqi/USR_REGS_reg[0][0]/D
+
+ 
+ 
+Global mapping status
+=====================
+                         Worst  
+                 Total    Neg       Switching  
+Operation         Area   Slack        Power  
+-------------------------------------------------------------------------------
+ global_map      15728       0 -9223372036855 
+ 
+Global incremental target info
+==============================
+Cost Group 'default' target slack:   999 ps
+Target path end-point (Pin: ID/CORE_ULA_REGA_Stall_reg/D (DFF_X2/D))
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+             Pin                     Type      Fanout Load Arrival   
+                                                      (fF)   (ps)    
+---------------------------------------------------------------------
+(clock clk)                    <<<  launch                   50000 F 
+ID
+  cb_oseqi
+    old_rd_reg[1]/CK                                                 
+    old_rd_reg[1]/QN                DFF_X1          3  4.3           
+    g4484/A                                                          
+    g4484/ZN                        INV_X4          2  2.7           
+    g4476/A                                                          
+    g4476/ZN                        AOI211_X1       1  0.9           
+    g4472/A1                                                         
+    g4472/ZN                        NOR2_X1         1  0.9           
+    g4470/A1                                                         
+    g4470/ZN                        OR2_X1          1  1.2           
+    g4468/A                                                          
+    g4468/Z                         MUX2_X1         1  1.0           
+    g4467/A1                                                         
+    g4467/ZN                        NOR4_X1         1  1.1           
+    CORE_ULA_REGA_Stall_reg/D  <<<  DFF_X2                           
+    CORE_ULA_REGA_Stall_reg/CK      setup                            
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)                         capture                 100000 R 
+---------------------------------------------------------------------
+Start-point  : ID/cb_oseqi/old_rd_reg[1]/CK
+End-point    : ID/cb_oseqi/CORE_ULA_REGA_Stall_reg/D
+
+The global mapper estimates a slack for this path of 34598ps.
+ 
+ 
+Global incremental timing result
+================================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+           Pin                   Type     Fanout Load Slew Delay Arrival   
+                                                 (fF) (ps)  (ps)   (ps)    
+---------------------------------------------------------------------------
+(clock clk)                     launch                             50000 F 
+cb_oseqi
+  REG_Write_wb_pipe_reg/CK                               0         50000 R 
+  REG_Write_wb_pipe_reg/Q       DFF_X1         2  1.5   24   +91   50091 R 
+cb_oseqi/REGs_REG_Write 
+REGs/REG_Write 
+  cb_seqi/REG_Write 
+    g16841/A2                                                 +0   50091   
+    g16841/ZN                   AND2_X1        2  1.5   25   +56   50147 R 
+    g16834/A1                                                 +0   50147   
+    g16834/ZN                   NAND2_X1       2  1.5   17   +28   50175 F 
+    g16819/A2                                                 +0   50175   
+    g16819/ZN                   OR2_X1         5  3.5   25   +83   50258 F 
+    g16796/A2                                                 +0   50258   
+    g16796/ZN                   NOR2_X1       17 15.1  249  +294   50551 R 
+    g16777/A1                                                 +0   50551   
+    g16777/ZN                   NOR2_X1       16 11.1  105  +156   50707 F 
+    g16508/A2                                                 +0   50707   
+    g16508/ZN                   AOI22_X1       1  1.2   62  +115   50822 R 
+    g16507/A                                                  +0   50822   
+    g16507/ZN                   INV_X2         1  1.1   16   +16   50838 F 
+    USR_REGS_reg[0][0]/D   <<<  DFF_X1                        +0   50838   
+    USR_REGS_reg[0][0]/CK       setup                    0   +44   50882 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)                     capture                           100000 R 
+---------------------------------------------------------------------------
+Timing slack :   49118ps 
+Start-point  : cb_oseqi/REG_Write_wb_pipe_reg/CK
+End-point    : REGs/cb_seqi/USR_REGS_reg[0][0]/D
+
+ 
+ 
+Global incremental optimization status
+======================================
+                         Worst  
+                 Total    Neg       Switching  
+Operation         Area   Slack        Power  
+-------------------------------------------------------------------------------
+ global_inc      15706       0 -9223372036855 
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ simp_cc_in      15699       0         0        0      97035 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      15699       0         0        0      97035 
+ init_drc        15699       0         0        0      97035 
+ init_power      15699       0         0        0      97035 
+ p_merge_bi      15685       0         0        0      96792 
+ glob_power      15685       0         0        0      94647 
+ power_down      15685       0         0        0      93290 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      15685       0         0        0      93290 
+ init_drc        15685       0         0        0      93290 
+ init_power      15685       0         0        0      93290 
+ glob_power      15685       0         0        0      93283 
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max     Switching  
+Operation         Area   Slack     Trans      Cap       Power  
+-------------------------------------------------------------------------------
+ init_delay      15685       0         0        0      93283 
+ init_drc        15685       0         0        0      93283 
+ init_power      15685       0         0        0      93283 
+
+  Done mapping NRISC_UP
+  Synthesis succeeded.
+Runtime & Memory after incremental synthesis
+===========================================
+The RUNTIME after INCREMENTAL is 29 secs
+and the MEMORY_USAGE after INCREMENTAL is 89.00 MB
+===========================================
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'NRISC_UP'
+
+No empty modules in design 'NRISC_UP'
+
+ Unloaded Pin(s), Port(s)
+ -------------------------
+No unloaded sequential element in 'NRISC_UP'
+
+design 'NRISC_UP' has the following unloaded port(s)
+/designs/NRISC_UP/ports_in/CORE_ctrl[0]
+/designs/NRISC_UP/ports_in/CORE_ctrl[1]
+/designs/NRISC_UP/ports_in/CORE_ctrl[2]
+Total number of unloaded ports in design 'NRISC_UP' : 3
+
+ Assigns
+ ------- 
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[4]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[3]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[2]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_Status_ctrl[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_DATA_ADDR_mux' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[7]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[6]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[5]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[4]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[3]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[2]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_CHA[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_ctrl[1]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/ID/subports_out/CORE_INT_ctrl[0]' in subdesign NRISC_InstructionDecoder
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[15]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[14]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[13]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[12]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[11]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[10]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[9]' in subdesign NRISC_PC_ctrl
+Encountered an assign statement at subport '/designs/NRISC_UP/instances_hier/PC/subports_out/REG_R1[8]' in subdesign NRISC_PC_ctrl
+Total number of assign statements in design 'NRISC_UP' : 24
+
+ Undriven Port(s)/Pin(s)
+ ------------------------
+The following combinational pin(s) in design 'NRISC_UP' are undriven
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g5147/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g5186/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g5199/pins_in/S
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g5201/pins_in/B
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g5227/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g5228/pins_in/A1
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g5228/pins_in/A2
+/designs/NRISC_UP/instances_hier/ULA/instances_comb/g5229/pins_in/A
+Total number of combinational undriven pins in design 'NRISC_UP' : 8
+
+No undriven sequential pin in 'NRISC_UP'
+
+No undriven hierarchical pin in 'NRISC_UP'
+
+The following port(s) in design 'NRISC_UP' are undriven
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[0]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[1]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[2]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[3]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[4]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[5]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[6]}
+{/designs/NRISC_UP/ports_out/DDATA_CORE_addr[7]}
+Total number of undriven port(s) in design 'NRISC_UP' : 8
+
+ Multidriven Port(s)/Pin(s)
+--------------------------
+
+No multidriven combinational pin in 'NRISC_UP'
+
+No multidriven sequential pin in 'NRISC_UP'
+
+No multidriven hierarchical pin in 'NRISC_UP'
+
+No multidriven ports in 'NRISC_UP'
+
+  Constant Pin(s)
+  ----------------
+No constant combinational pin(s) in design 'NRISC_UP'
+
+No constant sequential pin(s) in design 'NRISC_UP'
+
+design 'NRISC_UP' has the following constant input hierarchical pin(s)
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[0]
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[1]
+/designs/NRISC_UP/instances_hier/ID/pins_in/CORE_ctrl[2]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[10]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[11]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[12]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[13]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[14]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[15]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[8]
+/designs/NRISC_UP/instances_hier/REGs/pins_in/REG_R1[9]
+Total number of constant hierarchical pins in design 'NRISC_UP' : 11
+
+No constant connected ports in design 'NRISC_UP'
+
+  Preserved instances(s)
+  ----------------
+No preserved combinational instance(s) in design 'NRISC_UP'
+No preserved sequential instance(s) in design 'NRISC_UP'
+No preserved hierarchical instance(s) in design 'NRISC_UP'
+
+Libcells with no corresponding LEF
+----------------------------------
+No libcell(s) found.
+
+LEF cells with no corresponding libcell
+---------------------------------------
+
+No physical (LEF) cells found.
+
+ Summary
+ ------- 
+
+                Name                 Total 
+-------------------------------------------
+Unresolved References                    0 
+Empty Modules                            0 
+Unloaded Port(s)                         3 
+Unloaded Sequential Pin(s)               0 
+Assigns                                 24 
+Undriven Port(s)                         8 
+Undriven Leaf Pin(s)                     8 
+Undriven hierarchical pin(s)             0 
+Multidriven Port(s)                      0 
+Multidriven Leaf Pin(s)                  0 
+Multidriven hierarchical Pin(s)          0 
+Constant Port(s)                         0 
+Constant Leaf Pin(s)                     0 
+Constant hierarchical Pin(s)            11 
+Preserved leaf instance(s)               0 
+Preserved hierarchical instance(s)       0 
+Libcells with no LEF cell                0 
+Physical (LEF) cells with no libcell     0 
+
+  Done Checking the design.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'NRISC_UP'.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 10 2018  01:58:05 PM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+Timing
+------
+
+  Cost    Critical       Violating 
+ Group   Path Slack TNS    Paths   
+-----------------------------------
+default     49113.9   0          0 
+-----------------------------------
+Total                 0          0 
+
+Instance Count
+--------------
+
+Leaf Instance Count            2662 
+Sequential Instance Count       479 
+Combinational Instance Count   2183 
+Hierarchical Instance Count       8 
+
+Area & Power
+------------
+Total Area                         15684.748
+Cell Area                          4753.686
+Leakage Power                      39.577 uW
+Dynamic Power                      195.432 uW
+Total Power                        235.009 uW
+
+
+Max Fanout                         477 (clk)
+Min Fanout                         0 (n_114)
+Average Fanout                     2.9
+Terms to net ratio                 3.2
+Terms to instance ratio            3.9
+Runtime                            30 seconds
+Hostname                           localhost
+Final Runtime & Memory.
+===========================================
+The RUNTIME after FINAL is 30 secs
+and the MEMORY_USAGE after FINAL is 89.00 MB
+===========================================
+============================
+Synthesis Finished .........
+============================
+============================================================
+  Generated by:           Encounter(R) RTL Compiler v08.10-s222_1
+  Generated on:           Feb 10 2018  01:58:05 PM
+  Module:                 NRISC_UP
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      ple
+  Area mode:              physical library
+============================================================
+
+                Leakage   Dynamic    Total   
+Instance Cells Power(uW) Power(uW) Power(uW) 
+---------------------------------------------
+NRISC_UP  2662    39.577   195.432   235.009 
+  REGs    1600    24.932   113.942   138.875 
+  PC       221     4.087    20.587    24.674 
+  ULA      423     4.510    19.461    23.971 
+  ID       289     3.440    16.911    20.351 
+
